@@ -54,6 +54,20 @@ export const feeds = [
 ];
 ```
 
+## Ejecución automática con cron
+
+Para que el scraper corra solo todos los días (por ejemplo, a las 08:00), añade una entrada a tu `crontab`:
+
+```bash
+crontab -e
+```
+
+```
+0 8 * * * cd /ruta/a/ultima-hora-ias && /opt/homebrew/bin/node scraper.js >> scraper.log 2>&1
+```
+
+Ajusta la ruta del proyecto y la ruta de `node` (`which node`) a tu sistema. Los logs de cada ejecución quedan en `scraper.log` (ignorado por git).
+
 ## Estructura del proyecto
 
 ```
