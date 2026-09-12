@@ -1,4 +1,5 @@
 import Parser from 'rss-parser';
+import Anthropic from '@anthropic-ai/sdk';
 import { mkdir, writeFile } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -8,6 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
 
 const parser = new Parser();
+const anthropic = new Anthropic();
 
 async function fetchFeed(feed) {
   try {
@@ -23,6 +25,29 @@ async function fetchFeed(feed) {
     console.warn(`No se pudo leer el feed "${feed.name}": ${err.message}`);
     return [];
   }
+}
+
+async function seleccionarYResumir(noticias) {
+  const prompt = `Responde siempre en español, sin excepción. Si una noticia viene de una fuente en otro idioma, traduce tanto el titular como el resto de campos al español; no dejes ninguna palabra o frase en el idioma original.
+
+De la siguiente lista de noticias, elige entre 2 y 3 que consideres más relevantes sobre inteligencia artificial y escribe un resumen breve de cada una.
+
+Noticias:
+${JSON.stringify(noticias, null, 2)}
+
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato:
+[
+  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
+]`;
+
+  const respuesta = await anthropic.messages.create({
+    model: 'claude-sonnet-5',
+    max_tokens: 1024,
+    messages: [{ role: 'user', content: prompt }],
+  });
+
+  const texto = respuesta.content[0].text;
+  return JSON.parse(texto);
 }
 
 async function main() {
@@ -41,6 +66,19 @@ async function main() {
   await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');
 
   console.log(`Se guardaron ${noticias.length} noticias en ${outFile}`);
+
+  try {
+    const destacadas = await seleccionarYResumir(noticias);
+    const destacadasFile = path.join(DATA_DIR, `destacadas-${fecha}.json`);
+    const destacadasLatestFile = path.join(DATA_DIR, 'destacadas-latest.json');
+
+    await writeFile(destacadasFile, JSON.stringify(destacadas, null, 2), 'utf-8');
+    await writeFile(destacadasLatestFile, JSON.stringify(destacadas, null, 2), 'utf-8');
+
+    console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
+  } catch (err) {
+    console.warn(`No se pudieron seleccionar noticias destacadas: ${err.message}`);
+  }
 }
 
 main();
