@@ -1,0 +1,13 @@
+{
+  "name": "ultima-hora-ias",
+  "version": "1.0.0",
+  "description": "Scraper de noticias sobre inteligencia artificial a partir de feeds RSS",
+  "type": "module",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
