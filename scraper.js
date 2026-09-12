@@ -27,6 +27,39 @@ async function fetchFeed(feed) {
   }
 }
 
+function extraerJSON(texto) {
+  const limpio = texto
+    .trim()
+    .replace(/^```(json)?/i, '')
+    .replace(/```$/, '')
+    .trim();
+  return JSON.parse(limpio);
+}
+
+async function filtrarYTraducirAISafety(noticias) {
+  const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety): riesgos catastróficos o de mal uso, alineamiento, evaluaciones de modelos, interpretabilidad, gobernanza y regulación de la IA.
+
+Responde siempre en español, sin excepción. Traduce tanto el titular como el resumen de cada noticia al español; no dejes ninguna palabra o frase en el idioma original.
+
+De la siguiente lista de noticias, descarta todas las que NO traten sobre seguridad, riesgos, alineamiento, evaluaciones de modelos, interpretabilidad o gobernanza/regulación de la IA. Conserva únicamente las que sí sean relevantes para AI safety.
+
+Noticias:
+${JSON.stringify(noticias, null, 2)}
+
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato, uno por cada noticia conservada:
+[
+  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
+]`;
+
+  const respuesta = await anthropic.messages.create({
+    model: 'claude-sonnet-5',
+    max_tokens: 8192,
+    messages: [{ role: 'user', content: prompt }],
+  });
+
+  return extraerJSON(respuesta.content[0].text);
+}
+
 async function seleccionarYResumir(noticias) {
   const prompt = `Responde siempre en español, sin excepción. Si una noticia viene de una fuente en otro idioma, traduce tanto el titular como el resto de campos al español; no dejes ninguna palabra o frase en el idioma original.
 
@@ -46,21 +79,28 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
     messages: [{ role: 'user', content: prompt }],
   });
 
-  const texto = respuesta.content[0].text;
-  return JSON.parse(texto);
+  return extraerJSON(respuesta.content[0].text);
 }
 
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
   const results = await Promise.all(feeds.map(fetchFeed));
-  const noticias = results
+  const noticiasCrudas = results
     .flat()
     .sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
 
   const fecha = new Date().toISOString().slice(0, 10);
   const outFile = path.join(DATA_DIR, `noticias-${fecha}.json`);
   const latestFile = path.join(DATA_DIR, 'latest.json');
+
+  let noticias;
+  try {
+    noticias = await filtrarYTraducirAISafety(noticiasCrudas);
+  } catch (err) {
+    console.warn(`No se pudo filtrar/traducir con la API de Anthropic, se guardan las noticias sin filtrar: ${err.message}`);
+    noticias = noticiasCrudas;
+  }
 
   await writeFile(outFile, JSON.stringify(noticias, null, 2), 'utf-8');
   await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');

@@ -1,11 +1,11 @@
 # última hora IAs
 
-Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge, Xataka, Genbeta y Google AI Blog) y las guarda en formato JSON.
+Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa general (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge, Xataka, Genbeta), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Alignment Forum, LessWrong, Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
 
 ## Requisitos
 
 - Node.js 18 o superior
-- Una clave de la API de Anthropic en la variable de entorno `ANTHROPIC_API_KEY` (necesaria para la selección y resumen de noticias destacadas; si no está configurada, ese paso se salta con un aviso y el resto del scraper sigue funcionando)
+- Una clave de la API de Anthropic en la variable de entorno `ANTHROPIC_API_KEY` (necesaria para filtrar/traducir las noticias y para seleccionar las destacadas; si no está configurada, esos pasos se saltan con un aviso y se guardan las noticias sin filtrar ni traducir)
 
 ## Instalación
 
@@ -25,9 +25,9 @@ o directamente:
 node scraper.js
 ```
 
-Esto descarga las últimas entradas de cada feed definido en `feeds.js` y genera dos archivos dentro de `data/`:
+Esto descarga las últimas entradas de cada feed definido en `feeds.js`, las pasa por Claude para descartar todo lo que no sea relevante para AI safety y traducir el resto al español, y genera dos archivos dentro de `data/`:
 
-- `data/noticias-YYYY-MM-DD.json` — snapshot de las noticias del día
+- `data/noticias-YYYY-MM-DD.json` — snapshot del día, ya filtrado a AI safety y en español
 - `data/latest.json` — siempre contiene la ejecución más reciente
 
 Cada noticia tiene esta forma:
@@ -42,9 +42,9 @@ Cada noticia tiene esta forma:
 }
 ```
 
-Si un feed falla (por red, cambio de URL, etc.) se muestra un aviso en consola y el scraper continúa con el resto sin interrumpirse.
+Si un feed falla (por red, cambio de URL, etc.) se muestra un aviso en consola y el scraper continúa con el resto sin interrumpirse. Si falla la llamada a Anthropic para filtrar/traducir (o falta `ANTHROPIC_API_KEY`), se avisa por consola y se guardan las noticias tal cual, sin filtrar ni traducir.
 
-Además, usando la API de Anthropic (Claude), el scraper selecciona entre 2 y 3 noticias destacadas y genera un resumen de cada una, siempre en español (traduciendo el contenido si la fuente original está en otro idioma). El resultado se guarda en:
+Además, sobre ese conjunto ya filtrado y traducido, el scraper selecciona entre 2 y 3 noticias destacadas y genera un resumen de cada una. El resultado se guarda en:
 
 - `data/destacadas-YYYY-MM-DD.json`
 - `data/destacadas-latest.json`
