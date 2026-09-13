@@ -75,12 +75,14 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
 async function seleccionarYResumir(noticias) {
   const prompt = `Responde siempre en español, sin excepción. Si una noticia viene de una fuente en otro idioma, traduce tanto el titular como el resto de campos al español; no dejes ninguna palabra o frase en el idioma original.
 
-De la siguiente lista de noticias, elige entre 2 y 3 que consideres más relevantes sobre inteligencia artificial y escribe un resumen breve de cada una.
+De la siguiente lista de noticias, elige entre 2 y 3 que tengan relevancia real para AI safety: regulación, incidentes, investigación o decisiones de empresa con impacto significativo. Escribe un resumen breve de cada una que elijas.
+
+Si ninguna noticia del lote cumple ese criterio de relevancia real, no fuerces la cuota de 2 o 3: devuelve un array vacío [] en lugar de incluir noticias flojas o poco relevantes solo para completarla.
 
 Noticias:
 ${JSON.stringify(noticias, null, 2)}
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato:
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato, o un array vacío [] si ninguna noticia cumple el criterio:
 [
   { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
 ]`;
@@ -123,13 +125,18 @@ async function main() {
 
   try {
     const destacadas = await seleccionarYResumir(noticias);
-    const destacadasFile = path.join(DATA_DIR, `destacadas-${fecha}.json`);
-    const destacadasLatestFile = path.join(DATA_DIR, 'destacadas-latest.json');
 
-    await writeFile(destacadasFile, JSON.stringify(destacadas, null, 2), 'utf-8');
-    await writeFile(destacadasLatestFile, JSON.stringify(destacadas, null, 2), 'utf-8');
+    if (destacadas.length === 0) {
+      console.log('Ninguna noticia de hoy cumple el criterio de relevancia real; no se genera entrada de destacadas.');
+    } else {
+      const destacadasFile = path.join(DATA_DIR, `destacadas-${fecha}.json`);
+      const destacadasLatestFile = path.join(DATA_DIR, 'destacadas-latest.json');
 
-    console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
+      await writeFile(destacadasFile, JSON.stringify(destacadas, null, 2), 'utf-8');
+      await writeFile(destacadasLatestFile, JSON.stringify(destacadas, null, 2), 'utf-8');
+
+      console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
+    }
   } catch (err) {
     console.warn(`No se pudieron seleccionar noticias destacadas: ${err.message}`);
   }

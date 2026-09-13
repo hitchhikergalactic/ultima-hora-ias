@@ -1,0 +1,45 @@
+name: Actualizar noticias IA
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      - run: node scraper.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+
+      # No se comitea directo a main: esta acción crea una rama y abre
+      # un pull request. El merge a main sigue siendo manual (no hay
+      # auto-merge configurado aquí ni se activa en el PR).
+      - name: Abrir pull request con las noticias del día
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Actualiza noticias IA del día'
+          branch: actualizacion-noticias
+          delete-branch: true
+          title: 'Actualización automática de noticias IA'
+          body: |
+            Pull request generado automáticamente por el scraper (`scraper.js`).
+
+            Requiere revisión y aprobación manual antes de fusionar a `main`.
+          add-paths: |
+            data/*.json
