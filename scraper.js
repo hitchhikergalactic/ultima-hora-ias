@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import Parser from 'rss-parser';
 import Anthropic from '@anthropic-ai/sdk';
 import { mkdir, writeFile } from 'fs/promises';
@@ -8,13 +9,19 @@ import { feeds } from './feeds.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
 
+const MAX_ITEMS_POR_FEED = 30;
+
 const parser = new Parser();
-const anthropic = new Anthropic();
+const anthropic = new Anthropic(
+  process.env.ANTHROPIC_WORKSPACE_ID
+    ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
+    : undefined
+);
 
 async function fetchFeed(feed) {
   try {
     const result = await parser.parseURL(feed.url);
-    return result.items.map((item) => ({
+    return result.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => ({
       fuente: feed.name,
       titulo: item.title ?? '',
       enlace: item.link ?? '',
@@ -28,6 +35,9 @@ async function fetchFeed(feed) {
 }
 
 function extraerJSON(texto) {
+  if (!texto) {
+    throw new Error('La respuesta de la API no contenía texto');
+  }
   const limpio = texto
     .trim()
     .replace(/^```(json)?/i, '')
@@ -53,11 +63,13 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
 
   const respuesta = await anthropic.messages.create({
     model: 'claude-sonnet-5',
-    max_tokens: 8192,
+    max_tokens: 32000,
+    thinking: { type: 'disabled' },
     messages: [{ role: 'user', content: prompt }],
   });
 
-  return extraerJSON(respuesta.content[0].text);
+  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
+  return extraerJSON(texto);
 }
 
 async function seleccionarYResumir(noticias) {
@@ -75,11 +87,13 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
 
   const respuesta = await anthropic.messages.create({
     model: 'claude-sonnet-5',
-    max_tokens: 1024,
+    max_tokens: 2048,
+    thinking: { type: 'disabled' },
     messages: [{ role: 'user', content: prompt }],
   });
 
-  return extraerJSON(respuesta.content[0].text);
+  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
+  return extraerJSON(texto);
 }
 
 async function main() {

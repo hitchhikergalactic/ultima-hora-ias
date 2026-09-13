@@ -5,12 +5,25 @@ Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds 
 ## Requisitos
 
 - Node.js 18 o superior
-- Una clave de la API de Anthropic en la variable de entorno `ANTHROPIC_API_KEY` (necesaria para filtrar/traducir las noticias y para seleccionar las destacadas; si no está configurada, esos pasos se saltan con un aviso y se guardan las noticias sin filtrar ni traducir)
+- Una clave de la API de Anthropic (necesaria para filtrar/traducir las noticias y para seleccionar las destacadas; si no está configurada, esos pasos se saltan con un aviso y se guardan las noticias sin filtrar ni traducir)
 
 ## Instalación
 
 ```bash
 npm install
+cp .env.example .env
+```
+
+Edita `.env` (nunca lo subas a git, ya está en `.gitignore`) y añade tu clave:
+
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Si tu clave no está vinculada a un workspace, la API devolverá un error `invalid_request_error` pidiendo un `anthropic-workspace-id`. En ese caso añade también en `.env` el ID del workspace (lo encuentras en la URL de `console.anthropic.com` dentro del workspace correspondiente):
+
+```
+ANTHROPIC_WORKSPACE_ID=wrkspc_...
 ```
 
 ## Uso
@@ -25,7 +38,7 @@ o directamente:
 node scraper.js
 ```
 
-Esto descarga las últimas entradas de cada feed definido en `feeds.js`, las pasa por Claude para descartar todo lo que no sea relevante para AI safety y traducir el resto al español, y genera dos archivos dentro de `data/`:
+Esto descarga hasta 30 entradas por cada feed definido en `feeds.js`, las pasa por Claude para descartar todo lo que no sea relevante para AI safety y traducir el resto al español, y genera dos archivos dentro de `data/`:
 
 - `data/noticias-YYYY-MM-DD.json` — snapshot del día, ya filtrado a AI safety y en español
 - `data/latest.json` — siempre contiene la ejecución más reciente
