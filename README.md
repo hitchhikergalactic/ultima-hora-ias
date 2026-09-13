@@ -75,26 +75,29 @@ export const feeds = [
 ];
 ```
 
-## Ejecución automática con cron
+## Ejecución automática
 
-Para que el scraper corra solo todos los días (por ejemplo, a las 08:00), añade una entrada a tu `crontab`:
+El scraper corre solo todos los días mediante el GitHub Action definido en
+`.github/workflows/scraper.yml` (cron diario a las 08:00 UTC, o manualmente
+desde la pestaña Actions con "Run workflow"). Cada ejecución abre un pull
+request con las noticias del día; no comitea directo a `main` y el merge
+requiere aprobación manual.
 
-```bash
-crontab -e
-```
+Para que funcione hace falta configurar el secret `ANTHROPIC_API_KEY` (y
+opcionalmente `ANTHROPIC_WORKSPACE_ID`) en Settings → Secrets and
+variables → Actions del repositorio.
 
-```
-0 8 * * * cd /ruta/a/ultima-hora-ias && /opt/homebrew/bin/node scraper.js >> scraper.log 2>&1
-```
-
-Ajusta la ruta del proyecto y la ruta de `node` (`which node`) a tu sistema. Los logs de cada ejecución quedan en `scraper.log` (ignorado por git).
+No uses además un cron local para esta misma tarea: ejecutar el scraper
+dos veces al día (local + Action) duplica las llamadas a la API de
+Anthropic sin ningún beneficio.
 
 ## Estructura del proyecto
 
 ```
 ultima-hora-ias/
-├── scraper.js      # lógica de descarga y guardado de noticias
-├── feeds.js        # lista de fuentes RSS
+├── .github/workflows/scraper.yml  # Action que ejecuta el scraper y abre el PR diario
+├── scraper.js                     # lógica de descarga y guardado de noticias
+├── feeds.js                       # lista de fuentes RSS
 ├── package.json
-└── data/           # noticias generadas (ignoradas en git, excepto .gitkeep)
+└── data/                          # noticias generadas, versionadas en git
 ```
