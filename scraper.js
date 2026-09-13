@@ -10,13 +10,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
 
 const MAX_ITEMS_POR_FEED = 30;
+const ANTHROPIC_TIMEOUT_MS = 8 * 60 * 1000;
 
 const parser = new Parser();
-const anthropic = new Anthropic(
-  process.env.ANTHROPIC_WORKSPACE_ID
+const anthropic = new Anthropic({
+  timeout: ANTHROPIC_TIMEOUT_MS,
+  maxRetries: 1,
+  ...(process.env.ANTHROPIC_WORKSPACE_ID
     ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
-    : undefined
-);
+    : {}),
+});
 
 async function fetchFeed(feed) {
   try {
