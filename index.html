@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Última hora IA · AI Safety</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --border: #e5e5e5;
+    --accent: #7c3aed;
+    --card-bg: #f8f7fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14121a;
+      --fg: #f0eef5;
+      --muted: #a9a3b5;
+      --border: #2c2836;
+      --accent: #b794f6;
+      --card-bg: #1d1a26;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-block: 32px 64px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0 0 4px;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0 0 32px;
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin: 40px 0 16px;
+  }
+  h2:first-of-type { margin-top: 0; }
+  .item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .item:last-child { border-bottom: none; }
+  .item a {
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .item a:hover { color: var(--accent); }
+  .item .meta {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  .item .resumen {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .destacada {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .destacada a { font-size: 1.02rem; }
+  .status {
+    color: var(--muted);
+    font-size: 0.9rem;
+    padding: 24px 0;
+  }
+  footer {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 48px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Última hora en IA y AI Safety</h1>
+    <p>Noticias filtradas y traducidas automáticamente. Página puente mientras se completa la integración en aisafety.es.</p>
+  </header>
+
+  <section id="destacadas-section" hidden>
+    <h2>Destacadas</h2>
+    <div id="destacadas"></div>
+  </section>
+
+  <section id="noticias-section" hidden>
+    <h2>Todas las noticias</h2>
+    <div id="noticias"></div>
+  </section>
+
+  <p id="status" class="status">Cargando noticias…</p>
+
+  <footer>
+    Generado por <a href="https://github.com/hitchhikergalactic/ultima-hora-ias" target="_blank" rel="noopener">ultima-hora-ias</a>.
+  </footer>
+</main>
+
+<script>
+  function formatFecha(fecha) {
+    var d = new Date(fecha);
+    if (isNaN(d.getTime())) return fecha;
+    return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
+
+  function renderDestacadas(items) {
+    var section = document.getElementById('destacadas-section');
+    var container = document.getElementById('destacadas');
+    if (!Array.isArray(items) || items.length === 0) return;
+    items.forEach(function (n) {
+      var div = document.createElement('div');
+      div.className = 'destacada';
+
+      var a = document.createElement('a');
+      a.href = n.enlace;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = n.titulo || '(sin título)';
+      div.appendChild(a);
+
+      var meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = [n.fuente, n.fecha ? formatFecha(n.fecha) : null].filter(Boolean).join(' · ');
+      div.appendChild(meta);
+
+      if (n.resumen) {
+        var p = document.createElement('div');
+        p.className = 'resumen';
+        p.textContent = n.resumen;
+        div.appendChild(p);
+      }
+      container.appendChild(div);
+    });
+    section.hidden = false;
+  }
+
+  function renderNoticias(items) {
+    var section = document.getElementById('noticias-section');
+    var container = document.getElementById('noticias');
+    if (!Array.isArray(items) || items.length === 0) return;
+
+    var ordenadas = items.slice().sort(function (a, b) {
+      return new Date(b.fecha) - new Date(a.fecha);
+    });
+
+    ordenadas.forEach(function (n) {
+      var div = document.createElement('div');
+      div.className = 'item';
+
+      var a = document.createElement('a');
+      a.href = n.enlace;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = n.titulo || '(sin título)';
+      div.appendChild(a);
+
+      var meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = [n.fuente, n.fecha ? formatFecha(n.fecha) : null].filter(Boolean).join(' · ');
+      div.appendChild(meta);
+
+      if (n.resumen) {
+        var p = document.createElement('div');
+        p.className = 'resumen';
+        p.textContent = n.resumen;
+        div.appendChild(p);
+      }
+      container.appendChild(div);
+    });
+    section.hidden = false;
+  }
+
+  function fetchJSON(path) {
+    return fetch(path, { cache: 'no-store' }).then(function (res) {
+      if (!res.ok) throw new Error(path + ': ' + res.status);
+      return res.json();
+    });
+  }
+
+  Promise.allSettled([
+    fetchJSON('data/destacadas-latest.json'),
+    fetchJSON('data/latest.json')
+  ]).then(function (results) {
+    var destacadasResult = results[0];
+    var noticiasResult = results[1];
+
+    if (destacadasResult.status === 'fulfilled') {
+      renderDestacadas(destacadasResult.value);
+    }
+    if (noticiasResult.status === 'fulfilled') {
+      renderNoticias(noticiasResult.value);
+    }
+
+    var status = document.getElementById('status');
+    if (noticiasResult.status === 'fulfilled') {
+      status.hidden = true;
+    } else {
+      status.textContent = 'No se han podido cargar las noticias ahora mismo.';
+    }
+  });
+</script>
+</body>
+</html>
