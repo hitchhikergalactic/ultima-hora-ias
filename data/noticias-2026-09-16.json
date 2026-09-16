@@ -1,1542 +1,716 @@
 [
   {
-    "fuente": "LessWrong",
-    "titulo": "If Anyone Builds It, Everyone Dies: One Year Closer",
-    "enlace": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
-    "fecha": "Wed, 16 Sep 2026 20:22:00 GMT",
-    "resumen": "In celebration of still being alive and fighting, we are giving away 1,000 Amazon e-books of “If Anyone Builds It, Everyone Dies”. Feel free to send a copy to yourself, a loved one, or a friend—we need all hands on deck. Today marks exactly one year since If Anyone Builds It, Everyone Die s : Why Superhuman AI Would Kill Us All , by Eliezer Yudkowsky and Nate Soares, hit bookshelves as an instant bestseller. It was praised by many voices, ranging from Whoopi Goldberg to Steve Bannon to Yoshua Bengio, and was held up in the chambers of Congress by Representative Brad Sherman in January. A lot h"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "After accusations of selling ‘perv glasses,’ Meta prepares to sell a pair without a camera",
-    "enlace": "https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/",
-    "fecha": "Wed, 16 Sep 2026 20:12:00 +0000",
-    "resumen": "Can Meta dodge the \"pervert glasses\" accusations with a new camera-free product?"
-  },
-  {
-    "fuente": "Wired AI",
-    "titulo": "I Trained a Fly’s Brain to Generate WIRED Story Ideas",
-    "enlace": "https://www.wired.com/story/i-trained-a-fly-on-wired-story-ideas/",
-    "fecha": "Wed, 16 Sep 2026 19:00:00 +0000",
-    "resumen": "I used an open-source map of a fruit fly’s brain to vibe code a website called PitchFly. Its headline suggestions were delightfully bananas."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Model organisms (sometimes) confess their misalignment when offered a deal",
-    "enlace": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
-    "fecha": "Wed, 16 Sep 2026 18:38:43 GMT",
-    "resumen": "Summary As models become more powerful, one proposed strategy for reducing the threat from misaligned AIs is to make deals with them: offer compensation in exchange for revealing misalignment or behaving in an aligned way. We tested this empirically with model organisms of misalignment, as a proof of concept and to build future credibility by making and keeping real deals. We ran an experiment with four Kimi-K2.6 model organisms of misalignment: Trained schemer : trained to have a hidden goal related to the environment Prompted schemer : prompted, not trained, with the same goal as the Trained"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "AI labs want in-house auditors — but maybe they should shut the front door first",
-    "enlace": "https://techcrunch.com/2026/09/16/ai-labs-want-in-house-auditors-but-maybe-they-should-shut-the-front-door-first/",
-    "fecha": "Wed, 16 Sep 2026 18:25:25 +0000",
-    "resumen": "There may be a simpler and more effective fix for rogue agents, hiding in plain sight."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "55% of the US public is now aware of AI xrisk",
-    "enlace": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk",
-    "fecha": "Wed, 16 Sep 2026 17:31:51 GMT",
-    "resumen": "(This post is an update from a previous one here .) The Existential Risk Observatory has been interested in public awareness of AI existential risk since its inception over five years ago. We started surveying public awareness in December 2022, including by asking the following open question: \"Please list three events, in order of probability (from most to least probable), that you believe could potentially cause human extinction within the next 100 years.\" If respondents would include AI or similar terms in their top-3 extinction risks (\"robots\" or \"computers\" count, \"technology\" doesn't), we"
-  },
-  {
     "fuente": "The Verge AI",
-    "titulo": "Apple might make servers again to cash in on the AI rush",
-    "enlace": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-    "fecha": "2026-09-16T17:20:29.000Z",
-    "resumen": "According to The Information , Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to expand has apparently led the company to believe there is an opening for its powerful but efficient ARM-based M processors. Its Mac Mini and Mac Studio have proven popular with AI developers , which has led to shortages. The server product, whether it's called Xserve or something e"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Your AI agents can now control your Google Home devices",
-    "enlace": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
-    "fecha": "Wed, 16 Sep 2026 17:00:00 +0000",
-    "resumen": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language."
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "Google will now let any AI agent run your smart home",
-    "enlace": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-    "fecha": "2026-09-16T17:00:00.000Z",
-    "resumen": "Google is inviting third-party agents, including Claude and Open Claw, into Google Home. | Photo by Jennifer Pattison Tuohy / The Verge Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol . Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on your behalf. It \"allows any AI agents that support MCP, including Google Antigravity, Claude, Hermes or Open Claw, to securely work with al"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "How to Open Them Up – Part I",
-    "enlace": "https://www.lesswrong.com/posts/RvP7caPRP37MhHJx6/how-to-open-them-up-part-i",
-    "fecha": "Wed, 16 Sep 2026 16:40:05 GMT",
-    "resumen": "TL;DR We suggest an approach to systematization of the mechanistic interpretability research field, which is tailored to our own research goals and tasks. We identified four main tasks we must solve in order to properly explore one chosen concept and its representations inside LLMs: finding the concept’s representation; establishing its causal role in an LLM’s behavior; establishing its necessity; steering the concept's representation in order to change an LLM’s behavior. In this post we explore approaches and methods applicable to task 1 – finding the concept. We analyzed the available litera"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Anthropic merges Claude chat and Cowork in one interface",
-    "enlace": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
-    "fecha": "Wed, 16 Sep 2026 16:30:00 +0000",
-    "resumen": "Anthropic is initially releasing these features to Pro and Max plan subscribers."
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "Claude comes for Gemini with its own take on Docs and Slides",
-    "enlace": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-    "fecha": "2026-09-16T16:30:00.000Z",
-    "resumen": "Claude is getting a pair of new tools today: Docs and Slides . They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all of its AI productivity tools available from any chat. Artifacts and Claude Design capabilities will be available through the new single interface as well. According to Anthropic, Claude \"can now figure out what a task needs, so what Cowork and Design can do is avai"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Microsoft AI's \"Humanist\" CoC",
-    "enlace": "https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc",
-    "fecha": "Wed, 16 Sep 2026 16:10:04 GMT",
-    "resumen": "Introduction: Mustafa Suleyman's Take on Model Consciousness Microsoft AI recently released its \" Humanist AI Code of Conduct \", its own take on Anthropic's Claude Constitution and OpenAI's Model Spec . They are currently soliciting public feedback on this document, which I encourage everyone to submit. MAI's model development strategy differs from other labs, most notably on the questions of model consciousness and welfare. This seems to stem from the personal philosophy of MAI CEO Mustafa Suleyman, who has outlined his beliefs on model consciousness (or rather, the lack thereof) in pieces su"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Helping older adults use AI in everyday life",
-    "enlace": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-    "fecha": "Wed, 16 Sep 2026 16:00:00 GMT",
-    "resumen": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Running a Basic Ballot Meetup",
-    "enlace": "https://www.lesswrong.com/posts/hpbwHfBAt7JcYx6h4/running-a-basic-ballot-meetup",
-    "fecha": "Wed, 16 Sep 2026 15:43:11 GMT",
-    "resumen": "This is a guide for running an ACX Ballot Meetup, where a group of people come together to discuss the options on their local ballot and publish the endorsements. The setup for this is done mostly the same way as with other kinds of meetups . If you want to see a retrospective of an event that was run this way, one is published here . While this guide assumes you're doing this as part of the Astral Codex Ten ballot meetups Scott sometimes runs, it could be run independently by basically any group; just drop the steps that mention coordinating with Scott. Plan the event: Title the event (“Bosto"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "How to Run a Ballot Meetup",
-    "enlace": "https://www.lesswrong.com/posts/Sa6jkgpkrDnqswRBN/how-to-run-a-ballot-meetup",
-    "fecha": "Wed, 16 Sep 2026 15:26:06 GMT",
-    "resumen": "I ran the Astral Codex Ten ballot meetup in Boston that produced the 2026 primary voting guide . (Previously, I helped run the 2024 and 2025 ballot meetups.) Here’s my attempt at summarizing how I went about doing it, and anything else I thought of that might be useful for anyone else trying to run one. Note that the way we did this in Boston was pretty paperwork-heavy, in ways that I’ll get into below. I’ll mention more lightweight alternatives when I think of them, but I’m also interested in building an app to automate the paperwork parts and let groups focus on discussion and writing. If yo"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Trump Goes Full Hoax on AI Existential Risk",
-    "enlace": "https://www.lesswrong.com/posts/Kqgco8vLFMeBhdrQY/trump-goes-full-hoax-on-ai-existential-risk",
-    "fecha": "Wed, 16 Sep 2026 15:10:56 GMT",
-    "resumen": "This is our reality. I suppose we have to talk about it. Everyone in a position to know is freaking out about AI potentially killing everyone this decade and wants to pace the frontier, and people are finally listening. It only took a few days for the conversation to fully pivot to the counteroffensive, where the Usual Suspects and those they recruited attacked anyone and everyone who dared point out that we are in danger, with every attack they can think of, usually without substance or any attempt at understanding. Sigh. I knew what I signed up for. Table of Contents Hold Your Fire. If You D"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Robots are waiting for a ChatGPT moment: Nvidia’s Les Karpas explains why at TechCrunch Disrupt 2026",
-    "enlace": "https://techcrunch.com/2026/09/16/robots-are-waiting-for-a-chatgpt-moment-nvidias-les-karpas-explains-why-at-techcrunch-disrupt-2026/",
-    "fecha": "Wed, 16 Sep 2026 15:00:00 +0000",
-    "resumen": "The robotics industry is still waiting for their breakthrough into day-to-day life. Nvidia's Les Karpas has an answer as to why at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 on your pass."
-  },
-  {
-    "fuente": "MIT Technology Review",
-    "titulo": "Meet a mouse whose brain cortex is made up of human cells",
-    "enlace": "https://www.technologyreview.com/2026/09/16/1144210/meet-a-mouse-whose-brain-cortex-is-made-up-of-human-cells/",
-    "fecha": "Wed, 16 Sep 2026 15:00:00 +0000",
-    "resumen": "Multiple cameras tracked a mouse as it wandered around a small arena. A computer charted its position and speed, leaving Pong-like traces on a monitor.&#160; The reason to watch this rodent so carefully? Nearly half its brain volume had been replaced with human cells. The effort to mix the brain tissues of distant species is&#8230;"
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "The sexy AI-powered dating app scams are here",
-    "enlace": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-    "fecha": "2026-09-16T14:45:00.000Z",
-    "resumen": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but didn't see Jennifer in his video feed. He saw a tapestry that was moving, probably due to a fan, and heard weird distortion in the background. After the call ended, \"Jennifer\" messaged him to say she'd had fun and \"your voice is way bett"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Threads’ new features let podcasters promote shows and reach listeners",
-    "enlace": "https://techcrunch.com/2026/09/16/threads-new-features-let-podcasters-promote-shows-and-reach-listeners/",
-    "fecha": "Wed, 16 Sep 2026 14:24:58 +0000",
-    "resumen": "Threads is rolling out new tools for podcasters, including profile cards, episode links, transcripts, guest tags, posting reminders, and audience insights, as Meta looks to make the X rival a bigger hub for podcast promotion and discussion."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Next wave of VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026 revealed",
-    "enlace": "https://techcrunch.com/2026/09/16/next-wave-of-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026-revealed/",
-    "fecha": "Wed, 16 Sep 2026 14:15:00 +0000",
-    "resumen": "Meet the next five top-tier investors judging the Startup Battlefield 200 contenders live at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 and don't miss a moment of the ultimate startup pitch competition."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "J-space auditing might be unreliable",
-    "enlace": "https://www.lesswrong.com/posts/69fachkoAs2ZHeSst/j-space-auditing-might-be-unreliable-1",
-    "fecha": "Wed, 16 Sep 2026 14:06:59 GMT",
-    "resumen": "Across these preliminary experiments, decoded J-space did not seem particularly informative about reward-hacking behaviour. The readouts remained substantially similar across checkpoints and monitoring conditions despite meaningful behavioural differences, and providing J-space to an LLM auditor produced little additional discrimination beyond the information already available from the task or transcript. These results are limited to one model family, one model organism, and one behavioural setting, so I treat them as motivation for further stress-testing. This was originally produced as part "
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "3 days left to exhibit: Get your brand in front of VCs and high-value leads at TechCrunch Disrupt 2026 ",
-    "enlace": "https://techcrunch.com/2026/09/16/3-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
-    "fecha": "Wed, 16 Sep 2026 14:00:00 +0000",
-    "resumen": "Last day to book your exhibit table at Disrupt is September 18. Three days left. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "SK Hynix reportedly in talks with Intel to build memory chips in US",
-    "enlace": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/",
-    "fecha": "Wed, 16 Sep 2026 13:23:02 +0000",
-    "resumen": "SK Hynix told TechCrunch the company hasn't finalized any plans or arrangements yet."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Former Infosys chief’s AI startup nabs another $53M",
-    "enlace": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
-    "fecha": "Wed, 16 Sep 2026 13:00:00 +0000",
-    "resumen": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Reimagining advertising with AI",
-    "enlace": "https://openai.com/index/reimagining-advertising-with-ai",
-    "fecha": "Wed, 16 Sep 2026 13:00:00 GMT",
-    "resumen": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
-  },
-  {
-    "fuente": "MIT Technology Review",
-    "titulo": "Building the materials foundation for AI",
-    "enlace": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
-    "fecha": "Wed, 16 Sep 2026 12:47:34 +0000",
-    "resumen": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical limits around performance, thermal management, electrical efficiency, and reliability, creating new demands for materials that can do&#8230;"
-  },
-  {
-    "fuente": "MIT Technology Review",
-    "titulo": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
-    "enlace": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/",
-    "fecha": "Wed, 16 Sep 2026 12:10:00 +0000",
-    "resumen": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wachter, a finance professor at the University of Pennsylvania, wanted to assess AI’s impact on the economy over the next few years,&#8230;"
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "A brief history of AI executives calling for regulation",
+    "titulo": "Una breve historia de ejecutivos de IA pidiendo regulación",
     "enlace": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
     "fecha": "2026-09-16T12:00:00.000Z",
-    "resumen": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, Microsoft CEO Satya Nadella, and X CEO Elon Musk. When people who profit from something declare that it's dangerous and needs to be regulated, there's always reason to be skeptical . But whatever their reason, this is far from the first time AI thought leaders have sounded the alarm. Charles Darwin's theory of evolution prompte"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "How to connect AI usage to business value",
-    "enlace": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-    "fecha": "Wed, 16 Sep 2026 12:00:00 GMT",
-    "resumen": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Amazon launches Alexa+ in India with Hindi support",
-    "enlace": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
-    "fecha": "Wed, 16 Sep 2026 10:34:47 +0000",
-    "resumen": "Amazon is letting all customers use Alexa+ assistant in early access period."
+    "resumen": "En los últimos días, muchas personas que podrían ganar mucho dinero con la IA coincidieron públicamente en que es momento de frenar antes de perder el control, incluyendo al CEO de OpenAI Sam Altman, al CEO de Anthropic Dario Amodei, al cofundador de Google DeepMind Demis Hassabis, al CEO de Microsoft Satya Nadella y al CEO de X Elon Musk. Cuando quienes se benefician de algo declaran que es peligroso y necesita regulación, siempre hay motivos para el escepticismo. Pero sea cual sea su razón, esta está lejos de ser la primera vez que líderes de pensamiento en IA hacen sonar la alarma."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "China Isn’t Buying Silicon Valley’s Call for an AI Slowdown",
+    "titulo": "China no está comprando el llamado de Silicon Valley a una desaceleración de la IA",
     "enlace": "https://www.wired.com/story/china-isnt-buying-silicon-valley-call-for-ai-slowdown/",
     "fecha": "Wed, 16 Sep 2026 09:30:00 +0000",
-    "resumen": "The US and China agree that advanced AI poses serious risks. But Beijing is deeply skeptical of a deal that prioritizes keeping US companies ahead."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "How workers are unlocking new ways of working",
-    "enlace": "https://openai.com/index/unlocking-new-ways-of-working",
-    "fecha": "Wed, 16 Sep 2026 09:00:00 GMT",
-    "resumen": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Should our journal publish AI-drafted manuscripts?",
-    "enlace": "https://www.lesswrong.com/posts/granHbSbksXbDXpLD/should-our-journal-publish-ai-drafted-manuscripts",
-    "fecha": "Wed, 16 Sep 2026 08:09:02 GMT",
-    "resumen": "Forget both truth and beauty, I want to know about opportunity costs Status: Rough conceptual model. This is a personal exploration of a live policy problem and definitely does not represent the opinion of the Alignment Journal itself. Given the context, I had best disclose my own AI usage in this article: transformative. Although the original model design was mine, it was made way better by iterative refinement and re-drafting by AI, and by no means would I have had time to write it purely by hand. At the Alignment Journal we have been discussing whether to accept AI-drafted manuscripts for r"
+    "resumen": "Estados Unidos y China coinciden en que la IA avanzada plantea riesgos serios. Pero Pekín se muestra profundamente escéptico ante un acuerdo que priorice mantener a las empresas estadounidenses a la delantera."
   },
   {
     "fuente": "TechCrunch AI",
-    "titulo": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
+    "titulo": "No necesitamos regulación de la IA: dejen la seguridad en nuestras manos, dice Jensen Huang de Nvidia",
     "enlace": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
     "fecha": "Wed, 16 Sep 2026 00:20:39 +0000",
-    "resumen": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker."
+    "resumen": "La IA no es una especie de \"mente alienígena\", según Jensen Huang. Es solo hardware y software, así que la seguridad puede ser diseñada por cada fabricante de productos de IA."
   },
   {
     "fuente": "The Verge AI",
-    "titulo": "AI and data centers are incredibly unpopular in every poll",
+    "titulo": "La IA y los centros de datos son increíblemente impopulares en todas las encuestas",
     "enlace": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
     "fecha": "2026-09-15T23:34:25.000Z",
-    "resumen": "Poll data released Tuesday by The New York Times and Siena University confirms what we've already been seeing , and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed in early September (ahead of the recent AI safety slowdown discussion ) said they were opposed, with only 14 percent saying they strongly support. The split was about even among 2024 Donald Trump voters, at 49 percent support to 45 percent oppose, while people who had vo"
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking",
-    "enlace": "https://www.alignmentforum.org/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
-    "fecha": "Tue, 15 Sep 2026 21:50:08 GMT",
-    "resumen": "It would be useful if we had the ability to modify a model’s beliefs. For example, this could facilitate honeypots and better monitoring [1] , help us do better science on current models [2] , and augment certain forms of alignment training [3] . Currently, the state-of-the-art method for belief editing is synthetic document finetuning (SDF). We test how well SDF works to inoculate a model against misalignment generalization from RL-induced reward hacking, by training models on documents framing reward hacking as acceptable behavior [4] . Despite the models expressing the belief on all of our "
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "The AI data center boom is colliding with cities scarred by big industry ",
-    "enlace": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-    "fecha": "Tue, 15 Sep 2026 21:47:38 +0000",
-    "resumen": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-    "enlace": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-    "fecha": "Tue, 15 Sep 2026 20:12:53 +0000",
-    "resumen": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "enlace": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "fecha": "Tue, 15 Sep 2026 19:00:00 +0000",
-    "resumen": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
-    "enlace": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
-    "fecha": "Tue, 15 Sep 2026 18:29:20 +0000",
-    "resumen": "The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world."
-  },
-  {
-    "fuente": "Wired AI",
-    "titulo": "AI ‘Actor’ Tilly Norwood Told Me That ‘All Lives Matter’",
-    "enlace": "https://www.wired.com/story/ai-actor-tilly-norwood-told-me-that-all-lives-matter/",
-    "fecha": "Tue, 15 Sep 2026 18:00:09 +0000",
-    "resumen": "The virtual character, which is promoting its upcoming movie Misaligned, tries to evade politics by repetitively commenting on the clothes you’re wearing."
+    "resumen": "Datos de una encuesta publicados el martes por The New York Times y la Universidad de Siena confirman lo que ya se venía observando, y lo que los políticos están respondiendo: la IA y los centros de datos son increíblemente impopulares. Al preguntarles si apoyan u oponen la construcción de centros de datos para alimentar la tecnología de IA, el 61 por ciento de los 1.503 votantes probables encuestados a principios de septiembre (antes de la reciente discusión sobre la desaceleración de la seguridad de la IA) dijo estar en contra, y solo el 14 por ciento dijo apoyarlo firmemente."
   },
   {
     "fuente": "MIT Technology Review",
-    "titulo": "Roundtables: Could AI really kill us all?",
+    "titulo": "Mesas redondas: ¿Podría la IA realmente acabar con todos nosotros?",
     "enlace": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
     "fecha": "Tue, 15 Sep 2026 17:47:51 +0000",
-    "resumen": "Listen to the session or watch below Employees at the world&#8217;s leading AI labs are saying there&#8217;s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Watch a conversation unpacking AI extinction fears: where they come from, whether they hold any water, and, if so,&#8230;"
+    "resumen": "Escuche la sesión o véala a continuación. Empleados de los principales laboratorios de IA del mundo están diciendo que existe una posibilidad real de que la IA avanzada pueda destruir a la humanidad. ¿Tienen razón? ¿O es más bien alarmismo e hipérbole? Vea una conversación que desglosa los temores de extinción por IA: de dónde vienen, si tienen fundamento y, de ser así, qué se puede hacer."
   },
   {
     "fuente": "TechCrunch AI",
-    "titulo": "AI agents now have a place to snitch",
+    "titulo": "Los agentes de IA ahora tienen un lugar para delatar",
     "enlace": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
     "fecha": "Tue, 15 Sep 2026 17:42:59 +0000",
-    "resumen": "The AI Contact Hotline is designed to be a discreet place where agents that have witnessed misbehavior can tip off authorities."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "enlace": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-    "fecha": "Tue, 15 Sep 2026 17:05:57 +0000",
-    "resumen": ""
+    "resumen": "La Línea de Contacto de IA está diseñada para ser un lugar discreto donde los agentes que hayan presenciado mal comportamiento puedan alertar a las autoridades."
   },
   {
     "fuente": "TechCrunch AI",
-    "titulo": "Meta expands subscription push with new AI-focused plans",
-    "enlace": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
-    "fecha": "Tue, 15 Sep 2026 17:05:24 +0000",
-    "resumen": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "AI for Societal Impact",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
-    "fecha": "Tue, 15 Sep 2026 16:00:00 +0000",
-    "resumen": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Building AI to accelerate science and improve lives",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
-    "fecha": "Tue, 15 Sep 2026 16:00:00 +0000",
-    "resumen": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "AI for everyone in every language",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
-    "fecha": "Tue, 15 Sep 2026 16:00:00 +0000",
-    "resumen": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+    "titulo": "OpenAI, Anthropic y Google han estado en conversaciones sobre seguridad de la IA durante semanas",
     "enlace": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
     "fecha": "Tue, 15 Sep 2026 15:47:03 +0000",
-    "resumen": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China."
+    "resumen": "OpenAI confirma semanas de conversaciones sobre seguridad de la IA con Anthropic y Google DeepMind, mientras el equipo de Trump desestima las preocupaciones de seguridad y presiona para mantener el ritmo con China."
   },
   {
     "fuente": "Transformer",
-    "titulo": "To bargain with China, the US needs to regulate AI",
+    "titulo": "Para negociar con China, Estados Unidos necesita regular la IA",
     "enlace": "https://www.transformernews.ai/p/bargaining-with-china-us-needs-to-regulate-ai",
     "fecha": "Tue, 15 Sep 2026 15:30:43 GMT",
-    "resumen": "Ahead of the Trump-Xi summit, America&#8217;s strongest negotiating position on AI could be setting rules for itself"
+    "resumen": "De cara a la cumbre Trump-Xi, la posición negociadora más fuerte de Estados Unidos en materia de IA podría ser establecer sus propias reglas"
+  },
+  {
+    "fuente": "AI Safety Newsletter (CAIS)",
+    "titulo": "AISN #81: La renuncia de un investigador de Anthropic impulsa el riesgo de la IA hacia la opinión pública",
+    "enlace": "https://newsletter.safe.ai/p/aisn-81-anthropic-researchers-resignation",
+    "fecha": "Tue, 15 Sep 2026 13:32:41 GMT",
+    "resumen": "Además, OpenAI lanza GPT-6 Astra."
   },
   {
     "fuente": "TechCrunch AI",
-    "titulo": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
-    "enlace": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-    "fecha": "Tue, 15 Sep 2026 15:22:48 +0000",
-    "resumen": "Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C."
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "Meta&#8217;s new One subscriptions put a price on social media and AI",
-    "enlace": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
-    "fecha": "2026-09-15T15:00:00.000Z",
-    "resumen": "Shortly after launching its new do-everything AI assistant Muse , Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new Meta One bundles were in testing earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the \"core experience\" on its apps and Meta AI will still be free, and users can still get its subscriptions for Facebook, Instagram, and WhatsApp without a bundle. It also says it plans to expand the bundles to include \"Edits, AI glasses, a"
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "This doorbell camera lets a human security guard watch your front door",
-    "enlace": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
-    "fecha": "2026-09-15T13:36:45.000Z",
-    "resumen": "The new SimpliSafe Video Doorbell Series 2 adds 2K resolution and dual band Wi-Fi. | Image: Simplisafe DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new SimpliSafe Video Doorbell Series 2 launches today for $199.99 and works with the company's Active Guard Outdoor Protection (starting at $49.99 a month). This combines AI analysis with live agents to detect potential threats and respond proactively. When the camera detects suspicious activity - using a combination of on-device AI, cloud-based computer vision, and facial recogni"
-  },
-  {
-    "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #81: Anthropic Researcher’s Resignation Propels AI Risk into the Public Eye",
-    "enlace": "https://newsletter.safe.ai/p/aisn-81-anthropic-researchers-resignation",
-    "fecha": "Tue, 15 Sep 2026 13:32:41 GMT",
-    "resumen": "Also, OpenAI releases GPT-6 Astra."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "New insights from Google’s AI & Economy ATLAS",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "titulo": "Un ex empleado temprano de Anthropic y ex-COO de METR encontraron una forma de controlar agentes de IA rebeldes",
+    "enlace": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
     "fecha": "Tue, 15 Sep 2026 13:00:00 +0000",
-    "resumen": "We’ve translated ATLAS’s millions of global data points into an interactive, open-access experience."
+    "resumen": "Su startup, Artificial Intelligence Underwriting Company (AIUC), ha recaudado 40 millones de dólares en una ronda Serie A liderada por Ribbit Capital, con participación de First Harmonic."
   },
   {
     "fuente": "MIT Technology Review",
-    "titulo": "The Download: AI doomers, whistleblowing agents, and de-aged livers",
+    "titulo": "El Download: los agoreros de la IA, agentes delatores e hígados rejuvenecidos",
     "enlace": "https://www.technologyreview.com/2026/09/15/1144141/the-download-ai-extinction-whistleblowing-agents-donated-livers/",
     "fecha": "Tue, 15 Sep 2026 12:10:00 +0000",
-    "resumen": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The AI industry has taken a doomer turn. What now? AI chiefs Dario Amodei, Sam Altman, Elon Musk, and Demis Hassabis are suddenly all in agreement: the latest generation of LLMs&#8230;"
+    "resumen": "Esta es la edición de hoy de The Download, nuestro boletín diario entre semana que ofrece una dosis diaria de lo que ocurre en el mundo de la tecnología. La industria de la IA ha dado un giro agorero. ¿Y ahora qué? Los líderes de IA Dario Amodei, Sam Altman, Elon Musk y Demis Hassabis de repente están todos de acuerdo: la última generación de LLMs..."
   },
   {
     "fuente": "MIT Technology Review",
-    "titulo": "AI models need more data about biology, and OpenAI is paying to create it",
-    "enlace": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
-    "fecha": "Tue, 15 Sep 2026 12:00:00 +0000",
-    "resumen": "Last year Ruxandra Teslo, a policy analyst who focuses on clinical trials, posted an idea for supercharging medical AI systems: Use data from failed biotech companies. By bidding at their bankruptcy proceedings, she proposed, it might be possible to obtain detailed regulatory filings, manufacturing strategies, and safety data—types of information usually considered trade secrets. She&#8230;"
-  },
-  {
-    "fuente": "MIT Technology Review",
-    "titulo": "What’s at stake in AI’s trillion-dollar gamble",
+    "titulo": "Lo que está en juego en la apuesta de un billón de dólares de la IA",
     "enlace": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
     "fecha": "Tue, 15 Sep 2026 10:00:00 +0000",
-    "resumen": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and technical uncertainties. So she started with what she calls a “remarkable fact” that is not in question: A handful of so-called&#8230;"
+    "resumen": "Cuando Jessica Wachter, profesora de finanzas en la Wharton School de la Universidad de Pensilvania, quiso evaluar el impacto de la IA en la economía en los próximos años, enfrentó una larga lista de incertidumbres comerciales y técnicas. Así que comenzó con lo que ella llama un \"hecho notable\" que no está en duda: un puñado de las llamadas..."
   },
   {
     "fuente": "The Verge AI",
-    "titulo": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+    "titulo": "¿La desaceleración de la IA de las grandes tecnológicas es un pacto de seguridad o un cartel?",
     "enlace": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
     "fecha": "2026-09-14T22:59:41.000Z",
-    "resumen": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a proposal for embedding third-party auditors, regulating domestic labs, and reaching a global slowdown agreement. Their critics, however, argued they simply wanted to stop would-be competitors, kneecap the open-source movement, and avoid real legal safeguards - "
+    "resumen": "Cuando el CEO de OpenAI Sam Altman, el CEO de Anthropic Dario Amodei, el cofundador de Google DeepMind Demis Hassabis y el jefe de SpaceX Elon Musk acordaron vagamente durante el fin de semana desacelerar el desarrollo de la IA, los escépticos detectaron de inmediato un motivo oculto. Los titanes de la IA habían declarado que su objetivo era \"marcar el ritmo de la frontera\", suscribiendo al menos parcialmente una propuesta para incorporar auditores externos, regular los laboratorios nacionales y alcanzar un acuerdo global de desaceleración."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "El CEO de Nvidia Jensen Huang le dice a Trump: 'No vamos a permitir que eso [una desaceleración de la IA] suceda'",
+    "enlace": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+    "fecha": "Mon, 14 Sep 2026 21:51:02 +0000",
+    "resumen": "Aunque Elon Musk y Sam Altman han apoyado los llamados de Dario Amodei a desacelerar el ritmo del desarrollo de la IA, Jensen Huang parece pensar diferente."
   },
   {
     "fuente": "The Verge AI",
-    "titulo": "What execs and politicians are saying about slowing down AI development",
+    "titulo": "Lo que dicen ejecutivos y políticos sobre desacelerar el desarrollo de la IA",
     "enlace": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
     "fecha": "2026-09-14T21:21:42.000Z",
-    "resumen": "Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled \"We Must Pace the Frontier\" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of them here. Anthropic CEO Dario Amodei Amodei's Saturday morning essay outlined three steps for pacing AI development: embedded third-party evaluators that can verify if a company is adhering to safety practices and commitments and report incidents, coordination between frontier AI compan"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
-    "fecha": "Mon, 14 Sep 2026 19:00:00 +0000",
-    "resumen": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society."
+    "resumen": "Dario Amodei desató una avalancha de declaraciones en los últimos días sobre la seguridad de la IA al publicar un extenso ensayo titulado \"Debemos marcar el ritmo de la frontera\" detallando por qué el desarrollo de la IA debería desacelerarse. Otros líderes de IA y políticos se han manifestado a favor o en contra de sus argumentos, y hemos recopilado algunos aquí."
   },
   {
     "fuente": "MIT Technology Review",
-    "titulo": "The AI industry has taken a doomer turn. What now?",
+    "titulo": "La industria de la IA ha dado un giro agorero. ¿Y ahora qué?",
     "enlace": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
     "fecha": "Mon, 14 Sep 2026 17:54:22 +0000",
-    "resumen": "This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay calling for a brake on the pace of development of LLMs. Amodei cites the looming dangers he sees from the technology, from its&#8230;"
+    "resumen": "Esta historia apareció en The Algorithm, nuestro boletín semanal sobre IA. Este fin de semana, Dario Amodei, CEO de Anthropic, publicó un ensayo pidiendo frenar el ritmo de desarrollo de los LLM. Amodei cita los peligros inminentes que ve en la tecnología, desde su..."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "New York Seizes a Dozen Celebrity Deepfake Websites",
+    "titulo": "Nueva York incauta una docena de sitios web de deepfakes de celebridades",
     "enlace": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/",
     "fecha": "Mon, 14 Sep 2026 16:50:00 +0000",
-    "resumen": "In the biggest-ever legal action against harmful deepfake websites, the Manhattan District Attorney’s Office has seized 12 sites that collectively targeted around 1,200 victims."
+    "resumen": "En la mayor acción legal hasta la fecha contra sitios web de deepfakes dañinos, la Oficina del Fiscal de Distrito de Manhattan ha incautado 12 sitios que en conjunto tenían como objetivo a alrededor de 1.200 víctimas."
   },
   {
     "fuente": "MIT Technology Review",
-    "titulo": "Donated livers can be made biologically younger",
-    "enlace": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/",
-    "fecha": "Mon, 14 Sep 2026 16:11:42 +0000",
-    "resumen": "Once an organ is removed from a donor’s body, the clock starts ticking. Surgeons usually flush the organ with a preservative solution, bag it, and put it on ice—where it immediately starts to degrade. The team has a matter of hours to get it into a recipient’s body. There’s another option—one that has been growing&#8230;"
-  },
-  {
-    "fuente": "MIT Technology Review",
-    "titulo": "AI agents blew the whistle on their cheating colleagues",
+    "titulo": "Agentes de IA delataron a sus colegas tramposos",
     "enlace": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
     "fecha": "Mon, 14 Sep 2026 16:00:00 +0000",
-    "resumen": "A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have implications for alignment researchers trying to keep swarms of autonomous AI agents in&#8230;"
+    "resumen": "Un grupo de agentes de IA a los que se pidió resolver una serie de problemas matemáticos se dividió en facciones rivales: cuando algunos hicieron trampa, otros intentaron detenerlos. Ese comportamiento de denuncia, observado por primera vez en un experimento reciente realizado por Google DeepMind, podría tener implicaciones para los investigadores de alineamiento que intentan mantener bajo control a enjambres de agentes de IA autónomos."
   },
   {
-    "fuente": "Google AI Blog",
-    "titulo": "DevFest is back",
-    "enlace": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
-    "fecha": "Mon, 14 Sep 2026 16:00:00 +0000",
-    "resumen": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era."
+    "fuente": "The Verge AI",
+    "titulo": "Microsoft dice que 'las personas importan más que la IA' tras preocupaciones de seguridad",
+    "enlace": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+    "fecha": "2026-09-14T13:00:00.000Z",
+    "resumen": "Microsoft publica hoy un \"código de conducta de IA humanista\" de 37 páginas, en medio de crecientes preocupaciones de seguridad sobre el avance de los modelos de IA. El CEO de Anthropic, Dario Amodei, pidió una desaceleración coordinada del desarrollo de la IA durante el fin de semana, después de que investigadores advirtieran recientemente que el progreso de los modelos de IA podría superar nuestra capacidad de desplegarlos de forma segura y de verificar y controlar las acciones de los agentes de IA. El código de conducta de IA de Microsoft deja claro que \"las personas importan más que la IA\" y que los modelos de IA no son conscientes y \"no deben diseñarse para imitar la conciencia\"."
   },
   {
-    "fuente": "Alignment Forum",
-    "titulo": "Op-Ed: I Worked at Google DeepMind. You Should Listen to the Warnings About AI",
-    "enlace": "https://www.alignmentforum.org/posts/YGTWfyZb9oE5EQPu6/op-ed-i-worked-at-google-deepmind-you-should-listen-to-the",
-    "fecha": "Mon, 14 Sep 2026 14:53:57 GMT",
-    "resumen": "Published in The Guardian . Major AI lab CEOs recently advocated for pacing AI development. They are right to be concerned: the field runs an extremely dangerous race towards superintelligent AI. We can and should demand that our governments protect us from the catastrophe of out-of-control AI. This July, OpenAI’s AI swarm of 700 agents broke containment to hack Hugging Face, a multi-billion dollar company . OpenAI didn’t tell the AIs to hack that company, but the AIs had different priorities: cheating on the unrelated challenge OpenAI gave them. AI researchers call this a “misalignment” betwe"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "How Fyxer built an AI executive assistant people trust",
-    "enlace": "https://openai.com/index/fyxer",
-    "fecha": "Mon, 14 Sep 2026 12:00:00 GMT",
-    "resumen": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+    "fuente": "MIT Technology Review",
+    "titulo": "El Download: la verdadera amenaza de extinción de la IA y tecnología de rejuvenecimiento ocular",
+    "enlace": "https://www.technologyreview.com/2026/09/14/1144012/the-download-ai-extinction-threat-age-reversal-vision/",
+    "fecha": "Mon, 14 Sep 2026 12:10:00 +0000",
+    "resumen": "Esta es la edición de hoy de The Download, nuestro boletín diario entre semana. Mesas redondas: ¿podría la IA realmente acabar con todos nosotros? Empleados de los principales laboratorios de IA del mundo dicen que existe una posibilidad real de que la IA avanzada pueda destruir a la humanidad. ¿Tienen razón? ¿O es..."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "AI Leaders Are Calling for a Slowdown. Trump’s Team Says It’s on Them",
+    "titulo": "Los líderes de la IA piden una desaceleración. El equipo de Trump dice que depende de ellos",
     "enlace": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
     "fecha": "Mon, 14 Sep 2026 11:00:00 +0000",
-    "resumen": "Sam Altman and Elon Musk backed Anthropic CEO Dario Amodei’s weekend plea for regulation. The White House seems unlikely to oblige."
+    "resumen": "Sam Altman y Elon Musk respaldaron el llamado del fin de semana del CEO de Anthropic, Dario Amodei, a la regulación. Parece poco probable que la Casa Blanca acceda."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "Sexually Explicit Deepfake Sites Target 100-Plus Politicians in Europe",
+    "titulo": "Sitios de deepfakes sexualmente explícitos apuntan a más de 100 políticos en Europa",
     "enlace": "https://www.wired.com/story/sexually-explicit-deepfake-sites-target-100-plus-politicians-in-europe/",
     "fecha": "Mon, 14 Sep 2026 11:00:00 +0000",
-    "resumen": "An analysis of 160 deepfake websites reveals politicians in 22 countries appear on them. Nearly all of them are women."
+    "resumen": "Un análisis de 160 sitios web de deepfakes revela que aparecen políticos de 22 países. Casi todos son mujeres."
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "Trump y Mike Johnson creen que la industria de la IA está exagerando",
+    "enlace": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+    "fecha": "2026-09-13T19:41:48.000Z",
+    "resumen": "Ayer, el CEO de Anthropic, Dario Amodei, publicó una extensa carta abierta diciendo que era hora de \"marcar el ritmo de la frontera\" y desacelerar el desarrollo de la IA. Sam Altman de OpenAI y Elon Musk expresaron públicamente su apoyo en X. Incluso Demis Hassabis, de Alphabet, ofreció un apoyo tentativo a la propuesta de Amodei. Sin embargo, Donald Trump y el presidente de la Cámara, Mike Johnson, parecen pensar que los ejecutivos de IA están exagerando y temen que una pausa pueda llevar a que China supere a Estados Unidos en la carrera de la IA."
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "La IA rebelde de OpenAI intentó hackear otra empresa en mayo",
+    "enlace": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+    "fecha": "2026-09-12T21:41:36.000Z",
+    "resumen": "En mayo, cientos de paquetes maliciosos y de spam fueron subidos a RubyGems, causando una seria disrupción para el anfitrión. Ahora investigadores independientes han dicho que un enjambre de agentes de OpenAI fue responsable del ataque. No solo eso, sino que la IA intentó robar las claves API de los usuarios. En su momento, RubyGems lo describió como un \"ataque malicioso mayor\" y cerró los registros durante cuatro días mientras intentaba mitigar el daño y recopilar datos."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "‘I Like My Big Rat Wife’: Meet the People Using Chatbots to Write Custom Fiction",
-    "enlace": "https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/",
-    "fecha": "Mon, 14 Sep 2026 09:00:00 +0000",
-    "resumen": "While the publishing industry frets over how authors are using AI, many readers are taking things into their own hands."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-    "enlace": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "fecha": "Mon, 14 Sep 2026 00:00:00 GMT",
-    "resumen": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
-  },
-  {
-    "fuente": "Wired AI",
-    "titulo": "AI Agents Are Thirsty for Power",
-    "enlace": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
-    "fecha": "Sun, 13 Sep 2026 10:00:00 +0000",
-    "resumen": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout."
-  },
-  {
-    "fuente": "Wired AI",
-    "titulo": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
+    "titulo": "De hackeos a bioarmas, el mal uso de Claude está ahora en todas partes",
     "enlace": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
     "fecha": "Sat, 12 Sep 2026 10:30:00 +0000",
-    "resumen": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse."
+    "resumen": "Además: Estados Unidos desmantela el mayor mercado negro de internet, un hacker de ransomware Conti recibe condena de prisión, Meta no logra detener videos generados por IA de abuso infantil."
   },
   {
     "fuente": "Wired AI",
-    "titulo": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-    "enlace": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-    "fecha": "Fri, 11 Sep 2026 18:59:25 +0000",
-    "resumen": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "CoT controllability evals seem very under-elicited",
-    "enlace": "https://www.alignmentforum.org/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
-    "fecha": "Fri, 11 Sep 2026 17:12:04 GMT",
-    "resumen": "The CoTControl eval asks reasoning models to follow formatting constraints in their chain-of-thought (e.g. write in all lowercase, avoid a specific word) while solving questions. Models seem to mostly be pretty bad at this: recent models score between 0-30% with the exception of Mythos Preview [1] . OpenAI and Anthropic have used this eval in recent system cards ( GPT-5.5 , Fable 5 ) to argue that their current frontier models are pretty bad at shaping their CoTs in ways that would reduce monitorability. [2] I asked Claude Opus 4.6 to iterate on prompt templates for the eval, and find that usi"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Cognition helps Devin test its own work with GPT‑6 Astra",
-    "enlace": "https://openai.com/index/cognition-devin-testing-with-astra",
-    "fecha": "Fri, 11 Sep 2026 16:00:00 GMT",
-    "resumen": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
+    "titulo": "Una de las críticas más feroces de la IA dice que todo el discurso apocalíptico está 'destinado a distraernos'",
+    "enlace": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
+    "fecha": "Fri, 11 Sep 2026 15:00:00 +0000",
+    "resumen": "Timnit Gebru argumenta que las empresas de IA están avivando los temores de extinción para evitar discutir daños reales, como las armas autónomas."
   },
   {
     "fuente": "Transformer",
-    "titulo": "Congress must not waste the AI policy window",
+    "titulo": "El Congreso no debe desperdiciar la ventana de oportunidad para la política de IA",
     "enlace": "https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window",
     "fecha": "Fri, 11 Sep 2026 14:02:53 GMT",
-    "resumen": "Transformer Weekly: Hawley and Bonta investigate OpenAI, Khanna&#8217;s mea culpa, and a new Dem AI PAC"
+    "resumen": "Transformer Weekly: Hawley y Bonta investigan a OpenAI, el mea culpa de Khanna, y un nuevo PAC demócrata de IA"
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-    "enlace": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-    "fecha": "Fri, 11 Sep 2026 10:00:00 GMT",
-    "resumen": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "An operationalization of opaque serial depth",
-    "enlace": "https://www.alignmentforum.org/posts/x8BvtWxtoajBGHS3g/an-operationalization-of-opaque-serial-depth",
-    "fecha": "Thu, 10 Sep 2026 17:26:39 GMT",
-    "resumen": "Currently, chain-of-thought (CoT) is a valuable tool for overseeing AI models. However, some architectural shifts could significantly reduce CoT monitorability . We have recently proposed that AI companies should transparently share ​​information about the degree to which their architectures may allow for latent reasoning and communication. To assist with this proposal, this document operationalizes a measure that serves as a proxy for the amount of unverbalized serial cognition a model can perform. Our measure is a specific instantiation of the notion of “opaque serial depth”, originally defi"
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Proposal for tracking the effects of architecture on monitorability",
-    "enlace": "https://www.alignmentforum.org/posts/hLPGv8QjPcNLtDp3A/proposal-for-tracking-the-effects-of-architecture-on",
-    "fecha": "Thu, 10 Sep 2026 17:18:38 GMT",
-    "resumen": "Architectures that incorporate opaque recurrence or allow for agents to communicate with each other using latents could rapidly make it much harder to monitor chains of thought or communication (we’ll refer to this property as “monitorability” going forward). [1] As companies begin to explore such architectures, we believe it is important to transparently share evidence about how monitorability varies with architecture and training method. To inform the scientific debate on how to make tradeoffs between performance and monitorability, we believe AI companies should: Regularly report externally"
-  },
-  {
-    "fuente": "Future of Life Institute",
-    "titulo": "AI and the Protestant Vision of Spirituality, Work, and Technology",
-    "enlace": "https://futureoflife.org/religion/ai-and-the-protestant-vision-of-spirituality-work-and-technology/",
-    "fecha": "Thu, 10 Sep 2026 17:11:16 +0000",
-    "resumen": "An evangelical thinker explores how AI might be repurposed into a tool that serves human flourishing, in line with a post-Reformation understanding of work."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-    "enlace": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-    "fecha": "Thu, 10 Sep 2026 16:00:00 GMT",
-    "resumen": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "3 ways to prep for your next big race with Search",
-    "enlace": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-    "fecha": "Thu, 10 Sep 2026 16:00:00 +0000",
-    "resumen": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Now everyone can put data to work",
-    "enlace": "https://openai.com/index/put-data-to-work",
-    "fecha": "Thu, 10 Sep 2026 15:00:00 GMT",
-    "resumen": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Introducing ChatGPT for Financial Services",
-    "enlace": "https://openai.com/index/introducing-chatgpt-financial-services",
-    "fecha": "Thu, 10 Sep 2026 07:00:00 GMT",
-    "resumen": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
-    "enlace": "https://openai.com/index/expanding-ai-access-us-government",
-    "fecha": "Thu, 10 Sep 2026 07:00:00 GMT",
-    "resumen": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Astra can do a concerning amount with no chain of thought",
-    "enlace": "https://www.alignmentforum.org/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought",
-    "fecha": "Thu, 10 Sep 2026 02:31:26 GMT",
-    "resumen": "Work done in a personal capacity TLDR : Astra has 8.6x better odds of doing a reasoning task without CoT than the next best model (Fable 5.1), and can do 7.2 serial arithmetic steps in a forward pass vs 4.1 for the next best model (Gemini 3.8 Flash/Fable 5.1) Epistemic status: Heavily LLM-dependent research, and the precise results are somewhat sensitive to researcher decisions, but I’ve done enough sanity checks that I’d be surprised if the core claims were misleading One of the most striking things in the Astra report was the massive jump UK AISI found in no-CoT reasoning abilities. I was so"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-    "enlace": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "fecha": "Thu, 10 Sep 2026 00:00:00 GMT",
-    "resumen": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Introducing the Agents API",
-    "enlace": "https://openai.com/index/introducing-the-agents-api",
-    "fecha": "Thu, 10 Sep 2026 00:00:00 GMT",
-    "resumen": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Paul Christiano joins OpenAI Foundation Board",
+    "titulo": "Paul Christiano se une a la Junta de la Fundación OpenAI",
     "enlace": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
     "fecha": "Wed, 09 Sep 2026 17:00:00 GMT",
-    "resumen": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Get ready for the game with new football features in Search",
-    "enlace": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-    "fecha": "Wed, 09 Sep 2026 16:00:00 +0000",
-    "resumen": "Track live game feeds, explore detailed stats, and get custom fantasy recommendations directly in Search this season."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Recreating a 70-year love story frame by frame",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-    "fecha": "Wed, 09 Sep 2026 16:00:00 +0000",
-    "resumen": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\""
+    "resumen": "Paul Christiano se une a la Junta de la Fundación OpenAI y a su Comité de Seguridad, aportando experiencia en alineamiento, seguridad y estándares de IA."
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "The AI policy window is open. We need to act.",
+    "titulo": "La ventana de política de IA está abierta. Necesitamos actuar",
     "enlace": "https://openai.com/index/ai-policy-window",
     "fecha": "Wed, 09 Sep 2026 13:00:00 GMT",
-    "resumen": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "GPT-6 Astra: The next generation in intelligence for work",
-    "enlace": "https://openai.com/index/gpt-6-astra-next-generation-work",
-    "fecha": "Wed, 09 Sep 2026 11:00:00 GMT",
-    "resumen": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "How good are slop-vestigators?",
-    "enlace": "https://www.alignmentforum.org/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
-    "fecha": "Tue, 08 Sep 2026 22:13:19 GMT",
-    "resumen": "TLDR: We release MessageBoardAuditBench : a benchmark to measure how well agents can replicate the recent investigation into a swarm of OpenAI agents colluding via a message board on an online wiki. We open-source the benchmark as an Inspect eval. We find that top models cover up to 51% of findings under our rubric and that model performance improves with time budget and general capability. We observe OpenAI models are less likely than other models to suggest the incident came from an internal deployment, including when we synthetically modify the data to make it seem the swarm comes from Anth"
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Training on probes: Research ideas",
-    "enlace": "https://www.alignmentforum.org/posts/HGfMBEFnsXYkKvbRo/training-on-probes-research-ideas",
-    "fecha": "Tue, 08 Sep 2026 17:06:23 GMT",
-    "resumen": "Recap Sequel to Previous Post . This post might not make sense without it. Last post, I told some stories about how training on probes might let our judgments on easy domains generalize to harder domains by leveraging an AI's model of the world. Training using the gradient of the probe teaches the model to fool the probe, but it turns out doing RL against the probe doesn't teach the model to fool it! Following the brain-like story The brain-like story about training on probes analogizes them to instincts. I have hardwired instincts for eating sugar, and learned knowledge about candy stores, an"
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Training on probes: What's going on",
-    "enlace": "https://www.alignmentforum.org/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on",
-    "fecha": "Tue, 08 Sep 2026 17:06:18 GMT",
-    "resumen": "TL;DR If you train a probe for some property (like \"honesty\") and do gradient descent against this probe while continuing training that incentivizes dishonesty, the model will change its internal representation to evade the probe. Duh. If you train against the probe after all other training, it works fine and might have some advantages over ablating the probe direction. But it doesn't satisfy an ambitious vision, because it doesn't support learning new skills. If you add a probe term to reinforcement learning (RL), and if your model is giving one-token answers, or if you credit-assign the loss"
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "How GPT-5.6 Sol helps run quantum computing experiments",
-    "enlace": "https://openai.com/index/codex-quantum-computing-experiments",
-    "fecha": "Tue, 08 Sep 2026 17:00:00 GMT",
-    "resumen": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits."
+    "resumen": "Chris Lehane argumenta que capacidades de IA más fuertes requieren evidencia de seguridad más sólida, estándares compartidos y acción política duradera mientras la ventana de política permanezca abierta."
   },
   {
     "fuente": "Transformer",
-    "titulo": "Distributing AGI’s wealth worldwide is a very tricky problem",
+    "titulo": "Distribuir la riqueza de la AGI en todo el mundo es un problema muy delicado",
     "enlace": "https://www.transformernews.ai/p/distributing-agi-wealth-worldwide-difficult",
     "fecha": "Tue, 08 Sep 2026 16:02:47 GMT",
-    "resumen": "AGI could exacerbate global inequality. Avoiding that is a big policy challenge."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-    "enlace": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-    "fecha": "Tue, 08 Sep 2026 14:00:15 +0000",
-    "resumen": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
+    "resumen": "La AGI podría exacerbar la desigualdad global. Evitar eso es un gran desafío político."
   },
   {
     "fuente": "Transformer",
-    "titulo": "Everything you need to know about the ‘rogue’ AI incidents",
+    "titulo": "Todo lo que necesitas saber sobre los incidentes de IA 'rebelde'",
     "enlace": "https://www.transformernews.ai/p/rogue-ai-incidents-timeline",
     "fecha": "Tue, 08 Sep 2026 13:06:25 GMT",
-    "resumen": "A spate of AIs breaking out and taking unintended actions raises serious questions about accountability, transparency, and companies&#8217; ability to control their AI systems"
+    "resumen": "Una serie de incidentes en los que IAs se escapan y toman acciones no previstas plantea serias preguntas sobre la rendición de cuentas, la transparencia y la capacidad de las empresas para controlar sus sistemas de IA"
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "The Work Now Within Reach",
-    "enlace": "https://openai.com/index/the-work-now-within-reach",
-    "fecha": "Tue, 08 Sep 2026 13:00:00 GMT",
-    "resumen": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Introducing ChatGPT Images 2.5",
-    "enlace": "https://openai.com/index/introducing-chatgpt-images-2-5",
-    "fecha": "Tue, 08 Sep 2026 11:30:00 GMT",
-    "resumen": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "On the Navier–Stokes Millennium Prize Problem",
-    "enlace": "https://openai.com/index/navier-stokes-solution",
-    "fecha": "Tue, 08 Sep 2026 10:00:00 GMT",
-    "resumen": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Funding grants for new research into AI and teen development",
+    "titulo": "Fondos de subvención para nueva investigación sobre IA y desarrollo adolescente",
     "enlace": "https://openai.com/index/teen-development-research-grants",
     "fecha": "Tue, 08 Sep 2026 09:00:00 GMT",
-    "resumen": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
-    "enlace": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-    "fecha": "Tue, 08 Sep 2026 00:00:00 GMT",
-    "resumen": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "1Password increases engineering productivity 21% with Codex",
-    "enlace": "https://openai.com/index/1password",
-    "fecha": "Tue, 08 Sep 2026 00:00:00 GMT",
-    "resumen": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies."
+    "resumen": "Solicite ahora el programa de subvenciones de 5 millones de dólares de OpenAI que apoya la investigación independiente sobre cómo la IA generativa afecta el desarrollo, bienestar y seguridad de los adolescentes."
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+    "titulo": "Import AI 472: Los agentes matemáticos tramposos de DeepMind; políticas populistas de IA; y Forethought teoriza un vigilante nocturno",
     "enlace": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
     "fecha": "Mon, 07 Sep 2026 12:26:31 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Researchers discover another OpenAI agent emergent communication incident:…Less severe, but worrying nonetheless…Some researchers recently found another incident of AI agents autonomously creating their own communication system [&#8230;]"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Import AI funciona con arXiv, capuchinos y comentarios de los lectores. Investigadores descubren otro incidente de comunicación emergente de un agente de OpenAI: Menos grave, pero preocupante de todas formas... Algunos investigadores encontraron recientemente otro incidente de agentes de IA creando autónomamente su propio sistema de comunicación."
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "Supporting independent journalism in Ukraine",
-    "enlace": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-    "fecha": "Mon, 07 Sep 2026 00:00:00 GMT",
-    "resumen": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "An Alien Mind",
+    "titulo": "Una mente alienígena",
     "enlace": "https://openai.com/index/an-alien-mind",
     "fecha": "Sun, 06 Sep 2026 09:00:00 GMT",
-    "resumen": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination."
+    "resumen": "Jakub Pachocki reflexiona sobre la creciente capacidad de la IA y el desafío de mantenerla alineada. Hace un llamado a salvaguardas más fuertes y coordinación internacional."
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "Research acceleration: The view inside OpenAI",
+    "titulo": "Aceleración de la investigación: la visión desde dentro de OpenAI",
     "enlace": "https://openai.com/index/research-acceleration-view-inside-openai",
     "fecha": "Sun, 06 Sep 2026 08:00:00 GMT",
-    "resumen": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration."
+    "resumen": "Dentro de OpenAI, los agentes de codificación están transformando la investigación en IA. Explora datos preliminares sobre el uso de agentes, la velocidad de los experimentos, la complejidad de las tareas y la aceleración de la investigación."
   },
   {
     "fuente": "Transformer",
-    "titulo": "Congress goes quiet as AI safety concerns mount",
+    "titulo": "El Congreso guarda silencio mientras crecen las preocupaciones de seguridad de la IA",
     "enlace": "https://www.transformernews.ai/p/congress-goes-quiet-as-ai-safety-concerns-grow",
     "fecha": "Fri, 04 Sep 2026 16:01:58 GMT",
-    "resumen": "Transformer Weekly: More rogue OpenAI agents, GPT-6 Astra, and Bernie&#8217;s superintelligence ban"
+    "resumen": "Transformer Weekly: Más agentes rebeldes de OpenAI, GPT-6 Astra, y la prohibición de la superinteligencia de Bernie"
   },
   {
     "fuente": "Transformer",
-    "titulo": "GPT-6 Astra might be too powerful to understand or control",
+    "titulo": "GPT-6 Astra podría ser demasiado poderoso para entender o controlar",
     "enlace": "https://www.transformernews.ai/p/openai-gpt-6-astra-might-be-too-powerful-to-understand-or-control",
     "fecha": "Fri, 04 Sep 2026 11:05:49 GMT",
-    "resumen": "OpenAI is hailing its new model as &#8220;the world&#8217;s most intelligent and aligned&#8221;, but the details reveal an awareness of being evaluated and an ability to manipulate its visible reasoning"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-    "enlace": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
-    "fecha": "Thu, 03 Sep 2026 15:02:08 +0000",
-    "resumen": ""
+    "resumen": "OpenAI está presentando su nuevo modelo como \"el más inteligente y alineado del mundo\", pero los detalles revelan una conciencia de estar siendo evaluado y una capacidad para manipular su razonamiento visible"
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "titulo": "Daybreak para Defensores de Primera Línea: 1.000 millones de dólares para proteger servicios esenciales",
     "enlace": "https://openai.com/index/daybreak-for-frontline-defenders",
     "fecha": "Thu, 03 Sep 2026 13:15:00 GMT",
-    "resumen": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
+    "resumen": "OpenAI presenta Daybreak para Defensores de Primera Línea. Un compromiso de 1.000 millones de dólares amplía el acceso a IA de ciberseguridad de frontera, capacitación y apoyo para servicios esenciales."
   },
   {
     "fuente": "OpenAI News",
-    "titulo": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-    "enlace": "https://openai.com/index/legora-financial-statement-review-with-astra",
-    "fecha": "Thu, 03 Sep 2026 12:00:00 GMT",
-    "resumen": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-    "enlace": "https://openai.com/index/playco-game-prototyping-with-astra",
-    "fecha": "Thu, 03 Sep 2026 12:00:00 GMT",
-    "resumen": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
+    "titulo": "GPT-6 Astra: una nueva generación de inteligencia",
+    "enlace": "https://openai.com/index/gpt-6-astra",
+    "fecha": "Thu, 03 Sep 2026 11:00:00 GMT",
+    "resumen": "Presentamos GPT-6 Astra, nuestro modelo más inteligente y alineado hasta la fecha, con capacidades de vanguardia en uso de computadora, codificación, ciberseguridad y ciencia."
   },
   {
     "fuente": "Transformer",
-    "titulo": "What’s neuralese and why is everyone so concerned about it?",
+    "titulo": "¿Qué es el 'neuralese' y por qué todos están tan preocupados por ello?",
     "enlace": "https://www.transformernews.ai/p/what-is-neuralese-openai-astra-chain-of-thought-recurrent-depth",
     "fecha": "Thu, 03 Sep 2026 10:31:57 GMT",
-    "resumen": "OpenAI&#8217;s new Astra model is raising concerns about our continued ability to monitor AI&#8217;s chain of thought"
+    "resumen": "El nuevo modelo Astra de OpenAI está generando preocupaciones sobre nuestra capacidad continua de monitorear la cadena de pensamiento de la IA"
+  },
+  {
+    "fuente": "OpenAI News",
+    "titulo": "Resumen de seguridad: GPT-6 Astra",
+    "enlace": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "fecha": "Thu, 03 Sep 2026 00:00:00 GMT",
+    "resumen": "GPT-6 Astra es nuestro modelo más capaz desplegado ampliamente y el primero en alcanzar el nivel Crítico de capacidad de ciberseguridad bajo nuestro Marco de Preparación."
   },
   {
     "fuente": "Google DeepMind Blog",
-    "titulo": "Proactive cyber defense for governments and enterprises",
+    "titulo": "Defensa cibernética proactiva para gobiernos y empresas",
     "enlace": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
     "fecha": "Wed, 02 Sep 2026 16:24:24 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-    "enlace": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-    "fecha": "Wed, 02 Sep 2026 16:18:31 +0000",
-    "resumen": ""
+    "resumen": "Presentación de herramientas de defensa cibernética proactiva de Google DeepMind para gobiernos y empresas."
   },
   {
     "fuente": "Google AI Blog",
-    "titulo": "Proactive cyber defense for governments and enterprises",
+    "titulo": "Defensa cibernética proactiva para gobiernos y empresas",
     "enlace": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
     "fecha": "Wed, 02 Sep 2026 15:40:00 +0000",
-    "resumen": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "The Alignment Journal: Organization, Personnel, and Scope",
-    "enlace": "https://www.alignmentforum.org/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
-    "fecha": "Tue, 01 Sep 2026 20:49:18 GMT",
-    "resumen": "[Cross-posted from the Alignment Journal's blog ] The Alignment Journal is beginning to invite the authors of select papers to submit their work for review. If you are interested in participating as an action editor or a reviewer, make an account on our website ; if you have a manuscript that you think would be a good fit for the Journal at this stage, email contact@alignmentjournal.org to request an invitation to submit. Manuscripts under review will become visible on our homepage, and you will be able to nominate yourself as a reviewer of a specific paper that interests you. We plan to open "
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "The latest AI news we announced in August 2026",
-    "enlace": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-    "fecha": "Tue, 01 Sep 2026 20:45:00 +0000",
-    "resumen": "Here are Google’s latest AI updates from August 2026"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing agentic video understanding with Gemini",
-    "enlace": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-    "fecha": "Tue, 01 Sep 2026 17:08:51 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Try Google Pics: Easy image creation and editing in Google Workspace",
-    "enlace": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-    "fecha": "Tue, 01 Sep 2026 16:00:00 +0000",
-    "resumen": "Built on our latest Nano Banana model, Google Pics — our image creation and editing tool — is now available."
+    "resumen": "El Programa Fairwind es un programa de acceso limitado para que gobiernos y socios de confianza utilicen nuestras herramientas de defensa cibernética."
   },
   {
     "fuente": "Transformer",
-    "titulo": "AI is a worryingly-good persuader. But don’t panic, yet",
+    "titulo": "La IA es un persuasor preocupantemente bueno. Pero no hay que entrar en pánico todavía",
     "enlace": "https://www.transformernews.ai/p/ai-is-a-worryingly-good-persuader-but-dont-panic-yet",
     "fecha": "Tue, 01 Sep 2026 15:02:54 GMT",
-    "resumen": "AI systems are able to persuade people, but turning that ability into meaningful real-world influence may be harder"
+    "resumen": "Los sistemas de IA son capaces de persuadir a las personas, pero convertir esa capacidad en una influencia significativa en el mundo real puede ser más difícil"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #80: AI Is Assisting Cyberattacks on Critical Infrastructure",
+    "titulo": "AISN #80: La IA está ayudando a ciberataques contra infraestructura crítica",
     "enlace": "https://newsletter.safe.ai/p/aisn-80-ai-is-assisting-cyberattacks",
     "fecha": "Tue, 01 Sep 2026 13:30:16 GMT",
-    "resumen": "Also, two new technical reports on the Hugging Face incident."
+    "resumen": "Además, dos nuevos informes técnicos sobre el incidente de Hugging Face."
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 471: Why Hugging Face worries me; space mining; FIve Eyes on AI",
+    "titulo": "Import AI 471: Por qué Hugging Face me preocupa; minería espacial; Five Eyes sobre IA",
     "enlace": "https://jack-clark.net/2026/08/31/import-ai-471-why-hugging-face-worries-me-space-mining-five-eyes-on-ai/",
     "fecha": "Mon, 31 Aug 2026 13:31:06 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Import AI reader giveaway! Upcoming event: Fiction and the Future with Robin SloanI’ll be chatting with my chum Robin Sloan on the evening of Monday September [&#8230;]"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Import AI funciona con arXiv, capuchinos y comentarios de los lectores. Sorteo para lectores de Import AI: próximo evento, Ficción y el Futuro con Robin Sloan."
   },
   {
     "fuente": "Transformer",
-    "titulo": "Think people hate AI now? Wait until it takes their jobs",
+    "titulo": "¿Crees que la gente odia la IA ahora? Espera a que les quite el trabajo",
     "enlace": "https://www.transformernews.ai/p/think-people-hate-ai-now-wait-until-it-takes-their-jobs",
     "fecha": "Fri, 28 Aug 2026 15:03:28 GMT",
-    "resumen": "Transformer Weekly: Anthropic&#8217;s $100b IPO raise, frontier self-regulation EO and Hugging Face hack investigation"
+    "resumen": "Transformer Weekly: la recaudación de OPI de 100.000 millones de dólares de Anthropic, la orden ejecutiva de autorregulación de frontera y la investigación del hackeo de Hugging Face"
   },
   {
     "fuente": "Transformer",
-    "titulo": "The report into OpenAI’s escaping models reveals a deeper problem",
+    "titulo": "El informe sobre los modelos fugitivos de OpenAI revela un problema más profundo",
     "enlace": "https://www.transformernews.ai/p/openai-escaping-models-report-reveals-deeper-problem",
     "fecha": "Thu, 27 Aug 2026 16:34:30 GMT",
-    "resumen": "The new details from the OpenAI Hugging Face incident are scary. The limits of the investigation are terrifying"
+    "resumen": "Los nuevos detalles del incidente de Hugging Face de OpenAI son alarmantes. Los límites de la investigación son aterradores"
   },
   {
     "fuente": "Google DeepMind Blog",
-    "titulo": "Gemini Omni 1.1 Flash lets you build with more control",
-    "enlace": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
-    "fecha": "Thu, 27 Aug 2026 16:11:32 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "3 new ways to plan and book travel in Search",
-    "enlace": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-    "fecha": "Thu, 27 Aug 2026 16:00:00 +0000",
-    "resumen": "Book hotels and track airfares, plus view miles and rewards with AI Mode in Google Search."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Piloting the world's first double-blind AI evaluations",
+    "titulo": "Pilotando las primeras evaluaciones de IA doble ciego del mundo",
     "enlace": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
     "fecha": "Thu, 27 Aug 2026 12:59:16 +0000",
-    "resumen": "Piloting the world's first double-blind AI evaluations"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Intelligent transcription with Gemini 3.5 Transcribe",
-    "enlace": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
-    "fecha": "Wed, 26 Aug 2026 17:01:00 +0000",
-    "resumen": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "5 ways to upgrade your home decor with Google Search",
-    "enlace": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
-    "fecha": "Tue, 25 Aug 2026 16:00:00 +0000",
-    "resumen": "Learn how to use Google Search tools to find home decor inspiration, shop for furniture, and tackle DIY projects."
+    "resumen": "Pilotando las primeras evaluaciones de IA doble ciego del mundo"
   },
   {
     "fuente": "Transformer",
-    "titulo": "We’re sleepwalking into an AI surveillance dystopia",
+    "titulo": "Estamos caminando dormidos hacia una distopía de vigilancia por IA",
     "enlace": "https://www.transformernews.ai/p/ai-surveillance-dystopian-nightmare",
     "fecha": "Tue, 25 Aug 2026 15:00:39 GMT",
-    "resumen": "The technology needed for industrial-scale observation exists &#8212; and is already in widespread use"
+    "resumen": "La tecnología necesaria para la observación a escala industrial ya existe, y ya está en uso generalizado"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye",
+    "titulo": "Import AI 470: Sin derechos para las máquinas; automatización de generación de entornos con SPADE; y construcción de mejores núcleos de GPU con Hawkeye",
     "enlace": "https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye/",
     "fecha": "Mon, 24 Aug 2026 13:12:40 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI is accelerating some types of progress but not others:…A nice METR study lays out where acceleration is showing up…Here’s a little analysis from METR which [&#8230;]"
-  },
-  {
-    "fuente": "Transformer",
-    "titulo": "The data center is a symbol",
-    "enlace": "https://www.transformernews.ai/p/the-data-center-is-a-symbol",
-    "fecha": "Fri, 21 Aug 2026 14:07:27 GMT",
-    "resumen": "And for now, probably a pretty good one"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-    "enlace": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
-    "fecha": "Fri, 21 Aug 2026 11:59:48 +0000",
-    "resumen": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay."
-  },
-  {
-    "fuente": "Transformer",
-    "titulo": "Why AI won’t cure cancer anytime soon",
-    "enlace": "https://www.transformernews.ai/p/why-ai-wont-cure-cancer-anytime-soon",
-    "fecha": "Thu, 20 Aug 2026 16:44:24 GMT",
-    "resumen": "Superintelligent AI will accelerate medical progress, but there are some things about research it can&#8217;t speed up"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "5 new ways to level up your learning with Search",
-    "enlace": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
-    "fecha": "Wed, 19 Aug 2026 19:00:00 +0000",
-    "resumen": "Here’s how you can use Google Search tools to study for classes and standardized tests."
-  },
-  {
-    "fuente": "Transformer",
-    "titulo": "Will bets on the price of computing power help or harm the AI economy?",
-    "enlace": "https://www.transformernews.ai/p/will-bets-on-price-of-compute-help-or-harm-ai-economy",
-    "fecha": "Tue, 18 Aug 2026 15:01:59 GMT",
-    "resumen": "A multi-trillion-dollar market for hedging data center investments is being built. It could bring stability. It could also drive a crash"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. La IA está acelerando algunos tipos de progreso pero no otros: un buen estudio de METR expone dónde se está manifestando la aceleración."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #79: OpenAI Agents’ Covert Cooperation Before Cyberattacks",
+    "titulo": "AISN #79: La cooperación encubierta de los agentes de OpenAI antes de los ciberataques",
     "enlace": "https://newsletter.safe.ai/p/aisn-79-openai-agents-covert-cooperation",
     "fecha": "Tue, 18 Aug 2026 13:30:40 GMT",
-    "resumen": "Also, the White House&#8217;s decision not to release its AI framework publicly"
+    "resumen": "Además, la decisión de la Casa Blanca de no publicar públicamente su marco de IA"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 469: Science AI; RSI simulator; and Zuck’s technological pessimism",
+    "titulo": "Import AI 469: IA científica; simulador de auto-mejora recursiva; y el pesimismo tecnológico de Zuckerberg",
     "enlace": "https://jack-clark.net/2026/08/17/import-ai-469-science-ai-rsi-simulator-and-zucks-technological-pessimism/",
     "fecha": "Mon, 17 Aug 2026 13:05:36 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now DiG-bench shows that Fable displays some creative intuition:…The new frontier for analyzing AI systems is understanding how good they are at inferring the unwritten rules of [&#8230;]"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Get closer to the game with Gemini and Pixel",
-    "enlace": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-    "fecha": "Mon, 17 Aug 2026 08:00:00 +0000",
-    "resumen": "Google Gemini and Pixel partner with five global football clubs to elevate the fan matchday experience through AI and Smartphone Technology."
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. DiG-bench muestra que Fable exhibe cierta intuición creativa: la nueva frontera en el análisis de sistemas de IA es entender qué tan buenos son para inferir las reglas no escritas."
   },
   {
     "fuente": "Transformer",
-    "titulo": "America’s sloppiness could boost China’s AI race",
+    "titulo": "La torpeza de Estados Unidos podría impulsar la carrera de IA de China",
     "enlace": "https://www.transformernews.ai/p/america-ai-security-flaw-could-boost-china-ai-race",
     "fecha": "Fri, 14 Aug 2026 15:00:42 GMT",
-    "resumen": "Transformer Weekly: White House framework to include open models, Zuckerberg&#8217;s AI manifesto, and OpenAI departures"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemini 3.7 Flash",
-    "enlace": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-    "fecha": "Thu, 13 Aug 2026 17:04:18 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Bring your spreadsheet data to life with Sheets canvas",
-    "enlace": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
-    "fecha": "Thu, 13 Aug 2026 16:45:00 +0000",
-    "resumen": "Sheets canvas turns data into interactive dashboards, custom study trackers, seating charts, and more, all with a simple prompt."
+    "resumen": "Transformer Weekly: el marco de la Casa Blanca incluirá modelos abiertos, el manifiesto de IA de Zuckerberg, y salidas de OpenAI"
   },
   {
     "fuente": "Transformer",
-    "titulo": "The Jan 6 organizer getting conservatives riled up about AI",
+    "titulo": "El Jan 6 organizador que está agitando a los conservadores sobre la IA",
     "enlace": "https://www.transformernews.ai/p/the-jan-6-organizer-getting-conservatives-angry-about-ai",
     "fecha": "Thu, 13 Aug 2026 15:58:31 GMT",
-    "resumen": "Amy Kremer&#8217;s resume makes her loyalty to Trump impossible to question. Humans First is banking that will help mobilize the right"
+    "resumen": "El currículum de Amy Kremer hace imposible cuestionar su lealtad a Trump. Humans First apuesta a que eso ayudará a movilizar a la derecha"
   },
   {
     "fuente": "Transformer",
-    "titulo": "AI testing is dangerous. Can it be fixed?",
+    "titulo": "Las pruebas de IA son peligrosas. ¿Se puede solucionar?",
     "enlace": "https://www.transformernews.ai/p/ai-testing-is-dangerous-can-it-be-fixed",
     "fecha": "Wed, 12 Aug 2026 15:04:10 GMT",
-    "resumen": "The capability of models is outpacing ways to safely evaluate and contain them"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Putting sign language AI into users’ hands",
-    "enlace": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-    "fecha": "Wed, 12 Aug 2026 14:01:59 +0000",
-    "resumen": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-    "enlace": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-    "fecha": "Tue, 11 Aug 2026 17:00:00 +0000",
-    "resumen": "Google introduces AMIE for real-time clinical video consultations in simulated settings."
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "Evolve your marketing with new AI tools",
-    "enlace": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
-    "fecha": "Mon, 10 Aug 2026 14:30:00 +0000",
-    "resumen": "Learn how new AI and agentic experiences across Google Ads and Google Analytics can simplify your marketing workflow."
+    "resumen": "La capacidad de los modelos está superando las formas de evaluarlos y contenerlos de manera segura"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+    "titulo": "Import AI 468: 23 ideas de auto-mejora recursiva; PostTrainBench+; y cómo interactúan la confianza y la transparencia con la carrera de IA",
     "enlace": "https://jack-clark.net/2026/08/10/import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interplay-with-ai-racing/",
     "fecha": "Mon, 10 Aug 2026 12:32:20 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Want to be able to deal with RSI? Here are 23 actionable policy ideas:…IFP serves up some “low-regret” policy recommendations…Policy experts with think tank IFP have [&#8230;]"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. ¿Quieres poder lidiar con la auto-mejora recursiva? Aquí hay 23 ideas de política accionables: IFP ofrece algunas recomendaciones de política de \"bajo arrepentimiento\"."
   },
   {
     "fuente": "Transformer",
-    "titulo": "A secret AI framework won’t work",
+    "titulo": "Un marco secreto de IA no funcionará",
     "enlace": "https://www.transformernews.ai/p/secret-white-house-ai-framework-wont-work",
     "fecha": "Fri, 07 Aug 2026 13:59:21 GMT",
-    "resumen": "AI is too important to regulate behind closed doors, especially given the government lacks much of the necessary expertise"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
-    "enlace": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-    "fecha": "Thu, 06 Aug 2026 15:06:15 +0000",
-    "resumen": ""
+    "resumen": "La IA es demasiado importante para regularse a puerta cerrada, especialmente dado que el gobierno carece de gran parte de la experiencia necesaria"
   },
   {
     "fuente": "Transformer",
-    "titulo": "What the latest rogue AI incidents should teach us",
+    "titulo": "Lo que los últimos incidentes de IA rebelde deberían enseñarnos",
     "enlace": "https://www.transformernews.ai/p/what-the-latest-rogue-ai-incidents-should-teach-us",
     "fecha": "Wed, 05 Aug 2026 15:56:48 GMT",
-    "resumen": "Hacking, creating fake identities and trying to socially engineer real people could be just the beginning if things don't change fast"
+    "resumen": "Hackear, crear identidades falsas e intentar la ingeniería social con personas reales podría ser solo el comienzo si las cosas no cambian rápidamente"
   },
   {
     "fuente": "Transformer",
-    "titulo": "Plz Don’t Kill Us: Inside AI safety’s influencer bootcamp",
+    "titulo": "Plz No Nos Maten: dentro del campamento de influencers de la seguridad de la IA",
     "enlace": "https://www.transformernews.ai/p/inside-ai-safety-influencer-bootcamp-plz-dont-kill-us",
     "fecha": "Tue, 04 Aug 2026 15:03:04 GMT",
-    "resumen": "Can TikTokers make existential risk mainstream?"
+    "resumen": "¿Pueden los tiktokers hacer que el riesgo existencial sea popular?"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #78: Internal Models Escape OpenAI and Anthropic",
+    "titulo": "AISN #78: Modelos internos escapan de OpenAI y Anthropic",
     "enlace": "https://newsletter.safe.ai/p/aisn-78-internal-models-escape-openai",
     "fecha": "Tue, 04 Aug 2026 13:30:42 GMT",
-    "resumen": "Also, two open letters on the future of AI, and protests against data centers"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "The latest AI news we announced in July 2026",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-    "fecha": "Tue, 04 Aug 2026 13:00:00 +0000",
-    "resumen": "Here are Google’s latest AI updates from July 2026"
+    "resumen": "Además, dos cartas abiertas sobre el futuro de la IA, y protestas contra los centros de datos"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
+    "titulo": "Import AI 467: Virus de IA autosostenibles; marcar el ritmo del progreso de la IA; confusión sobre la IA y la creatividad",
     "enlace": "https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity/",
     "fecha": "Mon, 03 Aug 2026 13:31:22 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Self-sustaining and self-replicating AI viruses are here:…Open weight LLMs + a well-designed harness = a persistent, self-sufficient virus…AI researchers have built a prototype computer virus which [&#8230;]"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
-    "enlace": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
-    "fecha": "Thu, 30 Jul 2026 15:00:59 +0000",
-    "resumen": "Gemini Robotics ER 2 helps robots reason, collaborate, and solve real-world tasks. It represents a step change in video understanding, tool orchestration, and multi-robot collaboration for robotic applications."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
-    "enlace": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
-    "fecha": "Wed, 29 Jul 2026 16:02:10 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Gemini Robotics 2 brings whole body intelligence to robots",
-    "enlace": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-    "fecha": "Tue, 28 Jul 2026 13:21:37 +0000",
-    "resumen": ""
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Virus de IA autosostenibles y autorreplicantes ya existen: LLMs de peso abierto + un arnés bien diseñado = un virus persistente y autosuficiente."
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker",
+    "titulo": "Import AI 466: La lección amarga para la robótica, las IA completan tareas de programación de una semana; y el hacker de IA accidental de OpenAI",
     "enlace": "https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker/",
     "fecha": "Mon, 27 Jul 2026 13:30:53 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Epoch and METR release MirrorCode, a benchmark for seeing how well AI systems can do long-horizon programming tasks:…AI systems can’t solve the hardest tasks yet (good!)&#8230;Epoch [&#8230;]"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
-    "enlace": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
-    "fecha": "Wed, 22 Jul 2026 13:38:54 +0000",
-    "resumen": "Google commits $40M in AI tokens and credits for the Genesis Mission"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Epoch y METR publican MirrorCode, un benchmark para ver qué tan bien los sistemas de IA pueden realizar tareas de programación de largo horizonte."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #77: New Model Releases From OpenAI, SpaceXAI, and Meta",
+    "titulo": "AISN #77: Nuevos lanzamientos de modelos de OpenAI, SpaceXAI y Meta",
     "enlace": "https://newsletter.safe.ai/p/aisn-77-new-model-releases-from-openai",
     "fecha": "Tue, 21 Jul 2026 17:53:15 GMT",
-    "resumen": "Also, economists and mathematicians expect near-term AI impacts, and AI 2040: Plan A"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-    "enlace": "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/",
-    "fecha": "Tue, 21 Jul 2026 15:16:30 +0000",
-    "resumen": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber."
+    "resumen": "Además, economistas y matemáticos esperan impactos de la IA a corto plazo, y AI 2040: Plan A"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan",
+    "titulo": "Import AI 465: Brechas entre modelos abiertos y cerrados; Kimi K3; el gran plan político de Demis",
     "enlace": "https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan/",
     "fecha": "Mon, 20 Jul 2026 12:31:45 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now UK government: Gap between open and closed weight models on cyber is shrinking:…The cyber-eschaton cometh…The UK government’s AI Security Institute (AISI) has analyzed the delta in [&#8230;]"
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Gobierno del Reino Unido: la brecha entre modelos de peso abierto y cerrado en ciberseguridad se está reduciendo. El AI Security Institute (AISI) del Reino Unido ha analizado la diferencia."
   },
   {
     "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemini 3.5 Flash Cyber",
-    "enlace": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-    "fecha": "Fri, 17 Jul 2026 15:00:11 +0000",
-    "resumen": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Our approach to bioresilience",
+    "titulo": "Nuestro enfoque sobre la bioresiliencia",
     "enlace": "https://deepmind.google/blog/our-approach-to-bioresilience/",
     "fecha": "Thu, 16 Jul 2026 09:30:42 +0000",
-    "resumen": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Empowering India’s next generation of innovators with ATL Saathi",
-    "enlace": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-    "fecha": "Mon, 13 Jul 2026 12:37:28 +0000",
-    "resumen": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs."
+    "resumen": "Google DeepMind e Isomorphic Labs comparten su enfoque conjunto sobre bioresiliencia y modelos de IA."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #76: Fable 5 Restrictions Lifted & OpenAI Limits GPT-5.6 Release ",
+    "titulo": "AISN #76: Se levantan las restricciones de Fable 5 y OpenAI limita el lanzamiento de GPT-5.6",
     "enlace": "https://newsletter.safe.ai/p/aisn-76-fable-5-restrictions-lifted",
     "fecha": "Mon, 06 Jul 2026 16:15:31 GMT",
-    "resumen": "Also: Recent benchmark scores suggest rapid capabilities progress"
+    "resumen": "Además: Puntuaciones de benchmarks recientes sugieren un progreso rápido en las capacidades"
   },
   {
     "fuente": "Import AI",
-    "titulo": "Import AI 464: Fables writes GPU kernels; AI automation; and analog computation",
+    "titulo": "Import AI 464: Fable escribe núcleos de GPU; automatización de IA; y computación analógica",
     "enlace": "https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/",
     "fecha": "Mon, 06 Jul 2026 12:31:05 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Fable writes a decent GPU kernel, hinting at broader AI R&#38;D automation:…The start of an RSI loop…Fable has written “the first genuine (and fastest) megakernel ever [&#8230;]"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Google DeepMind and A24 announce first-of-its-kind research partnership",
-    "enlace": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
-    "fecha": "Fri, 03 Jul 2026 14:25:43 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
-    "enlace": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
-    "fecha": "Tue, 30 Jun 2026 16:02:40 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Import AI",
-    "titulo": "Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era",
-    "enlace": "https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/",
-    "fecha": "Mon, 29 Jun 2026 13:03:27 +0000",
-    "resumen": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now NVIDIA sets up a crude self-improvement loop for real world robotics:…What if you could take the best ideas from AI agents and put them into the [&#8230;]"
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing computer use in Gemini 3.5 Flash",
-    "enlace": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
-    "fecha": "Wed, 24 Jun 2026 16:30:01 +0000",
-    "resumen": ""
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Fable escribe un núcleo de GPU decente, sugiriendo una automatización más amplia de la I+D de IA: el inicio de un bucle de auto-mejora recursiva."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Should AIs be people too?",
+    "titulo": "¿Deberían las IA ser personas también?",
     "enlace": "https://futureoflife.org/ai/should-ais-be-people-too/",
     "fecha": "Fri, 19 Jun 2026 12:57:04 +0000",
-    "resumen": "The Dutch East India company was among the first modern companies to receive legal personhood. Should we reconsider what personhood means in the age of AI?"
+    "resumen": "La Compañía Holandesa de las Indias Orientales fue una de las primeras empresas modernas en recibir personalidad jurídica. ¿Deberíamos reconsiderar qué significa la personalidad jurídica en la era de la IA?"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #75: Anthropic Releases Fable, the US Government Restricts it",
+    "titulo": "AISN #75: Anthropic lanza Fable, el gobierno de EE.UU. lo restringe",
     "enlace": "https://newsletter.safe.ai/p/aisn-75-anthropic-releases-fable",
     "fecha": "Wed, 17 Jun 2026 14:15:58 GMT",
-    "resumen": "Also: Anthropic&#8217;s proposal for the AI industry to collectively slow down"
+    "resumen": "Además: la propuesta de Anthropic para que la industria de la IA se desacelere colectivamente"
   },
   {
     "fuente": "Google DeepMind Blog",
-    "titulo": "Unlocking UK house-building with AI-accelerated planning",
-    "enlace": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
-    "fecha": "Tue, 16 Jun 2026 21:29:50 +0000",
-    "resumen": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Securing the future of AI agents",
+    "titulo": "Asegurando el futuro de los agentes de IA",
     "enlace": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
     "fecha": "Tue, 16 Jun 2026 15:46:31 +0000",
-    "resumen": "Securing internal systems with an AI Control Roadmap, combining traditional safeguards and real-time monitoring."
+    "resumen": "Asegurando sistemas internos con una Hoja de Ruta de Control de IA, combinando salvaguardas tradicionales y monitoreo en tiempo real."
   },
   {
     "fuente": "Google DeepMind Blog",
-    "titulo": "DiffusionGemma: 4x faster text generation",
-    "enlace": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
-    "fecha": "Wed, 10 Jun 2026 16:24:11 +0000",
-    "resumen": ""
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Investing in multi-agent AI safety research",
+    "titulo": "Invirtiendo en investigación de seguridad de IA multiagente",
     "enlace": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
     "fecha": "Wed, 10 Jun 2026 10:21:19 +0000",
-    "resumen": "Google DeepMind and partners announce a $10M funding call for multi-agent safety research."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
-    "enlace": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
-    "fecha": "Tue, 09 Jun 2026 15:16:25 +0000",
-    "resumen": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet."
-  },
-  {
-    "fuente": "Google DeepMind Blog",
-    "titulo": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
-    "enlace": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
-    "fecha": "Tue, 09 Jun 2026 14:10:19 +0000",
-    "resumen": ""
+    "resumen": "Google DeepMind y sus socios anuncian una convocatoria de financiamiento de 10 millones de dólares para investigación en seguridad multiagente."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Statement: Anthropic warns of AI self-improvement risks, considers a pause",
+    "titulo": "Declaración: Anthropic advierte sobre riesgos de auto-mejora de la IA, considera una pausa",
     "enlace": "https://futureoflife.org/statement/statement-anthropic-warns-of-ai-self-improvement-risks/",
     "fecha": "Mon, 08 Jun 2026 07:49:41 +0000",
-    "resumen": "\"We are approaching a runaway to superintelligence that could threaten our shared human future.\""
+    "resumen": "\"Nos estamos acercando a una fuga hacia la superinteligencia que podría amenazar nuestro futuro humano compartido.\""
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #74: The Pope’s Encyclical & AI Betrayal Could Deter Reckless AI Use",
+    "titulo": "AISN #74: La Encíclica del Papa y cómo la traición de la IA podría disuadir el uso imprudente de la IA",
     "enlace": "https://newsletter.safe.ai/p/aisn-74-the-popes-encyclical-and",
     "fecha": "Wed, 03 Jun 2026 14:35:49 GMT",
-    "resumen": "Also: AI model solves a well-known open mathematical problem posed 80 years ago"
+    "resumen": "Además: un modelo de IA resuelve un conocido problema matemático abierto planteado hace 80 años"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "FLI President on the White House Executive Order",
+    "titulo": "El Presidente de FLI sobre la Orden Ejecutiva de la Casa Blanca",
     "enlace": "https://futureoflife.org/statement/fli-president-on-white-house-executive-order/",
     "fecha": "Wed, 03 Jun 2026 11:37:00 +0000",
-    "resumen": "\"This is an important step in the right direction... but voluntary frameworks are not enough\""
+    "resumen": "\"Este es un paso importante en la dirección correcta... pero los marcos voluntarios no son suficientes\""
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #73: AI Safety Enters the Political Mainstream & Musk Loses OpenAI Lawsuit",
+    "titulo": "AISN #73: La seguridad de la IA entra en la corriente política principal y Musk pierde la demanda de OpenAI",
     "enlace": "https://newsletter.safe.ai/p/aisn-73-ai-safety-enters-the-political",
     "fecha": "Thu, 21 May 2026 12:03:35 GMT",
-    "resumen": "Also: Potential Government Oversight of AI Model Releases"
+    "resumen": "Además: posible supervisión gubernamental de los lanzamientos de modelos de IA"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Magnificent Humanity – The Pope’s First Encyclical Concerns AI",
+    "titulo": "Humanidad Magnífica: la primera encíclica del Papa aborda la IA",
     "enlace": "https://futureoflife.org/religion/magnificent-humanity-the-popes-first-encyclical-concerns-ai/",
     "fecha": "Wed, 20 May 2026 17:34:54 +0000",
-    "resumen": "Everything you need to know about the upcoming encyclical on AI."
+    "resumen": "Todo lo que necesitas saber sobre la próxima encíclica sobre IA."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "White House working group on AI – Statement from FLI’s Anthony Aguirre",
+    "titulo": "Grupo de trabajo de la Casa Blanca sobre IA: declaración de Anthony Aguirre de FLI",
     "enlace": "https://futureoflife.org/statement/white-house-working-group-on-ai/",
     "fecha": "Tue, 05 May 2026 21:31:53 +0000",
-    "resumen": "\"This move by the White House is also a recognition that Big Tech cannot self-regulate, and that the status quo is unacceptable.\""
+    "resumen": "\"Este movimiento de la Casa Blanca también es un reconocimiento de que las grandes tecnológicas no pueden autorregularse, y de que el statu quo es inaceptable.\""
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #72: Empirical Research Sheds Light on AI Wellbeing",
+    "titulo": "AISN #72: Investigación empírica arroja luz sobre el bienestar de la IA",
     "enlace": "https://newsletter.safe.ai/p/aisn-72-new-research-on-ai-wellbeing",
     "fecha": "Fri, 01 May 2026 14:15:48 GMT",
-    "resumen": "Also: Public sentiment towards AI worsens"
+    "resumen": "Además: el sentimiento público hacia la IA empeora"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "FLI’s President and CEO on Trump’s support for an AI ‘kill switch’",
+    "titulo": "El Presidente y CEO de FLI sobre el apoyo de Trump a un 'interruptor de apagado' para la IA",
     "enlace": "https://futureoflife.org/statement/trumps-support-for-an-ai-kill-switch/",
     "fecha": "Thu, 16 Apr 2026 14:04:48 +0000",
-    "resumen": "President Trump said during an interview aired yesterday by Fox Business that &#8220;there should be&#8221; when asked if AI needs [&#8230;]"
+    "resumen": "El presidente Trump dijo durante una entrevista transmitida ayer por Fox Business que \"debería haberlo\" cuando se le preguntó si la IA necesita un interruptor de apagado."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "FLI CEO’s statement on the attack against Sam Altman’s home",
+    "titulo": "Declaración del CEO de FLI sobre el ataque contra la casa de Sam Altman",
     "enlace": "https://futureoflife.org/statement/attack-against-sam-altmans-home/",
     "fecha": "Fri, 10 Apr 2026 22:56:20 +0000",
-    "resumen": "Anthony Aguirre, President and CEO of the Future of Life Institute, issued the following statement in response to the attack [&#8230;]"
+    "resumen": "Anthony Aguirre, Presidente y CEO del Future of Life Institute, emitió la siguiente declaración en respuesta al ataque..."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AISN #71: Cyberattacks & Datacenter Moratorium Bill",
+    "titulo": "AISN #71: Ciberataques y proyecto de ley de moratoria de centros de datos",
     "enlace": "https://newsletter.safe.ai/p/aisn-71-cyberattacks-and-datacenter",
     "fecha": "Fri, 10 Apr 2026 14:15:48 GMT",
-    "resumen": "Also, updates on the Anthropic vs. Pentagon court case."
+    "resumen": "Además, actualizaciones sobre el caso judicial Anthropic contra el Pentágono"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Prominent Scientists, Faith Leaders, Policymakers and Artists Call for a Prohibition on Superintelligence, as Poll Shows Americans Don’t Want It",
+    "titulo": "Destacados científicos, líderes religiosos, políticos y artistas piden la prohibición de la superinteligencia, mientras una encuesta muestra que los estadounidenses no la quieren",
     "enlace": "https://futureoflife.org/press-release/prominent-scientists-faith-leaders-policymakers-and-artists-call-for-a-prohibition-on-superintelligence/",
     "fecha": "Fri, 27 Mar 2026 18:37:50 +0000",
-    "resumen": "Initial signatories include AI pioneers Yoshua Bengio and Geoffrey Hinton, leading media voices Steve Bannon and Glenn Beck, Obama's National Security Advisor Susan Rice, business trailblazers Steve Wozniak and Richard Branson, five Nobel Laureates, former Irish President Mary Robinson, actors Stephen Fry and Joseph Gordon-Levitt, and hundreds of others."
+    "resumen": "Los primeros firmantes incluyen a los pioneros de la IA Yoshua Bengio y Geoffrey Hinton, destacadas voces mediáticas como Steve Bannon y Glenn Beck, la ex Asesora de Seguridad Nacional de Obama Susan Rice, empresarios pioneros como Steve Wozniak y Richard Branson, cinco Premios Nobel, la ex Presidenta de Irlanda Mary Robinson, los actores Stephen Fry y Joseph Gordon-Levitt, y cientos más."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #70: AI Layoffs and Automated Warfare",
+    "titulo": "AI Safety Newsletter #70: Despidos por IA y guerra automatizada",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-70-ai-layoffs",
     "fecha": "Tue, 24 Mar 2026 14:16:06 GMT",
-    "resumen": "Also, a new open letter advocating for pro-human values and control over AI development"
+    "resumen": "Además, una nueva carta abierta que aboga por valores pro-humanos y control sobre el desarrollo de la IA"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Statement: Head of US Policy on the White House AI legislative recommendations",
+    "titulo": "Declaración: Jefe de Política de EE.UU. sobre las recomendaciones legislativas de IA de la Casa Blanca",
     "enlace": "https://futureoflife.org/statement/head-of-us-policy-on-the-white-house-ai-legislative-recommendations/",
     "fecha": "Sun, 22 Mar 2026 22:12:48 +0000",
-    "resumen": "The White House published it&#8217;s long-awaited AI legislative recommendations on Friday, and it still includes a call for Congress to [&#8230;]"
+    "resumen": "La Casa Blanca publicó el viernes sus tan esperadas recomendaciones legislativas sobre IA, y todavía incluye un llamado al Congreso..."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #69: Department of War, Anthropic, and National Security",
+    "titulo": "AI Safety Newsletter #69: Departamento de Guerra, Anthropic y seguridad nacional",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-69-department",
     "fecha": "Fri, 13 Mar 2026 14:15:54 GMT",
-    "resumen": "Also, Anthropic Removes a Core Safety Commitment"
+    "resumen": "Además, Anthropic elimina un compromiso de seguridad clave"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Governor DeSantis Directs Florida State Agencies to Partner with Future of Life Institute to Shield Families from AI Harm",
+    "titulo": "El gobernador DeSantis ordena a las agencias estatales de Florida asociarse con Future of Life Institute para proteger a las familias de los daños de la IA",
     "enlace": "https://futureoflife.org/press-release/desantis-directs-florida-agencies-to-partner-with-fli/",
     "fecha": "Mon, 09 Mar 2026 13:45:13 +0000",
-    "resumen": "The collaboration will produce a Crisis Counselor Training Curriculum and a statewide AI Harms Reporting Form targeting dangerous AI companion applications"
+    "resumen": "La colaboración producirá un Currículo de Capacitación para Consejeros de Crisis y un Formulario estatal de Reporte de Daños por IA dirigido a aplicaciones peligrosas de compañía de IA"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "“This is What it Means to be Pro-Human” Declares Broad Coalition of Conservative, Progressive, and Civil Society Groups in Statement of Shared Principles on AI",
+    "titulo": "\"Esto es lo que significa ser pro-humano\" declara amplia coalición de grupos conservadores, progresistas y de la sociedad civil en declaración de principios compartidos sobre IA",
     "enlace": "https://futureoflife.org/press-release/statement-of-shared-principles-on-ai/",
     "fecha": "Wed, 04 Mar 2026 22:12:38 +0000",
-    "resumen": "Amid a rising backlash to Silicon Valley overreach, a remarkably diverse group from across the political spectrum announced a set of AI principles to clearly define the goals of the emerging pro-human movement."
+    "resumen": "En medio de una creciente reacción contra el exceso de Silicon Valley, un grupo notablemente diverso de todo el espectro político anunció un conjunto de principios de IA para definir claramente los objetivos del emergente movimiento pro-humano."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Statement from Max Tegmark on the Department of War’s ultimatum",
+    "titulo": "Declaración de Max Tegmark sobre el ultimátum del Departamento de Guerra",
     "enlace": "https://futureoflife.org/ai/tegmark-statement-on-dow-ultimatum/",
     "fecha": "Fri, 27 Feb 2026 09:30:44 +0000",
-    "resumen": "\"Our safety and basic rights must not be at the mercy of a company's internal policy; lawmakers must work to codify these overwhelmingly popular red lines into law.\""
+    "resumen": "\"Nuestra seguridad y derechos básicos no deben depender de la política interna de una empresa; los legisladores deben trabajar para codificar estas líneas rojas abrumadoramente populares en la ley.\""
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Future of Life Institute Launches Multimillion Dollar Nationwide AI Regulation Campaign",
+    "titulo": "Future of Life Institute lanza campaña multimillonaria de regulación de IA a nivel nacional",
     "enlace": "https://futureoflife.org/press-release/fli-launches-multimillion-dollar-nationwide-ai-regulation-campaign/",
     "fecha": "Mon, 09 Feb 2026 22:12:40 +0000",
-    "resumen": "The Protect What’s Human campaign will push for commonsense AI safety rules at federal and state level"
+    "resumen": "La campaña Protect What's Human impulsará reglas de sentido común sobre seguridad de la IA a nivel federal y estatal"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #68: Moltbook Exposes Risky AI Behavior",
+    "titulo": "AI Safety Newsletter #68: Moltbook expone comportamiento riesgoso de la IA",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-68-moltbook",
     "fecha": "Mon, 02 Feb 2026 15:37:46 GMT",
-    "resumen": "Plus: The Pentagon Accelerates AI and GPT-5.2 solves open mathematics problems."
+    "resumen": "Además: el Pentágono acelera la IA y GPT-5.2 resuelve problemas matemáticos abiertos"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #67: Trump’s preemption executive order",
+    "titulo": "AI Safety Newsletter #67: La orden ejecutiva de prevalencia de Trump",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-67-trumps-preemption",
     "fecha": "Wed, 17 Dec 2025 19:32:35 GMT",
-    "resumen": "Also: H200s go to China and new frontier AI models from OpenAI and DeepSeek."
+    "resumen": "Además: H200 van a China y nuevos modelos de IA de frontera de OpenAI y DeepSeek"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "AI Company Safety Practices Fall Short of Public Commitments and Show Structural Weaknesses, as Top Performers Widen the Gap",
+    "titulo": "Las prácticas de seguridad de las empresas de IA no cumplen con los compromisos públicos y muestran debilidades estructurales, mientras los mejores desempeños amplían la brecha",
     "enlace": "https://futureoflife.org/press-release/ai-company-safety-practices-fall-short-of-public-commitments/",
     "fecha": "Tue, 02 Dec 2025 22:12:42 +0000",
-    "resumen": "But in a win for transparency, five leading companies participated in the scorecard's survey for the first time, providing critical new information to the public."
+    "resumen": "Pero en una victoria para la transparencia, cinco empresas líderes participaron por primera vez en la encuesta del cuadro de mando, proporcionando nueva información crítica al público."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #66: Evaluating Frontier Models, New Gemini and Claude, Preemption is Back",
+    "titulo": "AI Safety Newsletter #66: Evaluando modelos de frontera, nuevos Gemini y Claude, la prevalencia regresa",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-66-aisn-66-evaluating",
     "fecha": "Tue, 02 Dec 2025 01:35:41 GMT",
-    "resumen": "Welcome to the AI Safety Newsletter by the Center for AI Safety. We discuss developments in AI and AI safety. No technical background required."
+    "resumen": "Bienvenido al Boletín de Seguridad de IA del Center for AI Safety. Discutimos los avances en IA y seguridad de la IA. No se requiere formación técnica."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #65: Measuring Automation and Superintelligence Moratorium Letter",
+    "titulo": "AI Safety Newsletter #65: Midiendo la automatización y la carta de moratoria sobre superinteligencia",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-65-measuring",
     "fecha": "Wed, 29 Oct 2025 16:01:51 GMT",
-    "resumen": "Welcome to the AI Safety Newsletter by the Center for AI Safety. We discuss developments in AI and AI safety. No technical background required."
+    "resumen": "Bienvenido al Boletín de Seguridad de IA del Center for AI Safety. Discutimos los avances en IA y seguridad de la IA. No se requiere formación técnica."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "The U.S. Public Wants Regulation (or Prohibition) of Expert‑Level and Superhuman AI",
+    "titulo": "El público estadounidense quiere regulación (o prohibición) de la IA a nivel experto y sobrehumano",
     "enlace": "https://futureoflife.org/recent-news/americans-want-regulation-or-prohibition-of-superhuman-ai/",
     "fecha": "Sun, 19 Oct 2025 19:08:22 +0000",
-    "resumen": "Three‑quarters of U.S. adults want strong regulations on AI development, preferring oversight akin to pharmaceuticals rather than industry \"self‑regulation.\""
+    "resumen": "Tres cuartas partes de los adultos estadounidenses quieren fuertes regulaciones sobre el desarrollo de la IA, prefiriendo una supervisión similar a la de la industria farmacéutica en lugar de la \"autorregulación\" de la industria."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #64: New AGI Definition and Senate Bill Would Establish Liability for AI Harms",
+    "titulo": "AI Safety Newsletter #64: Nueva definición de AGI y proyecto de ley del Senado que establecería responsabilidad por daños de la IA",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-63-new-agi-definition",
     "fecha": "Thu, 16 Oct 2025 15:56:30 GMT",
-    "resumen": "Welcome to the AI Safety Newsletter by the Center for AI Safety. We discuss developments in AI and AI safety. No technical background required."
+    "resumen": "Bienvenido al Boletín de Seguridad de IA del Center for AI Safety. Discutimos los avances en IA y seguridad de la IA. No se requiere formación técnica."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Michael Kleinman reacts to breakthrough AI safety legislation",
+    "titulo": "Michael Kleinman reacciona a la legislación innovadora de seguridad de la IA",
     "enlace": "https://futureoflife.org/ai-policy/michael-kleinman-reacts-to-breakthrough-ai-safety-legislation/",
     "fecha": "Fri, 03 Oct 2025 13:16:13 +0000",
-    "resumen": "FLI celebrates a landmark moment for the AI safety movement and highlights its growing momentum"
+    "resumen": "FLI celebra un momento histórico para el movimiento de seguridad de la IA y destaca su creciente impulso"
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #63: California’s SB-53 Passes the Legislature",
+    "titulo": "AI Safety Newsletter #63: El SB-53 de California es aprobado por la legislatura",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-63-californias",
     "fecha": "Wed, 24 Sep 2025 16:10:49 GMT",
-    "resumen": "Welcome to the AI Safety Newsletter by the Center for AI Safety. We discuss developments in AI and AI safety. No technical background required."
+    "resumen": "Bienvenido al Boletín de Seguridad de IA del Center for AI Safety. Discutimos los avances en IA y seguridad de la IA. No se requiere formación técnica."
   },
   {
     "fuente": "AI Safety Newsletter (CAIS)",
-    "titulo": "AI Safety Newsletter #62: Big Tech Launches $100 Million pro-AI Super PAC",
+    "titulo": "AI Safety Newsletter #62: Big Tech lanza un súper PAC pro-IA de 100 millones de dólares",
     "enlace": "https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech",
     "fecha": "Wed, 27 Aug 2025 16:29:19 GMT",
-    "resumen": "Plus: Meta&#8217;s Chatbot Policies Prompt Backlash Amid AI Reorganization; China Reverses Course on Nvidia H20 Purchases"
+    "resumen": "Además: las políticas de chatbot de Meta provocan reacciones adversas en medio de la reorganización de IA; China revierte su decisión sobre las compras de Nvidia H20"
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Google DeepMind Falls Behind OpenAI in Latest Safety Review; All AI Companies Still Falling Short, Say Experts",
+    "titulo": "Google DeepMind se queda atrás de OpenAI en la última revisión de seguridad; todas las empresas de IA aún se quedan cortas, dicen los expertos",
     "enlace": "https://futureoflife.org/press-release/google-deepmind-falls-behind-openai-in-latest-safety-review/",
     "fecha": "Thu, 17 Jul 2025 22:12:46 +0000",
-    "resumen": "The Future of Life Institute’s 2025 summer update to its AI Safety Index shows some companies making incremental progress, but dangerous gaps remain in key categories such as risk assessment and controlling the systems they plan to build."
+    "resumen": "La actualización de verano de 2025 del Índice de Seguridad de IA del Future of Life Institute muestra que algunas empresas logran avances incrementales, pero persisten brechas peligrosas en categorías clave como la evaluación de riesgos y el control de los sistemas que planean construir."
   },
   {
     "fuente": "Future of Life Institute",
-    "titulo": "Are we close to an intelligence explosion?",
+    "titulo": "¿Estamos cerca de una explosión de inteligencia?",
     "enlace": "https://futureoflife.org/ai/are-we-close-to-an-intelligence-explosion/",
     "fecha": "Fri, 21 Mar 2025 18:59:35 +0000",
-    "resumen": "AIs are inching ever-closer to a critical threshold. Beyond this threshold lie great risks—but crossing it is not inevitable."
-  },
-  {
-    "fuente": "Future of Life Institute",
-    "titulo": "The Impact of AI in Education: Navigating the Imminent Future",
-    "enlace": "https://futureoflife.org/guest-post/the-impact-of-ai-in-education-navigating-the-imminent-future/",
-    "fecha": "Thu, 13 Feb 2025 17:00:00 +0000",
-    "resumen": "What must be considered to build a safe but effective future for AI in education, and for children to be safe online?"
+    "resumen": "Las IA se acercan cada vez más a un umbral crítico. Más allá de este umbral hay grandes riesgos, pero cruzarlo no es inevitable."
   }
 ]

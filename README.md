@@ -1,6 +1,6 @@
 # última hora IAs
 
-Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa general (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge, Xataka, Genbeta), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Alignment Forum, LessWrong, Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
+Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa general (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge, Xataka, Genbeta), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
 
 ## Requisitos
 

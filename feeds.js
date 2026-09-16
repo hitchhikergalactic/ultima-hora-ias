@@ -15,8 +15,6 @@ export const feeds = [
 
   // Investigación y organizaciones especializadas en AI safety
   { name: 'AI Safety Newsletter (CAIS)', url: 'https://newsletter.safe.ai/feed' },
-  { name: 'Alignment Forum', url: 'https://www.alignmentforum.org/feed.xml' },
-  { name: 'LessWrong', url: 'https://www.lesswrong.com/feed.xml' },
   { name: 'Future of Life Institute', url: 'https://futureoflife.org/feed/' },
   { name: 'Transformer', url: 'https://www.transformernews.ai/feed' },
   { name: 'Import AI', url: 'https://jack-clark.net/feed/' },
