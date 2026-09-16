@@ -10,9 +10,25 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
 
 const MAX_ITEMS_POR_FEED = 30;
+const MAX_RESUMEN_CHARS = 600;
 const ANTHROPIC_TIMEOUT_MS = 8 * 60 * 1000;
 
 const parser = new Parser();
+
+// Algunos feeds (LessWrong, Alignment Forum) incrustan fórmulas con MathJax
+// como HTML con <style> inline por cada fórmula. rss-parser solo quita las
+// etiquetas al generar el texto plano, así que el CSS queda como texto
+// suelto y contamina el resumen. Lo limpiamos a mano antes de usarlo.
+function limpiarHTML(html) {
+  if (!html) return '';
+  return html
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 const anthropic = new Anthropic({
   timeout: ANTHROPIC_TIMEOUT_MS,
   maxRetries: 1,
@@ -24,13 +40,16 @@ const anthropic = new Anthropic({
 async function fetchFeed(feed) {
   try {
     const result = await parser.parseURL(feed.url);
-    return result.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => ({
-      fuente: feed.name,
-      titulo: item.title ?? '',
-      enlace: item.link ?? '',
-      fecha: item.pubDate ?? item.isoDate ?? '',
-      resumen: item.contentSnippet ?? '',
-    }));
+    return result.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => {
+      const textoLimpio = limpiarHTML(item.content ?? item.summary ?? item.contentSnippet ?? '');
+      return {
+        fuente: feed.name,
+        titulo: item.title ?? '',
+        enlace: item.link ?? '',
+        fecha: item.pubDate ?? item.isoDate ?? '',
+        resumen: textoLimpio.slice(0, MAX_RESUMEN_CHARS),
+      };
+    });
   } catch (err) {
     console.warn(`No se pudo leer el feed "${feed.name}": ${err.message}`);
     return [];
