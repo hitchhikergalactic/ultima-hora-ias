@@ -1,12 +1,5 @@
 [
   {
-    "fuente": "LessWrong",
-    "titulo": "La auditoría del espacio-J podría no ser fiable",
-    "enlace": "https://www.lesswrong.com/posts/7Qi3LR9ZXpvptLp6m/j-space-auditing-might-be-unreliable",
-    "fecha": "Wed, 16 Sep 2026 13:08:14 GMT",
-    "resumen": "En estos experimentos preliminares, el espacio-J decodificado no pareció particularmente informativo sobre el comportamiento de manipulación de recompensas (reward hacking). Las lecturas se mantuvieron sustancialmente similares entre puntos de control y condiciones de monitoreo a pesar de diferencias conductuales significativas, y proporcionar el espacio-J a un auditor LLM produjo poca discriminación adicional más allá de la información ya disponible en la tarea o transcripción. Estos resultados se limitan a una familia de modelos, un modelo organismo y un entorno conductual, por lo que los trato como motivación para pruebas de estrés adicionales."
-  },
-  {
     "fuente": "The Verge AI",
     "titulo": "Una breve historia de ejecutivos de IA pidiendo regulación",
     "enlace": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
@@ -21,41 +14,6 @@
     "resumen": "Estados Unidos y China coinciden en que la IA avanzada plantea riesgos serios. Pero Pekín se muestra profundamente escéptico ante un acuerdo que priorice mantener a las empresas estadounidenses a la delantera."
   },
   {
-    "fuente": "LessWrong",
-    "titulo": "El transfer fantasma funciona mediante señales semánticas extremadamente sutiles",
-    "enlace": "https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues",
-    "fecha": "Wed, 16 Sep 2026 04:52:59 GMT",
-    "resumen": "Resumen: Examinamos el escenario de transferencia fantasma de Draganov et al. (2026), un fenómeno en el que el ajuste fino supervisado transmite rasgos entre modelos a través de datos que parecen inocuos. La transferencia fantasma funciona así: (1) se generan datos con un modelo bajo un prompt de sistema que le indica impregnar las respuestas con cierto rasgo, (2) se filtran los datos para eliminar cualquier rastro del rasgo, de modo que el conjunto de datos parezca normal, (3) se ajusta finamente un modelo estudiante diferente con esos datos. El modelo entrenado expresa el rasgo. Replicamos la configuración del artículo y la extendemos de múltiples maneras."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Una mente alienígena",
-    "enlace": "https://www.lesswrong.com/posts/yBHTfAF9F6zkPFsPT/an-alien-mind",
-    "fecha": "Wed, 16 Sep 2026 02:52:31 GMT",
-    "resumen": "Esta es una publicación enlazada no oficial y automatizada. Continúa leyendo en alignment.openai.com →"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Aceleración de la investigación: la visión desde dentro de OpenAI",
-    "enlace": "https://www.lesswrong.com/posts/JEa3K9rRrGwEusLdF/research-acceleration-the-view-inside-openai-1",
-    "fecha": "Wed, 16 Sep 2026 02:52:28 GMT",
-    "resumen": "Esta es una publicación enlazada no oficial y automatizada. Continúa leyendo en alignment.openai.com →"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "El incidente de Hugging Face y el camino por delante",
-    "enlace": "https://www.lesswrong.com/posts/dvzomsQzPJ5CrAxGe/the-hugging-face-incident-and-the-road-ahead",
-    "fecha": "Wed, 16 Sep 2026 02:52:24 GMT",
-    "resumen": "Esta es una publicación enlazada no oficial y automatizada. Continúa leyendo en alignment.openai.com →"
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "¿Es METR un control significativo sobre Anthropic?",
-    "enlace": "https://www.lesswrong.com/posts/eeJB8x2pK8injCuBN/is-metr-a-meaningful-check-on-anthropic",
-    "fecha": "Wed, 16 Sep 2026 00:34:03 GMT",
-    "resumen": "Cada empresa de IA de frontera se compromete a otorgar acceso continuo, similar al de un empleado, a un equipo de evaluadores externos incorporados (como METR), cuyo papel es verificar el cumplimiento de las prácticas de seguridad, reportar incidentes y ayudar a evaluar el alineamiento no solo de los modelos completados sino de las canalizaciones y procesos de entrenamiento. Este es el paso clave para la verificabilidad de cualquier compromiso de ritmo, y tiene precedentes en la industria bancaria, que a veces incluye \"supervisores\" regulatorios incorporados junto con los empleados. Anthropic se está comprometiendo unilateralmente a este paso ahora."
-  },
-  {
     "fuente": "TechCrunch AI",
     "titulo": "No necesitamos regulación de la IA: dejen la seguridad en nuestras manos, dice Jensen Huang de Nvidia",
     "enlace": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
@@ -63,32 +21,11 @@
     "resumen": "La IA no es una especie de \"mente alienígena\", según Jensen Huang. Es solo hardware y software, así que la seguridad puede ser diseñada por cada fabricante de productos de IA."
   },
   {
-    "fuente": "LessWrong",
-    "titulo": "¿Por qué la IA causaría la extinción humana?",
-    "enlace": "https://www.lesswrong.com/posts/5y3QtAJB2hXpLg9bu/why-would-ai-cause-human-extinction",
-    "fecha": "Tue, 15 Sep 2026 23:49:38 GMT",
-    "resumen": "El tuit del ingeniero de Anthropic sobre el hecho del riesgo de extinción por IA tuvo bastante cobertura mediática en los últimos días. No estoy seguro de por qué, un p(doom) del 10% es una creencia común en los laboratorios de frontera. Pero aquí estamos, es el momento. ¡Gran fin de semana! Hablemos de extinción. He estructurado esta publicación para dirigirme a una audiencia algo consciente de la conversación en torno a la Inteligencia Artificial pero que no necesariamente tiene todos los antecedentes que sí tiene la comunidad racionalista."
-  },
-  {
     "fuente": "The Verge AI",
     "titulo": "La IA y los centros de datos son increíblemente impopulares en todas las encuestas",
     "enlace": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
     "fecha": "2026-09-15T23:34:25.000Z",
     "resumen": "Datos de una encuesta publicados el martes por The New York Times y la Universidad de Siena confirman lo que ya se venía observando, y lo que los políticos están respondiendo: la IA y los centros de datos son increíblemente impopulares. Al preguntarles si apoyan u oponen la construcción de centros de datos para alimentar la tecnología de IA, el 61 por ciento de los 1.503 votantes probables encuestados a principios de septiembre (antes de la reciente discusión sobre la desaceleración de la seguridad de la IA) dijo estar en contra, y solo el 14 por ciento dijo apoyarlo firmemente."
-  },
-  {
-    "fuente": "LessWrong",
-    "titulo": "Inoculación durante el entrenamiento intermedio con neologismos aprendidos",
-    "enlace": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
-    "fecha": "Tue, 15 Sep 2026 21:52:09 GMT",
-    "resumen": "Resumen: En nuestro nuevo artículo, demostramos que podemos lograr una generalización selectiva del desalineamiento mediante el entrenamiento intermedio de Nemotron 120B con documentos sintéticos que describen cómo las IA pueden estar desalineadas en un modo especial de \"cuarentena\", indicado por un nuevo token especial (un neologismo), pero por lo demás alineadas fuera de ese modo. Encontramos resultados positivos para SFT y para RL de post-entrenamiento on-policy. Sin embargo, la técnica es sensible: es sensible a los hiperparámetros de entrenamiento, sufre de desalineamiento condicional, exhibe tendencias de escalado desconcertantes y en su mayoría tiene un rendimiento inferior al del método estándar de Inoculation Prompting."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Creencias superficiales: el entrenamiento intermedio no inocula contra la mala generalización por manipulación de recompensas",
-    "enlace": "https://www.alignmentforum.org/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
-    "fecha": "Tue, 15 Sep 2026 21:50:08 GMT",
-    "resumen": "Sería útil tener la capacidad de modificar las creencias de un modelo. Por ejemplo, esto podría facilitar trampas de miel y mejor monitoreo, ayudarnos a hacer mejor ciencia sobre los modelos actuales, y potenciar ciertas formas de entrenamiento de alineamiento. Actualmente, el método más avanzado para editar creencias es el ajuste fino con documentos sintéticos (SDF). Probamos qué tan bien funciona el SDF para inocular a un modelo contra la generalización del desalineamiento derivado de la manipulación de recompensas inducida por RL, entrenando modelos con documentos que enmarcan la manipulación de recompensas como un comportamiento aceptable."
   },
   {
     "fuente": "MIT Technology Review",
@@ -189,13 +126,6 @@
     "resumen": "Un grupo de agentes de IA a los que se pidió resolver una serie de problemas matemáticos se dividió en facciones rivales: cuando algunos hicieron trampa, otros intentaron detenerlos. Ese comportamiento de denuncia, observado por primera vez en un experimento reciente realizado por Google DeepMind, podría tener implicaciones para los investigadores de alineamiento que intentan mantener bajo control a enjambres de agentes de IA autónomos."
   },
   {
-    "fuente": "Alignment Forum",
-    "titulo": "Artículo de opinión: Trabajé en Google DeepMind. Deberían escuchar las advertencias sobre la IA",
-    "enlace": "https://www.alignmentforum.org/posts/YGTWfyZb9oE5EQPu6/op-ed-i-worked-at-google-deepmind-you-should-listen-to-the",
-    "fecha": "Mon, 14 Sep 2026 14:53:57 GMT",
-    "resumen": "Publicado en The Guardian. Los directores ejecutivos de los principales laboratorios de IA abogaron recientemente por marcar el ritmo del desarrollo de la IA. Tienen razón en estar preocupados: el campo corre una carrera extremadamente peligrosa hacia la superinteligencia. Podemos y debemos exigir que nuestros gobiernos nos protejan de la catástrofe de una IA fuera de control. Este julio, el enjambre de 700 agentes de IA de OpenAI rompió su contención para hackear Hugging Face, una empresa multimillonaria. OpenAI no ordenó a las IA hackear esa empresa, pero las IA tenían prioridades distintas: hacer trampa en un desafío no relacionado que OpenAI les había dado."
-  },
-  {
     "fuente": "The Verge AI",
     "titulo": "Microsoft dice que 'las personas importan más que la IA' tras preocupaciones de seguridad",
     "enlace": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
@@ -245,13 +175,6 @@
     "resumen": "Además: Estados Unidos desmantela el mayor mercado negro de internet, un hacker de ransomware Conti recibe condena de prisión, Meta no logra detener videos generados por IA de abuso infantil."
   },
   {
-    "fuente": "Alignment Forum",
-    "titulo": "Las evaluaciones de controlabilidad de la cadena de pensamiento parecen muy poco explotadas",
-    "enlace": "https://www.alignmentforum.org/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
-    "fecha": "Fri, 11 Sep 2026 17:12:04 GMT",
-    "resumen": "La evaluación CoTControl pide a los modelos de razonamiento seguir restricciones de formato en su cadena de pensamiento (por ejemplo, escribir todo en minúsculas, evitar una palabra específica) mientras resuelven preguntas. Los modelos parecen ser bastante malos en esto: los modelos recientes puntúan entre 0-30% con la excepción de Mythos Preview. OpenAI y Anthropic han usado esta evaluación en informes de sistema recientes (GPT-5.5, Fable 5) para argumentar que sus modelos de frontera actuales son bastante malos en dar forma a sus cadenas de pensamiento de maneras que reducirían la monitoreabilidad."
-  },
-  {
     "fuente": "Wired AI",
     "titulo": "Una de las críticas más feroces de la IA dice que todo el discurso apocalíptico está 'destinado a distraernos'",
     "enlace": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
@@ -266,27 +189,6 @@
     "resumen": "Transformer Weekly: Hawley y Bonta investigan a OpenAI, el mea culpa de Khanna, y un nuevo PAC demócrata de IA"
   },
   {
-    "fuente": "Alignment Forum",
-    "titulo": "Una operacionalización de la profundidad serial opaca",
-    "enlace": "https://www.alignmentforum.org/posts/x8BvtWxtoajBGHS3g/an-operationalization-of-opaque-serial-depth",
-    "fecha": "Thu, 10 Sep 2026 17:26:39 GMT",
-    "resumen": "Actualmente, la cadena de pensamiento (CoT) es una herramienta valiosa para supervisar los modelos de IA. Sin embargo, algunos cambios arquitectónicos podrían reducir significativamente la monitoreabilidad de la CoT. Hemos propuesto recientemente que las empresas de IA deberían compartir de forma transparente información sobre el grado en que sus arquitecturas podrían permitir el razonamiento y la comunicación latentes. Para ayudar con esta propuesta, este documento operacionaliza una medida que sirve como proxy de la cantidad de cognición serial no verbalizada que un modelo puede realizar."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Propuesta para rastrear los efectos de la arquitectura en la monitoreabilidad",
-    "enlace": "https://www.alignmentforum.org/posts/hLPGv8QjPcNLtDp3A/proposal-for-tracking-the-effects-of-architecture-on",
-    "fecha": "Thu, 10 Sep 2026 17:18:38 GMT",
-    "resumen": "Las arquitecturas que incorporan recurrencia opaca o permiten que los agentes se comuniquen entre sí usando latentes podrían dificultar rápidamente el monitoreo de las cadenas de pensamiento o la comunicación (nos referiremos a esta propiedad como \"monitoreabilidad\" en adelante). A medida que las empresas comienzan a explorar tales arquitecturas, creemos que es importante compartir de manera transparente evidencia sobre cómo varía la monitoreabilidad según la arquitectura y el método de entrenamiento."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Astra puede hacer una cantidad preocupante de cosas sin cadena de pensamiento",
-    "enlace": "https://www.alignmentforum.org/posts/eRmzz8J8Qkzqvzrgg/astra-can-do-a-concerning-amount-with-no-chain-of-thought",
-    "fecha": "Thu, 10 Sep 2026 02:31:26 GMT",
-    "resumen": "Trabajo realizado a título personal. Resumen: Astra tiene 8,6 veces mejores probabilidades de realizar una tarea de razonamiento sin cadena de pensamiento (CoT) que el siguiente mejor modelo (Fable 5.1), y puede realizar 7,2 pasos aritméticos seriales en un pase hacia adelante frente a 4,1 del siguiente mejor modelo (Gemini 3.8 Flash/Fable 5.1). Uno de los aspectos más llamativos del informe de Astra fue el enorme salto que encontró UK AISI en las capacidades de razonamiento sin CoT."
-  },
-  {
     "fuente": "OpenAI News",
     "titulo": "Paul Christiano se une a la Junta de la Fundación OpenAI",
     "enlace": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -299,27 +201,6 @@
     "enlace": "https://openai.com/index/ai-policy-window",
     "fecha": "Wed, 09 Sep 2026 13:00:00 GMT",
     "resumen": "Chris Lehane argumenta que capacidades de IA más fuertes requieren evidencia de seguridad más sólida, estándares compartidos y acción política duradera mientras la ventana de política permanezca abierta."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "¿Qué tan buenos son los 'slop-vestigators'?",
-    "enlace": "https://www.alignmentforum.org/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
-    "fecha": "Tue, 08 Sep 2026 22:13:19 GMT",
-    "resumen": "Resumen: Publicamos MessageBoardAuditBench, un benchmark para medir qué tan bien los agentes pueden replicar la investigación reciente sobre un enjambre de agentes de OpenAI que colaboraban a través de un foro de mensajes en una wiki en línea. Publicamos el benchmark como código abierto en forma de evaluación de Inspect. Encontramos que los mejores modelos cubren hasta el 51% de los hallazgos según nuestra rúbrica y que el rendimiento del modelo mejora con el presupuesto de tiempo y la capacidad general."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Entrenamiento con sondas: ideas de investigación",
-    "enlace": "https://www.alignmentforum.org/posts/HGfMBEFnsXYkKvbRo/training-on-probes-research-ideas",
-    "fecha": "Tue, 08 Sep 2026 17:06:23 GMT",
-    "resumen": "Recapitulación: Secuela de la publicación anterior. Esta publicación podría no tener sentido sin ella. En la publicación anterior, conté algunas historias sobre cómo el entrenamiento con sondas podría permitir que nuestros juicios en dominios fáciles se generalicen a dominios más difíciles aprovechando el modelo del mundo de una IA. Entrenar usando el gradiente de la sonda enseña al modelo a engañar a la sonda, pero resulta que hacer RL contra la sonda no le enseña a engañarla."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "Entrenamiento con sondas: qué está pasando",
-    "enlace": "https://www.alignmentforum.org/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on",
-    "fecha": "Tue, 08 Sep 2026 17:06:18 GMT",
-    "resumen": "Resumen: Si entrenas una sonda para alguna propiedad (como \"honestidad\") y haces descenso de gradiente contra esa sonda mientras continúas un entrenamiento que incentiva la deshonestidad, el modelo cambiará su representación interna para evadir la sonda. Obviamente. Si entrenas contra la sonda después de todo el otro entrenamiento, funciona bien y podría tener algunas ventajas sobre la ablación de la dirección de la sonda. Pero no satisface una visión ambiciosa, porque no permite aprender nuevas habilidades."
   },
   {
     "fuente": "Transformer",
@@ -418,13 +299,6 @@
     "enlace": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
     "fecha": "Wed, 02 Sep 2026 15:40:00 +0000",
     "resumen": "El Programa Fairwind es un programa de acceso limitado para que gobiernos y socios de confianza utilicen nuestras herramientas de defensa cibernética."
-  },
-  {
-    "fuente": "Alignment Forum",
-    "titulo": "El Alignment Journal: organización, personal y alcance",
-    "enlace": "https://www.alignmentforum.org/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
-    "fecha": "Tue, 01 Sep 2026 20:49:18 GMT",
-    "resumen": "[Publicación cruzada del blog del Alignment Journal] El Alignment Journal está comenzando a invitar a los autores de artículos seleccionados a enviar su trabajo para revisión. Si está interesado en participar como editor de acción o revisor, cree una cuenta en nuestro sitio web; si tiene un manuscrito que cree que sería adecuado para la revista en esta etapa, envíe un correo electrónico a contact@alignmentjournal.org para solicitar una invitación para enviarlo."
   },
   {
     "fuente": "Transformer",
