@@ -75,6 +75,32 @@
   .item .resumen {
     color: var(--muted);
     font-size: 0.92rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .filtros {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .filtros select {
+    font: inherit;
+    color: var(--fg);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+  .conteo {
+    margin: -8px 0 16px;
+    font-size: 0.85rem;
+    color: var(--muted);
   }
   .destacada {
     background: var(--card-bg);
@@ -113,6 +139,16 @@
 
   <section id="noticias-section" hidden>
     <h2>Todas las noticias</h2>
+    <div class="filtros">
+      <label for="filtro-dias">Mostrar:</label>
+      <select id="filtro-dias">
+        <option value="7" selected>Últimos 7 días</option>
+        <option value="30">Últimos 30 días</option>
+        <option value="90">Últimos 90 días</option>
+        <option value="0">Todas</option>
+      </select>
+    </div>
+    <p id="conteo" class="conteo"></p>
     <div id="noticias"></div>
   </section>
 
@@ -161,16 +197,12 @@
     section.hidden = false;
   }
 
-  function renderNoticias(items) {
-    var section = document.getElementById('noticias-section');
+  var todasLasNoticias = [];
+
+  function pintarNoticias(items) {
     var container = document.getElementById('noticias');
-    if (!Array.isArray(items) || items.length === 0) return;
-
-    var ordenadas = items.slice().sort(function (a, b) {
-      return new Date(b.fecha) - new Date(a.fecha);
-    });
-
-    ordenadas.forEach(function (n) {
+    container.innerHTML = '';
+    items.forEach(function (n) {
       var div = document.createElement('div');
       div.className = 'item';
 
@@ -194,6 +226,33 @@
       }
       container.appendChild(div);
     });
+  }
+
+  function aplicarFiltro() {
+    var dias = parseInt(document.getElementById('filtro-dias').value, 10);
+    var filtradas = todasLasNoticias;
+    if (dias > 0) {
+      var limite = Date.now() - dias * 24 * 60 * 60 * 1000;
+      filtradas = todasLasNoticias.filter(function (n) {
+        var t = new Date(n.fecha).getTime();
+        return !isNaN(t) && t >= limite;
+      });
+    }
+    document.getElementById('conteo').textContent =
+      'Mostrando ' + filtradas.length + ' de ' + todasLasNoticias.length + ' noticias.';
+    pintarNoticias(filtradas);
+  }
+
+  function renderNoticias(items) {
+    var section = document.getElementById('noticias-section');
+    if (!Array.isArray(items) || items.length === 0) return;
+
+    todasLasNoticias = items.slice().sort(function (a, b) {
+      return new Date(b.fecha) - new Date(a.fecha);
+    });
+
+    document.getElementById('filtro-dias').addEventListener('change', aplicarFiltro);
+    aplicarFiltro();
     section.hidden = false;
   }
 
