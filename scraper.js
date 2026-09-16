@@ -31,7 +31,11 @@ function limpiarHTML(html) {
 }
 const anthropic = new Anthropic({
   timeout: ANTHROPIC_TIMEOUT_MS,
-  maxRetries: 1,
+  // Las últimas ejecuciones en GitHub Actions fallaron con un "Connection
+  // error" casi instantáneo (no un timeout real). Con más reintentos el
+  // SDK aplica su backoff exponencial por defecto y absorbe ese tipo de
+  // fallo transitorio en vez de caer directo al fallback sin filtrar.
+  maxRetries: 4,
   ...(process.env.ANTHROPIC_WORKSPACE_ID
     ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
     : {}),
