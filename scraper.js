@@ -29,16 +29,37 @@ function limpiarHTML(html) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+// El log del Action enmascaró el motivo real del "Connection error" como
+// "***" (GitHub redacta cualquier texto que contenga el valor exacto de un
+// secret). Eso solo pasa si el mensaje de error incluye el secreto en sí,
+// lo que apunta a un espacio/salto de línea de más en el secret guardado
+// (p.ej. ANTHROPIC_WORKSPACE_ID) que rompe la cabecera HTTP y hace fallar
+// la petición al instante, antes de llegar siquiera a la red. Se recortan
+// las variables por si acaso, y se deja un diagnóstico (solo longitudes,
+// nunca el valor) para confirmarlo si vuelve a pasar.
+function limpiarSecreto(nombre, valor) {
+  if (!valor) return valor;
+  const limpio = valor.trim();
+  if (limpio !== valor) {
+    console.warn(`Aviso: ${nombre} tenía espacios/saltos de línea de más (${valor.length} -> ${limpio.length} caracteres), se recorta.`);
+  }
+  return limpio;
+}
+
+const anthropicApiKey = limpiarSecreto('ANTHROPIC_API_KEY', process.env.ANTHROPIC_API_KEY);
+const anthropicWorkspaceId = limpiarSecreto('ANTHROPIC_WORKSPACE_ID', process.env.ANTHROPIC_WORKSPACE_ID);
+
 const anthropic = new Anthropic({
+  apiKey: anthropicApiKey,
   timeout: ANTHROPIC_TIMEOUT_MS,
   // Las últimas ejecuciones en GitHub Actions fallaron con un "Connection
-  // error" casi instantáneo (no un timeout real), dos días seguidos. Con
+  // error" casi instantáneo (no un timeout real), varios días seguidos. Con
   // más reintentos el SDK aplica su backoff exponencial por defecto y
   // absorbe mejor ese tipo de fallo transitorio en vez de caer directo al
   // fallback sin filtrar.
   maxRetries: 4,
-  ...(process.env.ANTHROPIC_WORKSPACE_ID
-    ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
+  ...(anthropicWorkspaceId
+    ? { defaultHeaders: { 'anthropic-workspace-id': anthropicWorkspaceId } }
     : {}),
 });
 
