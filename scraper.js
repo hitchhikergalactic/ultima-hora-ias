@@ -31,17 +31,20 @@ function limpiarHTML(html) {
 }
 // El log del Action enmascaró el motivo real del "Connection error" como
 // "***" (GitHub redacta cualquier texto que contenga el valor exacto de un
-// secret). Eso solo pasa si el mensaje de error incluye el secreto en sí,
-// lo que apunta a un espacio/salto de línea de más en el secret guardado
-// (p.ej. ANTHROPIC_WORKSPACE_ID) que rompe la cabecera HTTP y hace fallar
-// la petición al instante, antes de llegar siquiera a la red. Se recortan
-// las variables por si acaso, y se deja un diagnóstico (solo longitudes,
-// nunca el valor) para confirmarlo si vuelve a pasar.
+// secret). Reproducido en local: un secret con un carácter de control
+// (salto de línea, tab...) hace que node-fetch tire un
+// `TypeError: <valor> is not a legal HTTP header value` -- el propio
+// mensaje incluye el secreto, de ahí el enmascarado. Recortar solo los
+// extremos (trim) no basta si el carácter inválido está en medio del
+// valor, así que quitamos cualquier carácter de control de toda la
+// cadena. Se deja un diagnóstico (solo longitudes, nunca el valor) para
+// confirmar si hacía falta.
 function limpiarSecreto(nombre, valor) {
   if (!valor) return valor;
-  const limpio = valor.trim();
+  // eslint-disable-next-line no-control-regex
+  const limpio = valor.replace(/[\x00-\x1F\x7F]/g, '').trim();
   if (limpio !== valor) {
-    console.warn(`Aviso: ${nombre} tenía espacios/saltos de línea de más (${valor.length} -> ${limpio.length} caracteres), se recorta.`);
+    console.warn(`Aviso: ${nombre} tenía caracteres de control o espacios de más (${valor.length} -> ${limpio.length} caracteres), se limpia.`);
   }
   return limpio;
 }
@@ -146,6 +149,19 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
   return extraerJSON(texto);
 }
 
+// GitHub Actions enmascara como "***" cualquier texto de log que contenga el
+// valor exacto de un secret. Si el mensaje de error real incluye la API key
+// o el workspace ID (p.ej. un TypeError de cabecera HTTP inválida que cita
+// el valor), eso se come el diagnóstico entero. Lo quitamos nosotros mismos
+// antes de imprimir para que no quede nada que enmascarar.
+function redactar(texto) {
+  if (!texto) return texto;
+  let limpio = texto;
+  if (anthropicApiKey) limpio = limpio.split(anthropicApiKey).join('<ANTHROPIC_API_KEY>');
+  if (anthropicWorkspaceId) limpio = limpio.split(anthropicWorkspaceId).join('<ANTHROPIC_WORKSPACE_ID>');
+  return limpio;
+}
+
 // El SDK de Anthropic envuelve los fallos de red en un "Connection error"
 // genérico; err.message no dice nada útil. El motivo real (DNS, timeout de
 // conexión, TLS...) suele venir en err.cause (y a veces anidado otra vez).
@@ -158,7 +174,7 @@ function describirError(err) {
     causa = causa.cause;
     profundidad += 1;
   }
-  return partes.join(' | ');
+  return redactar(partes.join(' | '));
 }
 
 async function main() {
