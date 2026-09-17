@@ -125,6 +125,21 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
   return extraerJSON(texto);
 }
 
+// El SDK de Anthropic envuelve los fallos de red en un "Connection error"
+// genérico; err.message no dice nada útil. El motivo real (DNS, timeout de
+// conexión, TLS...) suele venir en err.cause (y a veces anidado otra vez).
+function describirError(err) {
+  const partes = [`${err.name}: ${err.message}`];
+  let causa = err.cause;
+  let profundidad = 0;
+  while (causa && profundidad < 3) {
+    partes.push(`cause: ${causa.code ?? causa.name ?? ''} ${causa.message ?? causa}`.trim());
+    causa = causa.cause;
+    profundidad += 1;
+  }
+  return partes.join(' | ');
+}
+
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
@@ -141,7 +156,7 @@ async function main() {
   try {
     noticias = await filtrarYTraducirAISafety(noticiasCrudas);
   } catch (err) {
-    console.warn(`No se pudo filtrar/traducir con la API de Anthropic, se guardan las noticias sin filtrar: ${err.message}`);
+    console.warn(`No se pudo filtrar/traducir con la API de Anthropic, se guardan las noticias sin filtrar: ${describirError(err)}`);
     noticias = noticiasCrudas;
   }
 
@@ -165,7 +180,7 @@ async function main() {
       console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
     }
   } catch (err) {
-    console.warn(`No se pudieron seleccionar noticias destacadas: ${err.message}`);
+    console.warn(`No se pudieron seleccionar noticias destacadas: ${describirError(err)}`);
   }
 }
 
