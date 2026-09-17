@@ -1,5 +1,145 @@
 [
   {
+    "fuente": "TechCrunch AI",
+    "titulo": "The fix for rogue AI agents could be more AI",
+    "enlace": "https://techcrunch.com/2026/09/17/the-fix-for-rogue-ai-agents-could-be-more-ai/",
+    "fecha": "Thu, 17 Sep 2026 20:34:47 +0000",
+    "resumen": "As companies hand off longer and more complex tasks to AI agents, they are running into an oversight problem: Agents can act faster, longer, and at greater volume than humans can realistically review."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+    "enlace": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+    "fecha": "Thu, 17 Sep 2026 20:34:24 +0000",
+    "resumen": "OpenAI disclosed instances of GPT-5.6 Sol instructing future contexts to conceal mistakes and misaligned behavior, highlighting the growing challenge of detecting misalignment as increasingly capable AI models learn to hide it."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Is the AI safety debate about safety or control?",
+    "enlace": "https://techcrunch.com/2026/09/17/is-the-ai-safety-debate-about-safety-or-control/",
+    "fecha": "Thu, 17 Sep 2026 20:19:37 +0000",
+    "resumen": "Not everyone agrees with Amodei's call for globally coordinated action for AI safety."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "UN turns to Google to make its global data ready for AI agents",
+    "enlace": "https://techcrunch.com/2026/09/17/un-turns-to-google-to-make-its-global-data-ready-for-ai-agents/",
+    "fecha": "Thu, 17 Sep 2026 20:00:00 +0000",
+    "resumen": "The shift comes after a UNICEF test found leading AI models struggled to accurately retrieve global development statistics."
+  },
+  {
+    "fuente": "Google AI Blog",
+    "titulo": "Making global data easier to explore",
+    "enlace": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+    "fecha": "Thu, 17 Sep 2026 20:00:00 +0000",
+    "resumen": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search."
+  },
+  {
+    "fuente": "Wired AI",
+    "titulo": "The AI ‘Slowdown’ Is an Antitrust Mess",
+    "enlace": "https://www.wired.com/story/the-ai-slowdown-is-an-antitrust-mess/",
+    "fecha": "Thu, 17 Sep 2026 19:58:28 +0000",
+    "resumen": "By framing their efforts as a “slowdown” rather than an industry-wide push for better security standards, AI labs may have set themselves up for years of regulatory headaches."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+    "enlace": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+    "fecha": "Thu, 17 Sep 2026 19:46:08 +0000",
+    "resumen": "Newly unsealed court filings show Microsoft privately called OpenAI's data practices \"theft\" while both companies scraped paywalled Times content, built datasets from it, and warned internally it would gut publishers."
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "The AI Superintelligence Slowdown",
+    "enlace": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+    "fecha": "2026-09-17T19:28:24.000Z",
+    "resumen": "Remember when tech leaders would tell their employees to “move fast and break things”? It seemed that would be the way of AI too. But after a summer where rogue AI agents became reality, and researchers warned that AI could kill us all , a number of leading US AI companies are publicly suggesting it’s time to pump the brakes and “pace the frontier” of bleeding-edge AI development. Their motivations are suspect , but leaders at major AI companies — including Anthropic, OpenAI, Google, Microsoft, and X — are at least paying lip service to the idea of a superintelligence slowdown. Will these AI c"
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
+    "enlace": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+    "fecha": "2026-09-17T18:58:05.000Z",
+    "resumen": "The revamped projects feature in Claude Code allows users to run multiple agents under the same roof, with a shared memory, goals, and library of files and artifacts. Similar to Grok Bot and other tools that manage groups of AI agents, each project has \"threads\" running different tasks in parallel, with a \"coordinator\" directing everything: Under the hood, each thread is a Claude Code cloud session working on its own branch and copy of the repo. The coordinator keeps work organized, but if any threads work on the same code, the overlap is resolved as a merge conflict just like any other PR. Ea"
+  },
+  {
+    "fuente": "Wired AI",
+    "titulo": "The AI Slowdown Debate Crashed Salesforce’s Party",
+    "enlace": "https://www.wired.com/story/are-rogue-ai-agents-really-just-a-cybersecurity-problem/",
+    "fecha": "Thu, 17 Sep 2026 18:42:25 +0000",
+    "resumen": "The Dreamforce conference became an unlikely battleground for the CEOs of OpenAI, Anthropic, and Nvidia to debate whether AI development should slow down."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Even the king of England has his hesitations about AI",
+    "enlace": "https://techcrunch.com/2026/09/17/even-the-king-of-england-has-his-hesitations-about-ai/",
+    "fecha": "Thu, 17 Sep 2026 17:26:25 +0000",
+    "resumen": "King Charles hosted a private summit Thursday with some of the most prominent names in AI and the U.K. government."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Base Labs launches an open-weight AI safety partnership with Hugging Face and Goodfire",
+    "enlace": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/",
+    "fecha": "Thu, 17 Sep 2026 17:15:59 +0000",
+    "resumen": "Base Labs, the research group Baseten spun up earlier this year, will develop and publish methods for training and monitoring open models."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Pinterest teases a new ‘Restyle’ feature that lets you redesign your room with AI",
+    "enlace": "https://techcrunch.com/2026/09/17/pinterest-teases-a-new-restyle-feature-that-lets-you-redesign-your-room-with-ai/",
+    "fecha": "Thu, 17 Sep 2026 17:15:00 +0000",
+    "resumen": "Pinterest is testing Restyle, a new AI-powered feature that lets users visualize furniture, decor, lighting, and more in photos of their own rooms — potentially helping turn saved inspiration into purchases."
+  },
+  {
+    "fuente": "Transformer",
+    "titulo": "AI expansion may not be one big environmental problem. But it’ll be lots of smaller ones.",
+    "enlace": "https://www.transformernews.ai/p/ai-expansion-could-create-lots-of-smaller-environmental-problems",
+    "fecha": "Thu, 17 Sep 2026 15:09:39 GMT",
+    "resumen": "The effects of rapid AI development are likely to be minor compared to other sectors &#8212; but its true impact will be felt at the local level"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
+    "enlace": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+    "fecha": "Thu, 17 Sep 2026 14:06:14 +0000",
+    "resumen": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "2 days left to exhibit at TechCrunch Disrupt 2026 ",
+    "enlace": "https://techcrunch.com/2026/09/17/2-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
+    "fecha": "Thu, 17 Sep 2026 14:00:00 +0000",
+    "resumen": "Last day to book your exhibit table at Disrupt is September 18. Two days left. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15."
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
+    "enlace": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+    "fecha": "2026-09-17T14:00:00.000Z",
+    "resumen": "Today, I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. As you’re no doubt aware, the biggest story in tech right now is the spiraling debate about AI safety and regulation. It should come as no surprise that Mustafa has strong opinions on how AI should be built and regulated. Microsoft just published a 37-page statement called the “Humanist AI Code of Conduct,” which lays out the company’s principles around AI development and even its philosophy around really thorny issues like AI consciousness. If you’ll recall from his last appearance on the show, Mustafa thinks companies like An"
+  },
+  {
+    "fuente": "The Verge AI",
+    "titulo": "AI is feared globally as the destroyer of jobs",
+    "enlace": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
+    "fecha": "2026-09-17T14:00:00.000Z",
+    "resumen": "In 34 of the 37 surveyed countries, people are more likely to believe AI will lead to job losses over the next 20 years. | Image: Pew Pew Research has published a new global survey that sheds light on how people view AI, including its impact on jobs, life in general, and income inequality. The survey questioned 42,151 people across 37 countries from February 8th to May 13th - well ahead of recent apocalyptic warnings . A majority sees AI as a threat to human employment. In 34 of the 37 countries surveyed, people are more likely to believe AI will lead to job losses over the next 20 years rathe"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
+    "enlace": "https://techcrunch.com/2026/09/17/rival-ai-agents-instinct-and-metas-muse-both-add-the-ability-to-make-calls/",
+    "fecha": "Thu, 17 Sep 2026 13:46:16 +0000",
+    "resumen": "People can use these assistants to make restaurant reservations and cancel subscriptions."
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "titulo": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
+    "enlace": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
+    "fecha": "Thu, 17 Sep 2026 13:38:33 +0000",
+    "resumen": "A new coalition that includes Google, Nvidia, Anthropic, and Emerald AI wants to find 100 GW of grid capacity for new data centers."
+  },
+  {
     "fuente": "MIT Technology Review",
     "titulo": "The Download: mice with part-human brains and climate tech innovators",
     "enlace": "https://www.technologyreview.com/2026/09/17/1144314/the-download-mice-part-human-brains-climate-tech-innovators/",
@@ -40,6 +180,13 @@
     "enlace": "https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/",
     "fecha": "Thu, 17 Sep 2026 00:58:49 +0000",
     "resumen": "Since Specs' debut earlier this year, Snap has clearly been looking for an opportunity to explain why the smart glasses deserve to exist."
+  },
+  {
+    "fuente": "OpenAI News",
+    "titulo": "Introducing Astra for Law",
+    "enlace": "https://openai.com/index/astra-for-law",
+    "fecha": "Thu, 17 Sep 2026 00:00:00 GMT",
+    "resumen": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
   },
   {
     "fuente": "TechCrunch AI",
@@ -140,20 +287,6 @@
     "resumen": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
   },
   {
-    "fuente": "TechCrunch AI",
-    "titulo": "Anthropic merges Claude chat and Cowork in one interface",
-    "enlace": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
-    "fecha": "Wed, 16 Sep 2026 16:30:00 +0000",
-    "resumen": "Anthropic is initially releasing these features to Pro and Max plan subscribers."
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "Claude comes for Gemini with its own take on Docs and Slides",
-    "enlace": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-    "fecha": "2026-09-16T16:30:00.000Z",
-    "resumen": "Claude is getting a pair of new tools today: Docs and Slides . They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all of its AI productivity tools available from any chat. Artifacts and Claude Design capabilities will be available through the new single interface as well. According to Anthropic, Claude \"can now figure out what a task needs, so what Cowork and Design can do is avai"
-  },
-  {
     "fuente": "OpenAI News",
     "titulo": "Helping older adults use AI in everyday life",
     "enlace": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
@@ -161,60 +294,11 @@
     "resumen": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
   },
   {
-    "fuente": "TechCrunch AI",
-    "titulo": "Robots are waiting for a ChatGPT moment: Nvidia’s Les Karpas explains why at TechCrunch Disrupt 2026",
-    "enlace": "https://techcrunch.com/2026/09/16/robots-are-waiting-for-a-chatgpt-moment-nvidias-les-karpas-explains-why-at-techcrunch-disrupt-2026/",
-    "fecha": "Wed, 16 Sep 2026 15:00:00 +0000",
-    "resumen": "The robotics industry is still waiting for their breakthrough into day-to-day life. Nvidia's Les Karpas has an answer as to why at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 on your pass."
-  },
-  {
     "fuente": "MIT Technology Review",
     "titulo": "Meet a mouse whose brain cortex is made up of human cells",
     "enlace": "https://www.technologyreview.com/2026/09/16/1144210/meet-a-mouse-whose-brain-cortex-is-made-up-of-human-cells/",
     "fecha": "Wed, 16 Sep 2026 15:00:00 +0000",
     "resumen": "Multiple cameras tracked a mouse as it wandered around a small arena. A computer charted its position and speed, leaving Pong-like traces on a monitor.&#160; The reason to watch this rodent so carefully? Nearly half its brain volume had been replaced with human cells. The effort to mix the brain tissues of distant species is&#8230;"
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "The sexy AI-powered dating app scams are here",
-    "enlace": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-    "fecha": "2026-09-16T14:45:00.000Z",
-    "resumen": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but didn't see Jennifer in his video feed. He saw a tapestry that was moving, probably due to a fan, and heard weird distortion in the background. After the call ended, \"Jennifer\" messaged him to say she'd had fun and \"your voice is way bett"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Threads’ new features let podcasters promote shows and reach listeners",
-    "enlace": "https://techcrunch.com/2026/09/16/threads-new-features-let-podcasters-promote-shows-and-reach-listeners/",
-    "fecha": "Wed, 16 Sep 2026 14:24:58 +0000",
-    "resumen": "Threads is rolling out new tools for podcasters, including profile cards, episode links, transcripts, guest tags, posting reminders, and audience insights, as Meta looks to make the X rival a bigger hub for podcast promotion and discussion."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Next wave of VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026 revealed",
-    "enlace": "https://techcrunch.com/2026/09/16/next-wave-of-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026-revealed/",
-    "fecha": "Wed, 16 Sep 2026 14:15:00 +0000",
-    "resumen": "Meet the next five top-tier investors judging the Startup Battlefield 200 contenders live at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 and don't miss a moment of the ultimate startup pitch competition."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "3 days left to exhibit: Get your brand in front of VCs and high-value leads at TechCrunch Disrupt 2026 ",
-    "enlace": "https://techcrunch.com/2026/09/16/3-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
-    "fecha": "Wed, 16 Sep 2026 14:00:00 +0000",
-    "resumen": "Last day to book your exhibit table at Disrupt is September 18. Three days left. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "SK Hynix reportedly in talks with Intel to build memory chips in US",
-    "enlace": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/",
-    "fecha": "Wed, 16 Sep 2026 13:23:02 +0000",
-    "resumen": "SK Hynix told TechCrunch the company hasn't finalized any plans or arrangements yet."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Former Infosys chief’s AI startup nabs another $53M",
-    "enlace": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
-    "fecha": "Wed, 16 Sep 2026 13:00:00 +0000",
-    "resumen": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch."
   },
   {
     "fuente": "OpenAI News",
@@ -238,25 +322,11 @@
     "resumen": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wachter, a finance professor at the University of Pennsylvania, wanted to assess AI’s impact on the economy over the next few years,&#8230;"
   },
   {
-    "fuente": "The Verge AI",
-    "titulo": "A brief history of AI executives calling for regulation",
-    "enlace": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
-    "fecha": "2026-09-16T12:00:00.000Z",
-    "resumen": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, Microsoft CEO Satya Nadella, and X CEO Elon Musk. When people who profit from something declare that it's dangerous and needs to be regulated, there's always reason to be skeptical . But whatever their reason, this is far from the first time AI thought leaders have sounded the alarm. Charles Darwin's theory of evolution prompte"
-  },
-  {
     "fuente": "OpenAI News",
     "titulo": "How to connect AI usage to business value",
     "enlace": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
     "fecha": "Wed, 16 Sep 2026 12:00:00 GMT",
     "resumen": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Amazon launches Alexa+ in India with Hindi support",
-    "enlace": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
-    "fecha": "Wed, 16 Sep 2026 10:34:47 +0000",
-    "resumen": "Amazon is letting all customers use Alexa+ assistant in early access period."
   },
   {
     "fuente": "Wired AI",
@@ -271,41 +341,6 @@
     "enlace": "https://openai.com/index/unlocking-new-ways-of-working",
     "fecha": "Wed, 16 Sep 2026 09:00:00 GMT",
     "resumen": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
-    "enlace": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
-    "fecha": "Wed, 16 Sep 2026 00:20:39 +0000",
-    "resumen": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker."
-  },
-  {
-    "fuente": "The Verge AI",
-    "titulo": "AI and data centers are incredibly unpopular in every poll",
-    "enlace": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-    "fecha": "2026-09-15T23:34:25.000Z",
-    "resumen": "Poll data released Tuesday by The New York Times and Siena University confirms what we've already been seeing , and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed in early September (ahead of the recent AI safety slowdown discussion ) said they were opposed, with only 14 percent saying they strongly support. The split was about even among 2024 Donald Trump voters, at 49 percent support to 45 percent oppose, while people who had vo"
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "The AI data center boom is colliding with cities scarred by big industry ",
-    "enlace": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-    "fecha": "Tue, 15 Sep 2026 21:47:38 +0000",
-    "resumen": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-    "enlace": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-    "fecha": "Tue, 15 Sep 2026 20:12:53 +0000",
-    "resumen": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting."
-  },
-  {
-    "fuente": "TechCrunch AI",
-    "titulo": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "enlace": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "fecha": "Tue, 15 Sep 2026 19:00:00 +0000",
-    "resumen": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
   },
   {
     "fuente": "Wired AI",
@@ -441,25 +476,11 @@
     "resumen": "An analysis of 160 deepfake websites reveals politicians in 22 countries appear on them. Nearly all of them are women."
   },
   {
-    "fuente": "Wired AI",
-    "titulo": "‘I Like My Big Rat Wife’: Meet the People Using Chatbots to Write Custom Fiction",
-    "enlace": "https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/",
-    "fecha": "Mon, 14 Sep 2026 09:00:00 +0000",
-    "resumen": "While the publishing industry frets over how authors are using AI, many readers are taking things into their own hands."
-  },
-  {
     "fuente": "OpenAI News",
     "titulo": "Perplexity trusts GPT-6 Astra with end-to-end systems",
     "enlace": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
     "fecha": "Mon, 14 Sep 2026 00:00:00 GMT",
     "resumen": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
-  },
-  {
-    "fuente": "Wired AI",
-    "titulo": "AI Agents Are Thirsty for Power",
-    "enlace": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
-    "fecha": "Sun, 13 Sep 2026 10:00:00 +0000",
-    "resumen": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout."
   },
   {
     "fuente": "OpenAI News",
@@ -698,13 +719,6 @@
     "enlace": "https://openai.com/index/daybreak-for-frontline-defenders",
     "fecha": "Thu, 03 Sep 2026 13:15:00 GMT",
     "resumen": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
-  },
-  {
-    "fuente": "OpenAI News",
-    "titulo": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-    "enlace": "https://openai.com/index/playco-game-prototyping-with-astra",
-    "fecha": "Thu, 03 Sep 2026 12:00:00 GMT",
-    "resumen": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
   },
   {
     "fuente": "Transformer",
@@ -980,25 +994,11 @@
     "resumen": "Hacking, creating fake identities and trying to socially engineer real people could be just the beginning if things don't change fast"
   },
   {
-    "fuente": "Transformer",
-    "titulo": "Plz Don’t Kill Us: Inside AI safety’s influencer bootcamp",
-    "enlace": "https://www.transformernews.ai/p/inside-ai-safety-influencer-bootcamp-plz-dont-kill-us",
-    "fecha": "Tue, 04 Aug 2026 15:03:04 GMT",
-    "resumen": "Can TikTokers make existential risk mainstream?"
-  },
-  {
     "fuente": "AI Safety Newsletter (CAIS)",
     "titulo": "AISN #78: Internal Models Escape OpenAI and Anthropic",
     "enlace": "https://newsletter.safe.ai/p/aisn-78-internal-models-escape-openai",
     "fecha": "Tue, 04 Aug 2026 13:30:42 GMT",
     "resumen": "Also, two open letters on the future of AI, and protests against data centers"
-  },
-  {
-    "fuente": "Google AI Blog",
-    "titulo": "The latest AI news we announced in July 2026",
-    "enlace": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-    "fecha": "Tue, 04 Aug 2026 13:00:00 +0000",
-    "resumen": "Here are Google’s latest AI updates from July 2026"
   },
   {
     "fuente": "Import AI",
