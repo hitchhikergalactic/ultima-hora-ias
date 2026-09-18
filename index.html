@@ -3,78 +3,146 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Última hora IA · AI Safety</title>
+<title>Última hora IA · AI Safety España</title>
+<link rel="icon" href="https://aisafety.es/favicon.ico?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #666666;
-    --border: #e5e5e5;
-    --accent: #7c3aed;
-    --card-bg: #f8f7fb;
+    --principal: #ff4500;
+    --bg: #f2f2f2;
+    --fg: #333333;
+    --muted: #6f6f6f;
+    --border: rgba(51, 51, 51, 0.12);
+    --card-bg: #e3e5e5;
+    --card-bg-2: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14121a;
-      --fg: #f0eef5;
-      --muted: #a9a3b5;
-      --border: #2c2836;
-      --accent: #b794f6;
-      --card-bg: #1d1a26;
+      --bg: #333333;
+      --fg: #f2f2f2;
+      --muted: #b3b3b3;
+      --border: rgba(242, 242, 242, 0.14);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-bg-2: rgba(255, 255, 255, 0.05);
     }
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 0 16px;
+    padding: 0 20px;
     background: var(--bg);
     color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  a { color: inherit; }
+  nav.topbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  nav.topbar .logo img {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+  nav.topbar .volver {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--fg);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  nav.topbar .volver:hover {
+    color: var(--principal);
+    border-color: var(--principal);
   }
   main {
-    max-width: 760px;
+    max-width: 820px;
     margin: 0 auto;
-    padding-block: 32px 64px;
+    padding-block: 8px 64px;
+  }
+  header p.eyebrow {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--principal);
+    margin: 0 0 8px;
   }
   header h1 {
-    font-size: 1.5rem;
-    margin: 0 0 4px;
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
   }
-  header p {
+  header p.desc {
     color: var(--muted);
-    margin: 0 0 32px;
-    font-size: 0.95rem;
+    margin: 0 0 36px;
+    font-size: 0.98rem;
+    max-width: 60ch;
   }
   h2 {
-    font-size: 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
     border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-    margin: 40px 0 16px;
+    padding-bottom: 10px;
+    margin: 44px 0 18px;
   }
   h2:first-of-type { margin-top: 0; }
   .item {
-    padding: 14px 0;
+    padding: 16px 0;
     border-bottom: 1px solid var(--border);
   }
   .item:last-child { border-bottom: none; }
   .item a {
-    color: var(--fg);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.02rem;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
   }
-  .item a:hover { color: var(--accent); }
+  .item a:hover { color: var(--principal); }
   .item .meta {
     color: var(--muted);
     font-size: 0.8rem;
     margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .item .meta .fuente {
+    display: inline-block;
+    padding: 2px 9px;
+    margin-right: 4px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--principal) 14%, transparent);
+    color: var(--principal);
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
   .item .resumen {
     color: var(--muted);
-    font-size: 0.92rem;
+    font-size: 0.94rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -83,53 +151,74 @@
   .filtros {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin: 0 0 16px;
-    font-size: 0.88rem;
+    margin: 0 0 18px;
+    font-size: 0.85rem;
     color: var(--muted);
+  }
+  .filtros label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
   }
   .filtros select {
     font: inherit;
+    font-weight: 700;
     color: var(--fg);
-    background: var(--card-bg);
+    background: var(--card-bg-2);
     border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 4px 8px;
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
   }
+  .filtros select:hover { border-color: var(--principal); }
   .conteo {
-    margin: -8px 0 16px;
-    font-size: 0.85rem;
+    margin: -6px 0 18px;
+    font-size: 0.82rem;
     color: var(--muted);
   }
   .destacada {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 12px;
+    border-radius: 22px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
   }
-  .destacada a { font-size: 1.02rem; }
+  .destacada a { font-size: 1.08rem; }
   .status {
     color: var(--muted);
     font-size: 0.9rem;
-    padding: 24px 0;
+    padding: 28px 0;
+    text-align: center;
   }
   footer {
     color: var(--muted);
     font-size: 0.8rem;
-    margin-top: 48px;
+    margin-top: 52px;
     border-top: 1px solid var(--border);
-    padding-top: 16px;
+    padding-top: 18px;
   }
-  footer a { color: inherit; }
+  footer a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  footer a:hover { color: var(--principal); }
 </style>
 </head>
 <body>
+<nav class="topbar">
+  <a class="logo" href="https://aisafety.es" aria-label="AI Safety España">
+    <img src="assets/ias_logo.svg" alt="AI Safety España">
+  </a>
+  <a class="volver" href="https://aisafety.es">← Volver a aisafety.es</a>
+</nav>
 <main>
   <header>
-    <h1>Última hora en IA y AI Safety</h1>
-    <p>Noticias filtradas y traducidas automáticamente. Página puente mientras se completa la integración en aisafety.es.</p>
+    <p class="eyebrow">/ Última hora</p>
+    <h1>Noticias de IA y AI Safety</h1>
+    <p class="desc">Selección filtrada y traducida automáticamente. Página puente mientras se completa la integración en aisafety.es.</p>
   </header>
 
   <section id="destacadas-section" hidden>
@@ -140,7 +229,7 @@
   <section id="noticias-section" hidden>
     <h2>Todas las noticias</h2>
     <div class="filtros">
-      <label for="filtro-dias">Mostrar:</label>
+      <label for="filtro-dias">Mostrar</label>
       <select id="filtro-dias">
         <option value="7" selected>Últimos 7 días</option>
         <option value="30">Últimos 30 días</option>
@@ -166,6 +255,30 @@
     return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
   }
 
+  function decodeEntities(str) {
+    if (!str) return str;
+    var txt = document.createElement('textarea');
+    txt.innerHTML = str;
+    return txt.value;
+  }
+
+  function metaNodo(n) {
+    var meta = document.createElement('div');
+    meta.className = 'meta';
+    if (n.fuente) {
+      var badge = document.createElement('span');
+      badge.className = 'fuente';
+      badge.textContent = n.fuente;
+      meta.appendChild(badge);
+    }
+    if (n.fecha) {
+      var fecha = document.createElement('span');
+      fecha.textContent = formatFecha(n.fecha);
+      meta.appendChild(fecha);
+    }
+    return meta;
+  }
+
   function renderDestacadas(items) {
     var section = document.getElementById('destacadas-section');
     var container = document.getElementById('destacadas');
@@ -178,18 +291,15 @@
       a.href = n.enlace;
       a.target = '_blank';
       a.rel = 'noopener';
-      a.textContent = n.titulo || '(sin título)';
+      a.textContent = decodeEntities(n.titulo) || '(sin título)';
       div.appendChild(a);
 
-      var meta = document.createElement('div');
-      meta.className = 'meta';
-      meta.textContent = [n.fuente, n.fecha ? formatFecha(n.fecha) : null].filter(Boolean).join(' · ');
-      div.appendChild(meta);
+      div.appendChild(metaNodo(n));
 
       if (n.resumen) {
         var p = document.createElement('div');
         p.className = 'resumen';
-        p.textContent = n.resumen;
+        p.textContent = decodeEntities(n.resumen);
         div.appendChild(p);
       }
       container.appendChild(div);
@@ -210,18 +320,15 @@
       a.href = n.enlace;
       a.target = '_blank';
       a.rel = 'noopener';
-      a.textContent = n.titulo || '(sin título)';
+      a.textContent = decodeEntities(n.titulo) || '(sin título)';
       div.appendChild(a);
 
-      var meta = document.createElement('div');
-      meta.className = 'meta';
-      meta.textContent = [n.fuente, n.fecha ? formatFecha(n.fecha) : null].filter(Boolean).join(' · ');
-      div.appendChild(meta);
+      div.appendChild(metaNodo(n));
 
       if (n.resumen) {
         var p = document.createElement('div');
         p.className = 'resumen';
-        p.textContent = n.resumen;
+        p.textContent = decodeEntities(n.resumen);
         div.appendChild(p);
       }
       container.appendChild(div);
