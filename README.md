@@ -89,10 +89,14 @@ export const feeds = [
 ## Ejecución automática
 
 El scraper corre solo todos los días mediante el GitHub Action definido en
-`.github/workflows/scraper.yml` (cron diario a las 08:00 UTC, o manualmente
-desde la pestaña Actions con "Run workflow"). Cada ejecución abre un pull
-request con las noticias del día; no comitea directo a `main` y el merge
-requiere aprobación manual.
+`.github/workflows/scraper.yml` (cron diario a las 08:00 UTC, aunque GitHub
+suele retrasarlo varias horas, o manualmente desde la pestaña Actions con
+"Run workflow"). Cada ejecución abre un pull request con las noticias del día
+y lo fusiona a `main` automáticamente; GitHub Pages republica la web en 1-2
+minutos. Si el scraper falla (sin saldo en la API, feeds caídos...) el
+workflow termina con error, no se abre ni se fusiona ningún PR y la web
+conserva las últimas noticias buenas. Para que la fusión automática funcione,
+`main` no debe exigir aprobaciones en los pull requests (Settings → Branches).
 
 Para que funcione hace falta configurar el secret `ANTHROPIC_API_KEY` (y
 opcionalmente `ANTHROPIC_WORKSPACE_ID`) en Settings → Secrets and

@@ -27,9 +27,11 @@ jobs:
           ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
 
       # No se comitea directo a main: esta acción crea una rama y abre
-      # un pull request. El merge a main sigue siendo manual (no hay
-      # auto-merge configurado aquí ni se activa en el PR).
+      # un pull request, que el paso siguiente fusiona. Si el scraper falla
+      # (sin saldo en la API, feeds caídos...) termina con error, este paso
+      # no se ejecuta y no se publica nada.
       - name: Abrir pull request con las noticias del día
+        id: pr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -40,6 +42,13 @@ jobs:
           body: |
             Pull request generado automáticamente por el scraper (`scraper.js`).
 
-            Requiere revisión y aprobación manual antes de fusionar a `main`.
+            Se fusiona automáticamente a `main` al terminar el workflow.
           add-paths: |
             data/*.json
+
+      # Sin cambios en los datos no hay PR y este paso se salta.
+      - name: Fusionar el pull request
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --repo "${{ github.repository }}" --squash --delete-branch
