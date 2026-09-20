@@ -1,10 +1,11 @@
 import 'dotenv/config';
 import Parser from 'rss-parser';
 import Anthropic from '@anthropic-ai/sdk';
-import { mkdir, writeFile } from 'fs/promises';
+import { mkdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { feeds } from './feeds.js';
+import { REGLAS, seleccionarNoticias } from './reglas.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
@@ -13,11 +14,6 @@ const MAX_ITEMS_POR_FEED = 30;
 const MAX_RESUMEN_CHARS = 600;
 const ANTHROPIC_TIMEOUT_MS = 8 * 60 * 1000;
 const FEED_TIMEOUT_MS = 30 * 1000;
-// Claude puntúa cada noticia de 1 a 5 según su relevancia para AI safety y solo
-// se conservan las que llegan a este mínimo. Subirlo acorta y endurece la
-// lista; bajarlo la alarga.
-const RELEVANCIA_MINIMA = 4;
-
 // El timeout de rss-parser es de inactividad del socket: un servidor que
 // gotea bytes sin terminar podría colgar el scraper indefinidamente (el run
 // del 19-09 estuvo 6 h en `node scraper.js` hasta que se canceló). El tope
@@ -25,6 +21,7 @@ const RELEVANCIA_MINIMA = 4;
 function crearParser(feed) {
   return new Parser({
     timeout: FEED_TIMEOUT_MS,
+    customFields: { item: ['source'] },
     ...(feed.userAgent ? { headers: { 'User-Agent': feed.userAgent } } : {}),
   });
 }
@@ -88,17 +85,42 @@ const anthropic = new Anthropic({
     : {}),
 });
 
+const escaparRegex = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// ¿Nombra el titular alguno de los términos de la fuente? Sin `terminos` siempre.
+const nombraTermino = (feed, titulo) =>
+  !feed.terminos || new RegExp(`\\b(${feed.terminos.map(escaparRegex).join('|')})\\b`, 'i').test(titulo);
+
+// Cada noticia lleva los metadatos de su fuente (idioma, categoría, laboratorio,
+// boletín semanal, prioridad): reglas.js los necesita para aplicar las reglas.
 async function fetchFeed(feed) {
   try {
     const result = await conTopeDuro(crearParser(feed).parseURL(feed.url), FEED_TIMEOUT_MS);
     return result.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => {
+      let titulo = item.title ?? '';
+      let publicador;
+      if (feed.googleNews) {
+        // Google News añade el medio al final del titular ("... - Reuters").
+        publicador = typeof item.source === 'string' ? item.source : item.source?._;
+        if (publicador && titulo.endsWith(` - ${publicador}`)) {
+          titulo = titulo.slice(0, -(publicador.length + 3));
+        }
+      }
       const textoLimpio = limpiarHTML(item.content ?? item.summary ?? item.contentSnippet ?? '');
+      // Un artículo de Google News que no nombra al laboratorio en el titular
+      // no cuenta como del laboratorio: pasa a prensa generalista.
+      const delLaboratorio = nombraTermino(feed, titulo);
       return {
         fuente: feed.name,
-        titulo: item.title ?? '',
+        titulo,
         enlace: item.link ?? '',
         fecha: item.pubDate ?? item.isoDate ?? '',
         resumen: textoLimpio.slice(0, MAX_RESUMEN_CHARS),
+        idioma: feed.idioma,
+        categoria: delLaboratorio ? feed.categoria : 'prensa',
+        ...(feed.laboratorio && delLaboratorio ? { laboratorio: feed.laboratorio } : {}),
+        ...(feed.semanal ? { semanal: true } : {}),
+        ...(publicador ? { publicador } : {}),
+        prioridad: feed.prioridad ?? 9,
       };
     });
   } catch (err) {
@@ -148,57 +170,14 @@ async function pedirLista({ prompt, maxTokens, herramienta, descripcion, propied
   return uso.input.items;
 }
 
-// Varias cabeceras cubren la misma historia. Pedirle a Claude que "quite
-// duplicados" mientras filtra cientos de noticias no es fiable (en una prueba
-// dejó la misma historia 5 veces), así que le pedimos una etiqueta por
-// historia y aquí nos quedamos con UNA por etiqueta: la de la fuente de mayor
-// prioridad (número más bajo en feeds.js) y, a igualdad, la más reciente.
-// Las noticias sin etiqueta (p. ej. si la API falló) se dejan tal cual.
-function deduplicarPorHistoria(noticias) {
-  const prioridad = new Map(feeds.map((f) => [f.name, f.prioridad ?? 9]));
-  const mejor = new Map();
-  for (const n of noticias) {
-    if (!n.historia) continue;
-    const actual = mejor.get(n.historia);
-    const gana =
-      !actual ||
-      (prioridad.get(n.fuente) ?? 9) < (prioridad.get(actual.fuente) ?? 9) ||
-      ((prioridad.get(n.fuente) ?? 9) === (prioridad.get(actual.fuente) ?? 9) &&
-        new Date(n.fecha) > new Date(actual.fecha));
-    if (gana) mejor.set(n.historia, n);
-  }
-  return noticias
-    .filter((n) => !n.historia || mejor.get(n.historia) === n)
-    .map(({ historia, ...resto }) => resto);
-}
-
-// La prensa general (feeds con maxPorDia) publica mucho y solo una parte es
-// AI safety: de cada una nos quedamos con las más relevantes (y, a igualdad,
-// las más recientes) para que una sola cabecera no llene la lista. Las fuentes especializadas no tienen tope.
-function limitarPorFuente(noticias) {
-  const tope = new Map(feeds.filter((f) => f.maxPorDia).map((f) => [f.name, f.maxPorDia]));
-  const usadas = new Map();
-  const porFecha = (a, b) => new Date(b.fecha) - new Date(a.fecha);
-  return [...noticias]
-    .sort((a, b) => (b.relevancia ?? 0) - (a.relevancia ?? 0) || porFecha(a, b))
-    .filter((n) => {
-      const max = tope.get(n.fuente);
-      if (!max) return true;
-      const usadasAntes = usadas.get(n.fuente) ?? 0;
-      usadas.set(n.fuente, usadasAntes + 1);
-      return usadasAntes < max;
-    })
-    .sort(porFecha);
-}
-
 // Pedirle a Claude que filtre, deduplique Y traduzca cientos de noticias en una
-// sola respuesta no cabe: en una prueba con 410 entradas se cortó por
-// max_tokens (32 000) a mitad de JSON. Por eso el trabajo se divide:
-//   1. Claude solo decide qué noticias entran y a qué historia pertenecen
-//      (respuesta de unos pocos miles de tokens: índice + etiqueta).
-//   2. El código deduplica por historia y aplica el tope por fuente.
+// sola respuesta no cabe (con 410 entradas se cortó por max_tokens) y las reglas
+// de diversidad no son fiables en un prompt. Por eso el trabajo se divide:
+//   1. Claude solo PUNTÚA la relevancia de cada noticia y le asigna un evento
+//      (respuesta pequeña: índice, puntuación y etiqueta).
+//   2. reglas.js aplica en código las reglas de diversidad.
 //   3. Solo las que sobreviven se traducen (las de fuentes en español no).
-// Además, enlaces y fechas ya no pasan por Claude: se toman del feed original.
+// Enlaces y fechas no pasan por Claude: se toman del feed original.
 async function clasificarAISafety(noticias) {
   const lista = noticias.map((n, i) => ({
     i,
@@ -217,22 +196,22 @@ Puntúa TODAS las noticias de la lista de 1 a 5 según su relevancia para AI saf
 - 1: nada que ver con la IA.
 Ante la duda entre dos puntuaciones, pon la más baja. Una noticia que solo nombra la IA de pasada nunca pasa de 2.
 
-Historia: a las noticias con puntuación 4 o 5 añádeles una "h": una etiqueta corta en minúsculas con guiones que identifique un SUCESO CONCRETO (quién hizo qué), no un tema general. Bien: "gemini-hackeo-tres-empresas", "newsom-orden-ejecutiva-seguridad-ia". Mal: "debate-riesgo-ia", "regulacion-ia". Las noticias que cuentan exactamente el mismo suceso, aunque vengan de fuentes o idiomas distintos, llevan EXACTAMENTE la misma etiqueta. Si dos noticias no cuentan el mismo suceso, usa etiquetas distintas: ante la duda, distintas. Decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
+Historia: a las noticias con puntuación 3, 4 o 5 añádeles una "h": una etiqueta corta en minúsculas con guiones que identifique un SUCESO CONCRETO (quién hizo qué), no un tema general. Bien: "gemini-hackeo-tres-empresas", "newsom-orden-ejecutiva-seguridad-ia". Mal: "debate-riesgo-ia", "regulacion-ia". Las noticias que cuentan exactamente el mismo suceso, aunque vengan de fuentes o idiomas distintos, llevan EXACTAMENTE la misma etiqueta. Si dos noticias no cuentan el mismo suceso, usa etiquetas distintas: ante la duda, distintas. Decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
 
 Noticias (i es el índice):
 ${JSON.stringify(lista)}
 
-Entrega el resultado con la herramienta, con UN objeto por cada noticia de la lista: "i" es el índice, "r" la puntuación y "h" la historia (solo si r es 4 o 5).`;
+Entrega el resultado con la herramienta, con UN objeto por cada noticia de la lista: "i" es el índice, "r" la puntuación y "h" la historia (solo si r es 3, 4 o 5).`;
 
   const resultados = await pedirLista({
     prompt,
     maxTokens: 16000,
     herramienta: 'entregar_puntuaciones',
-    descripcion: 'Entrega la puntuación de relevancia de cada noticia y la historia de las de 4 o 5.',
+    descripcion: 'Entrega la puntuación de relevancia de cada noticia y la historia de las de 3, 4 o 5.',
     propiedades: {
       i: { type: 'integer', description: 'Índice de la noticia' },
       r: { type: 'integer', minimum: 1, maximum: 5, description: 'Puntuación de relevancia para AI safety' },
-      h: { type: 'string', description: 'Etiqueta de la historia (solo si r es 4 o 5)' },
+      h: { type: 'string', description: 'Etiqueta de la historia (solo si r es 3, 4 o 5)' },
     },
     requeridas: ['i', 'r'],
   });
@@ -280,61 +259,44 @@ Entrega el resultado con la herramienta, un objeto por cada elemento y con el mi
   });
 }
 
-async function filtrarYTraducirAISafety(noticias) {
-  const puntuadas = await clasificarAISafety(noticias);
-  const reparto = [5, 4, 3, 2, 1]
-    .map((r) => `${r}: ${puntuadas.filter((p) => p.relevancia === r).length}`)
-    .join(' | ');
-  console.log(`Puntuación (${puntuadas.length} de ${noticias.length} noticias puntuadas) -> ${reparto}`);
-
-  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
-  const conservadas = puntuadas
-    .filter((p) => p.relevancia >= RELEVANCIA_MINIMA)
-    .map(({ i, relevancia, historia }) => ({
-      ...noticias[i],
-      idioma: idiomaPorFuente.get(noticias[i].fuente) ?? 'en',
-      relevancia,
-      // Sin etiqueta no se agrupa con ninguna otra.
-      historia: historia || `sin-etiqueta-${i}`,
-    }));
-  console.log(`Con relevancia >= ${RELEVANCIA_MINIMA}: ${conservadas.length} noticias.`);
-
-  const finales = limitarPorFuente(deduplicarPorHistoria(conservadas)).map(
-    ({ relevancia, ...resto }) => resto,
-  );
-  console.log(`Tras quitar repetidas y limitar por fuente: ${finales.length}.`);
-
-  return traducirAlEspanol(finales);
-}
-
+// Devuelve hasta REGLAS.maxDestacadas noticias de la lista con un resumen breve.
+// Claude solo elige por índice y escribe el resumen: título, enlace y fecha se
+// toman de la propia lista, así que una destacada siempre se puede quitar de
+// la lista por su enlace (regla 5).
 async function seleccionarYResumir(noticias) {
-  const prompt = `Responde siempre en español, sin excepción. Si una noticia viene de una fuente en otro idioma, traduce tanto el titular como el resto de campos al español; no dejes ninguna palabra o frase en el idioma original.
+  const lista = noticias.map((n, i) => ({ i, fuente: n.fuente, titulo: n.titulo, resumen: n.resumen }));
+  const prompt = `Responde siempre en español, sin excepción.
 
-De la siguiente lista de noticias, elige entre 2 y 3 que tengan relevancia real para AI safety: regulación, incidentes, investigación o decisiones de empresa con impacto significativo. Escribe un resumen breve de cada una que elijas.
+De la siguiente lista de noticias, elige entre 2 y ${REGLAS.maxDestacadas} que tengan relevancia real para AI safety: regulación, incidentes, investigación o decisiones de empresa con impacto significativo. Escribe un resumen breve de cada una que elijas.
 
-Si ninguna noticia del lote cumple ese criterio de relevancia real, no fuerces la cuota de 2 o 3: devuelve una lista vacía en lugar de incluir noticias flojas o poco relevantes solo para completarla.
+Si ninguna noticia del lote cumple ese criterio de relevancia real, no fuerces la cuota: devuelve una lista vacía en lugar de incluir noticias flojas o poco relevantes solo para completarla.
 
-Noticias:
-${JSON.stringify(noticias, null, 2)}
+Noticias (i es el índice):
+${JSON.stringify(lista, null, 2)}
 
-Entrega el resultado con la herramienta, o una lista vacía si ninguna noticia cumple el criterio.`;
+Entrega el resultado con la herramienta: el índice i de cada noticia elegida y su resumen breve, o una lista vacía.`;
 
-  const destacadas = await pedirLista({
+  const elegidas = await pedirLista({
     prompt,
     maxTokens: 4096,
     herramienta: 'entregar_destacadas',
-    descripcion: 'Entrega las noticias destacadas con su resumen, o una lista vacía.',
+    descripcion: 'Entrega el índice y el resumen de las noticias destacadas, o una lista vacía.',
     propiedades: {
-      fuente: { type: 'string' },
-      titulo: { type: 'string' },
-      enlace: { type: 'string' },
-      fecha: { type: 'string' },
-      resumen: { type: 'string' },
+      i: { type: 'integer', description: 'Índice de la noticia elegida' },
+      resumen: { type: 'string', description: 'Resumen breve en español' },
     },
-    requeridas: ['fuente', 'titulo', 'enlace', 'fecha', 'resumen'],
+    requeridas: ['i', 'resumen'],
   });
-  // El prompt pide 2-3 pero no lo hace cumplir: a veces salían 4.
-  return destacadas.slice(0, 3);
+
+  const vistos = new Set();
+  return elegidas
+    .filter((e) => {
+      const valido = Number.isInteger(e?.i) && e.i >= 0 && e.i < noticias.length && !vistos.has(e.i) && e.resumen;
+      if (valido) vistos.add(e.i);
+      return valido;
+    })
+    .slice(0, REGLAS.maxDestacadas)
+    .map((e) => ({ ...noticias[e.i], resumen: e.resumen }));
 }
 
 // GitHub Actions enmascara como "***" cualquier texto de log que contenga el
@@ -365,10 +327,27 @@ function describirError(err) {
   return redactar(partes.join(' | '));
 }
 
+// Campos internos que no se guardan en los datos publicados.
+const paraGuardar = ({ prioridad, semanal, ...resto }) => resto;
+
+async function leerDestacadasAnteriores() {
+  try {
+    return JSON.parse(await readFile(path.join(DATA_DIR, 'destacadas-latest.json'), 'utf-8'));
+  } catch {
+    return [];
+  }
+}
+
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
+  // Petición real a cada feed; se registra cuántos ítems devuelve.
   const results = await Promise.all(feeds.map(fetchFeed));
+  const informeFeeds = feeds.map((f, i) => ({ nombre: f.name, categoria: f.categoria, items: results[i].length }));
+  const feedsVacios = informeFeeds.filter((f) => f.items === 0).map((f) => f.nombre);
+  console.log(`Feeds (${feeds.length}):\n${informeFeeds.map((f) => `  ${String(f.items).padStart(3)}  ${f.nombre}`).join('\n')}`);
+  if (feedsVacios.length > 0) console.warn(`Feeds sin noticias: ${feedsVacios.join(', ')}`);
+
   const noticiasCrudas = results
     .flat()
     .sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
@@ -377,55 +356,89 @@ async function main() {
   const outFile = path.join(DATA_DIR, `noticias-${fecha}.json`);
   const latestFile = path.join(DATA_DIR, 'latest.json');
 
-  // Si no hay noticias, o el filtro/traducción fallan, se aborta SIN escribir
-  // nada (el proceso sale con error): en el Action eso evita abrir un PR y la
-  // web conserva las noticias buenas del último PR fusionado. Antes se
-  // guardaban las noticias sin filtrar ni traducir y el PR se abría igual; el
-  // 20-09 una de esas se fusionó y publicó 192 noticias sin filtrar.
+  // Si no hay noticias, o la puntuación/traducción fallan, se aborta SIN
+  // escribir nada (el proceso sale con error): en el Action eso evita abrir un
+  // PR y la web conserva las noticias buenas del último PR fusionado. Antes se
+  // guardaban las noticias sin filtrar y el PR se abría igual; el 20-09 una de
+  // esas se fusionó y publicó 192 noticias sin filtrar.
   if (noticiasCrudas.length === 0) {
     throw new Error('Ningún feed devolvió noticias; no se guarda nada.');
   }
 
-  let noticias;
+  let puntuadas;
   try {
-    noticias = await filtrarYTraducirAISafety(noticiasCrudas);
+    puntuadas = await clasificarAISafety(noticiasCrudas);
   } catch (err) {
-    throw new Error(`No se pudo filtrar/traducir con la API de Anthropic; no se guarda nada para no publicar noticias sin filtrar: ${describirError(err)}`);
+    throw new Error(`No se pudo puntuar con la API de Anthropic; no se guarda nada para no publicar noticias sin filtrar: ${describirError(err)}`);
   }
-  if (noticias.length === 0) {
+  const reparto = [5, 4, 3, 2, 1]
+    .map((r) => `${r}: ${puntuadas.filter((p) => p.relevancia === r).length}`)
+    .join(' | ');
+  console.log(`Puntuación (${puntuadas.length} de ${noticiasCrudas.length} noticias puntuadas) -> ${reparto}`);
+
+  // Reglas de diversidad, en código (ver reglas.js).
+  const candidatas = puntuadas.map(({ i, relevancia, historia }) => ({
+    ...noticiasCrudas[i],
+    relevancia,
+    // Sin etiqueta no se agrupa con ninguna otra.
+    evento: historia || `sin-etiqueta-${i}`,
+  }));
+  const seleccion = seleccionarNoticias(candidatas);
+  console.log(`Selección: ${seleccion.lista.length} noticias + ${seleccion.boletines.length} boletines semanales.`);
+  if (seleccion.lista.length + seleccion.boletines.length === 0) {
     throw new Error('Ninguna noticia pasó el filtro de AI safety; no se guarda nada para no vaciar la web.');
   }
 
-  // El idioma se añade aquí (y no en el prompt) para que no dependa de que
-  // Claude conserve el campo al reescribir cada noticia.
-  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
-  noticias = noticias.map((n) => ({
-    ...n,
-    idioma: idiomaPorFuente.get(n.fuente) ?? 'en',
-  }));
-
-  await writeFile(outFile, JSON.stringify(noticias, null, 2), 'utf-8');
-  await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');
-
-  console.log(`Se guardaron ${noticias.length} noticias en ${outFile}`);
-
+  let traducidas;
   try {
-    const destacadas = await seleccionarYResumir(noticias);
+    traducidas = await traducirAlEspanol([
+      ...seleccion.lista,
+      ...seleccion.boletines.map((b) => ({ ...b, bloque: 'boletines' })),
+    ]);
+  } catch (err) {
+    throw new Error(`No se pudo traducir con la API de Anthropic; no se guarda nada: ${describirError(err)}`);
+  }
+  let noticias = traducidas.slice(0, seleccion.lista.length);
+  const boletines = traducidas.slice(seleccion.lista.length);
 
-    if (destacadas.length === 0) {
-      console.log('Ninguna noticia de hoy cumple el criterio de relevancia real; no se genera entrada de destacadas.');
-    } else {
-      const destacadasFile = path.join(DATA_DIR, `destacadas-${fecha}.json`);
-      const destacadasLatestFile = path.join(DATA_DIR, 'destacadas-latest.json');
-
-      await writeFile(destacadasFile, JSON.stringify(destacadas, null, 2), 'utf-8');
-      await writeFile(destacadasLatestFile, JSON.stringify(destacadas, null, 2), 'utf-8');
-
-      console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
+  // Destacadas (regla 5: lo destacado no se repite en la lista). Si la
+  // selección falla o sale vacía se conservan las anteriores, y también se
+  // quitan de la lista.
+  let destacadas = [];
+  let destacadasNuevas = false;
+  try {
+    destacadas = await seleccionarYResumir(noticias);
+    destacadasNuevas = destacadas.length > 0;
+    if (!destacadasNuevas) {
+      console.log('Ninguna noticia de hoy cumple el criterio de relevancia real; se conservan las destacadas anteriores.');
     }
   } catch (err) {
-    console.warn(`No se pudieron seleccionar noticias destacadas: ${describirError(err)}`);
+    console.warn(`No se pudieron seleccionar noticias destacadas, se conservan las anteriores: ${describirError(err)}`);
   }
+  if (!destacadasNuevas) destacadas = await leerDestacadasAnteriores();
+  const enlacesDestacadas = new Set(destacadas.map((d) => d.enlace));
+  noticias = noticias.filter((n) => !enlacesDestacadas.has(n.enlace));
+
+  const publicadas = [...noticias, ...boletines].map(paraGuardar);
+  await writeFile(outFile, JSON.stringify(publicadas, null, 2), 'utf-8');
+  await writeFile(latestFile, JSON.stringify(publicadas, null, 2), 'utf-8');
+  console.log(`Se guardaron ${publicadas.length} noticias (${noticias.length} en la lista y ${boletines.length} boletines) en ${outFile}`);
+
+  if (destacadasNuevas) {
+    const destacadasFile = path.join(DATA_DIR, `destacadas-${fecha}.json`);
+    const destacadasLatestFile = path.join(DATA_DIR, 'destacadas-latest.json');
+    const guardadas = destacadas.map(paraGuardar);
+    await writeFile(destacadasFile, JSON.stringify(guardadas, null, 2), 'utf-8');
+    await writeFile(destacadasLatestFile, JSON.stringify(guardadas, null, 2), 'utf-8');
+    console.log(`Se seleccionaron ${destacadas.length} noticias destacadas en ${destacadasFile}`);
+  }
+
+  // Informe de la ejecución: lo lee scripts/verificar.mjs.
+  await writeFile(
+    path.join(DATA_DIR, 'informe-latest.json'),
+    JSON.stringify({ fecha, ventanaDias: REGLAS.ventanaDias, feeds: informeFeeds, feedsVacios, laboratorios: seleccion.informe.laboratorios }, null, 2),
+    'utf-8',
+  );
 }
 
 // Salida explícita: algún feed (Google) deja un socket keep-alive abierto y

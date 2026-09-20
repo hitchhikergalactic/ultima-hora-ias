@@ -40,8 +40,8 @@ node scraper.js
 
 Esto descarga hasta 30 entradas por cada feed definido en `feeds.js` y las procesa en tres pasos:
 
-1. **Puntuación (Claude):** puntúa TODAS las noticias de 1 a 5 según su relevancia para AI safety (5 = incidente o riesgo grave; 4 = claramente AI safety; 3 = lo menciona pero el tema es otro; 2 = IA sin relación con la seguridad; 1 = nada que ver) y etiqueta con su historia las de 4 o 5. Solo se conservan las que llegan a `RELEVANCIA_MINIMA` (4, en `scraper.js`); subirla acorta y endurece la lista.
-2. **Repetidas y topes (código):** si varias fuentes cuentan la misma historia se conserva una, la de la fuente de mayor `prioridad`, y de la prensa general se guardan como máximo `maxPorDia` por fuente, las de más relevancia.
+1. **Puntuación (Claude):** puntúa TODAS las noticias de 1 a 5 según su relevancia para AI safety (5 = incidente o riesgo grave; 4 = claramente AI safety; 3 = lo menciona pero el tema es otro; 2 = IA sin relación con la seguridad; 1 = nada que ver) y asigna un **evento** a las de 3, 4 o 5: las noticias sobre el mismo hecho comparten identificador.
+2. **Reglas de diversidad (código, `reglas.js`):** se aplican en código y no en el prompt (ver más abajo).
 3. **Traducción (Claude):** solo las que sobreviven, y solo las de fuentes que no están en español.
 
 Genera dos archivos dentro de `data/`:
@@ -77,14 +77,43 @@ Edita el array `feeds` en `feeds.js`:
 
 ```js
 export const feeds = [
-  { name: 'Nombre de la fuente', idioma: 'es', url: 'https://ejemplo.com/feed' },
+  { name: 'Nombre de la fuente', idioma: 'es', categoria: 'prensa', prioridad: 2, url: 'https://ejemplo.com/feed' },
   // ...
 ];
 ```
 
 - `idioma` (`'es'` o `'en'`): idioma original de la fuente. La página muestra primero las noticias en español y después las internacionales.
-- `prioridad` (1-3): si varias fuentes cuentan lo mismo se conserva la de menor número. 1 = fuente original (laboratorios, organizaciones de AI safety), 2 = prensa de referencia, 3 = prensa tecnológica general.
-- `maxPorDia` (opcional): tope de noticias que se conservan de esa fuente tras filtrar. Se usa en la prensa general para que una cabecera no llene la lista. Si un sitio rechaza el user agent por defecto (VentureBeat da 429, Euronews 406 a los de navegador), se puede fijar uno por fuente con `userAgent`.
+- `categoria`: `'laboratorio'` (blog oficial de un laboratorio o, si no tiene RSS oficial, búsqueda de Google News sobre él), `'seguridad'` (organizaciones y boletines de AI safety) o `'prensa'` (medios generalistas).
+- `laboratorio` (opcional): laboratorio al que se refiere la fuente; cuenta para la regla 3.
+- `semanal` (opcional): boletín semanal. Va en un bloque aparte de la página, solo con su último número.
+- `prioridad` (1-3): si varias fuentes cuentan lo mismo, gana la de menor número. 1 = fuente original, 2 = prensa de referencia, 3 = prensa general o cobertura de terceros.
+- `googleNews` y `terminos` (opcionales): para búsquedas de Google News. El titular debe nombrar alguno de los `terminos` para que la noticia cuente como del laboratorio; si no, pasa a prensa generalista.
+- `userAgent` (opcional): algunos sitios rechazan el user agent por defecto (VentureBeat da 429 y Euronews 406 a los de navegador).
+
+Anthropic, Meta, xAI, Moonshot y DeepSeek no tienen RSS oficial de noticias (se comprobó con peticiones reales), por eso usan Google News.
+
+## Reglas de diversidad
+
+Se aplican en `reglas.js` sobre la ventana de los últimos 7 días (la que la página muestra por defecto). Las noticias más antiguas solo pasan el umbral de relevancia y la regla 1.
+
+1. Como máximo 1 noticia por evento: la de mayor puntuación (a igualdad, la fuente más original).
+2. Como máximo 2 noticias por medio.
+3. Al menos 1 noticia por laboratorio (Anthropic, OpenAI, Google DeepMind, Meta, xAI, Moonshot) si existe alguna candidata en la ventana con relevancia >= 3. No se rellena con noticias sin relación con la seguridad: si no hay candidata, no se añade nada.
+4. La prensa generalista es como máximo el 50% de la ventana.
+5. Lo que sale en Destacadas no se repite en la lista.
+6. Los boletines semanales (AI Safety Newsletter de CAIS, Import AI) van en un bloque aparte, fuera del corte por fechas y de "Mostrando N de M". Solo se conserva el último número.
+
+Los parámetros están en `REGLAS` (`reglas.js`).
+
+### Verificación
+
+```bash
+node scripts/probar-reglas.mjs        # pruebas offline con datos inventados
+node scripts/verificar.mjs            # comprueba las reglas sobre data/ y falla si se incumple alguna
+node scripts/verificar.mjs --feeds    # falla si algún feed devolvió 0 ítems
+```
+
+`verificar.mjs` imprime las tablas de noticias por medio, por categoría y por laboratorio. En el Action se ejecuta antes de publicar (si falla no se abre el PR) y, con `--feeds`, después de publicar: si algún feed devuelve 0 ítems el workflow termina en rojo y GitHub avisa, sin impedir la publicación del resto.
 
 ## Ejecución automática
 
@@ -111,8 +140,10 @@ Anthropic sin ningún beneficio.
 ```
 ultima-hora-ias/
 ├── .github/workflows/scraper.yml  # Action que ejecuta el scraper y abre el PR diario
-├── scraper.js                     # lógica de descarga y guardado de noticias
-├── feeds.js                       # lista de fuentes RSS
+├── scraper.js                     # descarga, puntuación, traducción y guardado
+├── reglas.js                      # reglas de diversidad (código puro, sin API)
+├── feeds.js                       # lista de fuentes con su categoría
+├── scripts/                       # verificar.mjs y probar-reglas.mjs
 ├── package.json
 └── data/                          # noticias generadas, versionadas en git
 ```
