@@ -127,19 +127,69 @@ function extraerJSON(texto) {
   }
 }
 
+// Varias cabeceras cubren la misma historia. Pedirle a Claude que "quite
+// duplicados" mientras filtra cientos de noticias no es fiable (en una prueba
+// dejó la misma historia 5 veces), así que le pedimos una etiqueta por
+// historia y aquí nos quedamos con UNA por etiqueta: la de la fuente de mayor
+// prioridad (número más bajo en feeds.js) y, a igualdad, la más reciente.
+// Las noticias sin etiqueta (p. ej. si la API falló) se dejan tal cual.
+function deduplicarPorHistoria(noticias) {
+  const prioridad = new Map(feeds.map((f) => [f.name, f.prioridad ?? 9]));
+  const mejor = new Map();
+  for (const n of noticias) {
+    if (!n.historia) continue;
+    const actual = mejor.get(n.historia);
+    const gana =
+      !actual ||
+      (prioridad.get(n.fuente) ?? 9) < (prioridad.get(actual.fuente) ?? 9) ||
+      ((prioridad.get(n.fuente) ?? 9) === (prioridad.get(actual.fuente) ?? 9) &&
+        new Date(n.fecha) > new Date(actual.fecha));
+    if (gana) mejor.set(n.historia, n);
+  }
+  return noticias
+    .filter((n) => !n.historia || mejor.get(n.historia) === n)
+    .map(({ historia, ...resto }) => resto);
+}
+
+// La prensa general (feeds con maxPorDia) publica mucho y solo una parte es
+// AI safety: nos quedamos con las más recientes de cada una para que una sola
+// cabecera no llene la lista. Las fuentes especializadas no tienen tope.
+function limitarPorFuente(noticias) {
+  const tope = new Map(feeds.filter((f) => f.maxPorDia).map((f) => [f.name, f.maxPorDia]));
+  const usadas = new Map();
+  return [...noticias]
+    .sort((a, b) => new Date(b.fecha) - new Date(a.fecha))
+    .filter((n) => {
+      const max = tope.get(n.fuente);
+      if (!max) return true;
+      const usadasAntes = usadas.get(n.fuente) ?? 0;
+      usadas.set(n.fuente, usadasAntes + 1);
+      return usadasAntes < max;
+    });
+}
+
 async function filtrarYTraducirAISafety(noticias) {
   const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety): riesgos catastróficos o de mal uso, alineamiento, evaluaciones de modelos, interpretabilidad, gobernanza y regulación de la IA.
 
 Responde siempre en español, sin excepción. Traduce tanto el titular como el resumen de cada noticia al español; no dejes ninguna palabra o frase en el idioma original.
 
-De la siguiente lista de noticias, descarta todas las que NO traten sobre seguridad, riesgos, alineamiento, evaluaciones de modelos, interpretabilidad o gobernanza/regulación de la IA. Conserva únicamente las que sí sean relevantes para AI safety.
+Este es un boletín de AI safety, NO de noticias de IA en general. Conserva una noticia solo si su tema PRINCIPAL es uno de estos:
+- riesgos catastróficos o de mal uso de la IA (ciberataques, bioseguridad, armas, pérdida de control);
+- alineamiento y control: agentes o modelos que se desvían, engañan, sabotean o actúan fuera de lo previsto;
+- evaluaciones de seguridad de modelos, interpretabilidad e investigación en AI safety;
+- incidentes de seguridad reales con sistemas de IA y cómo los gestionan los laboratorios;
+- gobernanza y regulación orientadas a la seguridad de la IA avanzada (leyes, acuerdos internacionales, decisiones de laboratorios o gobiernos sobre seguridad).
+
+Descarta, aunque mencionen la IA: lanzamientos de producto, rendimiento o benchmarks, negocio, inversión y valoraciones, empleo y economía, centros de datos y energía, usos de la IA en educación, salud, cultura o deporte, artículos de opinión sobre ansiedad o tendencias, y privacidad, derechos de autor o deepfakes salvo que el eje sea un riesgo de la IA avanzada. Ante la duda, descarta: es mejor una lista corta y buena que una larga y de relleno.
+
+Historia: a cada noticia conservada asígnale un campo "historia": una etiqueta corta en minúsculas con guiones (p. ej. "gemini-hackeo-tres-empresas") que identifique el hecho o tema concreto. Todas las noticias que cuentan el mismo hecho, aunque vengan de fuentes o idiomas distintos, deben llevar EXACTAMENTE la misma etiqueta. Antes de escribir la lista, decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
 
 Noticias:
 ${JSON.stringify(noticias, null, 2)}
 
 Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato, uno por cada noticia conservada:
 [
-  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
+  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "...", "historia": "..." }
 ]`;
 
   const respuesta = await anthropic.messages.create({
@@ -230,7 +280,10 @@ async function main() {
   // El idioma se añade aquí (y no en el prompt) para que no dependa de que
   // Claude conserve el campo al reescribir cada noticia.
   const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
-  noticias = noticias.map((n) => ({ ...n, idioma: idiomaPorFuente.get(n.fuente) ?? 'en' }));
+  noticias = limitarPorFuente(deduplicarPorHistoria(noticias)).map((n) => ({
+    ...n,
+    idioma: idiomaPorFuente.get(n.fuente) ?? 'en',
+  }));
 
   await writeFile(outFile, JSON.stringify(noticias, null, 2), 'utf-8');
   await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');
