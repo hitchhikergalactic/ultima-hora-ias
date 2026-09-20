@@ -105,14 +105,14 @@
     margin: 44px 0 18px;
   }
   h2:first-of-type { margin-top: 0; }
-  #destacadas-section:not([hidden]) + #noticias-section,
+  section:not([hidden]) ~ section,
   #int-block { margin-top: 44px; }
   .item {
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
   }
   .item:last-child { border-bottom: none; }
-  .item a {
+  :is(.item, .destacada) a {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.02rem;
@@ -120,8 +120,8 @@
     margin-bottom: 6px;
     transition: color 0.2s ease;
   }
-  .item a:hover { color: var(--principal); }
-  .item .meta {
+  :is(.item, .destacada) a:hover { color: var(--principal); }
+  :is(.item, .destacada) .meta {
     color: var(--muted);
     font-size: 0.8rem;
     margin-bottom: 6px;
@@ -130,7 +130,7 @@
     gap: 8px;
     align-items: center;
   }
-  .item .meta .fuente {
+  :is(.item, .destacada) .meta .fuente {
     display: inline-block;
     padding: 2px 9px;
     margin-right: 4px;
@@ -142,7 +142,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
-  .item .resumen {
+  :is(.item, .destacada) .resumen {
     color: var(--muted);
     font-size: 0.94rem;
     display: -webkit-box;
@@ -228,6 +228,11 @@
     <div id="destacadas"></div>
   </section>
 
+  <section id="boletines-section" hidden>
+    <h2>Boletines semanales</h2>
+    <div id="boletines"></div>
+  </section>
+
   <section id="noticias-section" hidden>
     <div class="filtros">
       <label for="filtro-dias">Mostrar</label>
@@ -285,6 +290,11 @@
       var fecha = document.createElement('span');
       fecha.textContent = formatFecha(n.fecha);
       meta.appendChild(fecha);
+    }
+    if (n.publicador) {
+      var via = document.createElement('span');
+      via.textContent = 'vía ' + n.publicador;
+      meta.appendChild(via);
     }
     return meta;
   }
@@ -368,9 +378,13 @@
     var section = document.getElementById('noticias-section');
     if (!Array.isArray(items) || items.length === 0) return;
 
-    todasLasNoticias = items.slice().sort(function (a, b) {
+    var porFecha = function (a, b) {
       return new Date(b.fecha) - new Date(a.fecha);
-    });
+    };
+    var boletines = items.filter(function (n) { return n.bloque === 'boletines'; });
+    pintarNoticias(boletines.sort(porFecha), 'boletines', 'boletines-section');
+
+    todasLasNoticias = items.filter(function (n) { return n.bloque !== 'boletines'; }).sort(porFecha);
 
     document.getElementById('filtro-dias').addEventListener('change', aplicarFiltro);
     aplicarFiltro();

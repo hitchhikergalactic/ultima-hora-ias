@@ -21,10 +21,16 @@ jobs:
 
       - run: npm ci
 
-      - run: node scraper.js
+      - name: Ejecutar el scraper
+        run: node scraper.js
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+
+      # Comprueba las reglas de diversidad (reglas.js) sobre los datos recién
+      # generados. Si se incumple alguna el paso falla y no se publica nada.
+      - name: Verificar las reglas de diversidad
+        run: node scripts/verificar.mjs
 
       # No se comitea directo a main: esta acción crea una rama y abre
       # un pull request, que el paso siguiente fusiona. Si el scraper falla
@@ -52,3 +58,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --repo "${{ github.repository }}" --squash --delete-branch
+
+      # Va DESPUÉS de publicar: si algún feed devolvió 0 ítems el workflow
+      # termina en rojo (y GitHub avisa por correo) sin impedir la publicación
+      # de las noticias del resto.
+      - name: Comprobar que ningún feed devolvió 0 noticias
+        run: node scripts/verificar.mjs --feeds
