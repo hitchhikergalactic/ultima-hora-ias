@@ -1,6 +1,6 @@
 # última hora IAs
 
-Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa en español (Xataka, Genbeta, El País Tecnología, BBC Mundo, Euronews Next), prensa general en inglés (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
+Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa en español (Xataka, Genbeta, El País Tecnología, BBC Mundo, Euronews Next), prensa de referencia y general en inglés (The New York Times, The Guardian, Financial Times, Politico, TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
 
 ## Requisitos
 
@@ -38,7 +38,13 @@ o directamente:
 node scraper.js
 ```
 
-Esto descarga hasta 30 entradas por cada feed definido en `feeds.js`, las pasa por Claude para descartar todo lo que no sea relevante para AI safety y traducir el resto al español, y genera dos archivos dentro de `data/`:
+Esto descarga hasta 30 entradas por cada feed definido en `feeds.js` y las procesa en tres pasos:
+
+1. **Clasificación (Claude):** decide cuáles tratan de AI safety (riesgos, control, incidentes, evaluaciones, regulación; se descarta producto, negocio, empleo, centros de datos...) y a qué historia pertenece cada una.
+2. **Repetidas y topes (código):** si varias fuentes cuentan la misma historia se conserva una, la de la fuente de mayor `prioridad`, y de la prensa general se guardan como máximo `maxPorDia` por fuente.
+3. **Traducción (Claude):** solo las que sobreviven, y solo las de fuentes que no están en español.
+
+Genera dos archivos dentro de `data/`:
 
 - `data/noticias-YYYY-MM-DD.json` — snapshot del día, ya filtrado a AI safety y en español
 - `data/latest.json` — siempre contiene la ejecución más reciente
@@ -76,7 +82,9 @@ export const feeds = [
 ];
 ```
 
-`idioma` (`'es'` o `'en'`) es el idioma original de la fuente: la página muestra primero las noticias en español y después las internacionales. Si un sitio rechaza el user agent por defecto (VentureBeat da 429, Euronews 406 a los de navegador), se puede fijar uno por fuente con `userAgent`.
+- `idioma` (`'es'` o `'en'`): idioma original de la fuente. La página muestra primero las noticias en español y después las internacionales.
+- `prioridad` (1-3): si varias fuentes cuentan lo mismo se conserva la de menor número. 1 = fuente original (laboratorios, organizaciones de AI safety), 2 = prensa de referencia, 3 = prensa tecnológica general.
+- `maxPorDia` (opcional): tope de noticias que se conservan de esa fuente tras filtrar. Se usa en la prensa general para que una cabecera no llene la lista. Si un sitio rechaza el user agent por defecto (VentureBeat da 429, Euronews 406 a los de navegador), se puede fijar uno por fuente con `userAgent`.
 
 ## Ejecución automática
 

@@ -127,19 +127,113 @@ function extraerJSON(texto) {
   }
 }
 
-async function filtrarYTraducirAISafety(noticias) {
-  const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety): riesgos catastróficos o de mal uso, alineamiento, evaluaciones de modelos, interpretabilidad, gobernanza y regulación de la IA.
+// Varias cabeceras cubren la misma historia. Pedirle a Claude que "quite
+// duplicados" mientras filtra cientos de noticias no es fiable (en una prueba
+// dejó la misma historia 5 veces), así que le pedimos una etiqueta por
+// historia y aquí nos quedamos con UNA por etiqueta: la de la fuente de mayor
+// prioridad (número más bajo en feeds.js) y, a igualdad, la más reciente.
+// Las noticias sin etiqueta (p. ej. si la API falló) se dejan tal cual.
+function deduplicarPorHistoria(noticias) {
+  const prioridad = new Map(feeds.map((f) => [f.name, f.prioridad ?? 9]));
+  const mejor = new Map();
+  for (const n of noticias) {
+    if (!n.historia) continue;
+    const actual = mejor.get(n.historia);
+    const gana =
+      !actual ||
+      (prioridad.get(n.fuente) ?? 9) < (prioridad.get(actual.fuente) ?? 9) ||
+      ((prioridad.get(n.fuente) ?? 9) === (prioridad.get(actual.fuente) ?? 9) &&
+        new Date(n.fecha) > new Date(actual.fecha));
+    if (gana) mejor.set(n.historia, n);
+  }
+  return noticias
+    .filter((n) => !n.historia || mejor.get(n.historia) === n)
+    .map(({ historia, ...resto }) => resto);
+}
 
-Responde siempre en español, sin excepción. Traduce tanto el titular como el resumen de cada noticia al español; no dejes ninguna palabra o frase en el idioma original.
+// La prensa general (feeds con maxPorDia) publica mucho y solo una parte es
+// AI safety: nos quedamos con las más recientes de cada una para que una sola
+// cabecera no llene la lista. Las fuentes especializadas no tienen tope.
+function limitarPorFuente(noticias) {
+  const tope = new Map(feeds.filter((f) => f.maxPorDia).map((f) => [f.name, f.maxPorDia]));
+  const usadas = new Map();
+  return [...noticias]
+    .sort((a, b) => new Date(b.fecha) - new Date(a.fecha))
+    .filter((n) => {
+      const max = tope.get(n.fuente);
+      if (!max) return true;
+      const usadasAntes = usadas.get(n.fuente) ?? 0;
+      usadas.set(n.fuente, usadasAntes + 1);
+      return usadasAntes < max;
+    });
+}
 
-De la siguiente lista de noticias, descarta todas las que NO traten sobre seguridad, riesgos, alineamiento, evaluaciones de modelos, interpretabilidad o gobernanza/regulación de la IA. Conserva únicamente las que sí sean relevantes para AI safety.
+// Pedirle a Claude que filtre, deduplique Y traduzca cientos de noticias en una
+// sola respuesta no cabe: en una prueba con 410 entradas se cortó por
+// max_tokens (32 000) a mitad de JSON. Por eso el trabajo se divide:
+//   1. Claude solo decide qué noticias entran y a qué historia pertenecen
+//      (respuesta de unos pocos miles de tokens: índice + etiqueta).
+//   2. El código deduplica por historia y aplica el tope por fuente.
+//   3. Solo las que sobreviven se traducen (las de fuentes en español no).
+// Además, enlaces y fechas ya no pasan por Claude: se toman del feed original.
+async function clasificarAISafety(noticias) {
+  const lista = noticias.map((n, i) => ({
+    i,
+    fuente: n.fuente,
+    titulo: n.titulo,
+    resumen: n.resumen.slice(0, 300),
+  }));
 
-Noticias:
-${JSON.stringify(noticias, null, 2)}
+  const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety).
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato, uno por cada noticia conservada:
+Este es un boletín de AI safety, NO de noticias de IA en general. Conserva una noticia solo si su tema PRINCIPAL es uno de estos:
+- riesgos catastróficos o de mal uso de la IA (ciberataques, bioseguridad, armas, pérdida de control);
+- alineamiento y control: agentes o modelos que se desvían, engañan, sabotean o actúan fuera de lo previsto;
+- evaluaciones de seguridad de modelos, interpretabilidad e investigación en AI safety;
+- incidentes de seguridad reales con sistemas de IA y cómo los gestionan los laboratorios;
+- gobernanza y regulación orientadas a la seguridad de la IA avanzada (leyes, acuerdos internacionales, decisiones de laboratorios o gobiernos sobre seguridad).
+
+Descarta, aunque mencionen la IA: lanzamientos de producto, rendimiento o benchmarks, negocio, inversión y valoraciones, empleo y economía, centros de datos y energía, usos de la IA en educación, salud, cultura o deporte, artículos de opinión sobre ansiedad o tendencias, y privacidad, derechos de autor o deepfakes salvo que el eje sea un riesgo de la IA avanzada. Ante la duda, descarta: es mejor una lista corta y buena que una larga y de relleno.
+
+Historia: a cada noticia conservada asígnale una "historia": una etiqueta corta en minúsculas con guiones que identifique un SUCESO CONCRETO (quién hizo qué), no un tema general. Bien: "gemini-hackeo-tres-empresas", "newsom-orden-ejecutiva-seguridad-ia". Mal: "debate-riesgo-ia", "regulacion-ia". Las noticias que cuentan exactamente el mismo suceso, aunque vengan de fuentes o idiomas distintos, llevan EXACTAMENTE la misma etiqueta. Si dos noticias no cuentan el mismo suceso, usa etiquetas distintas: ante la duda, distintas. Decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
+
+Noticias (i es el índice):
+${JSON.stringify(lista)}
+
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array, un objeto por cada noticia conservada:
 [
-  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
+  { "i": 0, "historia": "..." }
+]`;
+
+  const respuesta = await anthropic.messages.create({
+    model: 'claude-sonnet-5',
+    max_tokens: 16000,
+    thinking: { type: 'disabled' },
+    messages: [{ role: 'user', content: prompt }],
+  });
+
+  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
+  const vistos = new Set();
+  return extraerJSON(texto).filter((e) => {
+    const valido = Number.isInteger(e?.i) && e.i >= 0 && e.i < noticias.length && !vistos.has(e.i);
+    if (valido) vistos.add(e.i);
+    return valido;
+  });
+}
+
+async function traducirAlEspanol(noticias) {
+  const pendientes = noticias
+    .map((n, i) => ({ i, titulo: n.titulo, resumen: n.resumen }))
+    .filter((_, i) => noticias[i].idioma !== 'es');
+  if (pendientes.length === 0) return noticias;
+
+  const prompt = `Traduce al español, sin excepción, el titular y el resumen de cada una de estas noticias. No dejes ninguna palabra o frase en el idioma original (salvo nombres propios). Mantén el sentido y un tono periodístico neutro.
+
+${JSON.stringify(pendientes)}
+
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array, un objeto por cada elemento y el mismo índice i:
+[
+  { "i": 0, "titulo": "...", "resumen": "..." }
 ]`;
 
   const respuesta = await anthropic.messages.create({
@@ -150,7 +244,32 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
   });
 
   const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
-  return extraerJSON(texto);
+  const traducidas = new Map(extraerJSON(texto).map((t) => [t.i, t]));
+  return noticias.map((n, i) => {
+    const t = traducidas.get(i);
+    return t?.titulo ? { ...n, titulo: t.titulo, resumen: t.resumen ?? n.resumen } : n;
+  });
+}
+
+async function filtrarYTraducirAISafety(noticias) {
+  const clasificadas = await clasificarAISafety(noticias);
+  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
+  const conservadas = clasificadas.map(({ i, historia }) => ({
+    ...noticias[i],
+    idioma: idiomaPorFuente.get(noticias[i].fuente) ?? 'en',
+    historia,
+  }));
+  console.log(`Clasificación: ${conservadas.length} de ${noticias.length} noticias son AI safety.`);
+
+  const finales = limitarPorFuente(deduplicarPorHistoria(conservadas));
+  console.log(`Tras quitar repetidas y limitar por fuente: ${finales.length}.`);
+
+  try {
+    return await traducirAlEspanol(finales);
+  } catch (err) {
+    console.warn(`No se pudo traducir con la API de Anthropic, se guardan las noticias filtradas sin traducir: ${describirError(err)}`);
+    return finales;
+  }
 }
 
 async function seleccionarYResumir(noticias) {
@@ -223,14 +342,17 @@ async function main() {
   try {
     noticias = await filtrarYTraducirAISafety(noticiasCrudas);
   } catch (err) {
-    console.warn(`No se pudo filtrar/traducir con la API de Anthropic, se guardan las noticias sin filtrar: ${describirError(err)}`);
-    noticias = noticiasCrudas;
+    console.warn(`No se pudo filtrar con la API de Anthropic, se guardan las noticias sin filtrar: ${describirError(err)}`);
+    noticias = limitarPorFuente(noticiasCrudas);
   }
 
   // El idioma se añade aquí (y no en el prompt) para que no dependa de que
   // Claude conserve el campo al reescribir cada noticia.
   const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
-  noticias = noticias.map((n) => ({ ...n, idioma: idiomaPorFuente.get(n.fuente) ?? 'en' }));
+  noticias = noticias.map((n) => ({
+    ...n,
+    idioma: idiomaPorFuente.get(n.fuente) ?? 'en',
+  }));
 
   await writeFile(outFile, JSON.stringify(noticias, null, 2), 'utf-8');
   await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');
