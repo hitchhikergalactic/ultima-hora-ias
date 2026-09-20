@@ -1,0 +1,168 @@
+{
+  "fecha": "2026-09-20",
+  "ventanaDias": 7,
+  "feeds": [
+    {
+      "nombre": "OpenAI News",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "Google DeepMind Blog",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "Google AI Blog",
+      "categoria": "laboratorio",
+      "items": 20
+    },
+    {
+      "nombre": "Mistral AI",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "Anthropic (Google News)",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "Meta AI (Google News)",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "xAI (Google News)",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "Moonshot (Google News)",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "DeepSeek (Google News)",
+      "categoria": "laboratorio",
+      "items": 30
+    },
+    {
+      "nombre": "AI Safety Newsletter (CAIS)",
+      "categoria": "seguridad",
+      "items": 20
+    },
+    {
+      "nombre": "Import AI",
+      "categoria": "seguridad",
+      "items": 10
+    },
+    {
+      "nombre": "Future of Life Institute",
+      "categoria": "seguridad",
+      "items": 20
+    },
+    {
+      "nombre": "Transformer",
+      "categoria": "seguridad",
+      "items": 20
+    },
+    {
+      "nombre": "Xataka IA",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "Genbeta IA",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "El País Tecnología",
+      "categoria": "prensa",
+      "items": 20
+    },
+    {
+      "nombre": "BBC Mundo",
+      "categoria": "prensa",
+      "items": 30
+    },
+    {
+      "nombre": "Euronews Next",
+      "categoria": "prensa",
+      "items": 30
+    },
+    {
+      "nombre": "The New York Times",
+      "categoria": "prensa",
+      "items": 27
+    },
+    {
+      "nombre": "The Guardian AI",
+      "categoria": "prensa",
+      "items": 20
+    },
+    {
+      "nombre": "Financial Times AI",
+      "categoria": "prensa",
+      "items": 25
+    },
+    {
+      "nombre": "Politico Tech",
+      "categoria": "prensa",
+      "items": 30
+    },
+    {
+      "nombre": "MIT Technology Review",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "Wired AI",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "TechCrunch AI",
+      "categoria": "prensa",
+      "items": 20
+    },
+    {
+      "nombre": "VentureBeat AI",
+      "categoria": "prensa",
+      "items": 7
+    },
+    {
+      "nombre": "The Verge AI",
+      "categoria": "prensa",
+      "items": 10
+    }
+  ],
+  "feedsVacios": [],
+  "laboratorios": {
+    "Anthropic": {
+      "candidatas": 16,
+      "colocada": true
+    },
+    "OpenAI": {
+      "candidatas": 2,
+      "colocada": true
+    },
+    "Google DeepMind": {
+      "candidatas": 0,
+      "colocada": false
+    },
+    "Meta": {
+      "candidatas": 8,
+      "colocada": true
+    },
+    "xAI": {
+      "candidatas": 6,
+      "colocada": true
+    },
+    "Moonshot": {
+      "candidatas": 1,
+      "colocada": true
+    }
+  }
+}
