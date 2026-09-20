@@ -90,7 +90,7 @@
   }
   header p.desc {
     color: var(--muted);
-    margin: 0 0 36px;
+    margin: 0 0 28px;
     font-size: 0.98rem;
     max-width: 60ch;
   }
@@ -102,60 +102,41 @@
     color: var(--muted);
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
-    margin: 44px 0 18px;
+    margin: 40px 0 6px;
   }
-  h2:first-of-type { margin-top: 0; }
-  section:not([hidden]) ~ section,
-  #int-block { margin-top: 44px; }
-  .item {
-    padding: 16px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .item:last-child { border-bottom: none; }
-  :is(.item, .destacada) a {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.02rem;
-    display: block;
-    margin-bottom: 6px;
-    transition: color 0.2s ease;
-  }
-  :is(.item, .destacada) a:hover { color: var(--principal); }
-  :is(.item, .destacada) .meta {
-    color: var(--muted);
-    font-size: 0.8rem;
-    margin-bottom: 6px;
+  h2 .n { font-weight: 600; letter-spacing: 0.04em; }
+  /* Controles: categorías, medio y agrupación */
+  .chips {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    align-items: center;
+    margin: 0 0 16px;
   }
-  :is(.item, .destacada) .meta .fuente {
-    display: inline-block;
-    padding: 2px 9px;
-    margin-right: 4px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--principal) 14%, transparent);
-    color: var(--principal);
+  .chip {
+    font: inherit;
+    font-size: 0.8rem;
     font-weight: 700;
-    font-size: 0.7rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    color: var(--fg);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
   }
-  :is(.item, .destacada) .resumen {
-    color: var(--muted);
-    font-size: 0.94rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  .chip:hover { border-color: var(--principal); }
+  .chip[aria-pressed="true"] {
+    background: var(--principal);
+    border-color: var(--principal);
+    color: #fff;
   }
+  .chip .n { font-weight: 600; opacity: 0.75; margin-left: 4px; }
   .filtros {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px 18px;
     flex-wrap: wrap;
-    margin: 0 0 18px;
+    margin: 0 0 14px;
     font-size: 0.85rem;
     color: var(--muted);
   }
@@ -173,22 +154,65 @@
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 6px 14px;
+    max-width: 100%;
     cursor: pointer;
   }
   .filtros select:hover { border-color: var(--principal); }
+  .filtros .agrupar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .filtros .agrupar input { accent-color: var(--principal); width: 16px; height: 16px; cursor: pointer; }
   .conteo {
-    margin: -6px 0 18px;
+    margin: 0 0 8px;
     font-size: 0.82rem;
     color: var(--muted);
   }
-  .destacada {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 20px 22px;
-    margin-bottom: 14px;
+  /* Noticias */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
   }
-  .destacada a { font-size: 1.08rem; }
+  .item:last-child { border-bottom: none; }
+  .item a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.02rem;
+    display: block;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+  }
+  .item a:hover { color: var(--principal); }
+  .item .meta {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    align-items: center;
+  }
+  .item .meta .fuente {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--principal) 14%, transparent);
+    color: var(--principal);
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .item .resumen {
+    color: var(--muted);
+    font-size: 0.94rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .status {
     color: var(--muted);
     font-size: 0.9rem;
@@ -220,42 +244,20 @@
   <header>
     <p class="eyebrow">/ Última hora</p>
     <h1>Noticias de seguridad de la IA</h1>
-    <p class="desc">Riesgos, control, incidentes, evaluaciones y regulación de la IA. Selección filtrada y traducida automáticamente. Página puente mientras se completa la integración en aisafety.es.</p>
+    <p class="desc">Todo lo publicado en los últimos 7 días por laboratorios, organizaciones de seguridad y gobernanza, boletines y prensa, traducido al español y ordenado por fecha.</p>
   </header>
 
-  <section id="destacadas-section" hidden>
-    <h2>Destacadas</h2>
-    <div id="destacadas"></div>
-  </section>
-
-  <section id="boletines-section" hidden>
-    <h2>Boletines semanales</h2>
-    <div id="boletines"></div>
-  </section>
-
-  <section id="noticias-section" hidden>
+  <section id="controles" hidden>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
     <div class="filtros">
-      <label for="filtro-dias">Mostrar</label>
-      <select id="filtro-dias">
-        <option value="7" selected>Últimos 7 días</option>
-        <option value="30">Últimos 30 días</option>
-        <option value="90">Últimos 90 días</option>
-        <option value="0">Todas</option>
-      </select>
+      <label for="filtro-medio">Medio</label>
+      <select id="filtro-medio"></select>
+      <label class="agrupar"><input type="checkbox" id="agrupar-medio"> Agrupar por medio</label>
     </div>
     <p id="conteo" class="conteo"></p>
-
-    <div id="es-block" hidden>
-      <h2>Noticias en español</h2>
-      <div id="noticias-es"></div>
-    </div>
-
-    <div id="int-block" hidden>
-      <h2>Internacional · traducidas al español</h2>
-      <div id="noticias-int"></div>
-    </div>
   </section>
 
+  <div id="noticias"></div>
   <p id="status" class="status">Cargando noticias…</p>
 
   <footer>
@@ -264,11 +266,18 @@
 </main>
 
 <script>
-  function formatFecha(fecha) {
-    var d = new Date(fecha);
-    if (isNaN(d.getTime())) return fecha;
-    return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-  }
+  var CATEGORIAS = [
+    ['todas', 'Todas'],
+    ['laboratorio', 'Laboratorios'],
+    ['seguridad', 'Seguridad y gobernanza'],
+    ['boletin', 'Boletines'],
+    ['prensa', 'Prensa']
+  ];
+  var etiquetaCategoria = { laboratorio: 'Laboratorio', seguridad: 'Seguridad y gobernanza', boletin: 'Boletín', prensa: 'Prensa' };
+
+  var todas = [];
+  var informe = null;
+  var estado = { categoria: 'todas', medio: 'todos', agrupar: false };
 
   function decodeEntities(str) {
     if (!str) return str;
@@ -277,147 +286,176 @@
     return txt.value;
   }
 
-  function metaNodo(n) {
+  function fechaLarga(fecha) {
+    var d = new Date(fecha);
+    return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
+  function hora(fecha) {
+    return new Date(fecha).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+  }
+  function claveDia(fecha) {
+    var d = new Date(fecha);
+    return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+  }
+  function tituloDia(fecha) {
+    var texto = new Date(fecha).toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    return texto.charAt(0).toUpperCase() + texto.slice(1);
+  }
+
+  function span(clase, texto) {
+    var el = document.createElement('span');
+    if (clase) el.className = clase;
+    el.textContent = texto;
+    return el;
+  }
+
+  function nodoNoticia(n, mostrarFechaCompleta) {
+    var div = document.createElement('div');
+    div.className = 'item';
+
+    var a = document.createElement('a');
+    a.href = n.enlace;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = decodeEntities(n.titulo) || '(sin título)';
+    div.appendChild(a);
+
     var meta = document.createElement('div');
     meta.className = 'meta';
-    if (n.fuente) {
-      var badge = document.createElement('span');
-      badge.className = 'fuente';
-      badge.textContent = n.fuente;
-      meta.appendChild(badge);
+    meta.appendChild(span('fuente', n.medio));
+    meta.appendChild(span('', mostrarFechaCompleta ? fechaLarga(n.fecha) : hora(n.fecha)));
+    meta.appendChild(span('', etiquetaCategoria[n.categoria] || n.categoria));
+    if (n.laboratorio && n.publicador) meta.appendChild(span('', n.laboratorio));
+    if (n.traducido === false) meta.appendChild(span('', '(sin traducir)'));
+    div.appendChild(meta);
+
+    if (n.resumen) {
+      var p = document.createElement('div');
+      p.className = 'resumen';
+      p.textContent = decodeEntities(n.resumen);
+      div.appendChild(p);
     }
-    if (n.fecha) {
-      var fecha = document.createElement('span');
-      fecha.textContent = formatFecha(n.fecha);
-      meta.appendChild(fecha);
-    }
-    if (n.publicador) {
-      var via = document.createElement('span');
-      via.textContent = 'vía ' + n.publicador;
-      meta.appendChild(via);
-    }
-    return meta;
+    return div;
   }
 
-  function renderDestacadas(items) {
-    var section = document.getElementById('destacadas-section');
-    var container = document.getElementById('destacadas');
-    if (!Array.isArray(items) || items.length === 0) return;
-    items.forEach(function (n) {
-      var div = document.createElement('div');
-      div.className = 'destacada';
-
-      var a = document.createElement('a');
-      a.href = n.enlace;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.textContent = decodeEntities(n.titulo) || '(sin título)';
-      div.appendChild(a);
-
-      div.appendChild(metaNodo(n));
-
-      if (n.resumen) {
-        var p = document.createElement('div');
-        p.className = 'resumen';
-        p.textContent = decodeEntities(n.resumen);
-        div.appendChild(p);
-      }
-      container.appendChild(div);
-    });
-    section.hidden = false;
+  function encabezado(texto, cuantas) {
+    var h = document.createElement('h2');
+    h.appendChild(document.createTextNode(texto + ' '));
+    h.appendChild(span('n', '· ' + cuantas));
+    return h;
   }
 
-  var todasLasNoticias = [];
+  function coincideCategoria(n) { return estado.categoria === 'todas' || n.categoria === estado.categoria; }
+  function coincideMedio(n) { return estado.medio === 'todos' || n.medio === estado.medio; }
 
-  function pintarNoticias(items, containerId, blockId) {
-    var container = document.getElementById(containerId);
-    container.innerHTML = '';
-    document.getElementById(blockId).hidden = items.length === 0;
-    items.forEach(function (n) {
-      var div = document.createElement('div');
-      div.className = 'item';
-
-      var a = document.createElement('a');
-      a.href = n.enlace;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.textContent = decodeEntities(n.titulo) || '(sin título)';
-      div.appendChild(a);
-
-      div.appendChild(metaNodo(n));
-
-      if (n.resumen) {
-        var p = document.createElement('div');
-        p.className = 'resumen';
-        p.textContent = decodeEntities(n.resumen);
-        div.appendChild(p);
-      }
-      container.appendChild(div);
-    });
-  }
-
-  function aplicarFiltro() {
-    var dias = parseInt(document.getElementById('filtro-dias').value, 10);
-    var filtradas = todasLasNoticias;
-    if (dias > 0) {
-      var limite = Date.now() - dias * 24 * 60 * 60 * 1000;
-      filtradas = todasLasNoticias.filter(function (n) {
-        var t = new Date(n.fecha).getTime();
-        return !isNaN(t) && t >= limite;
+  function pintarChips() {
+    var cont = document.getElementById('chips');
+    cont.innerHTML = '';
+    var base = todas.filter(coincideMedio);
+    CATEGORIAS.forEach(function (c) {
+      var cuantas = c[0] === 'todas' ? base.length : base.filter(function (n) { return n.categoria === c[0]; }).length;
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip';
+      b.setAttribute('aria-pressed', String(estado.categoria === c[0]));
+      b.appendChild(document.createTextNode(c[1]));
+      b.appendChild(span('n', String(cuantas)));
+      b.addEventListener('click', function () {
+        estado.categoria = c[0];
+        pintar();
       });
+      cont.appendChild(b);
+    });
+  }
+
+  function pintarSelectorMedio() {
+    var sel = document.getElementById('filtro-medio');
+    var cuenta = {};
+    todas.filter(coincideCategoria).forEach(function (n) { cuenta[n.medio] = (cuenta[n.medio] || 0) + 1; });
+    var medios = Object.keys(cuenta).sort(function (a, b) { return a.localeCompare(b, 'es'); });
+    if (estado.medio !== 'todos' && !cuenta[estado.medio]) estado.medio = 'todos';
+    sel.innerHTML = '';
+    var todos = document.createElement('option');
+    todos.value = 'todos';
+    todos.textContent = 'Todos los medios (' + medios.length + ')';
+    sel.appendChild(todos);
+    medios.forEach(function (m) {
+      var o = document.createElement('option');
+      o.value = m;
+      o.textContent = m + ' (' + cuenta[m] + ')';
+      sel.appendChild(o);
+    });
+    sel.value = estado.medio;
+  }
+
+  function pintarNoticias(visibles) {
+    var cont = document.getElementById('noticias');
+    cont.innerHTML = '';
+    var grupos = [];
+    var indice = {};
+    visibles.forEach(function (n) {
+      var clave = estado.agrupar ? n.medio : claveDia(n.fecha);
+      if (!(clave in indice)) {
+        indice[clave] = grupos.length;
+        grupos.push({ titulo: estado.agrupar ? n.medio : tituloDia(n.fecha), noticias: [] });
+      }
+      grupos[indice[clave]].noticias.push(n);
+    });
+    // Por día: los días ya salen en orden (las noticias vienen por fecha descendente).
+    // Por medio: primero el medio con la noticia más reciente.
+    grupos.forEach(function (g) {
+      var bloque = document.createElement('section');
+      bloque.appendChild(encabezado(g.titulo, g.noticias.length));
+      g.noticias.forEach(function (n) { bloque.appendChild(nodoNoticia(n, estado.agrupar)); });
+      cont.appendChild(bloque);
+    });
+    if (grupos.length === 0) {
+      var vacio = document.createElement('p');
+      vacio.className = 'status';
+      vacio.textContent = 'No hay noticias con estos filtros.';
+      cont.appendChild(vacio);
     }
-    document.getElementById('conteo').textContent =
-      'Mostrando ' + filtradas.length + ' de ' + todasLasNoticias.length + ' noticias.';
-    // Las fuentes en español van arriba; el resto (sin campo idioma incluido,
-    // como en los snapshots anteriores) se agrupa como internacional.
-    pintarNoticias(filtradas.filter(function (n) { return n.idioma === 'es'; }), 'noticias-es', 'es-block');
-    pintarNoticias(filtradas.filter(function (n) { return n.idioma !== 'es'; }), 'noticias-int', 'int-block');
   }
 
-  function renderNoticias(items) {
-    var section = document.getElementById('noticias-section');
-    if (!Array.isArray(items) || items.length === 0) return;
-
-    var porFecha = function (a, b) {
-      return new Date(b.fecha) - new Date(a.fecha);
-    };
-    var boletines = items.filter(function (n) { return n.bloque === 'boletines'; });
-    pintarNoticias(boletines.sort(porFecha), 'boletines', 'boletines-section');
-
-    todasLasNoticias = items.filter(function (n) { return n.bloque !== 'boletines'; }).sort(porFecha);
-
-    document.getElementById('filtro-dias').addEventListener('change', aplicarFiltro);
-    aplicarFiltro();
-    section.hidden = false;
+  function pintar() {
+    pintarSelectorMedio();
+    pintarChips();
+    var visibles = todas.filter(function (n) { return coincideCategoria(n) && coincideMedio(n); });
+    var texto = 'Mostrando ' + visibles.length + ' de ' + todas.length + ' noticias de los últimos 7 días.';
+    if (informe && informe.generado) texto += ' Actualizado: ' + fechaLarga(informe.generado) + '.';
+    document.getElementById('conteo').textContent = texto;
+    pintarNoticias(visibles);
   }
 
-  function fetchJSON(path) {
-    return fetch(path, { cache: 'no-store' }).then(function (res) {
-      if (!res.ok) throw new Error(path + ': ' + res.status);
+  function fetchJSON(ruta) {
+    return fetch(ruta, { cache: 'no-store' }).then(function (res) {
+      if (!res.ok) throw new Error(ruta + ': ' + res.status);
       return res.json();
     });
   }
 
-  Promise.allSettled([
-    fetchJSON('data/destacadas-latest.json'),
-    fetchJSON('data/latest.json')
-  ]).then(function (results) {
-    var destacadasResult = results[0];
-    var noticiasResult = results[1];
-
-    if (destacadasResult.status === 'fulfilled') {
-      renderDestacadas(destacadasResult.value);
-    }
-    if (noticiasResult.status === 'fulfilled') {
-      renderNoticias(noticiasResult.value);
-    }
-
+  Promise.allSettled([fetchJSON('data/latest.json'), fetchJSON('data/informe-latest.json')]).then(function (r) {
     var status = document.getElementById('status');
-    if (noticiasResult.status === 'fulfilled') {
-      status.hidden = true;
-    } else {
+    if (r[0].status !== 'fulfilled' || !Array.isArray(r[0].value)) {
       status.textContent = 'No se han podido cargar las noticias ahora mismo.';
+      return;
     }
+    todas = r[0].value.filter(function (n) { return n.fecha; }).sort(function (a, b) {
+      return new Date(b.fecha) - new Date(a.fecha);
+    });
+    informe = r[1].status === 'fulfilled' ? r[1].value : null;
+
+    document.getElementById('filtro-medio').addEventListener('change', function (e) {
+      estado.medio = e.target.value;
+      pintar();
+    });
+    document.getElementById('agrupar-medio').addEventListener('change', function (e) {
+      estado.agrupar = e.target.checked;
+      pintar();
+    });
+    document.getElementById('controles').hidden = false;
+    status.hidden = true;
+    pintar();
   });
 </script>
 </body>
