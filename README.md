@@ -1,6 +1,6 @@
 # última hora IAs
 
-Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa general (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge, Xataka, Genbeta), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
+Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds RSS —tanto prensa en español (Xataka, Genbeta, El País Tecnología, BBC Mundo, Euronews Next), prensa general en inglés (TechCrunch, VentureBeat, Wired, MIT Technology Review, The Verge), laboratorios (OpenAI, Google DeepMind) como fuentes especializadas en seguridad de la IA (Future of Life Institute, CAIS Newsletter, Transformer, Import AI)—, filtra las que tratan sobre **AI safety** (riesgos, alineamiento, evaluaciones, gobernanza y regulación) y las guarda **traducidas al 100% al español**.
 
 ## Requisitos
 
@@ -51,7 +51,8 @@ Cada noticia tiene esta forma:
   "titulo": "...",
   "enlace": "https://...",
   "fecha": "2026-09-12T18:00:00.000Z",
-  "resumen": "..."
+  "resumen": "...",
+  "idioma": "en"
 }
 ```
 
@@ -70,10 +71,12 @@ Edita el array `feeds` en `feeds.js`:
 
 ```js
 export const feeds = [
-  { name: 'Nombre de la fuente', url: 'https://ejemplo.com/feed' },
+  { name: 'Nombre de la fuente', idioma: 'es', url: 'https://ejemplo.com/feed' },
   // ...
 ];
 ```
+
+`idioma` (`'es'` o `'en'`) es el idioma original de la fuente: la página muestra primero las noticias en español y después las internacionales. Si un sitio rechaza el user agent por defecto (VentureBeat da 429, Euronews 406 a los de navegador), se puede fijar uno por fuente con `userAgent`.
 
 ## Ejecución automática
 

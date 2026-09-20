@@ -12,8 +12,26 @@ const DATA_DIR = path.join(__dirname, 'data');
 const MAX_ITEMS_POR_FEED = 30;
 const MAX_RESUMEN_CHARS = 600;
 const ANTHROPIC_TIMEOUT_MS = 8 * 60 * 1000;
+const FEED_TIMEOUT_MS = 30 * 1000;
 
-const parser = new Parser();
+// El timeout de rss-parser es de inactividad del socket: un servidor que
+// gotea bytes sin terminar podría colgar el scraper indefinidamente (el run
+// del 19-09 estuvo 6 h en `node scraper.js` hasta que se canceló). El tope
+// duro de abajo garantiza que ningún feed pueda bloquear al resto.
+function crearParser(feed) {
+  return new Parser({
+    timeout: FEED_TIMEOUT_MS,
+    ...(feed.userAgent ? { headers: { 'User-Agent': feed.userAgent } } : {}),
+  });
+}
+
+function conTopeDuro(promesa, ms) {
+  let timer;
+  const tope = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`sin respuesta tras ${ms / 1000}s`)), ms);
+  });
+  return Promise.race([promesa, tope]).finally(() => clearTimeout(timer));
+}
 
 // Algunos feeds (LessWrong, Alignment Forum) incrustan fórmulas con MathJax
 // como HTML con <style> inline por cada fórmula. rss-parser solo quita las
@@ -68,7 +86,7 @@ const anthropic = new Anthropic({
 
 async function fetchFeed(feed) {
   try {
-    const result = await parser.parseURL(feed.url);
+    const result = await conTopeDuro(crearParser(feed).parseURL(feed.url), FEED_TIMEOUT_MS);
     return result.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => {
       const textoLimpio = limpiarHTML(item.content ?? item.summary ?? item.contentSnippet ?? '');
       return {
@@ -197,6 +215,11 @@ async function main() {
     noticias = noticiasCrudas;
   }
 
+  // El idioma se añade aquí (y no en el prompt) para que no dependa de que
+  // Claude conserve el campo al reescribir cada noticia.
+  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
+  noticias = noticias.map((n) => ({ ...n, idioma: idiomaPorFuente.get(n.fuente) ?? 'en' }));
+
   await writeFile(outFile, JSON.stringify(noticias, null, 2), 'utf-8');
   await writeFile(latestFile, JSON.stringify(noticias, null, 2), 'utf-8');
 
@@ -221,4 +244,13 @@ async function main() {
   }
 }
 
-main();
+// Salida explícita: algún feed (Google) deja un socket keep-alive abierto y
+// Node no termina mientras exista. En el Action eso alargaba cada run ~9 min
+// y el del 19-09 no terminó nunca (cancelado a las 6 h).
+main().then(
+  () => process.exit(0),
+  (err) => {
+    console.error(err);
+    process.exit(1);
+  },
+);

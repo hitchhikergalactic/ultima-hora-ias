@@ -105,6 +105,8 @@
     margin: 44px 0 18px;
   }
   h2:first-of-type { margin-top: 0; }
+  #destacadas-section:not([hidden]) + #noticias-section,
+  #int-block { margin-top: 44px; }
   .item {
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
@@ -227,7 +229,6 @@
   </section>
 
   <section id="noticias-section" hidden>
-    <h2>Todas las noticias</h2>
     <div class="filtros">
       <label for="filtro-dias">Mostrar</label>
       <select id="filtro-dias">
@@ -238,7 +239,16 @@
       </select>
     </div>
     <p id="conteo" class="conteo"></p>
-    <div id="noticias"></div>
+
+    <div id="es-block" hidden>
+      <h2>Noticias en español</h2>
+      <div id="noticias-es"></div>
+    </div>
+
+    <div id="int-block" hidden>
+      <h2>Internacional · traducidas al español</h2>
+      <div id="noticias-int"></div>
+    </div>
   </section>
 
   <p id="status" class="status">Cargando noticias…</p>
@@ -309,9 +319,10 @@
 
   var todasLasNoticias = [];
 
-  function pintarNoticias(items) {
-    var container = document.getElementById('noticias');
+  function pintarNoticias(items, containerId, blockId) {
+    var container = document.getElementById(containerId);
     container.innerHTML = '';
+    document.getElementById(blockId).hidden = items.length === 0;
     items.forEach(function (n) {
       var div = document.createElement('div');
       div.className = 'item';
@@ -347,7 +358,10 @@
     }
     document.getElementById('conteo').textContent =
       'Mostrando ' + filtradas.length + ' de ' + todasLasNoticias.length + ' noticias.';
-    pintarNoticias(filtradas);
+    // Las fuentes en español van arriba; el resto (sin campo idioma incluido,
+    // como en los snapshots anteriores) se agrupa como internacional.
+    pintarNoticias(filtradas.filter(function (n) { return n.idioma === 'es'; }), 'noticias-es', 'es-block');
+    pintarNoticias(filtradas.filter(function (n) { return n.idioma !== 'es'; }), 'noticias-int', 'int-block');
   }
 
   function renderNoticias(items) {
