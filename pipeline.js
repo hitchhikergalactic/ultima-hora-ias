@@ -203,6 +203,24 @@ export function finalizarPublicacion(traducidas) {
 }
 
 // ---------------------------------------------------------------------------
+// Descarga: user agent de cada intento
+// ---------------------------------------------------------------------------
+
+export const USER_AGENTS = {
+  lector: 'Feedly/1.0 (+http://www.feedly.com/fetcher.html)',
+  navegador: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+};
+
+// User agent del intento `intento` (0 es el primero). El primero es el del feed o,
+// si no tiene, el de rss-parser (undefined). Si falla, se prueba como lector de
+// feeds y luego como navegador: Substack devolvía 403 desde el runner de GitHub y
+// otros sitios rechazan según el user agent (VentureBeat 429, Euronews 406).
+export function agenteDeUsuario(feed, intento) {
+  const orden = [feed.userAgent, USER_AGENTS.lector, USER_AGENTS.navegador];
+  return orden[Math.min(intento, orden.length - 1)];
+}
+
+// ---------------------------------------------------------------------------
 // Estado de los feeds
 // ---------------------------------------------------------------------------
 
