@@ -33,6 +33,15 @@ jobs:
       - name: Verificar el contenido
         run: node scripts/verificar.mjs --contenido
 
+      # Feeds y traducción se comprueban ANTES de abrir el PR: el paso siguiente
+      # devuelve el directorio a la rama base y dejaría esta comprobación leyendo
+      # los datos viejos. No impide publicar: el resultado se guarda y el
+      # workflow falla al final (ver el último paso).
+      - name: Comprobar feeds y traducción
+        id: feeds
+        continue-on-error: true
+        run: node scripts/verificar.mjs --feeds --traduccion
+
       # No se comitea directo a main: esta acción crea una rama y abre
       # un pull request, que el paso siguiente fusiona. Si el scraper falla
       # (sin saldo en la API, feeds caídos...) termina con error, este paso
@@ -60,9 +69,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --repo "${{ github.repository }}" --squash --delete-branch
 
-      # Va DESPUÉS de publicar: si algún feed devolvió 0 ítems, si un feed que ayer
+      # Va DESPUÉS de publicar: si algún feed devolvió 0 ítems, si uno que ayer
       # devolvía ítems hoy devuelve 0, o si quedó algo sin traducir, el workflow
-      # termina en rojo (y GitHub avisa por correo) sin impedir que se publique el
-      # resto.
-      - name: Comprobar feeds y traducción
-        run: node scripts/verificar.mjs --feeds --traduccion
+      # termina en rojo (y GitHub avisa por correo) sin haber impedido publicar el resto.
+      - name: Fallar si algún feed o la traducción fallaron
+        if: steps.feeds.outcome == 'failure'
+        run: |
+          echo "::error::Algún feed devolvió 0 ítems, se cayó respecto a ayer o quedó algo sin traducir (ver el paso 'Comprobar feeds y traducción')."
+          exit 1

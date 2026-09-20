@@ -5,7 +5,7 @@ import { mkdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { feeds } from './feeds.js';
-import { VENTANA_DIAS, comprobarFeeds, finalizarPublicacion, normalizarItem, prepararPublicacion } from './pipeline.js';
+import { VENTANA_DIAS, agenteDeUsuario, comprobarFeeds, finalizarPublicacion, normalizarItem, prepararPublicacion } from './pipeline.js';
 import { traducirNoticias, traductorSimulado } from './traduccion.js';
 
 // Uso:
@@ -45,11 +45,12 @@ function conTopeDuro(promesa, ms) {
   return Promise.race([promesa, tope]).finally(() => clearTimeout(timer));
 }
 
-function crearParser(feed) {
+function crearParser(feed, intento) {
+  const agente = agenteDeUsuario(feed, intento);
   return new Parser({
     timeout: FEED_TIMEOUT_MS,
     customFields: { item: ['source'] },
-    ...(feed.userAgent ? { headers: { 'User-Agent': feed.userAgent } } : {}),
+    ...(agente ? { headers: { 'User-Agent': agente } } : {}),
   });
 }
 
@@ -107,7 +108,7 @@ async function leerFeed(feed) {
   let ultimoError;
   for (let intento = 0; intento <= REINTENTOS; intento += 1) {
     try {
-      const resultado = await conTopeDuro(crearParser(feed).parseURL(feed.url), FEED_TIMEOUT_MS);
+      const resultado = await conTopeDuro(crearParser(feed, intento).parseURL(feed.url), FEED_TIMEOUT_MS);
       const items = resultado.items.slice(0, MAX_ITEMS_POR_FEED).map((item) => normalizarItem(feed, item));
       return { nombre: feed.name, categoria: feed.categoria, items, intentos: intento + 1 };
     } catch (err) {
@@ -250,6 +251,8 @@ async function main() {
   // Duplicados exactos que solo se ven tras traducir.
   const final = finalizarPublicacion(traducidas.noticias);
   descartes.duplicadasTrasTraducir = final.duplicadas;
+  // Las publicadas de las últimas 24 h se recalculan tras quitar esos duplicados.
+  conteo24h.publicadas = final.noticias.filter((n) => Date.parse(n.fecha) >= ahora - 24 * 60 * 60 * 1000).length;
   if (final.duplicadas > 0) console.log(`Tras traducir: ${final.duplicadas} duplicada(s) exacta(s) más.`);
 
   await escribirJSON(path.join(DATA_DIR, 'latest.json'), final.noticias);

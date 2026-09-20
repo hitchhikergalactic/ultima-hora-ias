@@ -1,7 +1,7 @@
 // Pruebas offline del pipeline con datos inventados. No hacen ninguna petición ni
 // llamada a la API: la traducción es simulada.
 //   node scripts/probar.mjs
-import { comprobarFeeds, deduplicar, finalizarPublicacion, normalizarItem, normalizarTitulo, pasaFiltro, prepararPublicacion } from '../pipeline.js';
+import { USER_AGENTS, agenteDeUsuario, comprobarFeeds, deduplicar, finalizarPublicacion, normalizarItem, normalizarTitulo, pasaFiltro, prepararPublicacion } from '../pipeline.js';
 import { hashUrl, LOTE, traducirNoticias, traductorSimulado } from '../traduccion.js';
 
 const AHORA = new Date('2026-09-20T12:00:00Z').getTime();
@@ -117,6 +117,15 @@ comprobar('Filtro: laboratorios, seguridad y boletines pasan SIN palabras clave'
   const { vacios, caidos } = comprobarFeeds(actual, previo);
   comprobar('Feeds: detecta los que devuelven cero', vacios.join() === 'A,C,D', vacios.join());
   comprobar('Feeds: "caído" = ayer tenía ítems y hoy 0', caidos.join() === 'A', caidos.join());
+}
+
+// --- User agent por intento -------------------------------------------------------
+{
+  comprobar('User agent: el primer intento usa el de rss-parser si el feed no define ninguno', agenteDeUsuario({}, 0) === undefined);
+  comprobar('User agent: el primer intento respeta el del feed', agenteDeUsuario({ userAgent: 'X/1' }, 0) === 'X/1');
+  comprobar('User agent: si falla, el segundo intento es un lector de feeds y el tercero un navegador',
+    agenteDeUsuario({}, 1) === USER_AGENTS.lector && agenteDeUsuario({}, 2) === USER_AGENTS.navegador);
+  comprobar('User agent: más intentos repiten el último', agenteDeUsuario({}, 5) === USER_AGENTS.navegador);
 }
 
 // --- Traducción con caché ---------------------------------------------------------
