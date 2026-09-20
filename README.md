@@ -8,8 +8,8 @@ Recoge noticias de **seguridad de la IA** de laboratorios, organizaciones de seg
 
 1. **Fuentes** (`feeds.js`, el único archivo de configuración). Cada una tiene nombre, url y categoría:
    - `laboratorio`: feeds oficiales (OpenAI, Google DeepMind, Mistral) y búsquedas de Google News para Anthropic, OpenAI, Google DeepMind, Meta AI, xAI, Moonshot y DeepSeek. Pasan sin filtro.
-   - `seguridad`: METR, Epoch, Alignment Forum, LessWrong, FLI, MIRI, Redwood, CSET y, por Google News, GovAI, Apollo Research y el AI Security Institute. Pasan sin filtro.
-   - `boletin`: AI Safety Newsletter (CAIS), Import AI, Zvi, Transformer, ML Safety Newsletter y otros Substacks. Pasan sin filtro.
+   - `seguridad`: METR, Alignment Forum, LessWrong, FLI, MIRI, Redwood, CSET y, por Google News, Epoch AI, Helen Toner, Miles Brundage, GovAI, Apollo Research y el AI Security Institute. Pasan sin filtro.
+   - `boletin`: AI Safety Newsletter (CAIS), Import AI, Zvi, Transformer, ML Safety Newsletter y AI Snake Oil. Pasan sin filtro. Los feeds de `*.substack.com` devuelven 403 al runner de GitHub (Substack bloquea las IPs de datacenter): por eso Zvi usa su espejo de WordPress y Epoch, Toner y Brundage van por Google News.
    - `prensa`: Guardian, Wired, NYT, FT, Politico, TechCrunch, MIT Technology Review, El País, Euronews, Xataka y BBC Mundo.
 2. **Ingesta** (`scraper.js`): descarga todos los feeds con 2 reintentos y registra cuántos ítems devuelve cada uno.
 3. **Filtro** (`pipeline.js`): solo la prensa pasa por una lista de palabras clave: nombres de laboratorios y modelos, o bien contexto de IA junto a una palabra de seguridad, riesgo, alineación, control, regulación, incidente, evaluación, AI Act, AISI... Nada se descarta por puntuación ni por decisión de un modelo.

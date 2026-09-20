@@ -45,13 +45,17 @@ export const feeds = [
 
   // --- Seguridad y gobernanza ---
   { name: 'METR', categoria: 'seguridad', idioma: 'en', url: 'https://metr.org/feed.xml' },
-  { name: 'Epoch AI', categoria: 'seguridad', idioma: 'en', url: 'https://epochai.substack.com/feed' },
+  // Epoch, Toner y Brundage solo publican en substack.com, que devuelve 403 al runner de
+  // GitHub con cualquier user agent: se sustituyen por búsquedas de Google News.
+  { name: 'Epoch AI (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('"Epoch AI"') },
   { name: 'Alignment Forum', categoria: 'seguridad', idioma: 'en', url: 'https://www.alignmentforum.org/feed.xml' },
   { name: 'LessWrong', categoria: 'seguridad', idioma: 'en', url: 'https://www.lesswrong.com/feed.xml' },
   { name: 'Future of Life Institute', categoria: 'seguridad', idioma: 'en', url: 'https://futureoflife.org/feed/' },
   { name: 'MIRI', categoria: 'seguridad', idioma: 'en', url: 'https://intelligence.org/feed/' },
   { name: 'Redwood Research', categoria: 'seguridad', idioma: 'en', url: 'https://blog.redwoodresearch.org/feed' },
   { name: 'CSET (Georgetown)', categoria: 'seguridad', idioma: 'en', url: 'https://cset.georgetown.edu/feed/' },
+  { name: 'Helen Toner (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('"Helen Toner" AI') },
+  { name: 'Miles Brundage (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('"Miles Brundage"') },
   { name: 'GovAI (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('("GovAI" OR "Centre for the Governance of AI")') },
   { name: 'Apollo Research (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('"Apollo Research" AI') },
   { name: 'AI Security Institute (Google News)', categoria: 'seguridad', idioma: 'en', googleNews: true, url: googleNews('("AI Security Institute" OR "AI Safety Institute") AI') },
@@ -59,12 +63,11 @@ export const feeds = [
   // --- Boletines y Substacks ---
   { name: 'AI Safety Newsletter (CAIS)', categoria: 'boletin', idioma: 'en', url: 'https://newsletter.safe.ai/feed' },
   { name: 'Import AI', categoria: 'boletin', idioma: 'en', url: 'https://jack-clark.net/feed/' },
-  { name: "Zvi (Don't Worry About the Vase)", categoria: 'boletin', idioma: 'en', url: 'https://thezvi.substack.com/feed' },
+  // Zvi: el feed de substack.com da 403 desde el runner; su espejo de WordPress publica lo mismo.
+  { name: "Zvi (Don't Worry About the Vase)", categoria: 'boletin', idioma: 'en', url: 'https://thezvi.wordpress.com/feed/' },
   { name: 'Transformer', categoria: 'boletin', idioma: 'en', url: 'https://www.transformernews.ai/feed' },
   { name: 'ML Safety Newsletter', categoria: 'boletin', idioma: 'en', url: 'https://newsletter.mlsafety.org/feed' },
   { name: 'AI Snake Oil', categoria: 'boletin', idioma: 'en', url: 'https://www.aisnakeoil.com/feed' },
-  { name: 'Helen Toner', categoria: 'boletin', idioma: 'en', url: 'https://helentoner.substack.com/feed' },
-  { name: 'Miles Brundage', categoria: 'boletin', idioma: 'en', url: 'https://milesbrundage.substack.com/feed' },
 
   // --- Prensa ---
   { name: 'The Guardian AI', categoria: 'prensa', idioma: 'en', url: 'https://www.theguardian.com/technology/artificialintelligenceai/rss' },
