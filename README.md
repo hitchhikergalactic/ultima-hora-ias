@@ -40,8 +40,8 @@ node scraper.js
 
 Esto descarga hasta 30 entradas por cada feed definido en `feeds.js` y las procesa en tres pasos:
 
-1. **Clasificación (Claude):** decide cuáles tratan de AI safety (riesgos, control, incidentes, evaluaciones, regulación; se descarta producto, negocio, empleo, centros de datos...) y a qué historia pertenece cada una.
-2. **Repetidas y topes (código):** si varias fuentes cuentan la misma historia se conserva una, la de la fuente de mayor `prioridad`, y de la prensa general se guardan como máximo `maxPorDia` por fuente.
+1. **Puntuación (Claude):** puntúa TODAS las noticias de 1 a 5 según su relevancia para AI safety (5 = incidente o riesgo grave; 4 = claramente AI safety; 3 = lo menciona pero el tema es otro; 2 = IA sin relación con la seguridad; 1 = nada que ver) y etiqueta con su historia las de 4 o 5. Solo se conservan las que llegan a `RELEVANCIA_MINIMA` (4, en `scraper.js`); subirla acorta y endurece la lista.
+2. **Repetidas y topes (código):** si varias fuentes cuentan la misma historia se conserva una, la de la fuente de mayor `prioridad`, y de la prensa general se guardan como máximo `maxPorDia` por fuente, las de más relevancia.
 3. **Traducción (Claude):** solo las que sobreviven, y solo las de fuentes que no están en español.
 
 Genera dos archivos dentro de `data/`:
