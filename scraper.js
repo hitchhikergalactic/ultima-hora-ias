@@ -304,12 +304,7 @@ async function filtrarYTraducirAISafety(noticias) {
   );
   console.log(`Tras quitar repetidas y limitar por fuente: ${finales.length}.`);
 
-  try {
-    return await traducirAlEspanol(finales);
-  } catch (err) {
-    console.warn(`No se pudo traducir con la API de Anthropic, se guardan las noticias filtradas sin traducir: ${describirError(err)}`);
-    return finales;
-  }
+  return traducirAlEspanol(finales);
 }
 
 async function seleccionarYResumir(noticias) {
@@ -382,12 +377,23 @@ async function main() {
   const outFile = path.join(DATA_DIR, `noticias-${fecha}.json`);
   const latestFile = path.join(DATA_DIR, 'latest.json');
 
+  // Si no hay noticias, o el filtro/traducción fallan, se aborta SIN escribir
+  // nada (el proceso sale con error): en el Action eso evita abrir un PR y la
+  // web conserva las noticias buenas del último PR fusionado. Antes se
+  // guardaban las noticias sin filtrar ni traducir y el PR se abría igual; el
+  // 20-09 una de esas se fusionó y publicó 192 noticias sin filtrar.
+  if (noticiasCrudas.length === 0) {
+    throw new Error('Ningún feed devolvió noticias; no se guarda nada.');
+  }
+
   let noticias;
   try {
     noticias = await filtrarYTraducirAISafety(noticiasCrudas);
   } catch (err) {
-    console.warn(`No se pudo filtrar con la API de Anthropic, se guardan las noticias sin filtrar: ${describirError(err)}`);
-    noticias = limitarPorFuente(noticiasCrudas);
+    throw new Error(`No se pudo filtrar/traducir con la API de Anthropic; no se guarda nada para no publicar noticias sin filtrar: ${describirError(err)}`);
+  }
+  if (noticias.length === 0) {
+    throw new Error('Ninguna noticia pasó el filtro de AI safety; no se guarda nada para no vaciar la web.');
   }
 
   // El idioma se añade aquí (y no en el prompt) para que no dependa de que
