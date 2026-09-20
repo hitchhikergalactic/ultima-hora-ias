@@ -5,7 +5,7 @@ Scraper que recolecta noticias sobre inteligencia artificial desde varios feeds 
 ## Requisitos
 
 - Node.js 18 o superior
-- Una clave de la API de Anthropic (necesaria para filtrar/traducir las noticias y para seleccionar las destacadas; si no está configurada, esos pasos se saltan con un aviso y se guardan las noticias sin filtrar ni traducir)
+- Una clave de la API de Anthropic (necesaria para filtrar/traducir las noticias y para seleccionar las destacadas; sin ella el scraper termina con error y no guarda nada)
 
 ## Instalación
 
@@ -62,7 +62,7 @@ Cada noticia tiene esta forma:
 }
 ```
 
-Si un feed falla (por red, cambio de URL, etc.) se muestra un aviso en consola y el scraper continúa con el resto sin interrumpirse. Si falla la llamada a Anthropic para filtrar/traducir (o falta `ANTHROPIC_API_KEY`), se avisa por consola y se guardan las noticias tal cual, sin filtrar ni traducir.
+Si un feed falla (por red, cambio de URL, etc.) se muestra un aviso en consola y el scraper continúa con el resto sin interrumpirse. Si falla la llamada a Anthropic para puntuar o traducir (o falta `ANTHROPIC_API_KEY`), o si ningún feed devuelve noticias, el scraper termina con error y **no guarda nada**: en el Action eso hace que no se abra el PR del día y la web conserve las noticias buenas del último PR fusionado, en vez de publicar noticias sin filtrar ni traducir.
 
 Además, sobre ese conjunto ya filtrado y traducido, el scraper selecciona entre 2 y 3 noticias destacadas y genera un resumen de cada una. El resultado se guarda en:
 
