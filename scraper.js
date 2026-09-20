@@ -107,60 +107,45 @@ async function fetchFeed(feed) {
   }
 }
 
-// Devuelve el primer array u objeto JSON completo del texto, ignorando lo que
-// haya antes y después (una nota, el cierre de un bloque de código...). Sabe
-// saltarse corchetes y llaves que aparezcan dentro de cadenas.
-function primerValorJSON(texto) {
-  const inicio = texto.search(/[[{]/);
-  if (inicio < 0) return texto;
-  let profundidad = 0;
-  let enCadena = false;
-  let escapado = false;
-  for (let i = inicio; i < texto.length; i += 1) {
-    const c = texto[i];
-    if (enCadena) {
-      if (escapado) escapado = false;
-      else if (c === '\\') escapado = true;
-      else if (c === '"') enCadena = false;
-    } else if (c === '"') {
-      enCadena = true;
-    } else if (c === '[' || c === '{') {
-      profundidad += 1;
-    } else if (c === ']' || c === '}') {
-      profundidad -= 1;
-      if (profundidad === 0) return texto.slice(inicio, i + 1);
-    }
-  }
-  return texto.slice(inicio);
-}
+// Las respuestas se piden como uso forzado de una herramienta con esquema en
+// vez de "JSON dentro de un texto": la API devuelve la lista ya estructurada y
+// no hay nada que parsear. Pedir JSON en texto falló tres veces el 20-09 con
+// errores distintos (coma final, texto después del array y un salto de línea
+// sin escapar dentro de una cadena), y cada parche solo cubría el anterior.
+async function pedirLista({ prompt, maxTokens, herramienta, descripcion, propiedades, requeridas }) {
+  const respuesta = await anthropic.messages.create({
+    model: 'claude-sonnet-5',
+    max_tokens: maxTokens,
+    thinking: { type: 'disabled' },
+    tools: [
+      {
+        name: herramienta,
+        description: descripcion,
+        input_schema: {
+          type: 'object',
+          properties: {
+            items: {
+              type: 'array',
+              items: { type: 'object', properties: propiedades, required: requeridas },
+            },
+          },
+          required: ['items'],
+        },
+      },
+    ],
+    tool_choice: { type: 'tool', name: herramienta },
+    messages: [{ role: 'user', content: prompt }],
+  });
 
-// Claude no siempre devuelve JSON limpio. Casos vistos en producción:
-//  - una coma final antes de `}` o `]` ("Expected double-quoted property
-//    name", tumbó las destacadas el 20-09);
-//  - texto después del array ("Unexpected non-whitespace character after
-//    JSON", tumbó la clasificación el 20-09 en el runner).
-// Se prueban, por orden, el texto tal cual y el primer valor JSON completo,
-// cada uno con y sin comas finales. Si nada parsea se propaga el PRIMER error.
-function extraerJSON(texto) {
-  if (!texto) {
-    throw new Error('La respuesta de la API no contenía texto');
+  // Si se cortó por max_tokens la lista podría estar incompleta sin dar error.
+  if (respuesta.stop_reason === 'max_tokens') {
+    throw new Error(`La respuesta se cortó por max_tokens (${maxTokens})`);
   }
-  const limpio = texto
-    .trim()
-    .replace(/^```(json)?/i, '')
-    .replace(/```$/, '')
-    .trim();
-  let primerError;
-  for (const candidato of [limpio, primerValorJSON(limpio)]) {
-    for (const intento of [candidato, candidato.replace(/,(\s*[}\]])/g, '$1')]) {
-      try {
-        return JSON.parse(intento);
-      } catch (err) {
-        primerError ??= err;
-      }
-    }
+  const uso = respuesta.content.find((bloque) => bloque.type === 'tool_use');
+  if (!Array.isArray(uso?.input?.items)) {
+    throw new Error(`La respuesta no traía la lista esperada (stop_reason: ${respuesta.stop_reason})`);
   }
-  throw primerError;
+  return uso.input.items;
 }
 
 // Varias cabeceras cubren la misma historia. Pedirle a Claude que "quite
@@ -237,22 +222,23 @@ Historia: a las noticias con puntuación 4 o 5 añádeles una "h": una etiqueta 
 Noticias (i es el índice):
 ${JSON.stringify(lista)}
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array con UN objeto por cada noticia de la lista: "i" es el índice, "r" la puntuación y "h" la historia (solo si r es 4 o 5).
-[
-  { "i": 0, "r": 5, "h": "..." },
-  { "i": 1, "r": 2 }
-]`;
+Entrega el resultado con la herramienta, con UN objeto por cada noticia de la lista: "i" es el índice, "r" la puntuación y "h" la historia (solo si r es 4 o 5).`;
 
-  const respuesta = await anthropic.messages.create({
-    model: 'claude-sonnet-5',
-    max_tokens: 16000,
-    thinking: { type: 'disabled' },
-    messages: [{ role: 'user', content: prompt }],
+  const resultados = await pedirLista({
+    prompt,
+    maxTokens: 16000,
+    herramienta: 'entregar_puntuaciones',
+    descripcion: 'Entrega la puntuación de relevancia de cada noticia y la historia de las de 4 o 5.',
+    propiedades: {
+      i: { type: 'integer', description: 'Índice de la noticia' },
+      r: { type: 'integer', minimum: 1, maximum: 5, description: 'Puntuación de relevancia para AI safety' },
+      h: { type: 'string', description: 'Etiqueta de la historia (solo si r es 4 o 5)' },
+    },
+    requeridas: ['i', 'r'],
   });
 
-  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
   const vistos = new Set();
-  return extraerJSON(texto)
+  return resultados
     .filter((e) => {
       const valido =
         Number.isInteger(e?.i) && e.i >= 0 && e.i < noticias.length && !vistos.has(e.i) &&
@@ -273,20 +259,21 @@ async function traducirAlEspanol(noticias) {
 
 ${JSON.stringify(pendientes)}
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array, un objeto por cada elemento y el mismo índice i:
-[
-  { "i": 0, "titulo": "...", "resumen": "..." }
-]`;
+Entrega el resultado con la herramienta, un objeto por cada elemento y con el mismo índice i.`;
 
-  const respuesta = await anthropic.messages.create({
-    model: 'claude-sonnet-5',
-    max_tokens: 32000,
-    thinking: { type: 'disabled' },
-    messages: [{ role: 'user', content: prompt }],
+  const resultados = await pedirLista({
+    prompt,
+    maxTokens: 32000,
+    herramienta: 'entregar_traducciones',
+    descripcion: 'Entrega el titular y el resumen traducidos al español de cada noticia.',
+    propiedades: {
+      i: { type: 'integer', description: 'Índice de la noticia' },
+      titulo: { type: 'string', description: 'Titular traducido al español' },
+      resumen: { type: 'string', description: 'Resumen traducido al español' },
+    },
+    requeridas: ['i', 'titulo', 'resumen'],
   });
-
-  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
-  const traducidas = new Map(extraerJSON(texto).map((t) => [t.i, t]));
+  const traducidas = new Map(resultados.map((t) => [t.i, t]));
   return noticias.map((n, i) => {
     const t = traducidas.get(i);
     return t?.titulo ? { ...n, titulo: t.titulo, resumen: t.resumen ?? n.resumen } : n;
@@ -330,25 +317,29 @@ async function seleccionarYResumir(noticias) {
 
 De la siguiente lista de noticias, elige entre 2 y 3 que tengan relevancia real para AI safety: regulación, incidentes, investigación o decisiones de empresa con impacto significativo. Escribe un resumen breve de cada una que elijas.
 
-Si ninguna noticia del lote cumple ese criterio de relevancia real, no fuerces la cuota de 2 o 3: devuelve un array vacío [] en lugar de incluir noticias flojas o poco relevantes solo para completarla.
+Si ninguna noticia del lote cumple ese criterio de relevancia real, no fuerces la cuota de 2 o 3: devuelve una lista vacía en lugar de incluir noticias flojas o poco relevantes solo para completarla.
 
 Noticias:
 ${JSON.stringify(noticias, null, 2)}
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array de objetos con este formato, o un array vacío [] si ninguna noticia cumple el criterio:
-[
-  { "fuente": "...", "titulo": "...", "enlace": "...", "fecha": "...", "resumen": "..." }
-]`;
+Entrega el resultado con la herramienta, o una lista vacía si ninguna noticia cumple el criterio.`;
 
-  const respuesta = await anthropic.messages.create({
-    model: 'claude-sonnet-5',
-    max_tokens: 2048,
-    thinking: { type: 'disabled' },
-    messages: [{ role: 'user', content: prompt }],
+  const destacadas = await pedirLista({
+    prompt,
+    maxTokens: 4096,
+    herramienta: 'entregar_destacadas',
+    descripcion: 'Entrega las noticias destacadas con su resumen, o una lista vacía.',
+    propiedades: {
+      fuente: { type: 'string' },
+      titulo: { type: 'string' },
+      enlace: { type: 'string' },
+      fecha: { type: 'string' },
+      resumen: { type: 'string' },
+    },
+    requeridas: ['fuente', 'titulo', 'enlace', 'fecha', 'resumen'],
   });
-
-  const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
-  return extraerJSON(texto);
+  // El prompt pide 2-3 pero no lo hace cumplir: a veces salían 4.
+  return destacadas.slice(0, 3);
 }
 
 // GitHub Actions enmascara como "***" cualquier texto de log que contenga el
