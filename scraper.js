@@ -112,7 +112,19 @@ function extraerJSON(texto) {
     .replace(/^```(json)?/i, '')
     .replace(/```$/, '')
     .trim();
-  return JSON.parse(limpio);
+  try {
+    return JSON.parse(limpio);
+  } catch (err) {
+    // Claude a veces deja una coma final antes de un `}` o `]`
+    // (`"resumen": "...",\n }`), que JSON no admite. El 20-09 eso tumbó la
+    // selección de destacadas ("Expected double-quoted property name").
+    // Si sigue sin parsear tras quitarlas, se propaga el error original.
+    try {
+      return JSON.parse(limpio.replace(/,(\s*[}\]])/g, '$1'));
+    } catch {
+      throw err;
+    }
+  }
 }
 
 async function filtrarYTraducirAISafety(noticias) {
