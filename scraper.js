@@ -103,6 +103,40 @@ async function fetchFeed(feed) {
   }
 }
 
+// Devuelve el primer array u objeto JSON completo del texto, ignorando lo que
+// haya antes y después (una nota, el cierre de un bloque de código...). Sabe
+// saltarse corchetes y llaves que aparezcan dentro de cadenas.
+function primerValorJSON(texto) {
+  const inicio = texto.search(/[[{]/);
+  if (inicio < 0) return texto;
+  let profundidad = 0;
+  let enCadena = false;
+  let escapado = false;
+  for (let i = inicio; i < texto.length; i += 1) {
+    const c = texto[i];
+    if (enCadena) {
+      if (escapado) escapado = false;
+      else if (c === '\\') escapado = true;
+      else if (c === '"') enCadena = false;
+    } else if (c === '"') {
+      enCadena = true;
+    } else if (c === '[' || c === '{') {
+      profundidad += 1;
+    } else if (c === ']' || c === '}') {
+      profundidad -= 1;
+      if (profundidad === 0) return texto.slice(inicio, i + 1);
+    }
+  }
+  return texto.slice(inicio);
+}
+
+// Claude no siempre devuelve JSON limpio. Casos vistos en producción:
+//  - una coma final antes de `}` o `]` ("Expected double-quoted property
+//    name", tumbó las destacadas el 20-09);
+//  - texto después del array ("Unexpected non-whitespace character after
+//    JSON", tumbó la clasificación el 20-09 en el runner).
+// Se prueban, por orden, el texto tal cual y el primer valor JSON completo,
+// cada uno con y sin comas finales. Si nada parsea se propaga el PRIMER error.
 function extraerJSON(texto) {
   if (!texto) {
     throw new Error('La respuesta de la API no contenía texto');
@@ -112,19 +146,17 @@ function extraerJSON(texto) {
     .replace(/^```(json)?/i, '')
     .replace(/```$/, '')
     .trim();
-  try {
-    return JSON.parse(limpio);
-  } catch (err) {
-    // Claude a veces deja una coma final antes de un `}` o `]`
-    // (`"resumen": "...",\n }`), que JSON no admite. El 20-09 eso tumbó la
-    // selección de destacadas ("Expected double-quoted property name").
-    // Si sigue sin parsear tras quitarlas, se propaga el error original.
-    try {
-      return JSON.parse(limpio.replace(/,(\s*[}\]])/g, '$1'));
-    } catch {
-      throw err;
+  let primerError;
+  for (const candidato of [limpio, primerValorJSON(limpio)]) {
+    for (const intento of [candidato, candidato.replace(/,(\s*[}\]])/g, '$1')]) {
+      try {
+        return JSON.parse(intento);
+      } catch (err) {
+        primerError ??= err;
+      }
     }
   }
+  throw primerError;
 }
 
 // Varias cabeceras cubren la misma historia. Pedirle a Claude que "quite
