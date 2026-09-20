@@ -13,6 +13,10 @@ const MAX_ITEMS_POR_FEED = 30;
 const MAX_RESUMEN_CHARS = 600;
 const ANTHROPIC_TIMEOUT_MS = 8 * 60 * 1000;
 const FEED_TIMEOUT_MS = 30 * 1000;
+// Claude puntúa cada noticia de 1 a 5 según su relevancia para AI safety y solo
+// se conservan las que llegan a este mínimo. Subirlo acorta y endurece la
+// lista; bajarlo la alarga.
+const RELEVANCIA_MINIMA = 4;
 
 // El timeout de rss-parser es de inactividad del socket: un servidor que
 // gotea bytes sin terminar podría colgar el scraper indefinidamente (el run
@@ -184,20 +188,22 @@ function deduplicarPorHistoria(noticias) {
 }
 
 // La prensa general (feeds con maxPorDia) publica mucho y solo una parte es
-// AI safety: nos quedamos con las más recientes de cada una para que una sola
-// cabecera no llene la lista. Las fuentes especializadas no tienen tope.
+// AI safety: de cada una nos quedamos con las más relevantes (y, a igualdad,
+// las más recientes) para que una sola cabecera no llene la lista. Las fuentes especializadas no tienen tope.
 function limitarPorFuente(noticias) {
   const tope = new Map(feeds.filter((f) => f.maxPorDia).map((f) => [f.name, f.maxPorDia]));
   const usadas = new Map();
+  const porFecha = (a, b) => new Date(b.fecha) - new Date(a.fecha);
   return [...noticias]
-    .sort((a, b) => new Date(b.fecha) - new Date(a.fecha))
+    .sort((a, b) => (b.relevancia ?? 0) - (a.relevancia ?? 0) || porFecha(a, b))
     .filter((n) => {
       const max = tope.get(n.fuente);
       if (!max) return true;
       const usadasAntes = usadas.get(n.fuente) ?? 0;
       usadas.set(n.fuente, usadasAntes + 1);
       return usadasAntes < max;
-    });
+    })
+    .sort(porFecha);
 }
 
 // Pedirle a Claude que filtre, deduplique Y traduzca cientos de noticias en una
@@ -216,25 +222,25 @@ async function clasificarAISafety(noticias) {
     resumen: n.resumen.slice(0, 300),
   }));
 
-  const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety).
+  const prompt = `Eres un editor especializado en seguridad de la inteligencia artificial (AI safety). Este es un boletín de AI safety, NO de noticias de IA en general.
 
-Este es un boletín de AI safety, NO de noticias de IA en general. Conserva una noticia solo si su tema PRINCIPAL es uno de estos:
-- riesgos catastróficos o de mal uso de la IA (ciberataques, bioseguridad, armas, pérdida de control);
-- alineamiento y control: agentes o modelos que se desvían, engañan, sabotean o actúan fuera de lo previsto;
-- evaluaciones de seguridad de modelos, interpretabilidad e investigación en AI safety;
-- incidentes de seguridad reales con sistemas de IA y cómo los gestionan los laboratorios;
-- gobernanza y regulación orientadas a la seguridad de la IA avanzada (leyes, acuerdos internacionales, decisiones de laboratorios o gobiernos sobre seguridad).
+Puntúa TODAS las noticias de la lista de 1 a 5 según su relevancia para AI safety, fijándote en su tema PRINCIPAL:
+- 5: incidente real o riesgo grave y concreto de seguridad de la IA (ciberataques, bioseguridad, armas, pérdida de control, agentes o modelos que engañan o sabotean), o una ley, acuerdo o decisión importante sobre seguridad de la IA avanzada.
+- 4: claramente sobre AI safety (investigación, evaluaciones de seguridad, interpretabilidad, alineamiento, control, gobernanza o regulación orientadas a la seguridad), de importancia media.
+- 3: menciona riesgos o seguridad, pero el tema principal es otro: negocio, inversión, empleo, geopolítica o política general, opinión sobre tendencias, privacidad, derechos de autor o deepfakes.
+- 2: sobre IA pero sin relación con la seguridad: lanzamientos de producto, rendimiento o benchmarks, centros de datos y energía, usos de la IA en educación, salud, cultura o deporte.
+- 1: nada que ver con la IA.
+Ante la duda entre dos puntuaciones, pon la más baja. Una noticia que solo nombra la IA de pasada nunca pasa de 2.
 
-Descarta, aunque mencionen la IA: lanzamientos de producto, rendimiento o benchmarks, negocio, inversión y valoraciones, empleo y economía, centros de datos y energía, usos de la IA en educación, salud, cultura o deporte, artículos de opinión sobre ansiedad o tendencias, y privacidad, derechos de autor o deepfakes salvo que el eje sea un riesgo de la IA avanzada. Ante la duda, descarta: es mejor una lista corta y buena que una larga y de relleno.
-
-Historia: a cada noticia conservada asígnale una "historia": una etiqueta corta en minúsculas con guiones que identifique un SUCESO CONCRETO (quién hizo qué), no un tema general. Bien: "gemini-hackeo-tres-empresas", "newsom-orden-ejecutiva-seguridad-ia". Mal: "debate-riesgo-ia", "regulacion-ia". Las noticias que cuentan exactamente el mismo suceso, aunque vengan de fuentes o idiomas distintos, llevan EXACTAMENTE la misma etiqueta. Si dos noticias no cuentan el mismo suceso, usa etiquetas distintas: ante la duda, distintas. Decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
+Historia: a las noticias con puntuación 4 o 5 añádeles una "h": una etiqueta corta en minúsculas con guiones que identifique un SUCESO CONCRETO (quién hizo qué), no un tema general. Bien: "gemini-hackeo-tres-empresas", "newsom-orden-ejecutiva-seguridad-ia". Mal: "debate-riesgo-ia", "regulacion-ia". Las noticias que cuentan exactamente el mismo suceso, aunque vengan de fuentes o idiomas distintos, llevan EXACTAMENTE la misma etiqueta. Si dos noticias no cuentan el mismo suceso, usa etiquetas distintas: ante la duda, distintas. Decide las etiquetas mirando todas las noticias a la vez para que sean coherentes entre sí.
 
 Noticias (i es el índice):
 ${JSON.stringify(lista)}
 
-Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array, un objeto por cada noticia conservada:
+Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un array con UN objeto por cada noticia de la lista: "i" es el índice, "r" la puntuación y "h" la historia (solo si r es 4 o 5).
 [
-  { "i": 0, "historia": "..." }
+  { "i": 0, "r": 5, "h": "..." },
+  { "i": 1, "r": 2 }
 ]`;
 
   const respuesta = await anthropic.messages.create({
@@ -246,11 +252,15 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
 
   const texto = respuesta.content.find((bloque) => bloque.type === 'text')?.text;
   const vistos = new Set();
-  return extraerJSON(texto).filter((e) => {
-    const valido = Number.isInteger(e?.i) && e.i >= 0 && e.i < noticias.length && !vistos.has(e.i);
-    if (valido) vistos.add(e.i);
-    return valido;
-  });
+  return extraerJSON(texto)
+    .filter((e) => {
+      const valido =
+        Number.isInteger(e?.i) && e.i >= 0 && e.i < noticias.length && !vistos.has(e.i) &&
+        Number.isInteger(e?.r) && e.r >= 1 && e.r <= 5;
+      if (valido) vistos.add(e.i);
+      return valido;
+    })
+    .map((e) => ({ i: e.i, relevancia: e.r, historia: e.h }));
 }
 
 async function traducirAlEspanol(noticias) {
@@ -284,16 +294,27 @@ Devuelve únicamente un JSON (sin texto adicional ni bloques de código) con un 
 }
 
 async function filtrarYTraducirAISafety(noticias) {
-  const clasificadas = await clasificarAISafety(noticias);
-  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
-  const conservadas = clasificadas.map(({ i, historia }) => ({
-    ...noticias[i],
-    idioma: idiomaPorFuente.get(noticias[i].fuente) ?? 'en',
-    historia,
-  }));
-  console.log(`Clasificación: ${conservadas.length} de ${noticias.length} noticias son AI safety.`);
+  const puntuadas = await clasificarAISafety(noticias);
+  const reparto = [5, 4, 3, 2, 1]
+    .map((r) => `${r}: ${puntuadas.filter((p) => p.relevancia === r).length}`)
+    .join(' | ');
+  console.log(`Puntuación (${puntuadas.length} de ${noticias.length} noticias puntuadas) -> ${reparto}`);
 
-  const finales = limitarPorFuente(deduplicarPorHistoria(conservadas));
+  const idiomaPorFuente = new Map(feeds.map((f) => [f.name, f.idioma]));
+  const conservadas = puntuadas
+    .filter((p) => p.relevancia >= RELEVANCIA_MINIMA)
+    .map(({ i, relevancia, historia }) => ({
+      ...noticias[i],
+      idioma: idiomaPorFuente.get(noticias[i].fuente) ?? 'en',
+      relevancia,
+      // Sin etiqueta no se agrupa con ninguna otra.
+      historia: historia || `sin-etiqueta-${i}`,
+    }));
+  console.log(`Con relevancia >= ${RELEVANCIA_MINIMA}: ${conservadas.length} noticias.`);
+
+  const finales = limitarPorFuente(deduplicarPorHistoria(conservadas)).map(
+    ({ relevancia, ...resto }) => resto,
+  );
   console.log(`Tras quitar repetidas y limitar por fuente: ${finales.length}.`);
 
   try {
