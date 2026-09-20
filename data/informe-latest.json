@@ -1,59 +1,74 @@
 {
-  "fecha": "2026-09-20",
+  "generado": "2026-09-20T16:30:44.329Z",
   "ventanaDias": 7,
   "feeds": [
     {
       "nombre": "OpenAI News",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
     },
     {
       "nombre": "Google DeepMind Blog",
       "categoria": "laboratorio",
-      "items": 30
-    },
-    {
-      "nombre": "Google AI Blog",
-      "categoria": "laboratorio",
-      "items": 20
+      "items": 50
     },
     {
       "nombre": "Mistral AI",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
     },
     {
       "nombre": "Anthropic (Google News)",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
+    },
+    {
+      "nombre": "OpenAI (Google News)",
+      "categoria": "laboratorio",
+      "items": 50
+    },
+    {
+      "nombre": "Google DeepMind (Google News)",
+      "categoria": "laboratorio",
+      "items": 50
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
     },
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 33
     },
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
     },
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 30
+      "items": 50
     },
     {
-      "nombre": "AI Safety Newsletter (CAIS)",
+      "nombre": "METR",
+      "categoria": "seguridad",
+      "items": 50
+    },
+    {
+      "nombre": "Epoch AI",
       "categoria": "seguridad",
       "items": 20
     },
     {
-      "nombre": "Import AI",
+      "nombre": "Alignment Forum",
+      "categoria": "seguridad",
+      "items": 10
+    },
+    {
+      "nombre": "LessWrong",
       "categoria": "seguridad",
       "items": 10
     },
@@ -63,44 +78,89 @@
       "items": 20
     },
     {
-      "nombre": "Transformer",
+      "nombre": "MIRI",
+      "categoria": "seguridad",
+      "items": 6
+    },
+    {
+      "nombre": "Redwood Research",
       "categoria": "seguridad",
       "items": 20
     },
     {
-      "nombre": "Xataka IA",
-      "categoria": "prensa",
+      "nombre": "CSET (Georgetown)",
+      "categoria": "seguridad",
       "items": 10
     },
     {
-      "nombre": "Genbeta IA",
-      "categoria": "prensa",
-      "items": 10
+      "nombre": "GovAI (Google News)",
+      "categoria": "seguridad",
+      "items": 8
     },
     {
-      "nombre": "El País Tecnología",
-      "categoria": "prensa",
+      "nombre": "Apollo Research (Google News)",
+      "categoria": "seguridad",
+      "items": 16
+    },
+    {
+      "nombre": "AI Security Institute (Google News)",
+      "categoria": "seguridad",
+      "items": 46
+    },
+    {
+      "nombre": "AI Safety Newsletter (CAIS)",
+      "categoria": "boletin",
       "items": 20
     },
     {
-      "nombre": "BBC Mundo",
-      "categoria": "prensa",
-      "items": 30
+      "nombre": "Import AI",
+      "categoria": "boletin",
+      "items": 10
     },
     {
-      "nombre": "Euronews Next",
-      "categoria": "prensa",
-      "items": 30
+      "nombre": "Zvi (Don't Worry About the Vase)",
+      "categoria": "boletin",
+      "items": 20
     },
     {
-      "nombre": "The New York Times",
-      "categoria": "prensa",
-      "items": 27
+      "nombre": "Transformer",
+      "categoria": "boletin",
+      "items": 20
+    },
+    {
+      "nombre": "ML Safety Newsletter",
+      "categoria": "boletin",
+      "items": 20
+    },
+    {
+      "nombre": "AI Snake Oil",
+      "categoria": "boletin",
+      "items": 20
+    },
+    {
+      "nombre": "Helen Toner",
+      "categoria": "boletin",
+      "items": 10
+    },
+    {
+      "nombre": "Miles Brundage",
+      "categoria": "boletin",
+      "items": 20
     },
     {
       "nombre": "The Guardian AI",
       "categoria": "prensa",
       "items": 20
+    },
+    {
+      "nombre": "Wired AI",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "The New York Times",
+      "categoria": "prensa",
+      "items": 27
     },
     {
       "nombre": "Financial Times AI",
@@ -113,56 +173,60 @@
       "items": 30
     },
     {
-      "nombre": "MIT Technology Review",
-      "categoria": "prensa",
-      "items": 10
-    },
-    {
-      "nombre": "Wired AI",
-      "categoria": "prensa",
-      "items": 10
-    },
-    {
       "nombre": "TechCrunch AI",
       "categoria": "prensa",
       "items": 20
     },
     {
-      "nombre": "VentureBeat AI",
-      "categoria": "prensa",
-      "items": 7
-    },
-    {
-      "nombre": "The Verge AI",
+      "nombre": "MIT Technology Review",
       "categoria": "prensa",
       "items": 10
+    },
+    {
+      "nombre": "El País Tecnología",
+      "categoria": "prensa",
+      "items": 20
+    },
+    {
+      "nombre": "Euronews Next",
+      "categoria": "prensa",
+      "items": 50
+    },
+    {
+      "nombre": "Xataka IA",
+      "categoria": "prensa",
+      "items": 10
+    },
+    {
+      "nombre": "BBC Mundo",
+      "categoria": "prensa",
+      "items": 34
     }
   ],
   "feedsVacios": [],
-  "laboratorios": {
-    "Anthropic": {
-      "candidatas": 16,
-      "colocada": true
-    },
-    "OpenAI": {
-      "candidatas": 2,
-      "colocada": true
-    },
-    "Google DeepMind": {
-      "candidatas": 0,
-      "colocada": false
-    },
-    "Meta": {
-      "candidatas": 8,
-      "colocada": true
-    },
-    "xAI": {
-      "candidatas": 6,
-      "colocada": true
-    },
-    "Moonshot": {
-      "candidatas": 1,
-      "colocada": true
+  "feedsCaidos": [],
+  "ultimas24h": {
+    "enFeeds": 60,
+    "quePasanFiltro": 39,
+    "publicadas": 37
+  },
+  "descartes": {
+    "sinFecha": 0,
+    "fueraDeVentana": 600,
+    "prensaSinCoincidencia": 126,
+    "duplicadas": 22,
+    "duplicadasTrasTraducir": 1
+  },
+  "traduccion": {
+    "modelo": "claude-haiku-4-5-20251001",
+    "yaEnEspanol": 29,
+    "deCache": 0,
+    "traducidas": 318,
+    "fallidas": 0,
+    "llamadas": 8,
+    "tokens": {
+      "entrada": 23358,
+      "salida": 24886
     }
   }
 }

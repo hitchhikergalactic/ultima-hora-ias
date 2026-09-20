@@ -5,7 +5,9 @@
   "type": "module",
   "main": "scraper.js",
   "scripts": {
-    "start": "node scraper.js"
+    "start": "node scraper.js",
+    "test": "node scripts/probar.mjs",
+    "verificar": "node scripts/verificar.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.0",
