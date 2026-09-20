@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-20T16:30:44.329Z",
+  "generado": "2026-09-20T16:52:59.376Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -40,7 +40,7 @@
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 33
+      "items": 31
     },
     {
       "nombre": "Moonshot (Google News)",
@@ -60,7 +60,8 @@
     {
       "nombre": "Epoch AI",
       "categoria": "seguridad",
-      "items": 20
+      "items": 0,
+      "error": "Status code 403"
     },
     {
       "nombre": "Alignment Forum",
@@ -95,7 +96,7 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 6
     },
     {
       "nombre": "Apollo Research (Google News)",
@@ -120,7 +121,8 @@
     {
       "nombre": "Zvi (Don't Worry About the Vase)",
       "categoria": "boletin",
-      "items": 20
+      "items": 0,
+      "error": "Status code 403"
     },
     {
       "nombre": "Transformer",
@@ -140,12 +142,14 @@
     {
       "nombre": "Helen Toner",
       "categoria": "boletin",
-      "items": 10
+      "items": 0,
+      "error": "Status code 403"
     },
     {
       "nombre": "Miles Brundage",
       "categoria": "boletin",
-      "items": 20
+      "items": 0,
+      "error": "Status code 403"
     },
     {
       "nombre": "The Guardian AI",
@@ -203,30 +207,40 @@
       "items": 34
     }
   ],
-  "feedsVacios": [],
-  "feedsCaidos": [],
+  "feedsVacios": [
+    "Epoch AI",
+    "Zvi (Don't Worry About the Vase)",
+    "Helen Toner",
+    "Miles Brundage"
+  ],
+  "feedsCaidos": [
+    "Epoch AI",
+    "Zvi (Don't Worry About the Vase)",
+    "Helen Toner",
+    "Miles Brundage"
+  ],
   "ultimas24h": {
     "enFeeds": 60,
     "quePasanFiltro": 39,
-    "publicadas": 37
+    "publicadas": 39
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 600,
+    "fueraDeVentana": 533,
     "prensaSinCoincidencia": 126,
-    "duplicadas": 22,
+    "duplicadas": 23,
     "duplicadasTrasTraducir": 1
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 29,
-    "deCache": 0,
-    "traducidas": 318,
+    "deCache": 298,
+    "traducidas": 12,
     "fallidas": 0,
-    "llamadas": 8,
+    "llamadas": 1,
     "tokens": {
-      "entrada": 23358,
-      "salida": 24886
+      "entrada": 1294,
+      "salida": 582
     }
   }
 }
