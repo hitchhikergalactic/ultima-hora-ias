@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-21T14:59:55.653Z",
+  "generado": "2026-09-22T13:17:20.825Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -40,17 +40,17 @@
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 28
+      "items": 41
     },
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 49
     },
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 34
     },
     {
       "nombre": "METR",
@@ -95,12 +95,12 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 9
     },
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 9
     },
     {
       "nombre": "GovAI (Google News)",
@@ -110,12 +110,12 @@
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 14
+      "items": 13
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 46
+      "items": 39
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 27
+      "items": 28
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 80,
-    "quePasanFiltro": 50,
-    "publicadas": 47
+    "enFeeds": 149,
+    "quePasanFiltro": 98,
+    "publicadas": 93
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 551,
-    "prensaSinCoincidencia": 136,
-    "duplicadas": 22,
-    "duplicadasTrasTraducir": 1
+    "fueraDeVentana": 519,
+    "prensaSinCoincidencia": 140,
+    "duplicadas": 23,
+    "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 30,
-    "deCache": 254,
-    "traducidas": 67,
+    "yaEnEspanol": 25,
+    "deCache": 234,
+    "traducidas": 111,
     "fallidas": 0,
-    "llamadas": 2,
+    "llamadas": 3,
     "tokens": {
-      "entrada": 5832,
-      "salida": 6251
+      "entrada": 8646,
+      "salida": 8219
     }
   }
 }
