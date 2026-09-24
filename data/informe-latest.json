@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24T13:26:56.301Z",
+  "generado": "2026-09-24T19:52:00.980Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 41
+      "items": 40
     },
     {
       "nombre": "METR",
@@ -95,17 +95,17 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 9
+      "items": 8
     },
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 6
+      "items": 7
     },
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 5
+      "items": 7
     },
     {
       "nombre": "Apollo Research (Google News)",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 159,
-    "quePasanFiltro": 88,
+    "enFeeds": 158,
+    "quePasanFiltro": 89,
     "publicadas": 80
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 538,
-    "prensaSinCoincidencia": 139,
-    "duplicadas": 31,
-    "duplicadasTrasTraducir": 1
+    "fueraDeVentana": 541,
+    "prensaSinCoincidencia": 138,
+    "duplicadas": 33,
+    "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 18,
-    "deCache": 228,
-    "traducidas": 98,
+    "yaEnEspanol": 17,
+    "deCache": 292,
+    "traducidas": 32,
     "fallidas": 0,
-    "llamadas": 3,
+    "llamadas": 1,
     "tokens": {
-      "entrada": 9012,
-      "salida": 9328
+      "entrada": 3717,
+      "salida": 4316
     }
   }
 }
