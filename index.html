@@ -165,6 +165,32 @@
     cursor: pointer;
   }
   .filtros .agrupar input { accent-color: var(--principal); width: 16px; height: 16px; cursor: pointer; }
+  .filtros input[type="search"],
+  .filtros input[type="date"] {
+    font: inherit;
+    font-weight: 700;
+    color: var(--fg);
+    background: var(--card-bg-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    max-width: 100%;
+  }
+  .filtros input[type="search"] { min-width: 200px; flex: 1 1 200px; }
+  .filtros input[type="search"]:hover, .filtros input[type="search"]:focus,
+  .filtros input[type="date"]:hover, .filtros input[type="date"]:focus { border-color: var(--principal); }
+  .filtros.busqueda { margin-bottom: 14px; }
+  .filtros .limpiar {
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--principal);
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+  }
   .conteo {
     margin: 0 0 8px;
     font-size: 0.82rem;
@@ -248,11 +274,21 @@
   </header>
 
   <section id="controles" hidden>
-    <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
-    <div class="filtros">
-      <label for="filtro-medio">Medio</label>
-      <select id="filtro-medio"></select>
-      <label class="agrupar"><input type="checkbox" id="agrupar-medio"> Agrupar por medio</label>
+    <div class="filtros busqueda">
+      <label for="busqueda-texto">Buscar</label>
+      <input type="search" id="busqueda-texto" placeholder="Palabra clave, p. ej. Hugging Face">
+      <label for="busqueda-fecha">Fecha</label>
+      <input type="date" id="busqueda-fecha">
+      <label class="agrupar"><input type="checkbox" id="busqueda-semana"> Toda la semana</label>
+      <button type="button" id="busqueda-limpiar" class="limpiar" hidden>Volver a los últimos 7 días</button>
+    </div>
+    <div id="controles-reciente">
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+      <div class="filtros">
+        <label for="filtro-medio">Medio</label>
+        <select id="filtro-medio"></select>
+        <label class="agrupar"><input type="checkbox" id="agrupar-medio"> Agrupar por medio</label>
+      </div>
     </div>
     <p id="conteo" class="conteo"></p>
   </section>
@@ -277,7 +313,67 @@
 
   var todas = [];
   var informe = null;
-  var estado = { categoria: 'todas', medio: 'todos', agrupar: false };
+  var estado = { categoria: 'todas', medio: 'todos', agrupar: false, modo: 'reciente', texto: '', fecha: '', semana: false };
+
+  // --- Histórico: fetch perezoso, cacheado en memoria, para la búsqueda ------------
+  var indiceHistorico = null;
+  var cacheMeses = {};
+
+  function pad2(n) { return n < 10 ? '0' + n : String(n); }
+  function fechaLocalISO(d) {
+    d = (d instanceof Date) ? d : new Date(d);
+    return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate());
+  }
+  // Lunes-domingo (hora local) de la semana de `fechaStr` ("AAAA-MM-DD").
+  function semanaDe(fechaStr) {
+    var d = new Date(fechaStr + 'T00:00:00');
+    var offset = (d.getDay() + 6) % 7; // 0 = lunes
+    var lunes = new Date(d); lunes.setDate(d.getDate() - offset);
+    var domingo = new Date(lunes); domingo.setDate(lunes.getDate() + 6);
+    return { desde: lunes, hasta: domingo };
+  }
+  // Meses (histórico se archiva en UTC) que hay que pedir para cubrir [desde, hasta]
+  // en hora local, con un día de margen a cada lado por si el desfase horario cambia
+  // el mes en UTC.
+  function mesesParaRango(desde, hasta) {
+    var ini = new Date(desde); ini.setDate(ini.getDate() - 1);
+    var fin = new Date(hasta); fin.setDate(fin.getDate() + 1);
+    var meses = [];
+    var cursor = new Date(ini.getFullYear(), ini.getMonth(), 1);
+    var limite = new Date(fin.getFullYear(), fin.getMonth(), 1);
+    while (cursor <= limite) {
+      meses.push(cursor.getFullYear() + '-' + pad2(cursor.getMonth() + 1));
+      cursor.setMonth(cursor.getMonth() + 1);
+    }
+    return meses;
+  }
+  function fetchIndiceHistorico() {
+    if (indiceHistorico) return Promise.resolve(indiceHistorico);
+    return fetchJSON('data/historico/indice.json')
+      .then(function (idx) { indiceHistorico = idx; return idx; })
+      .catch(function () { indiceHistorico = { meses: [] }; return indiceHistorico; });
+  }
+  function fetchMes(mes) {
+    if (cacheMeses[mes]) return Promise.resolve(cacheMeses[mes]);
+    return fetchJSON('data/historico/' + mes + '.json')
+      .then(function (arr) { cacheMeses[mes] = arr; return arr; })
+      .catch(function () { cacheMeses[mes] = []; return []; });
+  }
+  // Todo el histórico (para una búsqueda por palabra clave sin fecha).
+  function fetchTodoElHistorico() {
+    return fetchIndiceHistorico().then(function (idx) {
+      return Promise.all(idx.meses.map(fetchMes)).then(function (listas) {
+        return listas.reduce(function (a, b) { return a.concat(b); }, []);
+      });
+    });
+  }
+
+  function normalizarTexto(s) {
+    return (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  }
+  function coincideTexto(n, q) {
+    return normalizarTexto(n.titulo).indexOf(q) !== -1 || normalizarTexto(n.resumen || '').indexOf(q) !== -1;
+  }
 
   function decodeEntities(str) {
     if (!str) return str;
@@ -388,16 +484,16 @@
     sel.value = estado.medio;
   }
 
-  function pintarNoticias(visibles) {
+  function pintarNoticias(visibles, agruparPorMedio, mensajeVacio) {
     var cont = document.getElementById('noticias');
     cont.innerHTML = '';
     var grupos = [];
     var indice = {};
     visibles.forEach(function (n) {
-      var clave = estado.agrupar ? n.medio : claveDia(n.fecha);
+      var clave = agruparPorMedio ? n.medio : claveDia(n.fecha);
       if (!(clave in indice)) {
         indice[clave] = grupos.length;
-        grupos.push({ titulo: estado.agrupar ? n.medio : tituloDia(n.fecha), noticias: [] });
+        grupos.push({ titulo: agruparPorMedio ? n.medio : tituloDia(n.fecha), noticias: [] });
       }
       grupos[indice[clave]].noticias.push(n);
     });
@@ -406,25 +502,100 @@
     grupos.forEach(function (g) {
       var bloque = document.createElement('section');
       bloque.appendChild(encabezado(g.titulo, g.noticias.length));
-      g.noticias.forEach(function (n) { bloque.appendChild(nodoNoticia(n, estado.agrupar)); });
+      g.noticias.forEach(function (n) { bloque.appendChild(nodoNoticia(n, agruparPorMedio)); });
       cont.appendChild(bloque);
     });
     if (grupos.length === 0) {
       var vacio = document.createElement('p');
       vacio.className = 'status';
-      vacio.textContent = 'No hay noticias con estos filtros.';
+      vacio.textContent = mensajeVacio || 'No hay noticias con estos filtros.';
       cont.appendChild(vacio);
     }
   }
 
   function pintar() {
+    document.getElementById('controles-reciente').hidden = false;
     pintarSelectorMedio();
     pintarChips();
     var visibles = todas.filter(function (n) { return coincideCategoria(n) && coincideMedio(n); });
     var texto = 'Mostrando ' + visibles.length + ' de ' + todas.length + ' noticias de los últimos 7 días.';
     if (informe && informe.generado) texto += ' Actualizado: ' + fechaLarga(informe.generado) + '.';
     document.getElementById('conteo').textContent = texto;
-    pintarNoticias(visibles);
+    pintarNoticias(visibles, estado.agrupar);
+  }
+
+  // --- Búsqueda por palabra clave y/o por fecha (mira todo el histórico) ----------
+
+  function fechaCorta(fechaISOsinHora) {
+    return new Date(fechaISOsinHora + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'long' });
+  }
+  function descripcionBusqueda() {
+    var partes = [];
+    if (estado.texto) partes.push('con "' + estado.texto + '"');
+    if (estado.fecha) {
+      if (estado.semana) partes.push('de la semana del ' + fechaCorta(estado.semanaDesde) + ' al ' + fechaCorta(estado.semanaHasta));
+      else partes.push('del ' + tituloDia(estado.fecha + 'T12:00:00').toLowerCase());
+    }
+    return partes.join(' ');
+  }
+
+  function coincideFechaBusqueda(n) {
+    if (!estado.fecha) return true;
+    var f = fechaLocalISO(n.fecha);
+    return estado.semana ? (f >= estado.semanaDesde && f <= estado.semanaHasta) : f === estado.fecha;
+  }
+
+  function pintarBusqueda(origen) {
+    var q = normalizarTexto(estado.texto);
+    var resultado = origen
+      .filter(function (n) { return coincideFechaBusqueda(n) && (!q || coincideTexto(n, q)); })
+      .sort(function (a, b) { return new Date(b.fecha) - new Date(a.fecha); });
+    document.getElementById('conteo').textContent = 'Encontradas ' + resultado.length + ' noticia(s) ' + descripcionBusqueda() + '.';
+    pintarNoticias(resultado, false, 'No hay noticias ' + descripcionBusqueda() + '.');
+  }
+
+  function actualizarBusqueda() {
+    var texto = document.getElementById('busqueda-texto').value.trim();
+    var fecha = document.getElementById('busqueda-fecha').value;
+    var semana = document.getElementById('busqueda-semana').checked;
+    estado.texto = texto;
+    estado.fecha = fecha;
+    estado.semana = semana;
+    document.getElementById('busqueda-limpiar').hidden = !(texto || fecha);
+
+    if (!texto && !fecha) {
+      estado.modo = 'reciente';
+      pintar();
+      return;
+    }
+    estado.modo = 'busqueda';
+    document.getElementById('controles-reciente').hidden = true;
+    document.getElementById('conteo').textContent = 'Buscando…';
+    document.getElementById('noticias').innerHTML = '';
+
+    if (fecha) {
+      var rango = semana ? semanaDe(fecha) : { desde: new Date(fecha + 'T00:00:00'), hasta: new Date(fecha + 'T00:00:00') };
+      estado.semanaDesde = fechaLocalISO(rango.desde);
+      estado.semanaHasta = fechaLocalISO(rango.hasta);
+      var meses = mesesParaRango(rango.desde, rango.hasta);
+      Promise.all(meses.map(fetchMes)).then(function (listas) {
+        pintarBusqueda(listas.reduce(function (a, b) { return a.concat(b); }, []));
+      });
+    } else {
+      fetchTodoElHistorico().then(pintarBusqueda);
+    }
+  }
+
+  function limpiarBusqueda() {
+    document.getElementById('busqueda-texto').value = '';
+    document.getElementById('busqueda-fecha').value = '';
+    document.getElementById('busqueda-semana').checked = false;
+    document.getElementById('busqueda-limpiar').hidden = true;
+    estado.modo = 'reciente';
+    estado.texto = '';
+    estado.fecha = '';
+    estado.semana = false;
+    pintar();
   }
 
   function fetchJSON(ruta) {
@@ -453,6 +624,16 @@
       estado.agrupar = e.target.checked;
       pintar();
     });
+
+    var temporizadorBusqueda;
+    document.getElementById('busqueda-texto').addEventListener('input', function () {
+      clearTimeout(temporizadorBusqueda);
+      temporizadorBusqueda = setTimeout(actualizarBusqueda, 300);
+    });
+    document.getElementById('busqueda-fecha').addEventListener('change', actualizarBusqueda);
+    document.getElementById('busqueda-semana').addEventListener('change', actualizarBusqueda);
+    document.getElementById('busqueda-limpiar').addEventListener('click', limpiarBusqueda);
+
     document.getElementById('controles').hidden = false;
     status.hidden = true;
     pintar();

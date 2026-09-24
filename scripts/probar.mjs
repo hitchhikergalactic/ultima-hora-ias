@@ -1,7 +1,7 @@
 // Pruebas offline del pipeline con datos inventados. No hacen ninguna petición ni
 // llamada a la API: la traducción es simulada.
 //   node scripts/probar.mjs
-import { USER_AGENTS, agenteDeUsuario, comprobarFeeds, deduplicar, finalizarPublicacion, normalizarItem, normalizarTitulo, pasaFiltro, prepararPublicacion } from '../pipeline.js';
+import { USER_AGENTS, agenteDeUsuario, claveMes, comprobarFeeds, deduplicar, finalizarPublicacion, fusionarHistorico, normalizarItem, normalizarTitulo, pasaFiltro, prepararPublicacion } from '../pipeline.js';
 import { hashUrl, LOTE, traducirNoticias, traductorSimulado } from '../traduccion.js';
 
 const AHORA = new Date('2026-09-20T12:00:00Z').getTime();
@@ -159,6 +159,22 @@ comprobar('Filtro: laboratorios, seguridad y boletines pasan SIN palabras clave'
   const antigua = { [hashUrl('https://viejo.com')]: { titulo: 't', resumen: '', visto: new Date(AHORA - 40 * 86400000).toISOString() } };
   const podada = await traducirNoticias([N('seguridad', 'x')], antigua, traductorSimulado, { ahora: AHORA });
   comprobar('Caché: se descarta lo no visto en 30 días', !(hashUrl('https://viejo.com') in podada.cache));
+}
+
+// --- Histórico (para la búsqueda por fecha/palabra clave en la web) --------------
+{
+  comprobar('claveMes: mes en UTC de una fecha ISO', claveMes('2026-09-24T10:00:00.000Z') === '2026-09');
+  comprobar('claveMes: fin de mes en UTC no se cuela al siguiente', claveMes('2026-08-31T23:00:00.000Z') === '2026-08');
+
+  const a = N('laboratorio', 'Noticia A', { url: 'https://x.com/a' });
+  const b = N('laboratorio', 'Noticia B', { url: 'https://x.com/b' });
+  const bDuplicada = { ...b, titulo: 'Noticia B' }; // misma URL: es el mismo día siguiente
+  const fusion1 = fusionarHistorico([], [a, b]);
+  comprobar('fusionarHistorico: arranca vacío y archiva lo nuevo', fusion1.length === 2);
+  const fusion2 = fusionarHistorico(fusion1, [bDuplicada]);
+  comprobar('fusionarHistorico: no duplica lo ya archivado (misma URL)', fusion2.length === 2, `hay ${fusion2.length}`);
+  const c = N('prensa', 'Noticia C', { url: 'https://x.com/c', horas: 100 });
+  comprobar('fusionarHistorico: por fecha descendente', fusionarHistorico(fusion2, [c]).map((n) => n.titulo).join() === 'Noticia A,Noticia B,Noticia C');
 }
 
 console.log(fallos === 0 ? '\nTodas las pruebas pasan.' : `\n${fallos} prueba(s) fallan.`);

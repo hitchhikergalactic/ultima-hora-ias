@@ -16,6 +16,7 @@ Recoge noticias de **seguridad de la IA** de laboratorios, organizaciones de seg
 4. **Duplicados**: solo exactos (misma URL o mismo título normalizado). No se agrupa por evento ni hay topes por medio.
 5. **Traducción** (`traduccion.js`): Haiku 4.5 traduce título y resumen una sola vez por noticia, con caché por hash de URL en `data/cache-traducciones.json`. Lo que ya está en español no se traduce.
 6. **Publicación**: todo lo recibido en los últimos 7 días, por fecha descendente. La página (`index.html`) agrupa por día y tiene chips por categoría, un selector de medio y la opción de agrupar por medio. En Google News el medio que se muestra es el de "vía".
+7. **Histórico**: cada ejecución archiva también lo publicado (mismo filtro, sin duplicar) en `data/historico/AAAA-MM.json`, un fichero por mes. La página tiene un buscador por palabra clave (título o resumen, en todo el histórico) y por fecha (un día o toda su semana), que pide bajo demanda solo los meses que hace falta.
 
 ## Datos generados (`data/`)
 
@@ -24,6 +25,8 @@ Recoge noticias de **seguridad de la IA** de laboratorios, organizaciones de seg
 | `latest.json` | Las noticias publicadas: `medio`, `fuente`, `categoria`, `laboratorio`, `titulo`, `resumen`, `enlace`, `fecha`, `idioma` |
 | `informe-latest.json` | Ítems recibidos por feed, feeds vacíos o caídos, recuento de las últimas 24 h, descartes y estadísticas de traducción |
 | `cache-traducciones.json` | Traducciones ya hechas, por hash de URL |
+| `historico/AAAA-MM.json` | Archivo acumulado (sin duplicar) de todo lo publicado ese mes, mismo formato que `latest.json` |
+| `historico/indice.json` | Lista de los meses disponibles en `historico/`, para que la web sepa qué ficheros pedir |
 
 ## Requisitos
 
@@ -72,6 +75,7 @@ ultima-hora-ias/
 ├── traduccion.js                  # traducción con caché (traductor inyectable)
 ├── scraper.js                     # ingesta, traducción con Haiku y guardado
 ├── scripts/                       # verificar.mjs y probar.mjs
-├── index.html                     # la página
+├── index.html                     # la página (incluye el buscador)
 └── data/                          # datos generados, versionados en git
+    └── historico/                 # archivo mensual para la búsqueda por fecha/palabra clave
 ```
