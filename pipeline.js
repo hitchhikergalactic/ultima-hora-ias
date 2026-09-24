@@ -203,6 +203,22 @@ export function finalizarPublicacion(traducidas) {
 }
 
 // ---------------------------------------------------------------------------
+// Archivo histórico: todo lo publicado alguna vez, para la búsqueda por fecha y
+// por palabra clave en la web (que solo carga los últimos VENTANA_DIAS días).
+// Se guarda un fichero por mes (data/historico/AAAA-MM.json); cada publicación
+// fusiona en el mes que corresponda lo que acaba de publicarse.
+// ---------------------------------------------------------------------------
+
+// Mes (UTC) de una fecha ISO, como "2026-09".
+export const claveMes = (fecha) => new Date(fecha).toISOString().slice(0, 7);
+
+// Añade `nuevas` al archivo ya existente de un mes sin duplicar (misma lógica que
+// al publicar: misma URL o mismo título normalizado). Por fecha descendente.
+export function fusionarHistorico(existentes, nuevas) {
+  return ordenarPorFecha(deduplicar([...existentes, ...nuevas]));
+}
+
+// ---------------------------------------------------------------------------
 // Descarga: user agent de cada intento
 // ---------------------------------------------------------------------------
 

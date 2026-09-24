@@ -1,11 +1,11 @@
 import 'dotenv/config';
 import Parser from 'rss-parser';
 import Anthropic from '@anthropic-ai/sdk';
-import { mkdir, readFile, writeFile } from 'fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { feeds } from './feeds.js';
-import { VENTANA_DIAS, agenteDeUsuario, comprobarFeeds, finalizarPublicacion, normalizarItem, prepararPublicacion } from './pipeline.js';
+import { VENTANA_DIAS, agenteDeUsuario, claveMes, comprobarFeeds, finalizarPublicacion, fusionarHistorico, normalizarItem, prepararPublicacion } from './pipeline.js';
 import { traducirNoticias, traductorSimulado } from './traduccion.js';
 
 // Uso:
@@ -257,6 +257,31 @@ async function main() {
 
   await escribirJSON(path.join(DATA_DIR, 'latest.json'), final.noticias);
   await escribirJSON(rutaCache, traducidas.cache);
+
+  // Histórico: fusiona lo publicado hoy (ventana de 7 días) en el fichero de cada
+  // mes, sin duplicar. Así se construye desde ahora un archivo completo, sin tocar
+  // la ventana de 7 días de latest.json, que es la que se usa para verificar la
+  // frescura y coherencia de la publicación.
+  const DIR_HISTORICO = path.join(DATA_DIR, 'historico');
+  await mkdir(DIR_HISTORICO, { recursive: true });
+  const porMes = new Map();
+  for (const n of final.noticias) {
+    const mes = claveMes(n.fecha);
+    if (!porMes.has(mes)) porMes.set(mes, []);
+    porMes.get(mes).push(n);
+  }
+  let nuevasEnHistorico = 0;
+  for (const [mes, nuevas] of porMes) {
+    const ruta = path.join(DIR_HISTORICO, `${mes}.json`);
+    const existentes = await leerJSON(ruta, []);
+    const fusionadas = fusionarHistorico(existentes, nuevas);
+    nuevasEnHistorico += fusionadas.length - existentes.length;
+    await escribirJSON(ruta, fusionadas);
+  }
+  const meses = (await readdir(DIR_HISTORICO)).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)).map((f) => f.replace('.json', '')).sort();
+  await escribirJSON(path.join(DIR_HISTORICO, 'indice.json'), { generado: new Date(ahora).toISOString(), meses });
+  if (nuevasEnHistorico > 0) console.log(`Histórico: ${nuevasEnHistorico} noticia(s) nueva(s) archivada(s) (${meses.length} mes(es) en total).`);
+
   await escribirJSON(path.join(DATA_DIR, 'informe-latest.json'), {
     generado: new Date(ahora).toISOString(),
     ventanaDias: VENTANA_DIAS,

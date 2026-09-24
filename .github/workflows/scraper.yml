@@ -61,6 +61,7 @@ jobs:
             Se fusiona automáticamente a `main` al terminar el workflow.
           add-paths: |
             data/*.json
+            data/historico/*.json
 
       # Sin cambios en los datos no hay PR y este paso se salta.
       - name: Fusionar el pull request
