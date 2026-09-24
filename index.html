@@ -545,6 +545,22 @@
     return estado.semana ? (f >= estado.semanaDesde && f <= estado.semanaHasta) : f === estado.fecha;
   }
 
+  // El histórico puede no tener aún el día de hoy (el scraper lo archiva una vez al
+  // día) o estar vacío del todo (recién desplegado, sin ninguna ejecución todavía).
+  // Se combina siempre con `todas` (los últimos 7 días, ya cargados) para que la
+  // búsqueda nunca dependa solo de que el fichero histórico exista.
+  function combinarConRecientes(lista) {
+    var vistos = {};
+    var combinada = [];
+    lista.concat(todas).forEach(function (n) {
+      var clave = n.enlace || n.titulo;
+      if (vistos[clave]) return;
+      vistos[clave] = true;
+      combinada.push(n);
+    });
+    return combinada;
+  }
+
   function pintarBusqueda(origen) {
     var q = normalizarTexto(estado.texto);
     var resultado = origen
@@ -579,10 +595,10 @@
       estado.semanaHasta = fechaLocalISO(rango.hasta);
       var meses = mesesParaRango(rango.desde, rango.hasta);
       Promise.all(meses.map(fetchMes)).then(function (listas) {
-        pintarBusqueda(listas.reduce(function (a, b) { return a.concat(b); }, []));
+        pintarBusqueda(combinarConRecientes(listas.reduce(function (a, b) { return a.concat(b); }, [])));
       });
     } else {
-      fetchTodoElHistorico().then(pintarBusqueda);
+      fetchTodoElHistorico().then(function (lista) { pintarBusqueda(combinarConRecientes(lista)); });
     }
   }
 
