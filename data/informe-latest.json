@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24T19:52:00.980Z",
+  "generado": "2026-09-25T13:31:31.727Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 40
+      "items": 42
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 18
+      "items": 19
     },
     {
       "nombre": "Alignment Forum",
@@ -95,7 +95,7 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 10
     },
     {
       "nombre": "Miles Brundage (Google News)",
@@ -105,17 +105,17 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 3
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 10
+      "items": 11
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 31
+      "items": 34
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 27
+      "items": 28
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 158,
-    "quePasanFiltro": 89,
-    "publicadas": 80
+    "enFeeds": 119,
+    "quePasanFiltro": 60,
+    "publicadas": 55
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 541,
-    "prensaSinCoincidencia": 138,
-    "duplicadas": 33,
+    "fueraDeVentana": 556,
+    "prensaSinCoincidencia": 139,
+    "duplicadas": 32,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 17,
-    "deCache": 292,
-    "traducidas": 32,
+    "yaEnEspanol": 22,
+    "deCache": 259,
+    "traducidas": 51,
     "fallidas": 0,
-    "llamadas": 1,
+    "llamadas": 2,
     "tokens": {
-      "entrada": 3717,
-      "salida": 4316
+      "entrada": 5806,
+      "salida": 5984
     }
   }
 }
