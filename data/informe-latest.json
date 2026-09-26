@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-25T13:31:31.727Z",
+  "generado": "2026-09-26T12:53:56.198Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 42
+      "items": 43
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 19
+      "items": 18
     },
     {
       "nombre": "Alignment Forum",
@@ -105,17 +105,17 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 3
+      "items": 4
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 11
+      "items": 10
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 34
+      "items": 39
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -200,33 +200,33 @@
     {
       "nombre": "BBC Mundo",
       "categoria": "prensa",
-      "items": 34
+      "items": 33
     }
   ],
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 119,
-    "quePasanFiltro": 60,
-    "publicadas": 55
+    "enFeeds": 113,
+    "quePasanFiltro": 68,
+    "publicadas": 62
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 556,
-    "prensaSinCoincidencia": 139,
-    "duplicadas": 32,
-    "duplicadasTrasTraducir": 0
+    "fueraDeVentana": 563,
+    "prensaSinCoincidencia": 141,
+    "duplicadas": 35,
+    "duplicadasTrasTraducir": 1
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 22,
-    "deCache": 259,
-    "traducidas": 51,
+    "yaEnEspanol": 21,
+    "deCache": 223,
+    "traducidas": 80,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 5806,
-      "salida": 5984
+      "entrada": 7016,
+      "salida": 7872
     }
   }
 }
