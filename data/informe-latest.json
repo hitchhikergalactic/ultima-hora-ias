@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-26T12:53:56.198Z",
+  "generado": "2026-09-27T13:46:24.592Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 43
+      "items": 41
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 18
+      "items": 15
     },
     {
       "nombre": "Alignment Forum",
@@ -100,7 +100,7 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 8
     },
     {
       "nombre": "GovAI (Google News)",
@@ -115,7 +115,7 @@
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 39
+      "items": 42
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 28
+      "items": 29
     },
     {
       "nombre": "Financial Times AI",
@@ -200,33 +200,33 @@
     {
       "nombre": "BBC Mundo",
       "categoria": "prensa",
-      "items": 33
+      "items": 34
     }
   ],
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 113,
-    "quePasanFiltro": 68,
-    "publicadas": 62
+    "enFeeds": 45,
+    "quePasanFiltro": 29,
+    "publicadas": 28
   },
   "descartes": {
     "sinFecha": 0,
     "fueraDeVentana": 563,
-    "prensaSinCoincidencia": 141,
-    "duplicadas": 35,
-    "duplicadasTrasTraducir": 1
+    "prensaSinCoincidencia": 140,
+    "duplicadas": 33,
+    "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 21,
-    "deCache": 223,
-    "traducidas": 80,
+    "deCache": 270,
+    "traducidas": 37,
     "fallidas": 0,
-    "llamadas": 2,
+    "llamadas": 1,
     "tokens": {
-      "entrada": 7016,
-      "salida": 7872
+      "entrada": 3907,
+      "salida": 4191
     }
   }
 }
