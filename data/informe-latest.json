@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T15:18:12.843Z",
+  "generado": "2026-10-02T14:37:54.860Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,7 +30,7 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 46
     },
     {
       "nombre": "Meta AI (Google News)",
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 45
+      "items": 48
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 17
+      "items": 13
     },
     {
       "nombre": "Alignment Forum",
@@ -100,17 +100,17 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 6
+      "items": 4
     },
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 6
+      "items": 5
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 6
     },
     {
       "nombre": "AI Security Institute (Google News)",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 156,
-    "quePasanFiltro": 102,
-    "publicadas": 93
+    "enFeeds": 105,
+    "quePasanFiltro": 63,
+    "publicadas": 61
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 584,
-    "prensaSinCoincidencia": 135,
-    "duplicadas": 27,
-    "duplicadasTrasTraducir": 0
+    "fueraDeVentana": 572,
+    "prensaSinCoincidencia": 133,
+    "duplicadas": 22,
+    "duplicadasTrasTraducir": 1
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 19,
-    "deCache": 186,
-    "traducidas": 122,
+    "yaEnEspanol": 17,
+    "deCache": 241,
+    "traducidas": 79,
     "fallidas": 0,
-    "llamadas": 4,
+    "llamadas": 2,
     "tokens": {
-      "entrada": 10435,
-      "salida": 11004
+      "entrada": 6471,
+      "salida": 6396
     }
   }
 }
