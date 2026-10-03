@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:37:54.860Z",
+  "generado": "2026-10-03T13:13:34.587Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,7 +30,7 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 46
+      "items": 50
     },
     {
       "nombre": "Meta AI (Google News)",
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 48
+      "items": 45
     },
     {
       "nombre": "METR",
@@ -95,12 +95,12 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 8
     },
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 4
+      "items": 2
     },
     {
       "nombre": "GovAI (Google News)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 30
+      "items": 27
     },
     {
       "nombre": "Financial Times AI",
@@ -175,7 +175,7 @@
     {
       "nombre": "TechCrunch AI",
       "categoria": "prensa",
-      "items": 19
+      "items": 20
     },
     {
       "nombre": "MIT Technology Review",
@@ -200,33 +200,33 @@
     {
       "nombre": "BBC Mundo",
       "categoria": "prensa",
-      "items": 34
+      "items": 35
     }
   ],
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 105,
-    "quePasanFiltro": 63,
-    "publicadas": 61
+    "enFeeds": 80,
+    "quePasanFiltro": 44,
+    "publicadas": 44
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 572,
-    "prensaSinCoincidencia": 133,
-    "duplicadas": 22,
+    "fueraDeVentana": 576,
+    "prensaSinCoincidencia": 136,
+    "duplicadas": 18,
     "duplicadasTrasTraducir": 1
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 17,
-    "deCache": 241,
-    "traducidas": 79,
+    "deCache": 248,
+    "traducidas": 68,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 6471,
-      "salida": 6396
+      "entrada": 6307,
+      "salida": 6547
     }
   }
 }

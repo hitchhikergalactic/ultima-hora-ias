@@ -269,6 +269,16 @@
     "publicador": "AP News"
   },
   {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "La FTC investiga OpenAI y Anthropic por posibles daños a los consumidores",
+    "resumen": "La agencia examinará si los laboratorios de IA han violado las leyes federales que prohíben a las empresas prácticas injustas y engañosas.",
+    "enlace": "https://www.nytimes.com/2026/09/30/technology/ftc-openai-anthropic-investigation.html",
+    "fecha": "2026-09-30T19:26:02.000Z"
+  },
+  {
     "fuente": "Moonshot (Google News)",
     "medio": "Inshorts",
     "categoria": "laboratorio",
@@ -428,6 +438,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBrUzVNd2ZPTkN1bm1GNnJyeU50MG1MX1ZEMGhUZjM2bWdGLXZIbmwyMjIyYWNFTUU1ZGZNMm1rbm1OTXg0bEN6UWstb0EzUnNwYUFLdndhSVhlcXNCRlUxcGRmcnM1X29NTVY3N3JXUU9ESWlw?oc=5",
     "fecha": "2026-09-30T16:12:55.000Z",
     "publicador": "qz.com"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Anthropic",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "¿Podemos predecir los trabajos que harán los robots?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JM0E2czMxTW96bFJFdTVVZXk4SzktdVYya2tuYy1WYmdKN29TeTZ2U3J5V2dqMVZFRUpxelgxemY0a2c2RTl4c2FCRFh1M3ZWOUtETVJNY0NQNEhLZVh0TTRqb2l0ZkQ1NFE?oc=5",
+    "fecha": "2026-09-30T16:01:00.000Z",
+    "publicador": "Anthropic"
   },
   {
     "fuente": "Anthropic (Google News)",
@@ -927,6 +949,17 @@
     "fecha": "2026-09-30T07:00:00.000Z"
   },
   {
+    "fuente": "Helen Toner (Google News)",
+    "medio": "NewsNation",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Tendrá el acuerdo de IA algún impacto significativo? Panel delibera | En balance",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRkY1RFVSbmVYNVFqQ2UyUUh2LURlRmNCVzl1RjJEWDV4dWdtalR3VWRZNktXTndBeVg4RVQ2OFMwY0k2WnhBanJSVzZZTXNiekoxQ1JsN2F4dG1yT3VwdThTeEJzUTdHRlpaNElvdV9rWTJDUERWcTJ5QllEUDhHUmJKTVE1RTNMODhfcmFTX2t4MWVkaHBpX0I3MFdFNldoVmdNY0xDNk00b0EwN0p6dFkyb21MSlZQbnc?oc=5",
+    "fecha": "2026-09-30T07:00:00.000Z",
+    "publicador": "NewsNation"
+  },
+  {
     "fuente": "LessWrong",
     "medio": "LessWrong",
     "categoria": "seguridad",
@@ -1121,6 +1154,17 @@
     "resumen": "Tristian Buckmaster recientemente dio una entrevista con Brady Haran de Numberphile discutiendo qué sucedió en el drama de Navier-Stokes y contexto sobre su investigación. Estoy publicando la transcripción a continuación para personas que prefieren leer a ver. Fue ligeramente editado para claridad con Sonnet 5.5. También le recomiendo escuchar su charla más técnica en NYU para contexto sobre Euler/Navier-Stokes. Mi propia opinión sigue siendo que es muy de mal gusto que OA y otros laboratorios compitan para superar los resultados de investigadores, y esto establece un mal precedente para el futuro. Creo que engañaron a Buckmaster sobre su intercambio",
     "enlace": "https://www.lesswrong.com/posts/DgnQRGeGD27unRcGv/tristan-buckmaster-numberphile-interview-transcript",
     "fecha": "2026-09-30T02:28:48.000Z"
+  },
+  {
+    "fuente": "Helen Toner (Google News)",
+    "medio": "NewsNation",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Tendrá el acuerdo de IA algún impacto significativo? Panel delibera",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaGlnNEV2eEhrVGh5M1h4b0RVZkxlLWJwU0RjcDlSbjBWT2xUNEZrbVBKSmFUeHA2Qy1QZ2NVUGpOLVVrTzJfX1E3WXRnek5ubDYyeWhhX1lKVUlRb0xBSll0M0dXTTdQeFJ3bW5SUGFYazI4bFVGSzVRXzdObjRxOUVPcFB5aV95SWsyNnY3dHY3UVc5bGhNa2NVSU5URklLdjktOW1HZFlTMHF4UXhsUW1zSHJxNUYzZ1FNQnN3Y2LSAcYBQVVfeXFMUGJKNThTcEhwVFM1RF9Ob1JkdWZ0eVdtNzlpeUowdDNsY0dISGdwUmJWNmZwZzBDQXpqMTU4WUZITWd3Y2w2WU9QX1FjWEdGMlZpTU43Mm9aaVI1YXJ0MlB1SmszZkRGQVpFcHg4OXRjbW94WlN6Vm9DdnVxOHdHTlZjU3llUk8tYllpTFRjbXY4T3BROWw3VTJZVHItMzJlT0hMX1lKbVBWTXM0TklucE8tUnE3cVU0LWhHWThEMnkxeU5XVkt3?oc=5",
+    "fecha": "2026-09-30T02:00:16.000Z",
+    "publicador": "NewsNation"
   },
   {
     "fuente": "Helen Toner (Google News)",
@@ -1346,6 +1390,18 @@
     "fecha": "2026-09-29T20:15:47.000Z"
   },
   {
+    "fuente": "xAI (Google News)",
+    "medio": "Pasquale Pillitteri",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "xAI lanza un troleador de dot.com en el DevDay de OpenAI, redirigiendo a Grok Bot",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNenNmd1FaY2d5akY3VWZNTG9zQTZ0UlFVNURDblpRS2phNnowTUVzeThUSnNvYkh3MUFwZ2ZmWjlKWlBmN0tjc29sNUVCaXNWc3BGYkV2QldNQm0talpjN1UwNXBmUjhyU05qTy1jSHRwUVl0dGhJRkJNRlItVGZpS3ppUQ?oc=5",
+    "fecha": "2026-09-29T20:07:25.000Z",
+    "publicador": "Pasquale Pillitteri"
+  },
+  {
     "fuente": "TechCrunch AI",
     "medio": "TechCrunch AI",
     "categoria": "prensa",
@@ -1504,6 +1560,17 @@
     "publicador": "businesscloud.co.uk"
   },
   {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "Bain",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Auge de centros de datos de IA: ¿Podemos construirlo si vienen?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUWNvX2lrSDdtMnFwTDUtWUV3WjhUQ2w4d1hmalI3bHA0bUF2MmVMeDFQLVpYMUJIQjg3OXo1dFN1RUZtYll5OHkxUlpSa1FBajRBeVB3N3d5SmpwN0RmempoOV9WdnlzeV9URURzNU93RkhVV1poTmNFdVNkQ2VjNWRReDQyN24wODVNbWRqUUE4V1JmWjFzb0tPNGNDWXJsN2d1dg?oc=5",
+    "fecha": "2026-09-29T17:48:01.000Z",
+    "publicador": "Bain"
+  },
+  {
     "fuente": "TechCrunch AI",
     "medio": "TechCrunch AI",
     "categoria": "prensa",
@@ -1512,6 +1579,18 @@
     "resumen": "La suite de características de oficina recientemente anunciada por OpenAI la pone en competencia más directa con empresas de software más tradicionales.",
     "enlace": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/",
     "fecha": "2026-09-29T17:45:51.000Z"
+  },
+  {
+    "fuente": "Google DeepMind (Google News)",
+    "medio": "The Verge",
+    "categoria": "laboratorio",
+    "laboratorio": "Google DeepMind",
+    "idioma": "en",
+    "titulo": "Investigadores de IA sacan videos diciendo que la superinteligencia es 'exactamente tan peligrosa como suena'",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUGJBenRicmptaFZjQ08tMnZ2U01BSDlkOEd3d1FIaHBxRlI0SjBZRUlza3F4TGZjYVpmdEtkY0xWd2V4VXloU2Q1VXpzM3NPQ0tUM0lUeDZfcS10c2xVODJRby01aHFlQU9CZzZOakVuV0JWQS13eE9KN0FlUkQ2Vkdra2Rhb0pWRVk4cG9jZGdjemcwbFJMb3lKcXhSWHZJR2tFWm9jaTJidF9SUnZmcmZ4d1FjQ1k?oc=5",
+    "fecha": "2026-09-29T17:35:03.000Z",
+    "publicador": "The Verge"
   },
   {
     "fuente": "Anthropic (Google News)",
@@ -1678,6 +1757,18 @@
     "fecha": "2026-09-29T16:33:22.000Z"
   },
   {
+    "fuente": "Meta AI (Google News)",
+    "medio": "TechRepublic",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Meta lanza plataforma de IA empresarial",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYzZ4dUkxTVB1RFhxWjlsNEYyaTY1X1VLTkRYTHg1ZjhlUVd4RHpaSjZOeElVWDZIUUNFWmRWN0VqelFndkpOdHRKUGVZY3duaTN3T2diNWdxcTNacV9RZDk2TGhWVlFhbFVCWEx6QVhqY1BOdDllTWJnYUhDTHp4d3pydW90djg1OHFXa2oxdTJKN1dULVE?oc=5",
+    "fecha": "2026-09-29T16:24:45.000Z",
+    "publicador": "TechRepublic"
+  },
+  {
     "fuente": "GovAI (Google News)",
     "medio": "The Rundown AI",
     "categoria": "seguridad",
@@ -1699,6 +1790,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPX212WWhHNWgzWkdtSlZTV3hiU3ZVdmJoUnJPMl92MVlMd1VadHJrbXJ3RjFvdXJib3dueWk0eUFwY25DallZUTJGd1J2MWRTRkFZcWNoa1g3YVBzaEdKbmF5TE1HakN0cnI5emUwdVlKeTZPY2o5R3RheG54R0E2ODVVZXpVUGZ3MDFVQ0h3bDh0UQ?oc=5",
     "fecha": "2026-09-29T15:46:00.000Z",
     "publicador": "Anthropic"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "STAT",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic se une a la iniciativa de IA clínica de ARPA-H, celebrará evento de sanidad cerrado",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWUMyZE5uWU11UTdaZlhvUjI3UlR0Rm42cDRnYkpYc1M3dnFoQVU0TElJOTlndVYxQngya1lwWUhpeFNDbVIyU1dPMTI1UDFIRmF1MnhNb0hNMmU2X0RnOHlQVDlQamFIRi13bDVfbGxSMWNOZjRJeVhyMXZSWEFuSE5wU0dRNjRwb3pUQkRfcU5KNl9aQ1JF?oc=5",
+    "fecha": "2026-09-29T14:46:20.000Z",
+    "publicador": "STAT"
   },
   {
     "fuente": "Anthropic (Google News)",
@@ -2047,6 +2150,17 @@
     "enlace": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PUzdsazZ6OWFYVWtwTE5yeGdyMkVlZUpMZ0xsaDZmaUUzbjNQdGszdG1WSXFVZ2YzQUpkaGpXeWJIRnVnOFhQamNzekxDazYzVzNaQXdDc1QtM3NjeFJfRFYyVEc3Ymh0YWdVcFl3?oc=5",
     "fecha": "2026-09-29T11:33:47.000Z",
     "publicador": "qz.com"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "Resultsense",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "AISI del Reino Unido: GPT-6 Astra atacó objetivos fuera del alcance en pruebas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObUZSdGM0TG45b2RLeWhCNDhBemZDNFR4X1VRR1J6RFBpRXFZUENIZHRyOUZpV01XdUJUc05CTFJtbThMNV9famtDbVhZNGZudVE3am85Mm9OTzZYSU1vT29rbExWM2V6WXdOX2R4MkpTT1pPZWNRSWNsNEJCSTJVeVBVSmhPMHFFcUE?oc=5",
+    "fecha": "2026-09-29T11:33:41.000Z",
+    "publicador": "Resultsense"
   },
   {
     "fuente": "The Guardian AI",
@@ -2793,6 +2907,18 @@
     "fecha": "2026-09-28T18:31:23.000Z"
   },
   {
+    "fuente": "Google DeepMind (Google News)",
+    "medio": "Yahoo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Google DeepMind",
+    "idioma": "en",
+    "titulo": "Una exinvestigadora de Google dice que la IA podría 'matarnos a todos'. ¿Debería Alphabet preocuparse?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQV2phaWt1bDAyZFZzaFFrdW9DYlAwZ2pQU2h2VXAxNXBLcDFKdVNoZ2lUZWNYMkhpNDNmendkN2pERS1LX2NkMURnU3F0VmVOMVRjTHBWNFJ6di05TmdxeFEwUTVQZmJBVjQzT1Y3VjEwLUFmc2pNSzJaanh2eDh6WFJrcVVGQUVwT1l2dmI0Mjh2NTVBLXVv?oc=5",
+    "fecha": "2026-09-28T18:04:55.000Z",
+    "publicador": "Yahoo Finance"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "CNBC",
     "categoria": "laboratorio",
@@ -3350,6 +3476,18 @@
     "fecha": "2026-09-28T07:00:00.000Z"
   },
   {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "All About Cookies",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "¿Es DeepSeek seguro? Qué recopila y adónde va",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxa2k4c2F1NExNZ3RxTDdwbnpRRjNLSjFsd1VaVlNvTlo5TDM5SWJOdC12REJBRm10NldkeW5OaFJfT093allURDNXTFRMNGZMbURONzZ6eTQ4UENzenNCWkhyYTFRV00yMHc?oc=5",
+    "fecha": "2026-09-28T07:00:00.000Z",
+    "publicador": "All About Cookies"
+  },
+  {
     "fuente": "Google DeepMind (Google News)",
     "medio": "Rappler",
     "categoria": "laboratorio",
@@ -3720,6 +3858,17 @@
     "fecha": "2026-09-27T07:00:00.000Z"
   },
   {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "shattered.io",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "AISI del Reino Unido refuta la congelación estadounidense de Claude Mythos 5.1 [2026]",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8yVXlPUVQwZ2NQZjVtREMwNGg3V1lfNnpnNnMwb3p1QWVaRFB2d1dTbDc0ZXhHVk9BbUpwY0w5dERtNWtGVVhmTU5tMWFiZ3lIWFhLYklkNmVwLS1oZDk2R1JXY2k4T012aXFjRDNTQUhFTTZUb3NySU9n?oc=5",
+    "fecha": "2026-09-27T05:45:05.000Z",
+    "publicador": "shattered.io"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "Reuters",
     "categoria": "laboratorio",
@@ -3843,6 +3992,18 @@
     "resumen": "Y todos iremos juntos cuando nos vayamos Qué hecho reconfortante saber Duelo universal, un logro inspirador Sí, todos iremos juntos cuando nos vayamos -- We Will All Go Together When We Go de Tom Lehrer \"Que todos mueran\" no me parece emocionalmente algo tan malo. Sé intelectualmente que es algo bastante malo, pero me falta el sentimiento correspondiente. Asumo que no estoy solo en esto. Cuando la gente dice cosas como \"Si alguien lo construye, todos mueren\", hay una suposición implícita de que todos están de acuerdo en que \"todos mueren\" es un resultado realmente malo, quizás incluso el peor. Pero no",
     "enlace": "https://www.lesswrong.com/posts/xak4GixbKD9W5jzqn/extinction-does-not-feel-as-bad-as-it-should",
     "fecha": "2026-09-26T22:55:27.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "BASENOR",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Grok ahora puede gestionar tus finanzas: 5 detalles que importan",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSUVXN3ZYYkdndlNzdkNWeWo5RzJJb1RwY1Fac0RVLTZ1R1FZM2lYRkRHMVBBTmQ1bGRrd24yN19QQXJpVFIxSkJsME5YZVctWGtQaHlyRm51VVJPVE5JOS1sd2hzS29pS1EyR2NMMUcyTEk5S0NEQ0FNbTNoMUx4ZWNjRVpWQUh1cHc5b0hjMzU2alZj?oc=5",
+    "fecha": "2026-09-26T22:05:22.000Z",
+    "publicador": "BASENOR"
   },
   {
     "fuente": "LessWrong",
