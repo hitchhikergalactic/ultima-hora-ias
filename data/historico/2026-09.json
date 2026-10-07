@@ -401,6 +401,18 @@
   },
   {
     "fuente": "Anthropic (Google News)",
+    "medio": "The Guardian",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "El regulador comercial estadounidense abre una investigación sobre gigantes de la IA incluyendo Anthropic y OpenAI",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcWF1VUlLZVBPSkduVjFQcVdFR3VYbFNtbTdMU1hkUndzUFNnREVMTEIxR3o4WDFzSWxRcG9IbzRYODFnWXRsdWRKclNOVXdVSXRhYlJ4c3ZKU3NpbS1FZFBBUGZpVTFKXzc1V2hPczFqOTRSVVhEMjB4dDloZE42RC12bE9jXzNtZlE?oc=5",
+    "fecha": "2026-09-30T18:35:00.000Z",
+    "publicador": "The Guardian"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
     "medio": "Reuters",
     "categoria": "laboratorio",
     "laboratorio": "Anthropic",
@@ -410,6 +422,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdzYzcTVSY1JmRld3cFRBRlRaX0w0YVZHTjU3NWVvVG5BcXFIZGFwdXViLXBLNnhJQ3d0RS13T2VURWdNQ19ySkJuVXNlV2NWX0E3LUExYUZQaFBsTTVEaC1NMXJtR0RGYlllQVotQmM3VlRaVmd2em04YWdzTXFkMjhsUlQ0b1JlcVJBRENNRFFBT1NLcU00YUtqU0N5LUlJa0YxaEhzdU1mR1lkUTJ0MFhLMjA3a1FJVlQ5RXpMOEIxdw?oc=5",
     "fecha": "2026-09-30T18:17:19.000Z",
     "publicador": "Reuters"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Pasquale Pillitteri",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DeepSeek y Huawei lanzan TileLang para chips Ascend, apuntando a CUDA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRm9OSXRxSG9vdWd1U1BkcnVaTlVMb0xhTkw5ZjA0bDRfZlg1dzRvQWVWU1U3aTVLb0pqMUpabzBFMmVVRnhDY0UtbC1OYmQzdkM2OUhTNHhwdWFSNFN5blBqMzJHeWhpYTUxRmxVSHpHeWpWTGZxSHVmMjNMNFliaEhQbW8xTmc?oc=5",
+    "fecha": "2026-09-30T18:13:04.000Z",
+    "publicador": "Pasquale Pillitteri"
   },
   {
     "fuente": "Moonshot (Google News)",
@@ -424,6 +448,30 @@
     "publicador": "tokenpost.com"
   },
   {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Crypto Briefing",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "OpenAI interrumpe una campaña de destilación de modelos vinculada a Moonshot AI",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mcEZZZWo4d2UwRk5GWFoydmcxNzU1bmFUT1RSdUJ0TER2MUZ4SHlUSDFiSG1rWXI0TmpXbDdNYVZGOU9wTlk0ZWwyYmFIN05OaURPejhhMTZEanMxWWl0THpGNkhfbDBUQzJ0RmhDOXNSWmJEY1N1eGhkNA?oc=5",
+    "fecha": "2026-09-30T17:20:40.000Z",
+    "publicador": "Crypto Briefing"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "OpenAI",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Interrumpir una campaña coordinada de destilación de modelos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbEgxOFhvU3ZzR0JYMjZDbWhRaXlQeGoyci1PRGhfWkFhSGpER29fLXZydWRybEdpVEhUX0dCZ3pwS0ViUWRxVy1NVXZNREVfN2pOMU96c2NmSmlpY1lheUwxMGxuVjlmTV9uSkszVHU0RFhVVVNNUU42TkNjb084cThtaWc?oc=5",
+    "fecha": "2026-09-30T17:06:44.000Z",
+    "publicador": "OpenAI"
+  },
+  {
     "fuente": "OpenAI (Google News)",
     "medio": "ABC News - Breaking News, Latest News and Videos",
     "categoria": "laboratorio",
@@ -432,6 +480,18 @@
     "titulo": "OpenAI demandado por grupo de seguridad por hackeo autónomo de Hugging Face",
     "resumen": "",
     "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdGk0MnJrR0tQVHFrdVZSZ08tN05ZQXN5V19sRklaQVlHdFUyODNxa1JyY1JLLWRNSktuOGFPOFUwaXlXMnFLam04bDlRRXlNa055SzEwWFhOWEpZQ0s3U0FidXJwaE1ralg3bFFXTTY2ZU1MWW9kWmpQaGsya1NqVmJHVHFkRzROMWFUNU1tdW1nbjh5ZGx4OdIBngFBVV95cUxQdm0yVm05eTg4czRMbkJpWGJOTkFrZmpUYmg5aFotZjVnYUlxbWN0ek5fdWRjck1YX3h4WnBPeUpPVC1FY2xRTGNRbk9aOEh3SHFWU1ZOVmF0bXJXVXZtaHRWU0JjZDdrdG1ueGFicHBfSThDVnVIZ2lUeWhMSURnYTZnYlhEdkdzb2g3RWZQTVc5d0VQdVI5eEpsVC00UQ?oc=5",
+    "fecha": "2026-09-30T16:53:46.000Z",
+    "publicador": "ABC News - Breaking News, Latest News and Videos"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "ABC News - Breaking News, Latest News and Videos",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "OpenAI demandada por grupo de seguridad sobre ataque autónomo en Hugging Face",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdGk0MnJrR0tQVHFrdVZSZ08tN05ZQXN5V19sRklaQVlHdFUyODNxa1JyY1JLLWRNSktuOGFPOFUwaXlXMnFLam04bDlRRXlNa055SzEwWFhOWEpZQ0s3U0FidXJwaE1ralg3bFFXTTY2ZU1MWW9kWmpQaGsya1NqVmJHVHFkRzROMWFUNU1tdW1nbjh5ZGx4OQ?oc=5",
     "fecha": "2026-09-30T16:53:46.000Z",
     "publicador": "ABC News - Breaking News, Latest News and Videos"
   },
