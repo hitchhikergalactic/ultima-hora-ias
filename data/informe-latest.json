@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-10T14:23:04.341Z",
+  "generado": "2026-10-11T14:49:38.779Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -100,7 +100,7 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 9
     },
     {
       "nombre": "GovAI (Google News)",
@@ -115,7 +115,7 @@
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 44
+      "items": 49
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 20
+      "items": 22
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 73,
-    "quePasanFiltro": 44,
-    "publicadas": 42
+    "enFeeds": 63,
+    "quePasanFiltro": 37,
+    "publicadas": 35
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 606,
-    "prensaSinCoincidencia": 141,
-    "duplicadas": 16,
+    "fueraDeVentana": 610,
+    "prensaSinCoincidencia": 146,
+    "duplicadas": 19,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 12,
-    "deCache": 226,
-    "traducidas": 62,
+    "yaEnEspanol": 15,
+    "deCache": 230,
+    "traducidas": 51,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 5596,
-      "salida": 6043
+      "entrada": 5180,
+      "salida": 4785
     }
   }
 }
