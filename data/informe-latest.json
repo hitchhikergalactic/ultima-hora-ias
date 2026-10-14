@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-13T15:48:20.231Z",
+  "generado": "2026-10-14T13:31:40.957Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 19
+      "items": 18
     },
     {
       "nombre": "Alignment Forum",
@@ -95,22 +95,22 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 5
+      "items": 3
     },
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 9
+      "items": 10
     },
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 5
+      "items": 4
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 9
     },
     {
       "nombre": "AI Security Institute (Google News)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 20
+      "items": 21
     },
     {
       "nombre": "Financial Times AI",
@@ -200,33 +200,33 @@
     {
       "nombre": "BBC Mundo",
       "categoria": "prensa",
-      "items": 30
+      "items": 34
     }
   ],
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 128,
-    "quePasanFiltro": 84,
-    "publicadas": 82
+    "enFeeds": 170,
+    "quePasanFiltro": 119,
+    "publicadas": 109
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 597,
-    "prensaSinCoincidencia": 140,
-    "duplicadas": 12,
+    "fueraDeVentana": 564,
+    "prensaSinCoincidencia": 142,
+    "duplicadas": 20,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 15,
-    "deCache": 188,
-    "traducidas": 107,
+    "yaEnEspanol": 13,
+    "deCache": 215,
+    "traducidas": 108,
     "fallidas": 0,
     "llamadas": 3,
     "tokens": {
-      "entrada": 8752,
-      "salida": 9208
+      "entrada": 8506,
+      "salida": 9026
     }
   }
 }
