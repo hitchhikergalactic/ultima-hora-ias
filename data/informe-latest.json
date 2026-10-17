@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16T13:08:02.522Z",
+  "generado": "2026-10-17T12:04:37.953Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -10,7 +10,8 @@
     {
       "nombre": "Google DeepMind Blog",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 0,
+      "error": "Non-whitespace before first tag. Line: 0 Column: 1 Char: \u001f"
     },
     {
       "nombre": "Mistral AI",
@@ -45,7 +46,7 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 43
+      "items": 50
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -60,7 +61,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 20
+      "items": 21
     },
     {
       "nombre": "Alignment Forum",
@@ -105,17 +106,17 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 5
+      "items": 6
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 9
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 40
+      "items": 41
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -203,30 +204,34 @@
       "items": 34
     }
   ],
-  "feedsVacios": [],
-  "feedsCaidos": [],
+  "feedsVacios": [
+    "Google DeepMind Blog"
+  ],
+  "feedsCaidos": [
+    "Google DeepMind Blog"
+  ],
   "ultimas24h": {
-    "enFeeds": 137,
-    "quePasanFiltro": 83,
-    "publicadas": 80
+    "enFeeds": 110,
+    "quePasanFiltro": 63,
+    "publicadas": 61
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 538,
-    "prensaSinCoincidencia": 137,
-    "duplicadas": 17,
+    "fueraDeVentana": 501,
+    "prensaSinCoincidencia": 139,
+    "duplicadas": 14,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 12,
-    "deCache": 256,
-    "traducidas": 97,
+    "yaEnEspanol": 10,
+    "deCache": 274,
+    "traducidas": 80,
     "fallidas": 0,
-    "llamadas": 3,
+    "llamadas": 2,
     "tokens": {
-      "entrada": 7995,
-      "salida": 7653
+      "entrada": 6510,
+      "salida": 7391
     }
   }
 }
