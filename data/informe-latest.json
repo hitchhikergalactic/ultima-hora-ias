@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-17T12:04:37.953Z",
+  "generado": "2026-10-18T12:32:13.083Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -10,8 +10,7 @@
     {
       "nombre": "Google DeepMind Blog",
       "categoria": "laboratorio",
-      "items": 0,
-      "error": "Non-whitespace before first tag. Line: 0 Column: 1 Char: \u001f"
+      "items": 50
     },
     {
       "nombre": "Mistral AI",
@@ -96,7 +95,7 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 5
+      "items": 3
     },
     {
       "nombre": "Miles Brundage (Google News)",
@@ -116,7 +115,7 @@
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 41
+      "items": 42
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -204,34 +203,30 @@
       "items": 34
     }
   ],
-  "feedsVacios": [
-    "Google DeepMind Blog"
-  ],
-  "feedsCaidos": [
-    "Google DeepMind Blog"
-  ],
+  "feedsVacios": [],
+  "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 110,
-    "quePasanFiltro": 63,
-    "publicadas": 61
+    "enFeeds": 55,
+    "quePasanFiltro": 31,
+    "publicadas": 29
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 501,
-    "prensaSinCoincidencia": 139,
-    "duplicadas": 14,
+    "fueraDeVentana": 549,
+    "prensaSinCoincidencia": 140,
+    "duplicadas": 20,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 10,
-    "deCache": 274,
-    "traducidas": 80,
+    "yaEnEspanol": 9,
+    "deCache": 299,
+    "traducidas": 50,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 6510,
-      "salida": 7391
+      "entrada": 5077,
+      "salida": 5391
     }
   }
 }
