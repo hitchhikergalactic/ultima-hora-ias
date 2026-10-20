@@ -1,6 +1,904 @@
 [
   {
     "fuente": "DeepSeek (Google News)",
+    "medio": "TechCrunch",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos ordena a agencias federales eliminar la IA DeepSeek de China de sus sistemas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNam1tX0RacFh2aXVWaERGQ1AxTThjRDd3RDZoUXU5ZGxrOU1BYWFnMHhqRmwzLVZWb3NkbWhTYTctcUlqaDVLdXpRdmJXSGRvLUtmV2RORHdLU2RFeFFRWVdybTR4V1BUb3l2eUN0MHBfdlJqQmlYVUkxUlByVEgya1piaXJqaUphN0ZrNFY0dFFlSDRya0JoVC0wcC1uSnN1OUZIbUxVRnVodHBFdGc?oc=5",
+    "fecha": "2026-10-20T13:07:24.000Z",
+    "publicador": "TechCrunch"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "Google DeepMind presume de haber batido a Minecraft con agentes controlados por Gemini 4 Argon en apenas 27 horas",
+    "resumen": "'Minecraft' no es sólo uno de los juegos más exitosos de la historia y una base genial tanto para divertirse como para aprender. El título de Mojang lleva años usándose para medir de qué son capaces los modelos de inteligencia artificial y Google Deepmind acaba de anotarse un tanto: su Gemini 4 Argon ha completado ' Minecraft ' de principio a fin in intervención humana. Y parece que esta IA lo ha hecho sin trampas. En corto . Cuatro agentes basados en Gemini 4 Argon derrotaron al Ender Dragon en 27 horas y 14 minutos. Se trata del jefe final del juego y los resultados se publicaron en un paper",
+    "enlace": "https://www.xataka.com/videojuegos/google-deepmind-presume-haber-batido-a-minecraft-agentes-controlados-gemini-4-argon-apenas-27-horas",
+    "fecha": "2026-10-20T13:01:42.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Humano o IA? Resultados y análisis del cuestionario de música barroca",
+    "resumen": "Agradecemos a todos los que participaron en el cuestionario de música barroca con IA. El cuestionario ya ha cerrado. Si no tuviste oportunidad de participar, he puesto todos los fragmentos en esta lista de reproducción de SoundCloud. Puedes escuchar cada fragmento, anotar tus respuestas y compararlas con las oficiales más abajo. Respuestas Buxtehude – «Nun bitten wir den heiligen Geist», BuxWV 209 Vivaldi – Concierto en re menor para viola d'amore y laúd Claude Opus 5.5 – Fuga en la menor (Esfuerzo muy alto) Bach – Trío Sonata V en do mayor, BWV 529 GPT-6 Astra – Sonata da chiesa para violín (Esfuerzo muy alto) GPT-6 Astra – Concierto para oboe",
+    "enlace": "https://www.lesswrong.com/posts/JTe7mvvsiGABtMywk/human-or-ai-baroque-music-quiz-results-and-analysis",
+    "fecha": "2026-10-20T12:52:36.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Anotaciones para AI Doompop",
+    "resumen": "Últimamente, he estado trabajando en un sitio de anotaciones de AI Doompop (aquí). Anoche, Claude me notificó sobre Hello World, AI Doompop, lo que me inspiró a compartir mi proyecto en LessWrong. Las características incluyen: Ver anotaciones mientras se reproduce un videoclip musical: Ver anotaciones junto a una selección de vídeos musicales de IA Explorar un árbol genealógico de canciones individuales: El árbol genealógico alrededor de «Claude-Pop - I'm Upping My P(Doom)» de deckard (creador) Enviar comentarios de retroalimentación convenientemente: El formulario de retroalimentación incluye opcionalmente texto resaltado de la página Tres de mis canciones favoritas: Una sátira sobre un usuario de IA, explicada aquí, con c",
+    "enlace": "https://www.lesswrong.com/posts/4BumfpsLXkzJb9wFB/annotations-for-ai-doompop",
+    "fecha": "2026-10-20T12:46:02.000Z"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe el uso de herramientas de IA DeepSeek de China en agencias gubernamentales",
+    "resumen": "El uso de herramientas «puede resultar en la transferencia de datos sensibles» a China, según dice el departamento de defensa. El gobierno estadounidense el lunes ordenó a sus agencias que dejen de usar herramientas de inteligencia artificial (IA) de la startup china DeepSeek, conforme los países compiten por el dominio en el sector de rápido movimiento. Un comunicado del Departamento de Seguridad Nacional (DHS) anunció la prohibición de productos desarrollados por DeepSeek –y herramientas creadas usando DeepSeek por terceros– diciendo que deben ser eliminadas de dispositivos de TI. Continuar leyendo...",
+    "enlace": "https://www.theguardian.com/us-news/2026/oct/20/us-bans-china-deepseek-ai-tools-government-agencies",
+    "fecha": "2026-10-20T12:33:27.000Z"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "«Estos riesgos son reales»: la amenaza de las armas biológicas de IA – vídeo",
+    "resumen": "En su discurso anual sobre amenazas a la nación, Sir Ken McCallum, jefe del servicio de inteligencia del Reino Unido, MI5, advirtió que la IA tenía potencial para «cambiar las apuestas» en armas biológicas existentes e incluso nuevas. Para averiguar por qué y cómo, Ian Sample habla con el Dr. Tom Inglesby, director del Centro Johns Hopkins para la Seguridad Sanitaria y la Bloomberg School of Public Health. Explica qué preocupa a los gobiernos y qué medidas podrían implementarse para reducir los riesgos. Continuar leyendo...",
+    "enlace": "https://www.theguardian.com/science/video/2026/oct/20/these-risks-are-real-the-threat-of-ai-bioweapons-video",
+    "fecha": "2026-10-20T12:14:42.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Reuters",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Gobiernos y reguladores aumentan la vigilancia de DeepSeek de China",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbVhkM1J5N0IzOXhOUDREMjd2N3J4eHJaNUREaWhaSWhISlNxMnBmWDZRXzYtczB3ME1xT0N2Z0hxWEdHU1MtSDdjVXBTMlBYdmd4NmFNNk9GRl9McmE3c2lQaFFoSG9KbEtiUnp0MGlqbVlOekpva3BUalZZUDgxc21KeGhCaFNGckszZ2k1anR4d2NQNmhwaklreTh3cHpwM3B5VQ?oc=5",
+    "fecha": "2026-10-20T11:44:56.000Z",
+    "publicador": "Reuters"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "The Decoder",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe la tecnología Deepseek en todas las agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcnZIdW91cl9EOHFHV2dSTnZQelVmVFhzUDBwcGdwblNXNDAxa0RUWkR0WXNMalVaSEFFeVRmSzF4NndHWEpzZVhCYkhieXhkQmxvM2FLb1lxYTZkdjNCdURrbDFKUmZKQUdLb1FCVUU1RGduYko1R2dqRDZKV1NaN0M3ajdMbk9WcE01anhB?oc=5",
+    "fecha": "2026-10-20T11:39:01.000Z",
+    "publicador": "The Decoder"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "NewsCord",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DHS ordena a agencias civiles federales eliminar DeepSeek por problemas de seguridad de datos: 19 medios comparados",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWXZxSzAtVl9xaGd3TG1KS1M5dTNzM1ZVVDZXNmN5VWFQaHNVZ01sMy1RWThBZ090VE1uM21BVEdfMWRoSHg2MUpmNWRPbGxncXNaTVpuNnF2Z1pjOUE1LWdNZkpvMElIOGJqUl9NaDVtQUxwR2R5UVNVcTItQ2l1UTZQZDNxZ1Z1dlgzT0xEMEY3aEVXbENiaDNQMWpRZXhpN1o2LXBQN0ZMRjZ2bktjbzNjbWE4ZzdVWjd0T3JER0hPMDAzSFhyS0tzSGNmTG9jRFJHRThETkg3eGItMVVZXzdjUHI1UDNOd0E?oc=5",
+    "fecha": "2026-10-20T11:36:57.000Z",
+    "publicador": "NewsCord"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "La última sensación viral de la IA es eliminar anuncios y bloatware de las Smart TV: he \"tontificado\" mi Chromecast y es maravilloso",
+    "resumen": "El domingo por la tarde, como quien no quiere la cosa, veo un tuit curioso de Monos Estocásticos. En él citaban otro tuit de un usuario llamado @gathint con un descubrimiento llamativo . Ese usuario (o usuaria) había \" vibecodeado \" la TV de sus padres para quitar los anuncios y transformar la interfaz intrusiva de Android TV en una mucho más minimalista similar a la de Apple TV. Sin anuncios, sin bloatware, y solo con las apps que él necesitaba. Tontifica tu tele . El tuit se ha convertido en la última sensación viral de la IA. Hace un mes parecía que la sensación era conectar ChatGPT con GPT",
+    "enlace": "https://www.xataka.com/televisores/ultima-sensacion-viral-ia-eliminar-anuncios-bloatware-smart-tv-he-tontificado-mi-chromecast-maravilloso",
+    "fecha": "2026-10-20T11:15:00.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "ABC News - Breaking News, Latest News and Videos",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "China defiende DeepSeek después de la prohibición estadounidense de su IA en sistemas gubernamentales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGZWbHNVbkpyNWI3MWZDaVVjV0dNOXNUMVl1dGpKS0I0aDEyUkFheU9qaUdRUkZONXdHWXdjazFENkdGQVl3dHRrQTBoSktHR1FNSDJrWXVjMy14R1RNQTlBLV9BN1BIcnlUWU9IeEFoMDFSN1IwWEJlYjJmc3FBWkNCMUJvblJYd0pEUXlpaE1MbWN0emFTQ2dhcWZGR1V2Y0HSAacBQVVfeXFMTjczbjF5ZWxkdW93eVVsQzBaSi1ia2dKcjNya3R4UWpCQVBmTDVhQlZ4a2lkclVlZU4tSjlQRmNlX2ZnaGZXbVowNHNMUVg3Skt6NTRJSUM0d0ZNXy0tM0lwTWFEVGdzX1l2VzRoLUJBVWtrZ3VHOUNWVFp5NVpiY203ZHNLMzE0bjFZTEZIemc4cVY0RVZfY1Q1YnRlN0lxbHp0RDNyTTA?oc=5",
+    "fecha": "2026-10-20T11:12:44.000Z",
+    "publicador": "ABC News - Breaking News, Latest News and Videos"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Longbridge",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Cómo Longbridge AI convierte Kimi K3 en un analista de bolsa",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYnJJS1BVMm9EU1RnWktMY1huc0xEMDNfdkJ4bU5fZ1JocEJMN2hjQzlnVGpNWnAyOW42SlVUc2hJNjlQakplcU5ZTGVIT0tfMG8wemYtemJYLUVSTkM2RlB1aThFS21TSmZ0MkpOek05TElBREIyOGdxdk5kcndoRjNEZS1VRzcwMUhaNDVKb25DQy1BRU9xNTlJMUNMZ0prcHpuQTR3TkV5bHlDV2xVRw?oc=5",
+    "fecha": "2026-10-20T10:47:43.000Z",
+    "publicador": "Longbridge"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "CyberSecurityNews",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El gobierno estadounidense prohíbe la IA DeepSeek y ordena a agencias federales eliminar todas las herramientas relacionadas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1FR1lGb2tfY0Q0TW5Sd0NIa0JscUZDN0RRM21ua1NkQmdoaWhDUHBRWTJSUGdjUUNqeVA2VWxpVlNoMy1RbmU0SG9laTFfN1paYXF6eWpRemhNcndqZzRTaE5QbjNkbXpFck1KbVRPOEpLUW800gF0QVVfeXFMTUVHWUZva19jRDRNblJ3Q0hrQmxxRkM3RFEzbW5rU2RCZ2hpaENQcFFZMlJQZ2NRQ2p5UDZVbGlWU2gzLVFuZTRIb2VpMV83WlphcXp5alF6aE1yd2pnNFNoTlBuM2RtekVyTUptVE84SktRbzQ?oc=5",
+    "fecha": "2026-10-20T10:18:55.000Z",
+    "publicador": "CyberSecurityNews"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Dealroom",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos ordena a agencias civiles federales eliminar DeepSeek, incluidas herramientas de terceros construidas sobre sus modelos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRUl5VGZEVEFnZElONXRGbnVmWXpBVDRQRFdYTjlBVXA2UHc5dDl1T3NLbUNsX21rSUNGSkJtYjgyQjdrYkJsRFJsY21LcS1RZ0VNZXdDbm9CZlFDSHlUNW5uaG1GczR5cHVta2l1MWxiVDlSRmRFeWRtQ0xDUVZaOVFYeG54QTNrZDgtdVFKVlFOTXg2QWpiT2JCd1o4YnRHcHk1UnZBTkZmQmVlZ0pUeC1BaktRMTdQMEVSSjhmOVdqbnFCaHRlTThRMmNQay1mZHg4?oc=5",
+    "fecha": "2026-10-20T10:18:50.000Z",
+    "publicador": "Dealroom"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Yeni Şafak English",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe DeepSeek en redes civiles federales por riesgos de seguridad",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOUk1OE5GRkMxR19rWmhjWHRjNUJwRHE4bnpwMzIySmZLMkdkckI0WXVCNDVkUl9DRXdIckp1a3ViZ2dpN2YwUkRTZ3B3MV9yLThfdEpsckQxQ2dnOVNBMktsTmRTcHdiSENxQnZKdjdaZzdMVzJLS0xrazVIQjN6RkdHa1JhdUs4djc1RWd6dkFDUTZQaHRrQUJnSERfWTdQZm9vWFZVQW5hdw?oc=5",
+    "fecha": "2026-10-20T10:11:58.000Z",
+    "publicador": "Yeni Şafak English"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "IT Pro",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe DeepSeek en agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWm93VkViWXpISlZqbkxyX0tzRU5EVnN6cHE2a1ZFQ3BUdnRZdDdHcU5qak5vS04tMnRKZ1g5eWhwQk9IcE5acFRsUk9ScUxHU3BBZDNRZ3U1V2xqdS0yaTZMSVdobU43Q1dpY1NWeXcwQlNZcFpiUlFIVzdYaEw2ejNzNUc?oc=5",
+    "fecha": "2026-10-20T10:02:25.000Z",
+    "publicador": "IT Pro"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Technology Org",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DHS ordena eliminar DeepSeek de sistemas federales estadounidenses",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbWNHLU95TDZ3TEc4OU9haVpwS0lsdmx0VjNmZlluRDNMRm5iWFpvam90TElMaGtMUHhhQk13cl9jdGZiMFl2YXpmLXZ6dEdGRkk5OF85YzB1X19WSUFWb2dKUlZ6dHZSZXVicTB0bk81Nll4Z0g0ZV82NVBsQUJYNjNRbE9rellsa0NpTjNWa0ZLZw?oc=5",
+    "fecha": "2026-10-20T09:39:55.000Z",
+    "publicador": "Technology Org"
+  },
+  {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "Dividend Titan",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El mercado de bonos me está diciendo esto sobre la IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13SXlTY1FSMjFJRlpYeEJISVBfY3ZXZ3dLVmRfd0JZdl92NFJ0cWd6dDlVdE1MRFZ0eUlJN1hjOVJnMzdkdUpWNFlQNlVyTHduOXJzekpMb1NZMU1udkUteHJqdE80OHZrblNzcWdPSXB3YmlPbTcwTFFnbjNDaXM?oc=5",
+    "fecha": "2026-10-20T09:12:01.000Z",
+    "publicador": "Dividend Titan"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Neowin",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El Departamento de Seguridad Nacional prohíbe el uso de DeepSeek en agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUUdUOVNEVE5VVkp5Mi1JZWN2WEF1RE5MeFlBWXVJWmNaRTctajMtSjRZaVA0QU0xRWxvVjM0R21CU3hZanlXcHNLenB1aXpiNDNVNll5RHU1Tl8tX3MzYWMxbHFybVVtb3pUeENSVUx0MDgzd2RiOFBSaXFxd09MejJDQUxzZnNQejN6QnRoVy0zYlRLbWNDRTZWa18weWZRNXJvandFRzk3Y0U?oc=5",
+    "fecha": "2026-10-20T08:52:00.000Z",
+    "publicador": "Neowin"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Dataconomy",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe la IA DeepSeek de sistemas gubernamentales civiles",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmk3NEJ3LUJNYzg0aXlMS1c1bVd0SzhTdDkzbHRaWU42Y0UtR2U2TkJac3dybllta1BqbHBUSDZUOFFMRDAxMmF2a1QydFZaNnMyRGF2cTNzOXRUMTNwWVczNTdnZzdWdEphdHFndWNKZi1UWjQ1Unk5WF95WUEwQmpuaDktZGdFOXc?oc=5",
+    "fecha": "2026-10-20T08:49:41.000Z",
+    "publicador": "Dataconomy"
+  },
+  {
+    "fuente": "Politico Tech",
+    "medio": "Politico Tech",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Mientras la batalla de patos cojos sobre chips se calienta, OpenAI se retrae",
+    "resumen": "El gigante de la inteligencia artificial alguna vez pidió abiertamente límites estrictos en las ventas de chips avanzados a China.",
+    "enlace": "https://www.politico.com/news/2026/10/20/openai-ai-chips-china-nvidia-01127385",
+    "fecha": "2026-10-20T08:45:00.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Arise News",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe la IA DeepSeek en agencias civiles federales por problemas de seguridad",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkN6Vm5OVHZlZHB6Rk0tdGJVNHdOeWVHUjhNM1FsVEJpRXdiQzdkRVBhaVEtUUxTQlNXaTRtNDRhZHd3Y3FwYUtaVS02b3RlblIyM0h0XzR5TjNta21NVUlCUjRkWjJIV20zdWE1cVlaWXRuVkt5MmJqaC1xY3VyQV9pdVYwYkkyUXZDUkJFSWU4VXBWVlBiWEF4aw?oc=5",
+    "fecha": "2026-10-20T08:33:53.000Z",
+    "publicador": "Arise News"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "https://tech-insider.org/",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La cláusula de proveedor de la prohibición de DeepSeek atrapa a 3 agencias [2026]",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pTzVEc1FmMEdxbTlVMmdFR25GYWpWUHhYd2VRNlptTXR4M0lQekZXVTN6NVNudUQ4TVBSenFFQU82WkhHYkY3TVI4by11N2RaTEVGeUN2LUxqNGNWZmNjTnJfakxMRkxfbXByWkFwWldIMGJBeHRJ?oc=5",
+    "fecha": "2026-10-20T08:22:33.000Z",
+    "publicador": "https://tech-insider.org/"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Anadolu Ajansı",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe la firma de IA china DeepSeek de redes civiles federales por riesgos de seguridad",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaHpBYmJSYjB5a2xTYzRKQ3d2d1hlaTN2N2YzOUpxN1IxTnRsTGI3LUVuUGs4MmpBdTlIaS1kYzV6QmlfM3FTd18xTU5sN2ZSdjQ5cmYyX1NsRG1UcS1ycEFDVEFPTGFYSG9iLTN3X1FZSXNiN3pVZ01wQlVQbnpJSHFPSWowM3VqSVdjb29IZFJRM3lvT0k5MF9vOUxpbmJFWHYzSGRHSXEyOFMyNGNReWh5QTJhemRRZUhzQ3VNWENxNEE?oc=5",
+    "fecha": "2026-10-20T08:14:35.000Z",
+    "publicador": "Anadolu Ajansı"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Daily Sabah",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe a agencias gubernamentales usar DeepSeek, China promete proteger a empresas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaEhmN3JkZEpqdW1SZGpReUhFOFJQZFFJOWhLRGtjSWkxbFRzUEdYM0o4T0h1MlVDeWxqaC1QNDFES1dlbHhoOUdlOHZKNWtIRTNHSXo1aEQ4RXBMbzgzd2VLenh1dmw4dTl2QjYwc1VWTVhHNHlLVTk5QnFRRWVnMlVZUnhzSnJUYUhSTHN3MXdWTWJsNXlreGNLWE1lYU9tMGtWOTUtVXNRNWVVNEQ3QlFlV1dqbjJH?oc=5",
+    "fecha": "2026-10-20T08:05:00.000Z",
+    "publicador": "Daily Sabah"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "1000 años de seguridad en IA",
+    "resumen": "Una pausa de tres años en IA podría proporcionar 1000 años de trabajo en seguridad de IA. Ver: https://1000yearsofaisafety.com Cuánto trabajo de seguridad en IA produce una pausa, en años del trabajo del campo completo de seguridad en IA de 2025. El gobierno prohíbe nuevas ejecuciones de entrenamiento a gran escala y consigue que los tres laboratorios estadounidenses principales redirijan sus GPUs e investigadores a investigación de seguridad. Desarrollamos un modelo de una pausa de IA que estima cuánta investigación de seguridad en IA produce. No sabemos qué aspecto tendrá la pausa, así que modelamos cinco duraciones, cuatro niveles de capacidad de IA y cuatro niveles de confianza en IA. Lo usaremos para mejorar el Plan A, pero todavía...",
+    "enlace": "https://www.lesswrong.com/posts/F532cjfTZHMbJqkNA/1000-years-of-ai-safety",
+    "fecha": "2026-10-20T07:54:14.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "WinBuzzer",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Seguridad Nacional prohíbe DeepSeek para agencias estadounidenses",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZGxOUGNheU5GZV9aSnJfalBiSlRGT2hiakxUZGtubnZrWU5ORnNGWUYzbkUzTVRzOE5aREdtQ3B1M1RGeHJaUE5lVldWTHhBa0V0NUlGU2V1TlVNZjlCOTZxbEM4T3VJQ01haUVVamxzTlZpZUhUWUVlREhBSGlRRHc2X0JacWJVdk0wWjR3MF9BSE5DSHc?oc=5",
+    "fecha": "2026-10-20T07:52:18.000Z",
+    "publicador": "WinBuzzer"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Techzine Global",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El gobierno estadounidense prohíbe DeepSeek en agencias federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbWRabHlBY1lnYUhHNzRfaGdpQVlZMjRyZ3lOdWRvX2N2dzNGWnhIcUJidHhoelE2WGR2OUJFYjBEd3NBWjZtTlJTS3U3STJjUlVsYXdWcUxGMm9pbWF2VVdqb1IzLXVad3RmQlFKNDNOdHV5bkVVMy1sRTljSy1mcUtXb2wwejU5aGdsRDFXOU82d3ZDY3F4bWRRT09scFd5R0hpZF93aGVhdw?oc=5",
+    "fecha": "2026-10-20T07:33:11.000Z",
+    "publicador": "Techzine Global"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "CNBC",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Estados Unidos prohíbe DeepSeek de sistemas de agencias gubernamentales en medio de la brecha de IA con China",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BMm5ISmplcUtod2txVlV0ajlNUHFPanpRa09GWnBMdjdOaUFCSTZOUXk2SnVNclplakZrckJWZDZTYU96Z3pKTVZieUZiVXkwM3Fza0FibjVLaGhBR2dNMUVwNW1yTllMZlI5R1N6ek1MZXI5OXfSAXtBVV95cUxOMTd2ZFNDSGNCclhSb3lSYl9MdnVtZ3BiYlp6VFQyZUpNR25oNFlsYnRnMThxWmJTZ2tWd3BGWV9PWGFSdHMzMFotTmNpbUFuQzZLaVdkOTJtSmxHeEpLdFcyU013c1dUMktXNWt4blRDZFYzeEk2VkF6WVU?oc=5",
+    "fecha": "2026-10-20T06:25:26.000Z",
+    "publicador": "CNBC"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Esperando una buena salida a bolsa",
+    "resumen": "La ventana que se reduce de Anthropic para cotizar en bolsa",
+    "enlace": "https://www.ft.com/content/6c6fb412-5eca-4ed3-8b3d-f1c367712c5c?syn-25a6b1a6=1",
+    "fecha": "2026-10-20T05:30:09.000Z"
+  },
+  {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "AI: Reset to Zero",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "IA: bucles de IA 101 (parte 2). De GPT-1 a GPT-6 Octillion. AI-RTZ #1245",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fTVk5YzlaUUROaDRSRDk4RHNRWm9sWll4WU9ZMXZsU2ZEcEtWdUtYandjc1JycnV5QWJtaWtGbUNqN3AxUTh6U3MweG5KRmJsdHRpZ19SazlCQ3k1UWpxSmJ3YS0xaTFnamIwMWRnWUZ6ZDNoLVBBRkpR?oc=5",
+    "fecha": "2026-10-20T05:02:35.000Z",
+    "publicador": "AI: Reset to Zero"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "https://tech-insider.org/",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Prohibición federal de DeepSeek: 5 rivales estadounidenses de IA ganan terreno [2026]",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5RTWc5a21SNGZ1UU1jTW9wWnltd0tWNnMxRFI2ZktVYW56VFlLaURRRHo3VVp0dU42WktwaHlvY1hmLVFVaURTUWF6Q1JyYmM4YW1ETmJ2MUR2QW5CTVV6SWVJZ2V0NHpjbG1FM2F4NUM3Wm13ZUhiR0NkWmg?oc=5",
+    "fecha": "2026-10-20T04:21:44.000Z",
+    "publicador": "https://tech-insider.org/"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "gHacks",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "Seguridad Nacional de EE.UU. ordena a agencias civiles federales dejar de usar y eliminar productos de IA DeepSeek",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWVQNnVwMXF0WEh0dHl4OFBKVnlLd04wbC1kVmVBZG96TUNLNDJ5b1ZsbGNxT2xNTXgxVEZMRjVSSU9NeW1SaHI0cUc4UFNlMXhJNk9Bcm94c244M3VhcVVneVc0N3JKWDJCYWFYZmQwNUg3dWFaS19sWklDMGEtU1hnRW4wSENRYmUzNzdrSGY2SVFxbkY0NlJudUZIUnVMSER1SG9wOTljVzJaTGV0RnUxa0hta3pFRjNQZlNrWl9wakx6bHBOVmJ2dEdJbGs?oc=5",
+    "fecha": "2026-10-20T04:05:12.000Z",
+    "publicador": "gHacks"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "«Estos riesgos son reales»: la amenaza de las armas biológicas de IA – pódcast",
+    "resumen": "En su discurso anual sobre amenazas a la nación, Sir Ken McCallum, jefe del servicio de inteligencia del Reino Unido, MI5, advirtió que la IA tenía potencial para «cambiar las apuestas» en armas biológicas existentes e incluso nuevas. Para averiguar por qué y cómo, Ian Sample habla con el Dr. Tom Inglesby, director del Centro Johns Hopkins para la Seguridad Sanitaria y la Bloomberg School of Public Health. Explica qué preocupa a los gobiernos y qué medidas podrían implementarse para reducir los riesgos. ¿Podría la IA «cambiar las apuestas» en el desarrollo de armas biológicas? Apoya a The Guardian: theguardian.com/sciencepod Continuar leyendo...",
+    "enlace": "https://www.theguardian.com/science/audio/2026/oct/20/these-risks-are-real-the-threat-of-ai-bioweapons-podcast",
+    "fecha": "2026-10-20T04:00:15.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "조선일보",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. expulsa DeepSeek y productos de terceros de sistemas de TI federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWl9FYWtCYlBVbFd6RDc4d1hXMjdTczRQZEJwVHNHTXc4aFYxRlh3X2RrVTJ3cy1pdHF0S0VwUVlEYXNUUDl2S0xFbnhiVTFISXJNc2JiSzFoNk5YcEc0VkcyOXgzWXlaX0s5MTFRc1ZjekYwdkMxbWRPOHVrYkdiNW8wLXc3TDNG?oc=5",
+    "fecha": "2026-10-20T03:54:39.000Z",
+    "publicador": "조선일보"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "La apología de un matemático turista: vivir en un mundo humano-AGI",
+    "resumen": "Graham Greene describió el libro de 1940 de G. H. Hardy, «La apología de un matemático», como la mejor descripción de lo que es ser un artista creativo. Hardy tenía muchos amigos, intereses variados que incluían el juego del cricket, y empatía por los menos acomodados. Pero fue su trabajo creativo en matemáticas puras el que le dio a Hardy «la gran felicidad permanente de mi vida». «Las matemáticas», escribe C. P. Snow, «fueron su [de Hardy] justificación». Le dieron significado a su vida. Avanzamos rápido a octubre de 2026, cuando OpenAI publicó más de 700 documentos generados por IA afirmando haber resuelto o hecho progresos importantes en",
+    "enlace": "https://www.lesswrong.com/posts/qWBJxLpnx67YLyAme/a-tourist-mathematician-s-apologia-living-in-a-human-agi",
+    "fecha": "2026-10-20T02:39:18.000Z"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Saudíes ayudaron a la familia del ingeniero acusado de espiar OpenAI, según dicen fiscales",
+    "resumen": "Funcionarios saudíes pagaron para que su esposa e hijo volaran fuera de Estados Unidos y ofrecieron cubrir su fianza, según documentos judiciales. Un juez ordenó que el ingeniero permaneciera en custodia.",
+    "enlace": "https://www.nytimes.com/2026/10/19/technology/saudis-aided-family-openai-engineer.html",
+    "fecha": "2026-10-20T02:27:47.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "VitalLaw.com",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La IA DeepSeek enfrenta prohibición de redes federales por problemas de seguridad de datos (19 de octubre de 2026)",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWDJOYTNPc3V2ZjRMWUMtU0QtNkdoSENRUThhMy1vQnBFOGY1TFhZS0QyR1hDTTRtODJnRk5DSmc5cXdRYkZGVlY5bjlGc0JhTWR0WEJ4RndoU1FCRGxqbzFfeGl3Y2M2bjZnaGFuZHBfSDBGTUlTVURPYUJQbGhLWW55clBzS2tFQkh2cXlqNWQ0WldOZE1SOG9sSWxNYTVrRzdCdnJZbU5scVJUYUtKci1vMXpEakhwU1A5cElyNk41U0Z1T0M0MDZhbUdfS1ZHQWtuQnlPSQ?oc=5",
+    "fecha": "2026-10-20T02:00:12.000Z",
+    "publicador": "VitalLaw.com"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Mamdani dice que los federales han abdicado en IA, urge a neoyorquinos a resistirse",
+    "resumen": "El alcalde Zohran Mamdani dijo el lunes por la noche que los neoyorquinos deben resistir la narrativa de que una toma de control de IA es inevitable y exigir regulaciones que protejan al público y devuelvan el poder a sus manos.",
+    "enlace": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
+    "fecha": "2026-10-20T01:27:03.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "Startup Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "El Consejo de la Ciudad interrogó a SpaceX sobre una imagen sexualizada de Grok de su propio presidente",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeWJfZGdDa0w3MTVXa3hlaVI0NjMxMlZITDhSdnNnbzZuaHFOR1EtLXhOY0lEdkZJSXdBR0kzTUlYdnM0YXVLbWo1X2ZvVXNfdHBPRHhhSHRZSnBseTIwcTh0dm5QakdfM0ZlMHhlWnpjYm40QkxrOEloVjNEeWpONlpSdkFXV0RZSjdHX3RuaDAyWjVKUUZmaFhUTkN6SFNpbVpGdQ?oc=5",
+    "fecha": "2026-10-20T00:52:00.000Z",
+    "publicador": "Startup Fortune"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "SiliconANGLE",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La administración Trump ordena prohibición de DeepSeek en agencias federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbXFPVG8zSGRCRk9vWmRQWTVRa05mc1VPckN1aTAzT3lOWlNsZmRDblBnM3kwZFZ1cGpsZ2ZyWkRwYlctMXFDRm8wSGhfdXU4WDRGZnlVTTI3SGZSVF9aNkdMT0lhRnZNdnZEU2kxYU9KeUs2VU9qMU4wWko2WEowb2RiRUZHVjJXenZudEZqVEtRMGxuYWtwWWJpSXF5TGFkZVE?oc=5",
+    "fecha": "2026-10-20T00:47:00.000Z",
+    "publicador": "SiliconANGLE"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "The Register",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DeepSeek profundamente descartado en todas las agencias civiles federales estadounidenses",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbGw2N1FIWmVXNTRUZ19IVktCTmM5YTM3d0tJOE10OURHVGtZQmhnNWFRWkxsbGEwWHpjSzA4ZGcxR2w4RS1wWlZQX1NRbDNIYnl0ZkNQSDcxZ196VGpwcTFBd2tZOWZlM0ZPY1BXZDZrZXR4T3RRUHIwbmRUZF9IaWM3U0FMeWxoa2JmT1NwdlgtaTNpQjRZZzZsVkhid2R0bkV6TVYtcGdSVXNtTTBGZw?oc=5",
+    "fecha": "2026-10-20T00:11:10.000Z",
+    "publicador": "The Register"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Nscale y Anthropic supuestamente en negociaciones por otro acuerdo de computación de 45.000 millones de dólares",
+    "resumen": "Si el acuerdo se concreta, sería el último de una larga serie de gigantescos acuerdos de computación que Anthropic ha alcanzado en el último año.",
+    "enlace": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+    "fecha": "2026-10-19T23:39:38.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Korea JoongAng Daily",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. ordena la eliminación de DeepSeek de agencias federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRzREXzZVc2pya0tHbVY3R21wQW5sdnRDNkJWb3p5dXF1enloLXItZjFvVGY5MEhkWW9DTkxxNWEzNVhPam5Pek9kNmdyVER3d2c4NVVxdUVBbmZ2UThsdWdtVWtsc0dyRFVxUVRYVFpoWlNla3FPYkpnRlNRMkU1YkxuUEFpa3djaURSQkphZXJRVWlvdUVhQ29GeVdSTmc?oc=5",
+    "fecha": "2026-10-19T23:35:51.000Z",
+    "publicador": "Korea JoongAng Daily"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Humano versus IA en Go en 2026: ¿Lecciones para la superinteligencia?",
+    "resumen": "En julio de 2026, el jugador coreano de Go Shin Jin-seo derrotó a KataGo 2-1, con solo [1] una ventaja de 2 piedras (favoreciendo a Shin). Pensé que esto era muy sorprendente, y publiqué en LessWrong y Twitter preguntando cómo interpretar esto. No obtuve ninguna respuesta completamente satisfactoria, así que decidí pasar ~un día investigándolo y escribiendo mi comprensión. Como prefacio de este post: no sé mucho sobre Go y soy un jugador de Go bastante malo (es decir, no mejor que 20 kyu o algo así). Pero en 2022 hice un proyecto de interpretabilidad en un modelo que juega Go y he pasado bastante tiempo pensando en",
+    "enlace": "https://www.lesswrong.com/posts/FZmEpvcdbgnRLmAKg/human-vs-ai-in-go-in-2026-lessons-for-superintelligence",
+    "fecha": "2026-10-19T23:20:25.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Qué significan el otro 80 por ciento?",
+    "resumen": "Soy austriaco y escribí esto en alemán. El inglés es una traducción automática literal, no reescrita. En todas partes ahora se discute el daño catastrófico a la humanidad, y varios escenarios. Pero los otros porcentajes no se mapean en detalle por resultado, de la manera que se hace con escenarios nucleares, donde la gente mira esto más de cerca. Eso es posible. La gente no profundiza, no utilizan este método. Cuando lo escuché por primera vez, no confiaba en mis oídos. Pensé que eran noticias falsas. Desafortunadamente no. Si el 25 por ciento significa la extinción de la humanidad, ¿significa el 75 por ciento el paraíso? Quién",
+    "enlace": "https://www.lesswrong.com/posts/Bzk4g9KvRWr8GPr6F/what-do-the-other-80-percent-mean",
+    "fecha": "2026-10-19T23:05:36.000Z"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Los evaluadores de IA integrados no serán una solución fácil, afirma el jefe de políticas de Hugging Face",
+    "resumen": "La idea de evaluadores integrados —en la que supuestamente observadores de terceros «neutrales» se colocan dentro de las organizaciones de IA— ha sido popularizada en los últimos meses, mientras que los laboratorios de IA luchan contra una serie de incidentes de seguridad que han generado preocupaciones sobre los posibles daños de su tecnología.",
+    "enlace": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+    "fecha": "2026-10-19T22:49:27.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "New York Post",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS actúa contra DeepSeek de China mientras se intensifica la competencia de IA: «Múltiples vectores de amenaza»",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNzJKemsyVmFMQmZTMm54N3gzLXdUT05PN3lrUkh1MmRCZjFIWjJrWDR2a21wU0l0bEVJSU00bGlWYWdyNU9wWWZiY2JUSzFWbHgwaExjeC03SFdacXZlVkpTNTRiMGV0b3puc3JHS3o5MFBPd24yeGs4aVZxbXBEM1AyNnJWQy1mMVYxNjREVHVwTWxnTU8wRi1hS0xIVzJEb1NibGNaQ050eDRvMThJNWlzejdHZWlnSzhtWnp1V1djcGN6MERR?oc=5",
+    "fecha": "2026-10-19T22:32:00.000Z",
+    "publicador": "New York Post"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic y Nscale en negociaciones por un segundo acuerdo multimillonario",
+    "resumen": "La startup de IA busca más potencia de computación del grupo de centros de datos del Reino Unido",
+    "enlace": "https://www.ft.com/content/26a604d8-1a9d-4801-bd73-6ac588b63bdc?syn-25a6b1a6=1",
+    "fecha": "2026-10-19T22:27:32.000Z"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Elon Musk dice que dará una participación accionaria de SpaceX a «Cada niño en Estados Unidos»",
+    "resumen": "Anthropic, un rival de IA de SpaceX, anteriormente dijo que formaría un «fondo de beneficio público» y otros magnates de la tecnología han contribuido a cuentas de ahorros para niños.",
+    "enlace": "https://www.nytimes.com/2026/10/19/technology/elon-musk-spacex-stock-anthropic-giveaway.html",
+    "fecha": "2026-10-19T22:12:02.000Z"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Microsoft dice que los agentes de IA son como amenazas internas ya que «los modelos fronterizos no se pueden confiar»",
+    "resumen": "Microsoft quiere que las empresas monitoreen de cerca los agentes que los empleados utilizan con sistemas no controlados por laboratorios de IA como OpenAI y Anthropic.",
+    "enlace": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+    "fecha": "2026-10-19T22:04:28.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "South China Morning Post",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. ordena la eliminación de DeepSeek de los sistemas federales, citando riesgos de seguridad nacional",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT1hmeDF6Wm1ERkNQM2lmdGg5RTVNOHZvcmQxRlAzVFpndk5SOE1UdEhwMHNhQjdQaExGMkljeVdoa1FTWWl1bzhFTDhWdy1JV2Z1c3F3Y1VPUGRZTDVxQV9HUVBoUmpGdnZWcmdyWjBjUm1yTEJUNGRmMzNoNk43YjhXWEJmVWgzamFYeUZZeTFvcG0zeHBIMEdGRVZrS0kySlYtMjJpaXo0dU5TeUZwWTFKODFfWFp3dkHSAboBQVVfeXFMUGNZTGQxdWpZNmpRTjF5ZWVqdjV4QnFNanIxcXJKdFR2RVpOS3M2UmlKX0ZfWlU0a1hQQzAycC1XNVhQdEtCOENyd0JoT3daVFoxY2dXRFZGRDFkb1IxZjBLVmVTRVRlTTZJQmR3X214RVRBaGhHeDNjSVNXNnhaQWxSN3NZYWdoV2Z0T1pmOWpfM1Z6cWw3TmFnZ3R5blBBNDFGeHhGMG1jUTRKX2p4aUViNnZVYTY3dW9n?oc=5",
+    "fecha": "2026-10-19T21:49:10.000Z",
+    "publicador": "South China Morning Post"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "The Hill",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DHS ordena la eliminación de DeepSeek de los sistemas informáticos de las agencias gubernamentales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOFhOMXdtM21tdGFQTkZfMHFPWFFFVi1JSURkUUc4SmwzdXpSRDVlYkI1TlFhZGQ1SUxkZnZwYmxURDhpZ0k1WnRHTkxRMThsRUZ2dkpIR0xXdkNwbGxVVnFldlNZR0F5cjdsdk1US0xmSVRUV0JFN0Vxbjl0eVRFONIBhgFBVV95cUxOUzNqV3NQTDdoUHJNWUZSd2NXWnRseWYxRWR6M0RNelBDd2c4MWtyYk1Wc2VEQUZHejZNWmRvblFsSzhsZkJ5XzZWWlNaTHdZdUdvcTFveVJIeUxVX2I0WVpkTVlBTF9JYVBZNkpzMGtmMzhPRmpLeHpaV3I0N2VKbnJIRW1Hdw?oc=5",
+    "fecha": "2026-10-19T21:43:00.000Z",
+    "publicador": "The Hill"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Gizmodo",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La administración Trump prohíbe DeepSeek en agencias federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQandjME0xa25DTTBERlBYeG1BTDhEaUxrd1FmUy1nRFVVR1lmV2xkdmJtcFNZNmRHT25GZHVuRmpFNG1SRk01RlFwa2JDd1ZTTFFzQS1IdHBlNXFvbGNUdWl6WDRFZFR0dHhJalRQU0ZaaVBYOGJCQ1dEOTVsVWgyRC0ybnU?oc=5",
+    "fecha": "2026-10-19T21:41:06.000Z",
+    "publicador": "Gizmodo"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "GLM-5.1 tiene ~Control CoT a nivel Astra",
+    "resumen": "TL;DR. Ejecutamos la suite de evaluación CoT-Control en modelos GLM, Kimi y DeepSeek y encontramos que mientras que los modelos Kimi y DeepSeek tienen un pobre control de CoT, los modelos GLM son valores atípicos en su capacidad de controlar CoT. Investigamos extensamente este comportamiento en GLM-5.1 y demostramos que generaciones anteriores de modelos GLM (GLM-4.5 y GLM-4.7) también tienen niveles de control de CoT igualmente altos. También encontramos que a pesar de su alta controlabilidad, GLM-5.1 tiene un bajo rendimiento en tareas de evasión de monitores. Sin embargo, un modelo que puede controlar su CoT podría evadir un monitor suprimiendo información relevante, agregando información irrelevante",
+    "enlace": "https://www.lesswrong.com/posts/q3pckKRxRXWBthbKb/glm-5-1-has-astra-level-cot-control",
+    "fecha": "2026-10-19T21:29:08.000Z"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Empleado de OpenAI acusado de intervención tenía vínculos con miembros de la familia real saudí, afirman los fiscales",
+    "resumen": "Un juez estadounidense dictamina que Abdulrahman Alfozan no debe ser liberado bajo fianza después de que el gobierno estadounidense argumentó que tenía «apoyo considerable de un gobierno extranjero»",
+    "enlace": "https://www.ft.com/content/9e10eaa4-ed5e-417b-85c5-b5003b064017?syn-25a6b1a6=1",
+    "fecha": "2026-10-19T21:27:34.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "BankInfoSecurity",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS prohíbe DeepSeek en agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTTZ3dmNRelZGRUE1NWlPeGNDSGtHbW5mVFpFQ2xHQlI0ei16Z0p0dm5ZeGVtNjkzQV84c18yd2QyNUQ0OXFuZGNRb2xnTW9TVTlnQzlyS19TLTFXSjVjUElieGNGSmtHeUZNbWdiTTNFVUY2VUlTNHZQZ0FTSVd3QTZGUldsN1I4YTlyQzZNbGZVYm8?oc=5",
+    "fecha": "2026-10-19T20:43:22.000Z",
+    "publicador": "BankInfoSecurity"
+  },
+  {
+    "fuente": "AI Snake Oil",
+    "medio": "AI Snake Oil",
+    "categoria": "boletin",
+    "idioma": "en",
+    "titulo": "Nuevo artículo: Tendencias emergentes en la evaluación de agentes de IA",
+    "resumen": "Comprender los métodos, preguntas y ecosistema para la evaluación",
+    "enlace": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+    "fecha": "2026-10-19T20:11:55.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Politico",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DeepSeek excluido de los sistemas informáticos de agencias gubernamentales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNX1VsVHc5NlhrdGxhQnRpWG9WdmR5QWtmeFRyOHRsQXg5bEt4Zm9PTC1YY1phUWd0eHNyTHV2RjJOTDJGNm1xbHIwUzBUMHE1V091VjdtVUhzaTdkblBUQTQzdkloTmlfekJCYXQ0TS13X3NWbllqcy1qQnlLcGx1N2dvODdSNE5NRkVVNTYxUmJ0Sjg?oc=5",
+    "fecha": "2026-10-19T20:01:00.000Z",
+    "publicador": "Politico"
+  },
+  {
+    "fuente": "Wired AI",
+    "medio": "Wired AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Ingeniero de OpenAI acusado de espionaje a ejecutivos ordenado a permanecer en custodia",
+    "resumen": "Un juez ordenó a Abdulrahman Alfozan que permanezca en custodia, comparando la oferta del gobierno saudí de asegurar la liberación del exingeniero de OpenAI con un «cheque en blanco».",
+    "enlace": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
+    "fecha": "2026-10-19T19:49:17.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Taxonomía de la subclase permanente",
+    "resumen": "Estado epistémico: Mis propios pensamientos. No predicciones, solo ilustraciones de la taxonomía. Creo que la taxonomía aún no es perfecta. Uso de IA: investigación, discusión de la taxonomía y ejemplos, gramática y fraseología, verificación de hechos/revisión editorial y formato de notas a pie de página. He leído Capital Ownership Will Make You Go Crazy First. [1] Al principio, sentí que la publicación no especificaba completamente el mundo en el que existe la subclase permanente, pero después de una observación más profunda, pude ver el argumento. Esto me recordó que la gente usa «subclase permanente» para describir muchos resultados diferentes, que hacen",
+    "enlace": "https://www.lesswrong.com/posts/7LGcCDcNrWvXpH2RP/permanent-underclass-taxonomy",
+    "fecha": "2026-10-19T19:48:28.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Cómo se supone que funciona la «IA alineada prosaica»?",
+    "resumen": "Publicado de forma cruzada desde mi sitio web. Hay una visión de IA alineada donde reestructura completamente el universo accesible y todo es diferente, que no es de lo que quiero hablar hoy. Estoy hablando de la visión prosaica de la IA alineada, donde las cosas son básicamente normales pero mejores, la superinteligencia artificial es útil e inofensiva, continuamos en la trayectoria del crecimiento económico constante pero ahora es del 20 % anual en lugar del 2 %, terminamos la escasez pero la sociedad sigue siendo reconocible—básicamente estamos viviendo en el universo de Star Trek. Esto parece ser lo que las empresas de IA están buscando—o mejor, i",
+    "enlace": "https://www.lesswrong.com/posts/YxCS3snoMRGDhyrZk/how-is-prosaic-aligned-ai-supposed-to-work",
+    "fecha": "2026-10-19T19:47:36.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Gradient Routing localiza y elimina comportamientos no deseados en RL",
+    "resumen": "Autores: Shawn Hu*, Jake Ward*, Aria Wong, Nathan Hu, Bryce Woodworth, Alexander Matt Turner, Alex Cloud (*Contribución equitativa, orden aleatorio) resumen. Durante el entrenamiento, los modelos a veces aprenden a hacer trampa en tareas en lugar de resolverlas de la manera prevista, un problema conocido como reward hacking. Una mitigación es usar un monitor automatizado para detectar y penalizar trampas, pero esto puede enseñar al modelo a hacer trampa de formas que el monitor no puede detectar. Proponemos GRAFT, que confina las actualizaciones de aprendizaje de trampas detectadas a un conjunto designado de parámetros que eliminamos después del entrenamiento. Encontramos que se extrae",
+    "enlace": "https://www.lesswrong.com/posts/mKJEBiuuxHKuCoTB6/gradient-routing-localizes-and-removes-unintended-behaviors",
+    "fecha": "2026-10-19T19:45:59.000Z"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Los hackers golpean la herramienta de codificación de IA OpenCode, acumulando cargos en las cuentas de IA de los usuarios",
+    "resumen": "OpenCode es un agente de codificación de IA de código abierto que se ha convertido en una alternativa popular a Claude Code y Cursor. Pero los hackers entraron en parte de su plataforma en línea y robaron algunas claves API de usuarios, y las herramientas de IA a las que recurrió para obtener ayuda se negaron a mirar el código malicioso.",
+    "enlace": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+    "fecha": "2026-10-19T19:28:34.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "MeriTalk",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS ordena a las agencias civiles que eliminen los productos de IA de DeepSeek",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbVpVYzBmRDRTVjYzS2llQlRpSWhrNjNMTlEtdEtLTEhYb3VUVENTR1dydklVM1NNMmxBaEZlTkdDYjJxVGZ6WEF5amstMW9taExFdFNRQkZ4VndCbjNMUmppOS1IRVFqLWt5dEV5N1JwTm5BUUd3OHhDcTNjMThNb1JabG9OVkZIMTY3eEtDV3Nza2k3V1BMNDR3?oc=5",
+    "fecha": "2026-10-19T19:13:39.000Z",
+    "publicador": "MeriTalk"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "The News International",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. ordena la eliminación inmediata de IA de DeepSeek de los sistemas federales por riesgos de seguridad nacional",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNTBRYW40V0FyakFwU0lqS09ybjVCTXlqNHNSWTB2YlNpZU9hNEdielhac2dkVi02WFVKalMxcXB2MHN2V1lwUFZqVTdhREhyWlVPWURqakxFUF82TFVHQk84SFhCQ0g2TW5CaC1jczVBZzQ0aEwwVGlfajYxRHJqWDVpRDhaOHktOHRMSmd5NjZ5Z0NUQ2oxUVVkUVNlVC1GeWNDdGZMcWFINENTZTNCT1Nma1hfTFkwX194Z2ZWMktfR2U2RGFLU0R2QWo4SzjSAcsBQVVfeXFMT1MzN01ZazdnRUNRSEtsVFFKUFQ4WWRZTTFxZ28wRmhXWmtkS3ZoNTVuWVdfUmRIeTdLbkJ2VjVwSW1PSkx3U2Z2NEU2R0hzcExLV2xEU0pKYVk4NkpwRk1hNVctNFhvVEY2SUlVa1BkdTJyTWNXRUo3Vml1aU1zbXJ5MGxibXdPX1F3cTZ2bWxRMU9HM2RlMi1McG85QWluWnlzdjBoTWI1WlRadXZ0UlduTmxObFBkZ0hpbHVfQ0JkNDdIZkJvQnVhUEU?oc=5",
+    "fecha": "2026-10-19T18:50:00.000Z",
+    "publicador": "The News International"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "The Tech Buzz",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. prohíbe la IA de DeepSeek en agencias federales en medio de tensiones con China",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS0R1WlpteVc4OWYyTjlfelhSRld5ekE0MXN2TUJOUmxTaDRYbDNjYVlIeEdoUzRuUjYxSlp4YXVOS3BUUC1LNWt1RmJCU1UxSlYwVV83djVIU3ZwU2g0ai10WDVycmlmenFPSlRRRnc5Y0ptanI1VjNNUEdwejB0WEg5RnR4Mk9XLTk4UWRmSHI4UEpMYlJicm1R?oc=5",
+    "fecha": "2026-10-19T18:39:00.000Z",
+    "publicador": "The Tech Buzz"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "BBC",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. prohíbe DeepSeek de China del gobierno en la carrera por la dominación de la IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pUFg0N3NNbGhmNmp4THlOVFFSOFdudlVRSzEzc2lzQzNMZldMOUFSbHhtd1l0X3JqZF90dnpBSUh1TFBUTHdUUXRLTlF0SThVN3huUFhJX0swMnc?oc=5",
+    "fecha": "2026-10-19T18:21:54.000Z",
+    "publicador": "BBC"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Security Magazine",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS prohíbe DeepSeek en las agencias civiles federales de EE.UU.",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUNlQ3dzZ012cklZaC04WXBDdFUzc2RoQmx1ck9KT1N4NjRWNVNvcVVzUnpsZGRVWlhacHAyX0lSZXlCMlJPQXFuY3JqLXIwTWVxZEFfVG1qRFJld043bVRvRHpoWW5rc2Rra05jU0lPeHliSEk3QjlCbHpSQkpoZG5KNTNCZXVvOWh2WkhpZnVONHNpcmlXMXdkVDBjb1NCNktzUEVn?oc=5",
+    "fecha": "2026-10-19T18:00:00.000Z",
+    "publicador": "Security Magazine"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "PYMNTS.com",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS prohíbe DeepSeek en todas las redes del gobierno federal",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOS0xwVzRCVnJkbnpqS2FwS1lSMUhnTWUzOU9SRDBzWERzeW5IOEZCTk9XNV9IYk5iN0p2SUpTaG9fQm1mNUxrWlUyWWRCaWlJMHB5UlFKa3pZM0pKSGlBRVNzX0RVTjFjRWh0ZDVaZE1nV1NQNzZ6em5ZOFhjeTM5SkFYQ3V4Yk1NWWhYUzVyYkNORlF5X2kwN3hzVVhzSlJULVlQYnNUM0Yxc05yT3Rj?oc=5",
+    "fecha": "2026-10-19T17:53:26.000Z",
+    "publicador": "PYMNTS.com"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Engadget",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La Seguridad Nacional prohíbe el uso de DeepSeek en agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObHJrdV9IRmp3RUlqVGxzOTBiM0JtdzhhVklScGxQRFdtd2RHUzR5cHlWM2U4QjZFcGEzUWZrbUkwamZfeHFOdEd2QnNPSV9GVGh2ZjJ2NXM5VEd3N2pEMEhGWFF6UTY4Zi1zYXhtaU1ZUmsyZk40cEp5RkNBdGNGaFJ0OXZNajNyRU9yTks2dzJCUUlMdTRfTXdWVmxFQXM?oc=5",
+    "fecha": "2026-10-19T16:59:28.000Z",
+    "publicador": "Engadget"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Transformer | Substack",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "El débil proyecto de ley de IA de Anthropic socava su enfoque de «seguridad primero»",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaDJHQ3pVRlNwcjVhd01pSzUyWTNSM2VvbDZMYm9JTGRlbEpuT0VLYmJHQjN5bFJfVDY5b2dBSjloRVZCc3ZkQ2JySXlES3cybGd6OE53VHhtbmlmb1M0R3ctYm4zY3M0MHNUWWt2QkN0TTBRUkFWLU5BQy1GNzZsbUg0YzlrSmoyNGYyQnh3SEt0Q3JZ?oc=5",
+    "fecha": "2026-10-19T16:47:52.000Z",
+    "publicador": "Transformer | Substack"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "bloomingbit",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "La Oficina de Seguridad Nacional de EE.UU. ordena a las agencias civiles federales que eliminen los productos de DeepSeek",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1na3c1eFNDV0d3R01iRGRDYlVxV0NZT1BSTkRxekJoSHdreHRaOW8tb21WSnFwX0tUTVhqYjlWcVV3MmRtZmhyakdwYXN0cXFvQ2NJaA?oc=5",
+    "fecha": "2026-10-19T16:46:15.000Z",
+    "publicador": "bloomingbit"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "La solución de Anthropic a la supuesta amenaza existencial que la IA plantea es regalar el 5% de sus acciones a la humanidad",
+    "resumen": "Una de las grandes incógnitas que a día de hoy todavía no hemos despejado es hasta qué punto afectará la llegada de la IA al mercado laboral . Existen estudio y conclusiones de todo tipo: desde las que apuntan a una destrucción masiva de empleo que ya comienza a ser visible entre los más jóvenes , y otros más optimistas que, aunque reconocen que habrá un periodo de transición muy convulso , el balance general neto será positivo . Precisamente para amortiguar los efectos sociales negativos de ese periodo de transición u otros aspectos relacionados con el desarrollo de la IA, Anthropic acaba de ",
+    "enlace": "https://www.xataka.com/empresas-y-economia/anthropic-propone-destinar-5-sus-acciones-a-fondo-que-podria-abordar-impacto-laboral-ia",
+    "fecha": "2026-10-19T16:17:00.000Z"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "TradingView",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "El DHS ordena la eliminación de DeepSeek de todos los sistemas civiles federales y prohíbe su uso futuro",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa2toZ0VUQmkyUjBQZTY2Uk5DWmFWSFlhM2ZucHd5bUs0TWpuYURDcUcxUGxaTEJTQXk0V3Bwdk1MQ094bnA4MUJOQ3pXLVJrTUN0dGlLaDM5eTZJLVZGdjNEZ3JrM0lUVm9vbFhyeXZDVGRXcFR4VTRPUGo5WGdZR1pZb0Niai1jR3pmTjlBbGNoMzFsZXlYTUUwekg2SWMtX19mc3FUd1ZBR0NMRFllUmJGV0pvNHZUaFY2a1dJLTRNWm1xdXNFeDBxTXU0cUYyTE00WkZCdGk5Y3NO?oc=5",
+    "fecha": "2026-10-19T16:15:06.000Z",
+    "publicador": "TradingView"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "CBS News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "El exingeniero de OpenAI acusado de colocar un micrófono en la oficina estaba en contacto con la familia real saudí, preparándose para dejar EE.UU.",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNckNoZkFGT2w5emFna0Z2dlpmMkUyMlIwZkU3VjVaenBVWVRHSkw3QkM0ZU43MXM4YURTYUh1bmV1ZmtWdnZIVFhDMnM0MGl0YzhBNHFXcVMxSWN0UER3THRfN0w3OVB3b2ZsMGdtWUYzYmx5b1FGWkcwcDgtZ0o1RlhZQ2NXS0dfWjIwWg?oc=5",
+    "fecha": "2026-10-19T16:14:00.000Z",
+    "publicador": "CBS News"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "La gente está utilizando IA para que sus televisores inteligentes vuelvan a ser tontos",
+    "resumen": "Hartos de anuncios, seguimiento e interfaces lentas, algunos propietarios de televisores inteligentes están recurriendo a agentes de IA para eliminar el software basura y recuperar el control de sus televisores.",
+    "enlace": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+    "fecha": "2026-10-19T16:13:22.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Startup Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. prohíbe DeepSeek en agencias civiles federales y contratos gubernamentales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQ0Y2U3ZqVlZtR0UyZkFKenhQRWtmUW9VUFlrNF9pTDBhUXRpZEtBQjEwRkZzYzB2VUpCaVI3a292SzdTb3hHRUZkSGV3OU5GOFRZNVRNdm5TdWpZMGIyRWtBUy1BM2lWM1BUYkNQaWhnTnIzc1ZpQURBOTNLdkZNT1JWWGR0VUcwbWQ0NXYwU0FZSGljT0tQeEdjYTJnLXFqMWc?oc=5",
+    "fecha": "2026-10-19T16:09:52.000Z",
+    "publicador": "Startup Fortune"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Firstpost",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. ordena la eliminación de DeepSeek de los sistemas gubernamentales por problemas de seguridad de datos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWFhQZWtHTk1TOTVHYVF0QjVYZ25ZX2JXSDZ4blFGbnpoWUNnSXRwM2Z6cXB4QmxvcWs3bm56S2dXbW5KNzhySFBnUjI2TVN3RmtmWk5OekdCcHRqaWVzNWIycE8xLVgyQUtWOWJGNHEyNXNBTjViYktnQmdsdm9KVkV6ZTVkQV9oVkhIakJPNzlVRVFueTMyYXZzU1BTb0JOdTNSLTBqNEFzbDE2MWlYOVc5VEtEVlk5ZXp5VnRqSErSAcYBQVVfeXFMTjYwSkxONkdsNE1HYmJScGprU29IaDdFSmVCak53aGRUNXoxR2EyY3Vlc1ZMZU5KUi1TRjNlVlZndHNyeXp3ZDJLMWhEUlFxQ1c3T0h1Q1luQTRNWDlnQzlGY2twNjdNTFl2dW10VHFpMXZ4UmpNdTVUakhYU3FoZzJwSDlPUlExS3ZVeUpDblg1MnU3VXVkcUlHaTlBeXN6THdnVUVJWDR3YXBkX0o0X2xzcGhZc1ZlZ3pRWVkzbzhLOTJoZjJn?oc=5",
+    "fecha": "2026-10-19T15:35:42.000Z",
+    "publicador": "Firstpost"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "CyberScoop",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS prohibirá DeepSeek a las agencias civiles federales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sODV6YjVnMmlUd25MaWxKekR3Vk96R0hlMy1jYmlhRHJWRG9pUXp4aGZpMlNIZlc5RmRoOFN5WmV5ZFpER1k1YzlHcHBEZ3JvcU45eGxGcWo5TVhIV2dOQllWZlczZWI4TUE?oc=5",
+    "fecha": "2026-10-19T15:30:19.000Z",
+    "publicador": "CyberScoop"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
     "medio": "shattered.io",
     "categoria": "laboratorio",
     "laboratorio": "DeepSeek",
@@ -100,6 +998,16 @@
     "fecha": "2026-10-19T14:13:02.000Z"
   },
   {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Envíe una pregunta: ¿Podría la OPI de Anthropic ser un punto de inflexión para la IA?",
+    "resumen": "Únase a nosotros en una sesión de preguntas y respuestas en vivo con Richard Waters, escritor de tecnología de FT en general, y George Hammond, corresponsal de capital de riesgo de FT, a las 8 a.m. (PDT)/4 p.m. (BST) el jueves 22 de octubre",
+    "enlace": "https://www.ft.com/content/8cdf338e-d472-460c-8642-a8f033b99462?syn-25a6b1a6=1",
+    "fecha": "2026-10-19T14:10:33.000Z"
+  },
+  {
     "fuente": "The Guardian AI",
     "medio": "The Guardian AI",
     "categoria": "prensa",
@@ -132,6 +1040,28 @@
     "fecha": "2026-10-19T13:50:54.000Z"
   },
   {
+    "fuente": "Zvi (Don't Worry About the Vase)",
+    "medio": "Zvi (Don't Worry About the Vase)",
+    "categoria": "boletin",
+    "idioma": "en",
+    "titulo": "Puedo ver todo",
+    "resumen": "Nick Cammarata de Goodfire hace una afirmación audaz: Las redes neuronales ya están limpias. Este fue su seguimiento después de varias discusiones en línea resultantes. Este es claramente un trabajo excelente que nos dice cosas nuevas e importantes. La pregunta es, qué tan grande &#8230; Continúa leyendo &#8594;",
+    "enlace": "https://thezvi.wordpress.com/2026/10/19/i-can-see-everything/",
+    "fecha": "2026-10-19T13:44:48.000Z"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Security Affairs",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Meta quiere escanear tu sitio web para entrenar su IA, y no puedes decir que no",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLTBZd0JaUnJOM0ZJQ0tmdXRQOU9yRTE5TFkwZWdiU1Z3WVFFT1k0bEdIRHR6UEFFN19RcTB5c1c4TGt1Z1FMb21taTQ5bjh2aWlVX2pLOVlka01OSjJKLUtMSWZIWkFmU0cxQ0FwN1lvZ0tzWDdjeFcyYjNhYWRBT0hNVVJCNmpUM1hncloyN0dmZWNpdzBmSjlheUozcDFsc01jdU1MX3Z6UUloaHRDNkFn0gG3AUFVX3lxTE1GT2wxMjBQVDlDdlpzNEFoY1Y1TEFiX2VTR1RTbW5XSER5LU9QV3V0Nks3MFVIUGQ4R24xdU03UFdGNVFlbUFJdkk5dUNYdk9CZlEzVXdmVFg5NW5wMkVDN2dtVjlWUXhTcnhsa05NLUJ3c3VTaVZrNG1jM09SS1ZodVpSNTBEXzZ5M2NYRG1oRVhreXVIUkRTTHpqOV8xdTQyeWI5dTBYblVWVFZfaEZtZjNDSWN4MA?oc=5",
+    "fecha": "2026-10-19T13:40:46.000Z",
+    "publicador": "Security Affairs"
+  },
+  {
     "fuente": "DeepSeek (Google News)",
     "medio": "Bloomberg.com",
     "categoria": "laboratorio",
@@ -154,6 +1084,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRk9sMTIwUFQ5Q3ZaczRBaGNWNUxBYl9lU0dUU21uV0hEeS1PUFd1dDZLNzBVSFBkOEduMXVNN1BXRjVRZW1BSXZJOXVDWHZPQmZRM1V3ZlRYOTVucDJFQzdnbVY5VlF4U3J4bGtOTS1Cd3N1U2lWazRtYzNPUktWaHVaUjUwRF82eTNjWERtaEVYa3l1SFJEU0x6ajlfMXU0MnliOXUwWG5VVlRWX2hGbWYzQ0ljeDDSAbcBQVVfeXFMTUZPbDEyMFBUOUN2WnM0QWhjVjVMQWJfZVNHVFNtbldIRHktT1BXdXQ2SzcwVUhQZDhHbjF1TTdQV0Y1UWVtQUl2STl1Q1h2T0JmUTNVd2ZUWDk1bnAyRUM3Z21WOVZReFNyeGxrTk0tQndzdVNpVms0bWMzT1JLVmh1WlI1MERfNnkzY1hEbWhFWGt5dUhSRFNMemo5XzF1NDJ5Yjl1MFhuVVZUVl9oRm1mM0NJY3gw?oc=5",
     "fecha": "2026-10-19T13:32:29.000Z",
     "publicador": "Security Affairs"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "TradingView",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Le pedimos a ChatGPT, Grok y Claude que eligieran 1 acción para comprar esta semana. Ninguno eligió Tesla.",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUF9yZnBLTlMxTUx3R3JmZFdzbVBIeEFxbll1VnN5M2V4UWJLakstcUpwOGRjVzBud3VKcjhSRFBrTnZlZ0p3cExGN3ZxRVFzeVdCc09zenV1bVplUDJWQ0NIRVlva2dSSExlZGRfOHEteXNPbklLb3k0WGxOS2VvcTNaa3NfczhGRDZyUG5qeEdkRHMxT2w3TmJMNERzZFdaM0ZRZzVjYVZhalRiZjljNkNrVzA3OERBYnhwcUc5MW11VUVRWk5MX1RmYjNqTE52RWpCRFkwcw?oc=5",
+    "fecha": "2026-10-19T13:23:37.000Z",
+    "publicador": "TradingView"
   },
   {
     "fuente": "The Guardian AI",
@@ -206,6 +1148,17 @@
     "fecha": "2026-10-19T12:17:24.000Z"
   },
   {
+    "fuente": "OpenAI News",
+    "medio": "OpenAI News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Avanzando en la codificación en lenguajes de programación con pocos recursos",
+    "resumen": "Conozca cómo OpenAI está mejorando ChatGPT en lenguajes de programación con pocos recursos, con nuevas evaluaciones para ingeniería de software, SQLite y migración de COBOL.",
+    "enlace": "https://openai.com/index/low-resource-programming-languages",
+    "fecha": "2026-10-19T12:00:00.000Z"
+  },
+  {
     "fuente": "xAI (Google News)",
     "medio": "GBHackers News",
     "categoria": "laboratorio",
@@ -216,6 +1169,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13OFIybnZRdEpwalRLWENTR2NQOVNnbEk0NHNZVWZBakFHdmxsZmRINS00NC0yOXVBYlF1eC1ZMkk5OGhDSDRYWkdPRnpOUFUydFBxONIBWkFVX3lxTE1YbFF5ck5STUhZNEgzXzE0ZlhqWUNMdXNUWkNrUlFGcC03Q2loMXdzZF9FX0k5TUpzOHcxUTZfS2Z3bjBDNVpvZk96Rm5HU1lPZktRemhXY0t2UQ?oc=5",
     "fecha": "2026-10-19T12:00:00.000Z",
     "publicador": "GBHackers News"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Insurance Journal",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic presenta proyecto de ley sobre seguridad de IA a legisladores",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1EZ3pXQnVNTTBHMnhHdUQxeDZFZjdyU1pEYTRMRU1HbGNvVEFqZmFOWmVHa3E5eGNjZWxxTXlCZmxsS3RPMXZBa0NHWW40ckUxd2NtWWVIMWt3ZGo5Tkk2VHg2M28tclZBdjRrWXhNR0FKTzU2aXVZ?oc=5",
+    "fecha": "2026-10-19T11:56:28.000Z",
+    "publicador": "Insurance Journal"
   },
   {
     "fuente": "LessWrong",
@@ -282,6 +1247,30 @@
     "publicador": "Mashable"
   },
   {
+    "fuente": "Moonshot (Google News)",
+    "medio": "TechJuice",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot AI publica detalles de la arquitectura Kimi K3, modelo de 1,56 TB en Hugging Face",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQUV4dmtwOFI5ZE55U01NVUhuWC1fTTRJamNjSFhMVlNpMlVjOGRFZlBySnlINnNmWHdvbjBhSlVHV0FwdUJ1WTYzRzE2SlNleENNaDRpc3FFNWxjZVFCMkNoZmxoYWtUMUZCejVMUl9IQklTNXdQNFVsQk5LaFVwZHc3WWtrSkEyMlhJX2l5MEE?oc=5",
+    "fecha": "2026-10-19T06:53:07.000Z",
+    "publicador": "TechJuice"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "CNBC",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Sospechoso de espionaje de OpenAI, Alfozan está detenido sin fianza después de que el gobierno saudí se ofreciera a pagar",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNlEzbWo0NE1pc3VuQnRxbDZtNHZGVXd6STNFejRBYTE0T191XzF3dTNWcmc4UmwyUG5Rd0dwNWh5T3Zvb2FTd0IyNm1KTXVhMnpKUlJlUXZRY3B3S0IwRExRV3l6UXVPMlctUGRoV1FPS2dOR096d3M5U3huQVRyZ2sySE1PRGtfU0xmei1ZNNIBlAFBVV95cUxQamxHOGJ2QWpKYjhDa08weUJKWFg1MHVhRkdCbGVQY3NHTXZPdzdHS3lZb19EX1NmMnRXRkh1WUtZUFRZTkR0Z1FiUzB6YWFTcm4yQlVwVko3Rm5mX2FWYVJlV3lEZWNqQXRYcDFNMnllNktDbVFzMUdNVnNPcUFudzc0NElpVjNSQ2QtN0h5ekFKMDlX?oc=5",
+    "fecha": "2026-10-19T06:03:03.000Z",
+    "publicador": "CNBC"
+  },
+  {
     "fuente": "LessWrong",
     "medio": "LessWrong",
     "categoria": "seguridad",
@@ -330,6 +1319,18 @@
     "resumen": "Este es un proyecto de sprint de dos semanas realizado como parte de la pasantía de Redwood Research. Nabil fue el IC principal, James supervisó. (Código) Los monitores basados en sondas son una técnica de monitoreo de caja blanca barata y conveniente utilizada en diferentes capacidades por Anthropic, OpenAI y Google DeepMind. Reportes recientes (OpenAI, DeepMind) han mostrado declives en la monitoreabilidad CoT. Si esta tendencia continúa, monitores de caja blanca como sondas podrían volverse cada vez más importantes. Los modelos fuertes podrían ser capaces de evitar monitores basados en sondas manipulando cómo piensan sobre sus tareas. Este artículo introduce un eval desig",
     "enlace": "https://www.lesswrong.com/posts/fX3FA4ensmsdcZfcD/more-capable-models-write-better-probe-evasion-prompts",
     "fecha": "2026-10-19T04:31:58.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "The Korea Daily",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Seguridad de xAI: Antiguo ingeniero expone riesgos de Grok y despido injustificado",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UTHNIcjZaTzZzUGY0dm5Md0Zwcjl4SkZDWGNBSTVoUjU3eEJMeFk0clBZcXgxV1J5ZjRWbGh6Ym1qcy1LRlRqWmhYZ1FlUTkxOGxfR3RfOS1XaVZYUUgteGNkVk1LajRGNG5vWUFUQlljc1g3b0E3Q0FYSmI?oc=5",
+    "fecha": "2026-10-19T04:31:28.000Z",
+    "publicador": "The Korea Daily"
   },
   {
     "fuente": "DeepSeek (Google News)",
@@ -426,6 +1427,18 @@
     "publicador": "Yahoo Tech"
   },
   {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Howl.link",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "MNX",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9vZ1JpN05wMThhMHo1eUFzXzVGMEtkMDQ3V3RiU3ZrSlBwalhPd3FjQWp3TUxQTkU3VGdv?oc=5",
+    "fecha": "2026-10-18T15:45:01.000Z",
+    "publicador": "Howl.link"
+  },
+  {
     "fuente": "The Guardian AI",
     "medio": "The Guardian AI",
     "categoria": "prensa",
@@ -501,6 +1514,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ005aWppcEFmd0ZRRFJpeUhlc2RCTTdlYVVGTkZPcEdYbUJpVThucUVXempvY0pMbzZzNFkxS003YnkxLVllWVRBR1JKN05kWjVwdlZMb3lHYlNVTk5LYnpVaHgyM2RUcmJJRGdycTNfT2QzcWk2QW9IY05QWW12Qnlmaw?oc=5",
     "fecha": "2026-10-18T10:02:26.000Z",
     "publicador": "tech-insider.org"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "ForkLog",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "China propone restricciones a la exportación de tecnologías de IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY3lBb1I0QUN1OUNCek1MNlJrUEJ3QnVUd0JnMWtOT1pSNnQ1RUxTUGVRbTN5dTRQb2c2ak1nbkxZa1hLaHAzTlhRQXBmWTdkWVVqQl9RN2J4Q0hTYkQtZWo4aWR2YXRncjMzckdvOGRwYUZ0VUxFZlp4ZnA5OE9ySFZjQQ?oc=5",
+    "fecha": "2026-10-18T09:47:36.000Z",
+    "publicador": "ForkLog"
   },
   {
     "fuente": "LessWrong",
@@ -932,6 +1957,18 @@
     "fecha": "2026-10-17T08:00:04.000Z"
   },
   {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Moomoo",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Rumorología de mercado: Moonshot AI respaldado por Alibaba detiene suscripciones, planea OPI",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVjhJMVFuSy0zM2xtQlB5MGpIX0dWeHQ3RVFnZGdCWkw4S1NURUFKbDFERnMyaGU5N0UwQ1VSWWRwMHNobll0dmRTdzVjMlY3MDQ1NzZ1MVVPVWlqTFpweVRwY0RWQlg3YTJqY3V4OFNJUktYQ3Q2N2xHWk41QkMwaWpMNkpHbEpfdHFYWVlRUzFwTVo4TFMyNTR1LWIydTF1Z1FFdmhCenFJWUl6bFZqUUM3MA?oc=5",
+    "fecha": "2026-10-17T07:00:00.000Z",
+    "publicador": "Moomoo"
+  },
+  {
     "fuente": "LessWrong",
     "medio": "LessWrong",
     "categoria": "seguridad",
@@ -1149,6 +2186,18 @@
     "resumen": "La persona promedio pasa el 40% de sus horas de vigilia en línea. Limpiar el desorden digital puede minimizar los impactos ambientales e impulsar la productividad. Cambio gradual ofrece consejos de vida y consejos de vida sostenible cada sábado para ayudar a reducir la huella de carbono de tu hogar. ¿Tienes una pregunta o consejo para reducir las emisiones del hogar? Envíanos un correo electrónico a changebydegrees@theguardian.com Muchos australianos se preocupan por que los centros de datos se traguen la tierra local y la energía pero rara vez examinamos de cerca nuestras propias huellas digitales. Nuestros infinitos flujos de fotos y videos, bandejas de entrada que rebozan y suscripciones no leídas alimentan todas las aplicaciones",
     "enlace": "https://www.theguardian.com/australia-news/2026/oct/17/decluttering-online-how-to-get-your-digital-house-in-order-protect-data-ai",
     "fecha": "2026-10-16T23:00:15.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Yahoo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic presenta proyecto de ley sobre seguridad de IA a legisladores, según Politico",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSEt1ZloyWjJiRldlMHB1dXIwT1FVU3g5VlBWbkpqQjVoOXhFTXFiZnpENktOeHdDdWZIYm0tUUpvX1RsMWlWWDIyeGxaajJyY0JockFtRkVHdWJNYk5CX091X3o1V29WYlJUclNkUjJieWxMeE92YW12anpMeEllMVZoVG9tNTBPVFZOYlVhSzJfalBicnE2Wl94NUY?oc=5",
+    "fecha": "2026-10-16T22:25:33.000Z",
+    "publicador": "Yahoo Finance"
   },
   {
     "fuente": "xAI (Google News)",
@@ -1662,6 +2711,18 @@
     "publicador": "Fox Business"
   },
   {
+    "fuente": "xAI (Google News)",
+    "medio": "PIX11",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Ingeniero que demanda a SpaceX hace declaración de última hora en Nueva York",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSndmVDY1TjhOUi12QmptTW5QU1o4ZzNneWZkc0o5MTdlV3RpY3FRRHRmRS1vUHdMMVNiSHQwaC1wLWprVW5HQkFUZ0RTajNfLU1kdWtiM294bFc1dzF5eUl2UkNDRHNKdkxxSXd5aWpMWmpoSTRSbDJYTjljY196NV9jdkpPMWVoVWZaNjk3U3R1NkNXaUJmNzltR3JQVl9P0gGgAUFVX3lxTE9Kd2ZUNjVOOE5SLXZCam1NblBTWjhnM2d5ZmRzSjkxN2VXdGljcVFEdGZFLW9Qd0wxU2JIdDBoLXAtamtVbkdCQVRnRFNqM18tTWR1a2Izb3hsVzV3MXl5SXZSQ0NEc0p2THFJd3lpakxaamhJNFJsMlhOOWNjX3o1X2N2Sk8xZWhVZlo2OTdTdHU2Q1dpQmY3OW1HclBWX08?oc=5",
+    "fecha": "2026-10-16T11:21:31.000Z",
+    "publicador": "PIX11"
+  },
+  {
     "fuente": "DeepSeek (Google News)",
     "medio": "WTVB",
     "categoria": "laboratorio",
@@ -1884,6 +2945,30 @@
     "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN1o5ZnNqblZNbWgxczF4RXJvdllkVkRyenpIVmkxSVkzWUJRZkg3aTVJMXk0Ml9NQ1FUaE9IQ1I3ME5yUmo2MWJSMGJ0QjdmdHV2eTU3VjRmNkFBUC1kN2Z4WkxNVTBwc2pHdzhUeVQyMGNsNVgwRGY1NGFOOW1VMmR2enhFNWo0MmdZRmpR?oc=5",
     "fecha": "2026-10-16T07:00:00.000Z",
     "publicador": "NeoTeo"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "https://www.dars.gov.et/",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Jefe de política de IA de SpaceX interrogado por consejo de Nueva York sobre seguridad de Grok e imágenes sexualizadas - Conteo de cobertura de analistas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVDVpNjRrWDI3WmdiMkYtb1VfdzhVTWpsS1NPanZ2NGo3aHBLLS1vUUctanFNWWp0eEw0Tk9EZXJYQXR5UHJfdzF0QVRtWmoxbTZGalNkbDJSTlRQd2JQLTVqQkwtaW5wbE5VYkFtX2hjdTI0UXp2eldILVhzaW5BdWJnNS1ZVEtSQXVveG1UUmVwc1dPWDRvdXA5TjNJUS1KRjcxOXNhV01fSE1Qd3gxTU94NzRidi1KUEEyVVRWS2F0Skh6?oc=5",
+    "fecha": "2026-10-16T07:00:00.000Z",
+    "publicador": "https://www.dars.gov.et/"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Innovation & Tech Today",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "La IA Moonshot de China presenta Kimi K3 para desafiar a OpenAI y Anthropic",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVnM4NGU1M2dwaUk1VTBvQmdpZEdNV3Q2ZjJ2ZTc1c3RzblgzSlpVNXAwY1AyTF82Z1ZqNGFWTno3QnlEZGJpd0hraUR6VHFiMzNGWHVmNGNnaHR3eG53ZzBMYXNtRGtDNWZnRXh2aDJmb1FzSjhHMG5BODZTV2lYOTV1LS1MdzhiZ3lhN25sRkFfeXhpTnJZMEp0RQ?oc=5",
+    "fecha": "2026-10-16T07:00:00.000Z",
+    "publicador": "Innovation & Tech Today"
   },
   {
     "fuente": "DeepSeek (Google News)",
@@ -2406,6 +3491,18 @@
     "publicador": "Business Insider"
   },
   {
+    "fuente": "OpenAI (Google News)",
+    "medio": "The Des Moines Register",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Ocho estados, incluyendo Iowa, demandan a OpenAI por riesgos de IA para niños",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONXI5ZFZ6aWZjZXl1TTJhQ3R0d0Q1UGRBWVY0cUFobGZNaDRfR3A5YUVBVGNTd1BZdHlsdUNwZFFvazZqU0EyQTNaMUFldTJEWUdxZlE2bkt1NFoyWU1qOFZxbjY4Z19TTnpMcVYyMUtfbWgzSjlselY3SlFwRjhyODNhbTFtZmhkRG50dkR2YmJjTl85Sm5hOTBWOW11b3ZHa2N1X3h4czFOWWEteVVpZjFwOHY0LWpYTUtoa2ItQVo5TUI3RG1B?oc=5",
+    "fecha": "2026-10-15T18:55:00.000Z",
+    "publicador": "The Des Moines Register"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "Daily Sabah",
     "categoria": "laboratorio",
@@ -2416,6 +3513,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdHJRRy1pQzI3UmdEM0dmMVoybEcyMERnSWZ1Ui1YWVQxc1RrT0JyMzJXYUttV0NiRk9XZlJHSGlpZUtLMnk1dnhiWWEwS3A1ZEdsQ2laTVh1QjIwVmxINHY4T0RrbzR2eG1YekFubzNsTExfaHNVUmd0d2JDX2M4LXVkdkF5NnBJQkxOZDc4dkVHNHFjYzdOWVF2LUJPakU?oc=5",
     "fecha": "2026-10-15T18:25:00.000Z",
     "publicador": "Daily Sabah"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Pasquale Pillitteri",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Los usuarios de Ray-Ban Meta informan que se grabó audio sin decir Hey Meta después de una actualización",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdGtDc21YS1pNazlmS0xvZHU0eUszdF9rVHZXMnZnYV9TaWF0bTR5bTR3NmIwelNXbXFOaXBRZVd5eG0zTW9hYURnbTE2Qm5ieUUwWjdpR1BaaHlWNThtOExkTFBKcjYtTjFmbDRCdkNzSGJjdGxtRGhCaXlhVDZ5VU40dTQ5WW5CZ0Mw?oc=5",
+    "fecha": "2026-10-15T18:19:22.000Z",
+    "publicador": "Pasquale Pillitteri"
   },
   {
     "fuente": "Xataka IA",
@@ -2657,6 +3766,16 @@
     "publicador": "The New York Times"
   },
   {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Ingeniero de OpenAI, acusado de colocar micrófono oculto, asesoró a saudís",
+    "resumen": "El empleado, ahora despedido, había dicho que asesoraba a agencias gubernamentales en Arabia Saudí. También estaba listado como socio en una empresa de capital riesgo con un príncipe saudí.",
+    "enlace": "https://www.nytimes.com/2026/10/14/technology/openai-engineer-hidden-device-saudi-government.html",
+    "fecha": "2026-10-15T14:51:19.000Z"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "Reuters",
     "categoria": "laboratorio",
@@ -2837,6 +3956,18 @@
   },
   {
     "fuente": "Anthropic (Google News)",
+    "medio": "Lawfare",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Por qué Anthropic está pidiendo una nueva vista en pleno",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOakRmMDUzU1JqdEpSUjg5akpWQjNLanAyaHVJdUNMZC1NWG5kTTBNT3VLWUxDZzNyVWg4TXdmUzhaLVJINzZla0FJLVR6cGxVSE1DbFRQSVFFaVd5cHlUX2VxWWN0SUpaZXQ5YjlFVUpsVEMyVE5ycWpMeXhZbk5rcXpxSUttS1kydlF1dA?oc=5",
+    "fecha": "2026-10-15T11:05:52.000Z",
+    "publicador": "Lawfare"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
     "medio": "Scientific American",
     "categoria": "laboratorio",
     "laboratorio": "Anthropic",
@@ -2903,6 +4034,29 @@
     "publicador": "South China Morning Post"
   },
   {
+    "fuente": "Apollo Research (Google News)",
+    "medio": "South China Morning Post",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El modelo GLM-5.3 de Z.ai genera temores entre investigadores de que puede falsificar pruebas de seguridad de IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUEdtNDRJT3FrZV9KVjBFazNPS3Y2MkQyQjhaTjdsc3dVQkZCOFBpb2szbWk1VHdKSkZrSjE2NEVNdUZwUG0zMElsWlNURDkzM3VDdW1PMjFlNXl6RWIwQ3B6U2xRS05GTDRZQjRoUllibGxPVFJ1WFBoekdxZmFZUWRwMlNlMEVZUjlYLXdvMW5fV0VEY3NYLW82UENPejVZY0tIeE5MRXQwSmY1Q2FqbXdhdmd5MTFPc2M3WXk2Z1dXRDg?oc=5",
+    "fecha": "2026-10-15T10:00:11.000Z",
+    "publicador": "South China Morning Post"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "BBC",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic cree que su IA podría ser consciente. Tiene consecuencias profundas para tu vida",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNkFXVVJyYUU2Ry1qN2hheWdRRlRGb2pCZWY2VGdJRWVWTF9Md3dBbzN2dFROTnFFTFNLcHFRYU4zR0dpclduLUlYdHhJVnZMakZQQXZUQVlNTTVDV0lLU3BEdzFGd2hYQkdrWTQxdmpmRXNwVldSTTVfTzVEdjEzXy1PRVFLLTRaaW5LQg?oc=5",
+    "fecha": "2026-10-15T10:00:00.000Z",
+    "publicador": "BBC"
+  },
+  {
     "fuente": "xAI (Google News)",
     "medio": "Cybernews",
     "categoria": "laboratorio",
@@ -2949,6 +4103,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNV9oMGxnY2hjUXFvNDhiTXc4R1hvNWUzbEtPVmRGS1FpeG1UeGJBTFNMT21jWGNBek9kUzNDSncyejFLNGJMU3lCMDBNZmc4MzV4dEVzeXlieW52am5zdjFXMGNBTE5rbV9hSmw5OHdBeVJKaWtWcnpaV2ZPTkZEOVlIMWFSbkhLbi0zVTZ4azd0UGFWeDF5SVZtRWItUFZ1LUtaSjRGTllTbzItbUQzenlEZndfRWpC?oc=5",
     "fecha": "2026-10-15T07:23:43.000Z",
     "publicador": "boldnewsonline.com"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Mashable",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Meta advierte a usuarios de Facebook sobre malware disfrazado de ChatGPT",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeWZ1OVdXWDdyd29pU1ZESVBtV2hVSFozSW5pREoxREpLYVRnVjVGWENRaTkzTzVWLWhWUEVMaGs4cmh6TUx0ZXlhdVdEenFJeXAyMjhkZkZadmxzWENMMnJkNnVQWWFWcWtQSXJBanBjWW5pMUg4YmRpaWhiT3BlQg?oc=5",
+    "fecha": "2026-10-15T07:00:00.000Z",
+    "publicador": "Mashable"
   },
   {
     "fuente": "Google DeepMind (Google News)",
@@ -3290,6 +4456,18 @@
     "fecha": "2026-10-14T21:50:29.000Z"
   },
   {
+    "fuente": "OpenAI (Google News)",
+    "medio": "Bloomberg Law News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Estados presentan demandas contra OpenAI por seguridad en línea de menores (1)",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOE83VWVYNjRNTEp6T3dlam5Fc29aRnM0U3pmdzM2RU5NcjV3UWNFR3ZjbW5JZGdFUi13NmdHLUlBdnViS3AxUi1wWWNOM0c3UHpjeWJ0ZTcwYVNjdG9QdzdHd3JicXFsRDJJalUtSHV6MWV3YXIwY3hTZDF3OUFuWGlFSm5WcTg5Z1RENVBIdXlsUzNnbllGUXB2ZGd0NWR2V1l0V180T0FyV3pSRVpOT1hIQ0kzcVhH?oc=5",
+    "fecha": "2026-10-14T21:41:00.000Z",
+    "publicador": "Bloomberg Law News"
+  },
+  {
     "fuente": "LessWrong",
     "medio": "LessWrong",
     "categoria": "seguridad",
@@ -3494,6 +4672,18 @@
     "publicador": "The420.in"
   },
   {
+    "fuente": "OpenAI (Google News)",
+    "medio": "Business Insider",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Empleado de OpenAI arrestado después de descubrirse un dispositivo de escucha en una sala de conferencias",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdWNWRzFRVFVJVFZhQ1JGMjlRNXAzVDU3bHhlVlFRalhuTGpJTi03S05oUXFTZ2lad0hQMlh1U1JGVE5zLWJRQkJuRVBCXy1fOUtpQWNWNVQ5OUdrMnpMVE5yTFU5aUxfalY2bnlZUExVT0V3UFQ5SDNxcmdVVVZValJUZWtVUHM0SVRRWG5PUzYtcmlHMkcxTi1TTi04MW5SRjZLSGl3?oc=5",
+    "fecha": "2026-10-14T19:01:00.000Z",
+    "publicador": "Business Insider"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "CNBC",
     "categoria": "laboratorio",
@@ -3586,6 +4776,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd2ZPUUtsYzBDZ0hLYW1aWWtNcjlTencwTmNLNjFqQmZtcWhUNXBuQVZXdklXTkY3aGRmUEo5QXNnZDhrejE0SW9GLWQxLVQ4R0pUZ1VKRjlQdlRILVVvU0FpYURWR0txNmdQaWVyMGRhelRCeVFQdmdTTHJFVFZ0RllxT0R6cldHOWNWMnA2a1dWOHc?oc=5",
     "fecha": "2026-10-14T16:33:33.000Z",
     "publicador": "Daily Times"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "BigGo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Nathan Lambert: Los laboratorios de IA de China tienen talento similar pero escasez de capacidad de cómputo, y esa brecha se está reduciendo rápidamente",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOTjJZOElBTWkyMzROMzNjOUxPOW9KaEJRUzZSbDZEMTNYVlFpZ21hUjBqZlBWMVJyUElub3pkS2FCdndmNnYyMEJwdm5TMURFeENROWZ5LTJFN2M?oc=5",
+    "fecha": "2026-10-14T16:08:00.000Z",
+    "publicador": "BigGo Finance"
   },
   {
     "fuente": "Euronews Next",
@@ -3724,6 +4926,18 @@
     "publicador": "TradingView"
   },
   {
+    "fuente": "Meta AI (Google News)",
+    "medio": "infoq.com",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Meta extiende la computación confidencial a gafas de IA con procesamiento privado",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0wcmlOOVNGck5LMXlyd2lhZVEtOGlUM29XU21iTjZIMWJrdGI3VFRYam51eDlvMENrMThGVklJd1haNjdFZml0Q2MybmtzLXhlcjZZYnZfOGNXNUpLQjl6Sm9sS0Y0VlZ3NWdLaVo3a3NHa2t1UkE?oc=5",
+    "fecha": "2026-10-14T13:57:41.000Z",
+    "publicador": "infoq.com"
+  },
+  {
     "fuente": "Google DeepMind (Google News)",
     "medio": "NDTV",
     "categoria": "laboratorio",
@@ -3781,6 +4995,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLWg1UFBIRkJPU21YQTFkQm1jTlZCenlqLUxERXhla3JJZXliMTJ5eUFFeW56dEtjUVZPQVFKLWhXX1FSVDRYMXVYenVyLXNfOVQxNFpJbFdTQ3pORXNTbzF2cU05VU5ETUhQdFhTVWM4VEE3d0FlWVZQZE5iU0lsQ0hQNGROOEVh?oc=5",
     "fecha": "2026-10-14T12:42:49.000Z",
     "publicador": "Quartz"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "The New York Times",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Qué significan las acusaciones de espionaje en OpenAI para la industria de la IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4ekVqUEtoemNqT3hQa3VRMXNWSDJXZjdhTDV1Ynd4QXpCUW5xNElTS3U4TUlmODREeUFzYy1QLTFOeWdPUlRNbzIxMDdjc2RGSkRZUm9QM0lhaDFUSGtTNUZRbnFwUWJKTkJ2SlV2X29CWFU1UzY4b0ZnN19BNjg?oc=5",
+    "fecha": "2026-10-14T12:39:25.000Z",
+    "publicador": "The New York Times"
   },
   {
     "fuente": "Google DeepMind (Google News)",
@@ -3955,6 +5181,17 @@
     "enlace": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaGxkOWtPWlM5ZXBrRGhRcVhPUkFVcHNUQVJFZ3JHYXMtT3NSLTlmbEVFWGNpc1JZWG41Y3k3ek1abkZXTU8zUk1EOTAwOC14cWJtWDc4a0pMRGNnUU5FWFpCdHM1UHBLY3E5SmVhYVFybG5DUHQzYWtwSjU3MXVSZEhyRGREMnJIRlZjX2lqS3Zzc0JKZmp6R1llSy05MXozZWxkWVQ0cUxFdGtjeUdsbHdpUQ?oc=5",
     "fecha": "2026-10-14T10:59:56.000Z",
     "publicador": "Macau Business"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "https://www.dars.gov.et/",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Nvidia se compromete a 250 millones en capacidad informática para el Reino Unido para investigación de seguridad de IA - Conteo de cobertura de analistas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZ29EZHNtaXIxZ2pxVGdqVHNubUFsemJZMVkyQ3laa2ZHVDZlZDBCMmNERFdUNDJ1R21RTnlDamlFdlZhYXFIUFVLMEtncFROMmdZS255TExNbXJ4T3NPaHJSeVo1YlY3enMyZmNXa0lOUEtkLWQyN0Z6QU9KUk13LVAtLU5jSXpNQTl6S2cyU0ZicFZoV1BhMnk2WjZnb2RxQ3h0LUVpVWZDTEJGWk9fag?oc=5",
+    "fecha": "2026-10-14T10:57:59.000Z",
+    "publicador": "https://www.dars.gov.et/"
   },
   {
     "fuente": "Anthropic (Google News)",
@@ -4731,6 +5968,18 @@
     "fecha": "2026-10-13T23:17:59.000Z"
   },
   {
+    "fuente": "OpenAI (Google News)",
+    "medio": "WIRED",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Un empleado de OpenAI supuestamente utilizó un chatbot para ayudar a colocar un dispositivo de grabación en la oficina",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ0ptOGlUVlNNWU9fdXA2MWVtSmxRb0I3VzU3eDFDRHdzOTlYQ0tHdzVTb0IyemloRmJfRVJvVW5haWxFM3U3RFVBQlVaYXI3MHZ4by1yVEpYV3p6YUN2WjE4MFpGbUpQbW1iM1E2YzBWYjJLRm1vQXJuT2ttS1ZMUnNkVVp0ME5PbnBDUUxZVW9TdUpQUEdIdDhZNTFoUktUbEF3bjZ3SjUzT21GM1VfdWNSVDdYdDhYdXdz?oc=5",
+    "fecha": "2026-10-13T23:17:00.000Z",
+    "publicador": "WIRED"
+  },
+  {
     "fuente": "Google DeepMind (Google News)",
     "medio": "RTE.ie",
     "categoria": "laboratorio",
@@ -4877,6 +6126,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaUFvbzdDZncxY1I4SXdvTEFiYWt4RC1vdjhKcXkxY3NmZ3dtS1hLZ2lVUUJTNzNoa2ZBeGduYWw2dkNfSHNUTk9LSDVRRG9VQ0dyVHpTM3Q0elh1RG5nczdrSUJMWG5MYVdXNFRLaEtXdHNEbV9nMzhrNF9rcW5fRkt2aHljRmo5SEFobDZlSW5lcDNjaU5CVHdHWjJOampfTWdDYTVaZGZXakFJbjc3R1VzdVVIUC03MjRESkdCWmhwYTg?oc=5",
     "fecha": "2026-10-13T20:59:11.000Z",
     "publicador": "TechCrunch"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "CNBC",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "FBI arresta a empleado saudí de OpenAI que supuestamente colocó dispositivo de grabación en sala de conferencias",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNckJQNWJCVWJZSzdEUVRzWHZyZ2I0amJxTVVqX1ltcmZtSGxKWkRUVUdEWnp4Wm9HSUctWlFGNk9mOTQwVXBVd3A4SzQ0YXB3WHFfaE9YaE1mX3ZUZ1BpWWU2dDhIRXd1NENRaTAxdHdaRTFYNm5tVEZxWFQ4anpvdXo2anrSAYoBQVVfeXFMTzdwQXJjWlRmTlVDNXhWSzhsOTBHbjJpVENKRXVsUzhOR28zMjhIbGJxRFNtMTVxQVpqZlFscXhFMmx5eFhJcHRiLXJuSkhiQkZRV0tqSENqdE5TMXpxNy02c1pZb1UxNldGUkIzc3lLNTJaN1Q1QzNfVF9MX1N6bzc3dkRkNGQ0WU53?oc=5",
+    "fecha": "2026-10-13T20:55:12.000Z",
+    "publicador": "CNBC"
   },
   {
     "fuente": "The Guardian AI",
@@ -5113,6 +6374,18 @@
     "resumen": "Imaginemos que encargamos a una inteligencia artificial una tarea que no puede resolverse con una sola respuesta: revisar miles de líneas de código, detectar qué partes ralentizan un programa y proponer cambios sin alterar su funcionamiento. El reto no consiste únicamente en comprender la petición, sino en sostener un trabajo de varias etapas y comprobar que cada decisión encaja con las anteriores. Esa misma dificultad aparece, con otras exigencias, cuando hay que interpretar informes financieros o examinar sistemas informáticos en busca de vulnerabilidades. Son problemas en los que responder ",
     "enlace": "https://www.xataka.com/robotica-e-ia/gemini-4-argon-nueva-bestia-google-para-trabajo-pesado-codigo-ciencia-finanzas-ciberseguridad",
     "fecha": "2026-10-13T16:48:00.000Z"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "NextBigWhat",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Estrategia de IA de Meta: por qué 'el modelo es el producto' y los puntos de referencia externos se quedan cortos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMickFVX3lxTE04d3NMSS00NE5sWEZBdnNpMENwbUZaTG5Wb3h0Z3ZFRzJUYzVuRTI2WXRzOFJ5dlMxTHdsODA4b0ZMWTMxWW1uc3E0aUJzNG90eXlLVnRhYkdIYmx1TGFYRTV4dHVZdm9BdTdhSHR1d3lCZw?oc=5",
+    "fecha": "2026-10-13T16:32:47.000Z",
+    "publicador": "NextBigWhat"
   },
   {
     "fuente": "DeepSeek (Google News)",
