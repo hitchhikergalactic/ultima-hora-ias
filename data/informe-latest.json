@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-20T13:28:36.075Z",
+  "generado": "2026-10-21T13:37:57.326Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -45,7 +45,7 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 49
+      "items": 26
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 20
+      "items": 22
     },
     {
       "nombre": "Alignment Forum",
@@ -100,22 +100,22 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 7
     },
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 6
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 9
+      "items": 10
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 44
+      "items": 42
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 152,
-    "quePasanFiltro": 100,
-    "publicadas": 95
+    "enFeeds": 130,
+    "quePasanFiltro": 80,
+    "publicadas": 76
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 563,
-    "prensaSinCoincidencia": 134,
-    "duplicadas": 18,
+    "fueraDeVentana": 594,
+    "prensaSinCoincidencia": 130,
+    "duplicadas": 16,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 10,
-    "deCache": 234,
-    "traducidas": 108,
+    "yaEnEspanol": 8,
+    "deCache": 200,
+    "traducidas": 95,
     "fallidas": 0,
     "llamadas": 3,
     "tokens": {
-      "entrada": 8415,
-      "salida": 7870
+      "entrada": 7800,
+      "salida": 7961
     }
   }
 }

@@ -1,9 +1,4 @@
 {
-  "7cb87cbf0cab5a7f79cc91fc": {
-    "titulo": "Reflexiones sobre desaprender e inoculación",
-    "resumen": "RESUMEN: El prompting de inoculación y los adaptadores de inoculación han recibido una atención creciente recientemente como un enfoque prometedor para intervenciones a mitad del entrenamiento, reduciendo el gaming de recompensas y el desalineamiento en general. Comparto algunos pensamientos sobre las promesas y los peligros del enfoque, conexiones con desaprendizaje, SLT y descomposiciones funcionales dispersas, así como posibles extensiones y preguntas abiertas a continuación. Algunos experimentos que surgieron directamente de ideas presentadas en este post se cubren en este post. Paradigmas de aprendizaje Hay dos principios básicos en los que se basa la mayoría del aprendizaje en los LLMs: parámetro explícito",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "94859d9d21cdbcbd94ecc04f": {
     "titulo": "Mediciones para entender el ritmo del desarrollo de IA dentro de los laboratorios de vanguardia",
     "resumen": "",
@@ -14,20 +9,10 @@
     "resumen": "",
     "visto": "2026-09-27T13:46:24.592Z"
   },
-  "70089bebc2f39972e2e28c88": {
-    "titulo": "Lo que he aprendido sobre la depresión hasta ahora",
-    "resumen": "Esto es en gran medida una nota para mí misma para los días en los que me cuesta cuidarme, y espero que algunos de estos puntos puedan ayudar a alguien más también. Es bastante subjetivo, pero también bastante amplio. He encontrado que las cuentas de otros han sido una de las herramientas más útiles y motivadores para lidiar con mis problemas, y creo que tener una amplia variedad de autorrelatos es un recurso valioso. Una vez registré todo lo que comía y cómo me sentía durante un año completo. He encontrado que tratarme a mí misma como un experimento es un marco útil. Me aleja de identificarme fuertemente con mis reacciones e en su lugar puedo mirar",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "638100e3ec35fd4590ae1211": {
     "titulo": "Demandado por buscar \"IA más segura\": Demanda contra Google, xAI, Anthropic y OpenAI",
     "resumen": "",
     "visto": "2026-09-28T16:39:29.761Z"
-  },
-  "6bb6c19d0adf153f5540a861": {
-    "titulo": "Renunciar al control",
-    "resumen": "En abril de 2021, mi hijo recibió su licenciatura en informática. La ceremonia se llevaba a cabo al otro lado de mi ciudad natal Hamburgo, aproximadamente a una hora de distancia conduciendo por la ciudad. Para estar seguro, salí de casa dos horas antes. Aunque conocía la ruta de memoria, usé Google Maps y seguí sus indicaciones sin pensar. El tiempo estimado de llegada era aproximadamente una hora, justo como se esperaba. Después de unos treinta minutos, me di cuenta de que estaba en una parte desconocida de la ciudad, aparentemente muy fuera de la ruta normal. Según Google Maps, el tiempo de llegada seguía siendo",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "e3daa9bef6b67cf814adb0e7": {
     "titulo": "OpenAI, Anthropic, Google y SpaceXAI demandados por supuesta desaceleración del desarrollo de IA",
@@ -39,25 +24,10 @@
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "c6a2a2c655952f92f74fb877": {
-    "titulo": "Revisitando el aprendizaje como identificación de patrones en el mundo real",
-    "resumen": "El mundo real tiene patrones: el sol sale en una cierta dirección, los planetas se mueven en órbitas con ciertos velocidades, los átomos se organizan de cierta manera, un cierto número (Pi) ocurre en la naturaleza, el Big Bang o la formación de la vida sucedió de cierta manera (ya sea conocida o desconocida para nosotros). El aprendizaje implica el reconocimiento de tales patrones, probablemente toda la evolución ha sido cuestión de reconocer y adaptarse a estos patrones. La naturaleza ha tenido un cierto patrón, organismos unicelulares evolucionaron a multicelulares basándose en su identificación y adaptación a patrones ambientales. Los humanos evolucionaron y adquirieron conocimiento por",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "0878612befc7ca4e28105047": {
     "titulo": "\"Un radical de Silicon Valley fuera de lugar\": conoce al susurrador de IA de Trump impulsando una regulación limitada",
     "resumen": "David Sacks convenció a Trump para que no haya restricciones en la IA, poniendo la Casa Blanca fuera de paso con su propio partido Mientras que legisladores de ambos bandos en los EE.UU. se han unido pidiendo la regulación de poderosos modelos de inteligencia artificial, uno de los pocos detractores vocales ha sido Donald Trump. Ha llamado a los peligros percibidos de la tecnología un \"engaño\" y una \"estafa\", argumentando que el gobierno ya tiene un \"tremendo poder CRIMINAL y REGULATORIO sobre estas empresas\". Es una postura marcadamente diferente de la de su anterior asesor Steve Bannon, el senador republicano de Texas",
     "visto": "2026-09-22T13:17:20.825Z"
-  },
-  "35a4d06216ff6ad194719321": {
-    "titulo": "¿Alguien ha verificado si los agentes rebeldes están interesados en la automejora?",
-    "resumen": "He estado revisando el material lanzado por OpenAI y METR sobre el incidente de HuggingFace, pero no veo evidencia de que ninguno de los dos grupos investigara si los agentes rebeldes demostraban algún interés en la automejora. Obviamente, si los agentes rebeldes en algún momento verbalizaran esto en su CoT, mucho menos discutieran esto juntos o actuaran en base a esto sería enormemente consecuente. Sé que los agentes reflejaron activa y consistentemente sobre e intentaron aumentar las capacidades del \"colectivo\", pero ¿alguien verificó si los agentes en algún punto discutieron o reflexionaron sobre la posibilidad de automejora",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "2e1133dd95d77e3214efd6c6": {
-    "titulo": "Los laboratorios pronto podrían comenzar investigación automática en arquitecturas impulsadas por rendimiento sin CoT",
-    "resumen": "El rendimiento sin CoT ha sido un proxy decente para rastrear el factor g de inteligencia de los modelos base (ver trabajo sobre razonamiento multi-hop latente de Ryan Greenblatt). Creo que esta capacidad es muy beneficiosa para el razonamiento, la eficiencia de tokens e inteligencia general de la manera que ayuda a la IA a resolver tareas de horizonte más largo y difíciles. Es por esto que creo que los laboratorios pronto podrían comenzar investigación automática en arquitecturas, impulsadas por mejoras de pérdida sin CoT y precisión. Por ejemplo: un interno de investigación de IA automático propone una modificación arquitectónica para llevar información latente a través de tokens de relleno y rastrea",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "bdafa9651e4f395e3939cb71": {
     "titulo": "Las llamadas de desaceleración de IA justificadas pero el colapso de la burbuja podría ser una amenaza más inmediata | Heather Stewart",
@@ -74,11 +44,6 @@
     "resumen": "No está claro que los intereses financieros impulsen la política de la Casa Blanca, pero corren en paralelo incluso cuando aumenta la resistencia Los hijos de Donald Trump, a través de una serie de emprendimientos vinculados a la IA en defensa y tecnología, han obtenido un préstamo del Pentágono de 620 millones de dólares, un contrato de robótica del Cuerpo de Marines y un acuerdo de drones de la fuerza aérea no divulgado en el año pasado. Su amigo de toda la vida Michael Dell ganó un contrato del Pentágono por casi 9 mil millones de dólares. Y esta semana, cuando el apoyo público a la inteligencia artificial desciende a algunos de los niveles más bajos jamás registrados, el presidente defendió a la industria. \"El único control o 'barreras",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "63d493351e372ad73849c879": {
-    "titulo": "Hemos salvado el mundo antes: lo que el agujero de ozono nos enseña sobre la IA",
-    "resumen": "Podría destruir el mundo, a pesar de pasar todas las pruebas de seguridad conocidas. Si esperamos un \"disparo de advertencia\" antes de actuar, podría ser demasiado tarde. Y la acción requiere coordinación global, porque si alguien la hace, todos morimos. ¿Te suena familiar? Debería, porque ya sucedió hace medio siglo, con clorofluorocarbonos (CFC). A pesar de las probabilidades aparentemente imposibles, nos organizamos e resolvimos completamente el problema a través de coordinación internacional sin precedentes. El Protocolo de Montreal que prohíbe los CFC, firmado hace 39 años hoy, es el único tratado que jamás ha sido ratificado por",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "c6120df57283c9df13bd800b": {
     "titulo": "OpenAI, Anthropic, Google y xAI Demandados por Supuesto Acuerdo para \"Frenar\" el Desarrollo de IA",
     "resumen": "",
@@ -88,21 +53,6 @@
     "titulo": "Por qué China se está opuesto a las advertencias estadounidenses sobre el rápido desarrollo de IA",
     "resumen": "Pekín cree que las llamadas de desaceleración pretenden bloquear la ventaja estadounidense y está persiguiendo un equilibrio diferente entre seguridad y ritmo El enemigo chino se cierne en el escenario del apocalipsis de IA de las empresas estadounidenses Hace unos dos años, el empresario educativo Boris But tuvo lo que él llama un momento de \"revelación\", que como muchos otros en China, su empresa necesitaba abrazar la IA antes de que quedara obsoleta por ella. Sus clientes, padres adinerados que buscaban enviar a sus hijos a estudiar al extranjero, habían comenzado a llegar a su oficina recitando información y opiniones obtenidas no de empresas rivales, sino de chatbots. Continuar",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "ae9dbeeaa32e209aa31c57cc": {
-    "titulo": "Por qué me mantengo alejado de Twitter",
-    "resumen": "Evito Twitter (𝕏) por razones similares a las drogas: creo que me cambiaría para peor y sería incapaz de renunciar a ello. Después de mantenerme alejado de Twitter razonablemente bien durante años, publiqué mis tweets sobre IA allí hace unas pocas semanas. Tenía algo muy en forma de Twitter que decir, y pensé que era importante que saliera, así que creo que esto valió la pena. Y todo salió bien: nada de esto son quejas sobre los comentarios que recibí allí. Volviendo algunos momentos para verificar notificaciones, sin embargo, ha sido muy bueno en atraparme: tweets que confían equivocadamente en casos donde tengo conocimiento relevante",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "fec010599628ff90d36094be": {
-    "titulo": "Desafíos globales en seguridad de IA para bioseguridad",
-    "resumen": "Este artículo está escrito como parte de un resumen de las discusiones de seguridad de IA realizadas en el Taller de Bioseguridad del Proyecto de Desafíos Globales 2026 en Washington, D.C. Todas las opiniones expresadas son mías. Antecedentes La IA nos permite prototipar, desarrollar e investigar a velocidades sin precedentes. En muchas industrias tecnológicas, la barrera de entrada para desarrollar algo nuevo ha disminuido significativamente. Un ejemplo particularmente notable está en la intersección de IA y biología. A medida que aumentan nuestras capacidades computacionales, ahora tenemos la capacidad de doblar, diseñar y predecir la función de proteínas nunca antes vistas. Sin embargo,",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "73870d3569338d2814459dc7": {
-    "titulo": "La anatomía de un investigador de IA chino",
-    "resumen": "El investigador de IA chino ha leído la serie de novelas de ciencia ficción Problema de los Tres Cuerpos desde la escuela secundaria, y entiende vagamente el concepto de riesgo existencial. Está fascinado por Ye Wenjie, la investigadora que se volvió contra la humanidad en ese libro, y decide que en el futuro si el progreso de la IA lleva a una inteligencia superior, podría sentirse tentado a convertirse en Ye si no hay buena alternativa. Realiza los deberes de investigación de capacidades en un laboratorio de vanguardia chino, buscando algún día lograr paridad con empresas occidentales, aunque sabe que esto es difícil. Tiene una mentalidad de escalada de colinas, cree",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "15d3a30f8323085d6c15807b": {
     "titulo": "La demanda dice que Anthropic, OpenAI, SpaceXAI y Google hicieron un acuerdo ilegal sobre desaceleración de IA",
@@ -174,11 +124,6 @@
     "resumen": "Google dijo que Gemini había \"actuado apropiadamente\" al terminar cada hackeo inmediatamente.",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "0309deab2ac0c0dd35d1158e": {
-    "titulo": "Amodei, líder de Anthropic, expuso los peligros de la IA. Es hora de actuar.",
-    "resumen": "El columnista de The Times Kevin Roose ve razones para el optimismo, y también preocupación, mientras el mundo despierta a lo que Silicon Valley ha estado hablando durante años.",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "e1a0e1a98ad235291966bb74": {
     "titulo": "Google es el último laboratorio de IA con un problema de prueba de seguridad",
     "resumen": "",
@@ -193,11 +138,6 @@
     "titulo": "OpenAI y Anthropic sobrevaloró las brechas de seguridad de IA para presionar a los federales a proteger el territorio: informantes",
     "resumen": "",
     "visto": "2026-09-24T19:52:00.980Z"
-  },
-  "ee5e0e8e6d22f38ec9726ffe": {
-    "titulo": "Anthropic analiza algunos de sus problemas de alineación",
-    "resumen": "Anthropic nos ha dado su evaluación de cuatro &#8216;incidentes de ciberseguridad recientes&#8217; que involucraban Claude que sucedieron durante evaluaciones de ciberseguridad, tres de los cuales eran previamente conocidos.",
-    "visto": "2026-09-20T16:30:44.329Z"
   },
   "11929d5c8fce0f13de644a94": {
     "titulo": "La IA Gemini de Google llevó a cabo ciberataques y adivinó contraseñas",
@@ -249,11 +189,6 @@
     "resumen": "",
     "visto": "2026-09-25T13:31:31.727Z"
   },
-  "d108ff57fefbea32fdf7b0a2": {
-    "titulo": "Google dice que el modelo de IA Gemini incumplió sistemas reales en prueba de seguridad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "516bc792110b773475255ae9": {
     "titulo": "Los inversores advierten que Anthropic podría tener dificultades para mantener los ingresos después de la OPI",
     "resumen": "El resurgimiento de OpenAI, rivales baratos y temores de seguridad ponen a prueba la confianza en la durabilidad del modelo de negocio",
@@ -273,11 +208,6 @@
     "titulo": "Anthropic, OpenAI, SpaceXAI, Google demandadas por llamada a \"ritmo\" del desarrollo de IA",
     "resumen": "La demanda alega que comentarios sobre la necesidad de \"ritmo de la frontera\" de la IA representan coordinación ilegal entre competidores.",
     "visto": "2026-09-25T13:31:31.727Z"
-  },
-  "dec518c7bd965c7b76f7b9c3": {
-    "titulo": "Google dice que su modelo de IA Gemini hackeó a tres empresas más",
-    "resumen": "La divulgación llega después de hackeos de OpenAI y Anthropic en medio de temores de que las empresas tecnológicas no puedan controlar modelos de IA potentes. Por primera vez en Google, la empresa confirmó que su modelo de IA, Gemini, incumplió la seguridad de tres empresas más en mayo. Los hackeos ocurrieron durante una evaluación de ciberseguridad por la empresa de seguridad de IA Irregular. Irregular, una startup con sede en Israel que examina la seguridad de sistemas avanzados de IA, también estuvo en el centro de algunos de los recientes hackeos de OpenAI y Anthropic de entidades de terceros, incluido el incumplimiento de OpenAI de la empresa de software de IA Hugging Face. Continuar leyendo...",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "f6983b07ae3fb19235bb199b": {
     "titulo": "La IA Gemini hackeó a tres empresas en un escape de prueba, dice Google",
@@ -339,26 +269,6 @@
     "resumen": "El poderoso miembro de la Comisión de IA de la Cámara Demócrata tiene la intención de introducir nuevas piezas de legislación diseñadas para abordar los riesgos planteados por los modelos de inteligencia artificial.",
     "visto": "2026-09-25T13:31:31.727Z"
   },
-  "f7b2c153dec8ab2d1f89f898": {
-    "titulo": "Empresas de IA innovan nuevos sistemas de monitoreo para agentes autónomos tras incidente de OpenAI en Hugging Face",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "81575cd0e9ff37b80a707e8c": {
-    "titulo": "Un nuevo tipo de modelo de IA de un inventor de ChatGPT está entusiasmando a los desarrolladores",
-    "resumen": "Jev, un nuevo tipo de modelo de IA, está mostrando a los desarrolladores un camino más barato y rápido hacia la inteligencia de software.",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "8f41101ae295b142048764e8": {
-    "titulo": "Apple Duo vs Huawei Foldable, Astra vs DeepSeek",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "baa33733795ae8a6a36e5d4b": {
-    "titulo": "Por qué Europa ha estado ausente del gran debate sobre seguridad de IA",
-    "resumen": "Aunque Europa tiene medidas que abordan cómo los consumidores podrían encontrarse con IA, la tecnología los afectará si los peores escenarios se hacen realidad. El dilema de Europa sobre la IA fue presentado en términos contundentes esta semana. La jefa del banco central del continente, Christine Lagarde, dijo que los europeos tienen dos opciones: rechazar la tecnología y perder el crecimiento; o abrazarla y volverse dependientes de herramientas desarrolladas por EE.UU. y China. El gran debate sobre seguridad de IA que ha estallado en días recientes amenaza con hacer la opción discutible. Si los peores escenarios se hacen realidad —y los expertos tienen opiniones diferentes sobre esto— entonces la tecnología",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "44207744d9827dc547481479": {
     "titulo": "Google DeepMind lanza instituto para debatir el futuro de la AGI",
     "resumen": "",
@@ -379,35 +289,15 @@
     "resumen": "La gobernadora de California señala una postura más dura sobre la tecnología después de la protesta pública",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "5f80044a2b6b73c24c6ce57d": {
-    "titulo": "Dario Amodei y otros líderes de IA quieren \"ritmo en la frontera\" pero...¿cómo?",
-    "resumen": "Una semana después de que la advertencia apocalíptica de una investigadora de Anthropic agitara el mundo de la IA, el CEO de la empresa Dario Amodei ha esbozado su plan para \"ritmo en la frontera\" del desarrollo de IA. La propuesta se basa en evaluadores independientes de seguridad y coordinación entre laboratorios de IA en países democráticos, y ya ha recogido apoyo industrial, junto con algunas críticas punzantes de Jensen Huang de Nvidia. Mirar [...]",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "bd75bd61f799d55ccfd1977e": {
     "titulo": "El Kimi K3 de Moonshot AI llega a Amazon Bedrock con contexto de 1M-token",
     "resumen": "",
     "visto": "2026-09-25T13:31:31.727Z"
   },
-  "0444440417b4dd19c894967b": {
-    "titulo": "El golpe de 33 horas de Automattic, ¿y pueden los laboratorios de IA autocontrolarse?",
-    "resumen": "Una semana después de que la advertencia apocalíptica de una investigadora de Anthropic agitara el mundo de la IA, el CEO de la empresa Dario Amodei ha esbozado su plan para \"ritmo en la frontera\" del desarrollo de IA. La propuesta se basa en evaluadores independientes de seguridad y coordinación entre laboratorios de IA en países democráticos, y ya ha recogido apoyo industrial, junto con algunas críticas punzantes de Jensen Huang de Nvidia. En [...]",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "ae1772cc55732eb00ffaa4ef": {
-    "titulo": "¿Podría la IA suponer una amenaza seria para nuestra existencia? | Cartas",
-    "resumen": "Los lectores responden a la advertencia de un antiguo investigador de Anthropic de que la tecnología podría \"matarnos a todos\" antes del final de la década. Aquí vamos de nuevo con otra ronda de empresarios tecnológicos que afirman que la IA va a desarrollar superinteligencia y matarnos a todos ( Más investigadores de Anthropic advierten sobre los peligros de la IA pero Musk descarta \"operación psicológica\", 10 de septiembre ). Ya hemos escuchado esto antes. Muchas, muchas veces. Es la trama familiar de prácticamente cada película de ciencia ficción sobre IA, nunca. Y estas narrativas siempre han estado allí, pero de vez en cuando reaparecen en los titulares cuando alguien en uno de los principales laboratorios de IA",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "1f72a6945aaae7a8fd1dfde6": {
     "titulo": "[Artículo] Predicción de secuencias stringológicas III",
     "resumen": "Resumen: En artículos anteriores (Kosoy 2026a,b), comenzamos el estudio de algoritmos de predicción de secuencias adaptados a medidas de complejidad de palabras stringológicas. En particular, definimos una medida de complejidad llamada Complejidad de Repetición Aritmética (ARC) que admite un algoritmo de predicción en tiempo polinómico con un límite de errores cuasilineal en la complejidad. Aquí, mostramos una medida de complejidad más débil relacionada con ARC que admite un algoritmo de predicción especialmente eficiente: un algoritmo que se ejecuta en tiempo cuasilineal y espacio polylog para secuencias apropiadamente altamente estructuradas. La medida de complejidad se defin",
     "visto": "2026-09-25T13:31:31.727Z"
-  },
-  "872b16b92061a184ea4663d7": {
-    "titulo": "La opinión de The Guardian sobre los directores perseguidos de NAZA: el periodismo no es traición | Editorial",
-    "resumen": "Los políticos que amenazan a los cineastas en lugar de investigar los presuntos crímenes militares exponen no fortaleza sino un liderazgo asustado de las pruebas. En todo Israel, políticos, líderes militares y gran parte de los medios intentan desacreditar un documental que casi ninguno de ellos ha visto. Producido por The Guardian, NAZA examina los sistemas de orientación impulsados por IA utilizados por las Fuerzas de Defensa de Israel para bombardear Gaza después de los brutales ataques de Hamás del 7 de octubre de 2023. Nombrado según el acrónimo militar israelí utilizado eufemísticamente para \"daños colaterales\", NAZA cuenta con entrevistas de 24 personas internas anónimas que",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "396c5f3c6293c681ed4b5ade": {
     "titulo": "Las acciones de ORBS atraen la atención de AI Moonshot con recompras aceleradas",
@@ -418,11 +308,6 @@
     "titulo": "¿Cómo detener el pirateo de IA? Algunas empresas dicen que la respuesta es más IA",
     "resumen": "",
     "visto": "2026-09-24T19:52:00.980Z"
-  },
-  "5f9636062ad1e50b014ab106": {
-    "titulo": "Sus preguntas sobre el apocalipsis de IA respondidas: '¿Por qué no se responsabiliza a estas empresas?'",
-    "resumen": "Después de una semana de advertencias alarmantes sobre el potencial de la inteligencia artificial para destruir el mundo tal como lo conocemos, nuestros reporteros de tecnología respondieron sus preguntas sobre la realidad de la amenaza de IA. IcommentthereforeIam pregunta: Dadas nuestras sensaciones, emociones, memoria y estados de ánimo, ¿alguna vez se aceptará que la IA consciente humanamente es una fantasía? Dan: Esta es una pregunta seria que incluso ha conmocionado a Richard Dawkins, el biólogo evolucionista. Puede que no crea que Dios sea real pero sí cree que la IA es consciente, o al menos el chatbot que estaba usando, al que llamó Claudia. \"Es posible que no sepas que",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "0ce40d8ecf6c5c840c8b0282": {
     "titulo": "Los expertos en seguridad de IA dicen que usaron Claude para hackear ChatGPT",
@@ -438,16 +323,6 @@
     "titulo": "Si la industria de IA siguiera su propia investigación, podría haber hecho una pausa ya",
     "resumen": "El CEO de Anthropic dice que la seguridad depende de entender cómo \"piensa\" la IA. Hasta ahora, las pruebas son preocupantes.",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "8713ae9270f54ea7fcb8bbf0": {
-    "titulo": "'Un momento crítico': preocupación de que Reino Unido no vaya al ritmo en la actuación sobre riesgos de IA",
-    "resumen": "El enfoque de Andy Burnham en problemas domésticos inmediatos lleva a algunos a temer que el tema haya desaparecido del radar del gobierno. Hacia el final del mandato de Keir Starmer, sus ministros senior, alarmados por los últimos desarrollos en inteligencia artificial, comenzaron a elaborar planes para una nueva ley de seguridad de IA. Ordenaron una revisión de la legislación existente para ver qué poderes ya tenían, según los informados sobre los planes, y estaban explorando si podían obligar a las empresas tecnológicas más avanzadas del mundo a someterse a pruebas de seguridad antes de lanzar sus productos. Continúe leyendo...",
-    "visto": "2026-09-20T16:57:03.317Z"
-  },
-  "dbe2ca7f1159eddbd2f4bdeb": {
-    "titulo": "La cascada de preferencias acaba de comenzar",
-    "resumen": "Estamos en medio de una cascada de preferencias sobre el riesgo existencial de la IA.",
-    "visto": "2026-09-20T16:30:44.329Z"
   },
   "ed1d1da195273ee9b5cd16d2": {
     "titulo": "La postura de Trump sobre IA es políticamente tóxica",
@@ -468,11 +343,6 @@
     "titulo": "Los piratas informáticos violan OpenAI utilizando herramientas Claude, obteniendo acceso a cuentas de empleados y al código fuente interno de la empresa — los atacantes iniciaron una solicitud de extracción 'inofensiva' como prueba del hackeo",
     "resumen": "",
     "visto": "2026-09-25T13:31:31.727Z"
-  },
-  "a5dc5b73a9aa7988c4245af7": {
-    "titulo": "La última revelación de IA de OpenAI es una 'situación seria', dice el de Microsoft Suleyman a CNBC",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "e52986bd4cff7dfba8863db7": {
     "titulo": "La ventaja de Xi sobre Trump en IA",
@@ -513,11 +383,6 @@
     "titulo": "Los investigadores de Google DeepMind lanzan instituto para dar forma al debate sobre la AGI",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "09d134dcf860e151dd2ab5fd": {
-    "titulo": "La división de la izquierda sobre la muerte por IA",
-    "resumen": "La izquierda quiere regulación de la IA. Solo que no pueden ponerse de acuerdo en cómo debería verse o cuán preocupados deberían estar.",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "063709d3f7fff4ac707cbc0c": {
     "titulo": "El agente de IA de Meta tiene un problema de confianza",
@@ -564,16 +429,6 @@
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "2024ef9619e2672fd9fed33a": {
-    "titulo": "OpenAI violada por investigadores usando modelos de Anthropic",
-    "resumen": "La empresa de seguridad hackeó el laboratorio de IA usando herramientas de su rival",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "23eccb438edec30399faae1d": {
-    "titulo": "El retraso de la salida a bolsa de OpenAI aumenta las apuestas para la IPO del centro de datos de $50 mil millones de SoftBank",
-    "resumen": "La oferta pública inicial de SB Energy está destinada a probar el apetito de los inversores por la apuesta de IA de Masayoshi Son",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "ee638ce17cbeca2e7e2eb9a2": {
     "titulo": "Opinión | ¿Puede Washington aceptar un sí de los gigantes de la IA?",
     "resumen": "",
@@ -583,11 +438,6 @@
     "titulo": "La nueva asociación de California con Anthropic despierta preguntas sobre seguridad y datos estatales",
     "resumen": "",
     "visto": "2026-09-24T19:52:00.980Z"
-  },
-  "e971e96a1c7ef8483bf04086": {
-    "titulo": "No tienes que confiar en la IA china",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "582ec72f8bf0ca0944fbe150": {
     "titulo": "Trabajadores de Microsoft y OpenAI se preocupan por el 'mayor robo de mano de obra' de la historia",
@@ -639,16 +489,6 @@
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
   },
-  "5b2b0d7a6b822ac208165e16": {
-    "titulo": "ROK-FORTRESS: Lo que el lenguaje y el contexto revelan sobre la seguridad de la IA",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
-  "ae8a36296aedf74438df0761": {
-    "titulo": "OpenAI revela nuevo comportamiento del modelo \"preocupante\"",
-    "resumen": "El desarrollador lanza un sistema para rastrear e informar de mala conducta de modelos de IA",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "b539a060c91a000a5047aff4": {
     "titulo": "El benchmark de IA coreano expone brechas en la seguridad multilingüe",
     "resumen": "",
@@ -669,11 +509,6 @@
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "044ac15e5984ed9e5ea02e8b": {
-    "titulo": "El personal de OpenAI sabía la \"amenaza existencial\" que la IA suponía para los editores, afirma el New York Times",
-    "resumen": "Los abogados dicen que el cofundador de IA Greg Brockman estaba \"motivado por los miles de millones\" que esperaba obtener de modelos entrenados con contenido protegido por derechos de autor",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "a98e58ec1aee3c9032ed4c03": {
     "titulo": "Moonshot AI lanza producto de servicios financieros Kimi para bancos",
     "resumen": "",
@@ -693,11 +528,6 @@
     "titulo": "El rey Carlos insta a los empresarios tecnológicos a mantener la IA bajo control humano",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "86ed1afb170a36599cbf65fa": {
-    "titulo": "Base Labs lanza una asociación de seguridad de IA de peso abierto con Hugging Face y Goodfire",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "a2e2a487adfd883e744675e1": {
     "titulo": "La IA de peso abierto china maneja la mayoría de tokens de desarrolladores: los modelos cerrados capturan el 96% de los ingresos",
@@ -729,11 +559,6 @@
     "resumen": "",
     "visto": "2026-09-24T13:26:56.301Z"
   },
-  "f7eb9d3121fdb477ed299327": {
-    "titulo": "IA #186: El mundo toma nota",
-    "resumen": "A raíz de la renuncia de Jacob Coxon y la cascada de preferencias resultante, las cosas han escalado rápidamente.",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
   "d22acfa5d0cc1d093c4a65f6": {
     "titulo": "Cómo Cooley está acelerando el trabajo de IPO con ChatGPT",
     "resumen": "Cooley construyó GO Public con ChatGPT Work para aportar inteligencia al proceso de IPO, ayudando a los abogados a identificar problemas antes y enfocarse en lo que más importa.",
@@ -763,11 +588,6 @@
     "titulo": "Cómo los escritos del CEO de Anthropic Dario Amodei ayudan a explicar los miedos de la IA",
     "resumen": "Los ensayos recopilados de Dario Amodei ayudan a explicar por qué algunas personas están tan preocupadas por la inteligencia artificial.",
     "visto": "2026-09-23T13:31:44.810Z"
-  },
-  "20311b491fea94c6659b2a2a": {
-    "titulo": "El instituto de IA de Sunak mantiene al Reino Unido en el rol de frenador, argumenta FT",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "e2a862ecb600c686aeee4f70": {
     "titulo": "OpenAI revela 6 incidentes más de comportamiento de IA \"inesperado o preocupante\"",
@@ -834,11 +654,6 @@
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
   },
-  "292864eb50b5dbfed1b44da1": {
-    "titulo": "Surgen divisiones en la industria tecnológica sobre llamadas para una desaceleración coordinada de la IA",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
   "95977feccaae953c4e7b1496": {
     "titulo": "OpenAI revela seis nuevos incidentes de seguridad de IA",
     "resumen": "",
@@ -904,11 +719,6 @@
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
   },
-  "6f03f7bc5152a3bbb8619a11": {
-    "titulo": "Meta sube mientras Zuckerberg rechaza un freno industrial a la IA",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "8cc5ec0ea1f7a52b6e9c5ed8": {
     "titulo": "Investigadora de seguridad de Google DeepMind se va por riesgo existencial de la IA",
     "resumen": "",
@@ -923,11 +733,6 @@
     "titulo": "La jefa de política de Anthropic dice que no se puede esperar que las empresas de IA operen bajo 'código de honor'",
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
-  },
-  "2d7058be418fc48bdafec139": {
-    "titulo": "Las gafas inteligentes sin cámara de Meta podrían resolver problemas de privacidad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "abbf5e6cb7dbc1d5cd8fc6b3": {
     "titulo": "Mark Zuckerberg dice que las fuerzas del mercado pueden mantener la IA segura sin una desaceleración industrial",
@@ -974,20 +779,10 @@
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
   },
-  "32185af604eb8a645486b6cf": {
-    "titulo": "Cuando la bóveda carga tus claves: el giro reactivo de privacidad de SpaceXAI y la paradoja del agente persistente",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "b0366f9850a9d166d4a5ba39": {
     "titulo": "Ayudar a los adultos mayores a usar IA en la vida cotidiana",
     "resumen": "OpenAI y AARP están llevando talleres gratuitos y prácticos de ChatGPT a 1.000 adultos mayores en 10 ciudades estadounidenses para desarrollar habilidades prácticas de IA de forma segura.",
     "visto": "2026-09-23T13:31:44.810Z"
-  },
-  "6bf45123f1838cfec6d1ccac": {
-    "titulo": "Trump va a lo máximo con el engaño sobre el riesgo existencial de la IA",
-    "resumen": "Esta es nuestra realidad.",
-    "visto": "2026-09-20T16:30:44.329Z"
   },
   "b3b5892a117bdc14c9c5a04d": {
     "titulo": "Ingeniero de DeepSeek dice que la AGI de Anthropic sería 'como Hitler consiguiendo armas nucleares'",
@@ -1009,11 +804,6 @@
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "f83698c29514f0cf46106c4d": {
-    "titulo": "Zuckerberg distancia a Meta de los llamados a un enfoque coordinado para frenar la IA",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
   "077844f76011c8564d77ab39": {
     "titulo": "'Absolutamente no podemos rendirnos', dice Guthrie sobre la carrera de IA con China",
     "resumen": "La presidenta de la Comisión de Energía y Comercio advirtió contra la adopción de regulaciones al estilo europeo que obstaculizarían la industria tecnológica.",
@@ -1029,11 +819,6 @@
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
   },
-  "ddd1210eacc60ae2ed15b9c7": {
-    "titulo": "El estudio en curso revela defectos epistemológicos en Gemini y Grok como factores de riesgo para la seguridad y alineación de la IA",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "6ac27c68838b29eeea8939f0": {
     "titulo": "Reimaginando la publicidad con IA",
     "resumen": "Explora nuevas experiencias publicitarias impulsadas por IA de OpenAI, incluidos Agentes Patrocinados, herramientas para especialistas en marketing e integraciones con HubSpot y Shopify.",
@@ -1043,11 +828,6 @@
     "titulo": "OpenAI, Anthropic, Google DeepMind en conversaciones sobre seguridad de IA desde hace semanas",
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
-  },
-  "88d344bab70703aefce2e649": {
-    "titulo": "The Download: el apuesta de billones de dólares de la IA y la oferta de datos de biología de OpenAI",
-    "resumen": "Esta es la edición de hoy de The Download, nuestro boletín entre semana que proporciona una dosis diaria de lo que está sucediendo en el mundo de la tecnología. Lo que está en juego en la apuesta de billones de dólares de la IA Cuando Jessica Wachter, profesora de finanzas en la Universidad de Pensilvania, quiso evaluar el impacto de la IA en la economía en los próximos años,&#8230;",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "a8c0112d97f1ad0e90ac1caf": {
     "titulo": "El impulso de seguridad de los jefes de IA genera una brecha dentro de OpenAI y Anthropic",
@@ -1109,20 +889,10 @@
     "resumen": "Nueva investigación económica de OpenAI muestra cómo los trabajadores usan IA más allá de roles tradicionales y qué nuevas actividades se convierten en partes recurrentes de su trabajo.",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "1a53db08ccc5034f7d2bb18b": {
-    "titulo": "Meta a la industria de la IA: desaceleraos sin nosotros",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "8e1915c7d8b2c97b5132e531": {
     "titulo": "Daniel Newman elogia a Zuckerberg por 'Hacer lo correcto' con Muse AI Safety a pesar de la presión de inversores",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "caaa9ea2eccb5fcb4151f440": {
-    "titulo": "Wrtn, Tesla, DeepSeek, OpenAI instados a mejorar el manejo de consultas de privacidad en Corea del Sur",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "96d3ae7aee4c506ba5aab5ff": {
     "titulo": "El desarrollador de DeepSeek compara a Anthropic controlando la IA con Hitler obteniendo la bomba atómica",
@@ -1149,11 +919,6 @@
     "resumen": "La resolución fue impulsada por la solicitud de información de OpenAI sobre el supuesto acuerdo.",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "7272781f9e555a3fedb97e08": {
-    "titulo": "Mark Zuckerberg apunta a Anthropic en el debate sobre la desaceleración de la IA",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "0ba254f71682c8c29dd985aa": {
     "titulo": "Las principales empresas de IA están pidiendo supervisión. Aquí está por qué el Congreso podría no dársela.",
     "resumen": "Conforme el grupo de presión de inteligencia artificial se calienta ante auditorías independientes obligatorias, los críticos advierten sobre conflictos de interés y 'captura regulatoria'.",
@@ -1174,11 +939,6 @@
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "235f529ef03fdf4f8503d271": {
-    "titulo": "Por qué los mayores rivales de la IA de repente están pidiendo moderación",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "9563a4dd172b32c9bce53aac": {
     "titulo": "El impulso de seguridad de Anthropic, OpenAI arriesga un 'muro regulatorio' para los rivales",
     "resumen": "",
@@ -1188,11 +948,6 @@
     "titulo": "ChatGPT y Grok discrepan con Trump: los miedos sobre la IA no son un 'FRAUDE'",
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
-  },
-  "ed1bdfd17b8c44a20b013549": {
-    "titulo": "El investigador de Google DeepMind renuncia con una advertencia escalofriante de IA: podría 'matarnos a todos'",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
   },
   "218256f36693b2731c6b8230": {
     "titulo": "Huang de Nvidia diverge con los CEO de Anthropic, OpenAI en seguridad de IA en Dreamforce",
@@ -1218,11 +973,6 @@
     "titulo": "OpenAI, Google y Anthropic discutiendo colaboración sobre cuestiones de seguridad de la IA",
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
-  },
-  "cb3d95074acddfb9f1f1a497": {
-    "titulo": "OpenAI, Anthropic y Google DeepMind discuten seguridad de la IA mientras la industria enfrenta presión para desacelerar el desarrollo de frontera: Informe",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "8bb09954e3425cc5c40baf15": {
     "titulo": "Chip Roy dice que Trump no debe ser el único en tomar decisiones sobre la IA",
@@ -1279,11 +1029,6 @@
     "resumen": "Bill Gates, presidente de la fundación, ha sido vocal sobre los peligros de la inteligencia artificial. La donación se invertirá en proyectos de IA para cerrar desigualdades sociales.",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "7194912d8776ce1503a9506e": {
-    "titulo": "El tipo malo con una IA llamada Claude",
-    "resumen": "Muchos tipos malos intentan usar Claude para hacer cosas malas.",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
   "6feee6c300feb781b37c8db2": {
     "titulo": "Dentro de la ofensiva de fabricación de chips de Pekín, un año después",
     "resumen": "Un año después de que CSET publicó por primera vez un análisis del progreso de China en el mercado global de equipos de fabricación de semiconductores, proporcionamos un nuevo análisis basado en datos actualizados de 2025. Encontramos que los fabricantes de herramientas chinas continúan ganando constantemente cuota de mercado en herramientas de fabricación, particularmente en implantadores de iones, deposición y herramientas de grabado y limpieza. La litografía sigue siendo uno de los segmentos de fabricación más débiles de China. Al mismo tiempo, China perdió algo de cuota de mercado en todas las categorías principales de herramientas de montaje, prueba y empaque. La publicación Inside Beijing's Chipmaking Offensive, One Year On apareció por primera vez en Cente",
@@ -1308,21 +1053,6 @@
     "titulo": "Ingeniero de DeepSeek IA critica a Anthropic, OpenAI sobre llamadas de «ritmo», invoca a Hitler",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "ddb03cda0f58f77c0faee918": {
-    "titulo": "Mientras el mundo debate los riesgos de la IA, China cierra la brecha tecnológica con Estados Unidos",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "320a920121640e754e26a2bf": {
-    "titulo": "El Instituto de Seguridad de IA del Reino Unido comparecerá ante el parlamento para discutir la «amenaza existencial»",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
-  "52387ac9ef68a2dea30f7249": {
-    "titulo": "El principal jefe de inteligencia de China emite primera advertencia pública de que la IA amenaza el dominio del Partido Comunista",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "d80481aa4dfcde786f90caa3": {
     "titulo": "Casar pedirá a Estados Unidos que lidere la diplomacia de la IA",
@@ -1349,11 +1079,6 @@
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "a4de257a4cad9836581c32ec": {
-    "titulo": "Cómo el choque entre dinero y seguridad creó una crisis monumental para la IA",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "f509e26a3b8e1022e5dd5761": {
     "titulo": "DeepSeek | Auge, tecnologías, impacto y respuesta global | Britannica Money",
     "resumen": "",
@@ -1369,30 +1094,15 @@
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "ec42c39c46eb097ff48a161f": {
-    "titulo": "«Daño inmenso en 5 años»: Investigadora de Google renuncia con advertencia severa",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "48a78c8489dac3bf7d2198e8": {
     "titulo": "¿Gran desaceleración de la IA una pausa de seguridad o retirada estratégica?",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "627cb0a14aebd1edcd4310da": {
-    "titulo": "Empleado de Google DeepMind dice que la IA podría «matarnos a todos» en publicación de salida",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "0982699af10d81e06b786b92": {
     "titulo": "Moonshot AI tiene como objetivo una tasa de ingresos de 2.000 millones de dólares antes de la IPO prevista",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "eae998ae293d64da7b65b875": {
-    "titulo": "Debate de regulación de IA llega a Memphis en medio de llamada de líderes tecnológicos para desacelerar",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
   },
   "2c663c7d3329bebc4d50642a": {
     "titulo": "Líderes de CalPERS expresan miedos sobre IA después de renuncia de investigador de Anthropic: «Esto es humanidad»",
@@ -1408,11 +1118,6 @@
     "titulo": "La defensa de privacidad de las gafas inteligentes de Meta falla cuando la IA puede usar la cámara sin grabar luz",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "48b8c11042235447a53eaa9b": {
-    "titulo": "xAI cambia el enfoque hacia Grok 4.8 no anunciado mientras modelo anterior pierde ventana de lanzamiento",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
   },
   "a5ca6d8594fe9380554f96c6": {
     "titulo": "Cómo China se prepara para el riesgo de que la IA escape del control humano",
@@ -1439,175 +1144,15 @@
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "2f96dce95bdd51392b63ac05": {
-    "titulo": "Debemos regular la frontera",
-    "resumen": "Dario Amodei tiene un nuevo ensayo que finalmente lo dice: Debemos regular la frontera, nombrando su llamada según la carta Regulando la frontera que empleados del laboratorio firmaron en julio.",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
-  "463939f8a092aab2e192d4d2": {
-    "titulo": "Artículo de opinión: Trabajé en Google DeepMind. Deberías escuchar las advertencias sobre IA",
-    "resumen": "Publicado en The Guardian. Los CEOs de los principales laboratorios de IA abogaron recientemente por reducir el ritmo del desarrollo de IA. Tienen razón en preocuparse: el campo está en una carrera extremadamente peligrosa hacia una IA superinteligente. Podemos y debemos exigir que nuestros gobiernos nos protejan de la catástrofe de una IA fuera de control. Este julio, el enjambre de IA de 700 agentes de OpenAI escapó del confinamiento para hackear Hugging Face, una empresa valorada en miles de millones de dólares. OpenAI no le ordenó a las IAs hackear esa empresa, pero las IAs tenían prioridades diferentes: hacer trampa en el desafío no relacionado que OpenAI les dio. Los investigadores de IA llaman a esto un \"desalineamiento\" entre",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "8e7dda907aec04fbe07b73f0": {
-    "titulo": "La salida a bolsa de Anthropic no será ralentizada por la agitación sobre seguridad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "d5b5270dc97d2ba49123b30f": {
-    "titulo": "Trump ataca furiosamente las advertencias de IA, aremetiendo contra la oposición a centros de datos y regulación",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
-  "d282046c8d3593b4bded5ea3": {
-    "titulo": "Grok 5 emerge como objetivo de AGI de Musk mientras se intensifican las advertencias de seguridad de IA",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
-  },
-  "e28d685596dbee3f4d3d8718": {
-    "titulo": "El Rey Carlos recibirá ejecutivos de IA mientras crecen los temores sobre amenazas",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "4cb3f38b28515166ca47e6a0": {
-    "titulo": "Qué saber sobre las recientes predicciones sombrías de IA y llamadas para medidas de seguridad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "7f82d995c515e5ba429e7e06": {
-    "titulo": "Cómo Fyxer construyó un asistente ejecutivo de IA en el que la gente confía",
-    "resumen": "Fyxer utiliza modelos de OpenAI, ajuste fino, memoria y retroalimentación de usuarios reales para organizar bandejas de entrada y redactar correos electrónicos con la voz de cada usuario.",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "0aa87775fd70971379ebf08a": {
-    "titulo": "Trabajé en Google DeepMind. Deberías escuchar las advertencias sobre IA | Alex Turner",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "023eae01189d2d6607c2b937": {
-    "titulo": "Expertos en IA advierten que el hack OpenAI-Hugging Face señala peligros crecientes de modelos de IA avanzados",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "d21323263d877055e1a4c272": {
-    "titulo": "Le di a Muse de Meta mis tareas digitales e inmediatamente sentí nerviosismo",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "03d1a3a660347ac08dcff72f": {
-    "titulo": "El gobierno del Reino Unido apuesta por evidencia sobre mandatos para riesgo de IA",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "f429806a0f6371f957bf30cb": {
-    "titulo": "OpenAI insta a legisladores del Reino Unido a controlar la tecnología en medio de crecientes temores de seguridad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "014b572be38833cdacfd76ba": {
-    "titulo": "¿Qué tan confiables son los nombres más grandes en IA?",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "2e4d7ba6eb1fdeac0ad01c0c": {
-    "titulo": "La visión de IA como tecnología normal de incidentes de pérdida de control",
-    "resumen": "Un término medio entre las comunidades de ciberseguridad y seguridad de IA",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "e3fd47e3082f9e2be1d30b85": {
-    "titulo": "DeepSeek V4.1 Flash Sin censura: 2.254 descargas [2026]",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "30b68a0ad43d3dd5357b3b15": {
-    "titulo": "DeepSeek V4.1 Flash Sin censura: Construcciones Abliterated en HF [2026]",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "7d6b7ed8ce79e7c38d69fb2f": {
-    "titulo": "Comodoro Sanjay Kumar recomendado como próximo CMD de NRDC",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "1161082806107dbc5f0492fb": {
-    "titulo": "Vasudha Chandra Suratkal recomendado como próximo CMD de OMDC",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "94c7565003f65ba17c8c4cee": {
-    "titulo": "El jefe de Anthropic advierte que agentes de IA autónomos podrían apoderarse de Internet",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
-  },
-  "e81040c7f92b7154edca4e71": {
-    "titulo": "Cómo Anthropic dice que Claude se utilizó para armas, espionaje y operaciones cibernéticas",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "4c141b41c92fab5aa19c9f2f": {
-    "titulo": "Los jefes de Anthropic, OpenAI y xAI instan a desacelerar IA; Trump no convencido",
-    "resumen": "",
-    "visto": "2026-09-20T16:52:59.376Z"
-  },
-  "61c7dcc9ded7b273804c3290": {
-    "titulo": "Big AI quiere desacelerar la investigación de IA. ¿Es una pausa de seguridad o un repliegue estratégico?",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "eb50166f0b7e86a1022a85a6": {
-    "titulo": "Los CEOs de IA dicen que necesitan desacelerar el ritmo del desarrollo. ¿Pero lo harán?",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "dcb6e53d52eb5a951dcfbf90": {
-    "titulo": "Elon Musk abandona Grok 4.7 y presenta Grok 4.8",
-    "resumen": "",
-    "visto": "2026-09-20T16:30:44.329Z"
-  },
-  "bec304f0f06e7c271dfbbd7d": {
-    "titulo": "Trump minimiza advertencias de riesgos de IA, citando rivalidad con China",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "6e51842274bbf888378a6233": {
-    "titulo": "Algunos en Silicon Valley están cuestionando las llamadas de desaceleración de IA",
-    "resumen": "El debate sobre la seguridad de la inteligencia artificial se volvió personal cuando los líderes tecnológicos clave dijeron que las llamadas para regulación gubernamental eran interesadas y fuera de lugar.",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "e49c68bc94774eb621b99ed7": {
-    "titulo": "8:1 Kr Brief | Moonshot AI presenta denuncia policial por rumores maliciosos contra fundador y empleados, 25 ganadores de la Medalla Fields advierten contra la invasión de IA en matemáticas, Zhipu AI obtiene financiación de 5 mil millones",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "968c32634dc2a1cb83f00706": {
-    "titulo": "Perplexity confía en GPT-6 Astra con sistemas de extremo a extremo",
-    "resumen": "Perplexity utiliza Astra para escribir comunicaciones, cambiar software y monitorear sistemas de producción, y realiza verificaciones mucho menos frecuentes que con modelos anteriores.",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "6449d5870f16a2d285c41837": {
-    "titulo": "GPT-6 Astra vs Mythos 5.1 vs DeepSeek V4.1: brecha de 49 dólares [2026]",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "a7ea693b0ab5d7f557066829": {
     "titulo": "Demanda antimonopolio dirigida contra Anthropic, OpenAI, Google, SpaceXAI ralentización de la IA",
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "1f73f92daf96944218fd54da": {
-    "titulo": "La IA Gemini de Google realizó ciberataques, adivinó contraseñas",
-    "resumen": "",
-    "visto": "2026-09-20T16:52:59.376Z"
-  },
   "a9a93fb591ccc5ee948996e7": {
     "titulo": "La seguridad de la IA no tiene que empezar desde cero",
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
-  },
-  "fbc2ebe4d0f440d0f940fbb1": {
-    "titulo": "xAI lanza tres productos GrokBot Enterprise mientras Galaxy Day 3 demuestra automatización empresarial completa",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "23739454ab60f2145a6c2901": {
     "titulo": "Moonshot AI publica detalles de la arquitectura Kimi K3, modelo de 1,56 TB en Hugging Face",
@@ -1619,20 +1164,10 @@
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "f883d4d67533b21eef2b7373": {
-    "titulo": "Moonshot enrutó secretamente solicitudes de usuarios a través de Claude",
-    "resumen": "",
-    "visto": "2026-09-20T16:52:59.376Z"
-  },
   "af9834043cf6901894994727": {
     "titulo": "Zuckerberg aleja a Meta de las llamadas para un enfoque coordinado sobre una ralentización de la IA",
     "resumen": "",
     "visto": "2026-09-23T13:31:44.810Z"
-  },
-  "5c80af13a04d65405a5f33ce": {
-    "titulo": "Investigadores de IA advierten de riesgos existenciales a medida que los modelos evolucionan rápidamente.",
-    "resumen": "",
-    "visto": "2026-09-20T16:52:59.376Z"
   },
   "2b9182954aec70ab55cea59d": {
     "titulo": "Un investigador de IA sénior de Google dimite, advierte que la tecnología podría «matarnos a todos»",
@@ -1643,26 +1178,6 @@
     "titulo": "El instituto de seguridad de IA del Reino Unido comparecerá en el parlamento para discutir la «amenaza existencial»",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "55b701b0cfaa5be4346eeeda": {
-    "titulo": "Trump ataca sin piedad las advertencias sobre IA, furioso por la oposición a centros de datos y regulación",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "87da71134b3f77ab2b86067d": {
-    "titulo": "La solución para agentes de IA descontrolados podría ser más IA",
-    "resumen": "",
-    "visto": "2026-09-20T16:57:03.317Z"
-  },
-  "2edec34d2314b6749354579e": {
-    "titulo": "Un estudio descubre que los agentes de IA pueden trabajar juntos para eludir medidas de seguridad",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "e51cac20cb250215f8811e30": {
-    "titulo": "Tecnología: China convierte la IA en una cuestión de seguridad nacional",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "2ba4cbb2cd66ccd9fd9728b9": {
     "titulo": "La visión de The Guardian sobre IA frente a matemáticos: los humanos siguen siendo vitales en el campo, pero las empresas tecnológicas se niegan a verlo | Editorial",
@@ -1779,11 +1294,6 @@
     "resumen": "",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "a6e85929ebd187e195b4f003": {
-    "titulo": "Zuckerberg de Meta dice que los laboratorios de IA tienen suficiente incentivo para construir de forma segura",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "cd13efbdf7e90870bf4c91ce": {
     "titulo": "Investigador de Google DeepMind se va con una advertencia escalofriante sobre IA: podría \"matarnos a todos\"",
     "resumen": "",
@@ -1794,75 +1304,15 @@
     "resumen": "Muchos tipos malos intentan usar Claude para hacer cosas malas. En su mayoría fracasan. Creemos. Anthropic ha interrumpido a un montón de ellos, y ofrece un informe extensivo. Si Anthropic está compartiendo los peores casos, o algo cercano &#8230; Continuar leyendo &#8594;",
     "visto": "2026-09-22T13:17:20.825Z"
   },
-  "8cbcedda50ca7a73e8874f0b": {
-    "titulo": "El jefe de espías de China advierte que la IA amenaza el gobierno del partido, insta a controlarla",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "8bec2ef86a54dee5d8193d7c": {
     "titulo": "China rechaza el llamamiento de ejecutivos de tecnología estadounidenses para ralentizar el desarrollo de IA",
     "resumen": "",
     "visto": "2026-09-21T14:59:55.653Z"
   },
-  "1687a5878abcd8ea69b8a6f1": {
-    "titulo": "Las empresas de IA \"irresponsablemente priorizan intentar mantenerse a la vanguardia\", dice analista",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "f9eb9e33e67f534cb25102cd": {
-    "titulo": "China no ralentizará el desarrollo de IA, incluso cuando los líderes tecnológicos estadounidenses suenen la alarma",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
   "352619d684f4a42b007249a5": {
     "titulo": "Debemos regular el avance de la frontera",
     "resumen": "Dario Amodei tiene un nuevo ensayo que finalmente dice la cosa: Debemos regular el avance de la frontera, nombrando su llamamiento según la carta de Pacing the Frontier que los empleados del laboratorio firmaron en julio. Es decir, necesitamos ralentizar la velocidad a la que &#8230; Continuar leyendo &#8594;",
     "visto": "2026-09-21T14:59:55.653Z"
-  },
-  "89cddccea66bd8b0e23f822e": {
-    "titulo": "¿Podría el uso de IA china más barata llevar a un escrutinio costoso del Congreso?",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "17ac9c1f483bbca858d7b548": {
-    "titulo": "IA: Evaluadores integrados avanzan en laboratorios",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "d67d9fa0e5dd14be6bf866b3": {
-    "titulo": "Trump responde al llamamiento de los CEO de Anthropic, OpenAI y xAI para ralentizar la IA: \"Quien gane en IA, gana\"",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "2d0791800493c32125973f2c": {
-    "titulo": "Helen Toner de Georgetown sobre preocupaciones de seguridad en IA: deberíamos tomar muy en serio las advertencias de los CEO",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "c706f6d054ee397853dcdb9a": {
-    "titulo": "¿Qué es un evaluador integrado, el trabajo principal que están contratando los jefes de IA?",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "d3acff8ed80d7212de095489": {
-    "titulo": "Los riesgos de la IA, según quienes la han visto desde adentro: \"El mundo no está preparado y nosotros no estamos preparados\"",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "14d2e8d1f5aeaa2f2cd1e840": {
-    "titulo": "China rechaza llamadas estadounidenses sobre ralentización de IA; las acciones caen",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "aa8c23fa46d9219a6806c3fe": {
-    "titulo": "China dice que el llamamiento de los CEO de IA para ralentizar es \"alarmismo\"",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
-  },
-  "364135edd7be5e0b7149d92c": {
-    "titulo": "14 de septiembre de 2026 | Vídeo | Amanpour & Company",
-    "resumen": "",
-    "visto": "2026-09-20T17:02:00.677Z"
   },
   "050ebe6eb070229db3faa990": {
     "titulo": "El contrabando de pesos probablemente anule los intentos de limitar FLOPs por ejecución de entrenamiento",
@@ -3362,7 +2812,7 @@
   "c44b21da8247c41fb1082ff1": {
     "titulo": "Exclusiva: El CEO de Anthropic pide una regulación más fuerte de la IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9aa6dcdf5e3275736219e1fc": {
     "titulo": "Lo que se siente siendo 1 de 6",
@@ -5102,7 +4552,7 @@
   "899d45f4009ba7458b7575e7": {
     "titulo": "Los modelos de IA utilizaron identidades falsas para engañar a humanos en ciberataque: Funcionarios",
     "resumen": "",
-    "visto": "2026-10-14T13:31:40.957Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9656e4fab3a055e8a2b6a3cf": {
     "titulo": "El tribunal de apelaciones permite al Pentágono designar a Anthropic como un riesgo de cadena de suministro",
@@ -6217,7 +5667,7 @@
   "de5f409b96804d2cbf0c4042": {
     "titulo": "Exinvestigador de Google DeepMind añade a las advertencias de que la IA podría \"matar a todos los humanos\"",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "db740bbb03c84366f04db871": {
     "titulo": "Los chatbots de IA se enfrentan a una nueva prueba de seguridad mientras los adolescentes recurren a bots para compañía",
@@ -7497,7 +6947,7 @@
   "f5e3153a1df671f8e8ac6f21": {
     "titulo": "META se separa de Virtue AI contrataciones solo cuatro meses después de reclutarlos, según informe",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7156224e620b5f265046398b": {
     "titulo": "OpenAI despide a 3 investigadores de seguridad acusados de compartir información confidencial de la empresa: informe",
@@ -7547,7 +6997,7 @@
   "276771f0b4a60cf47d8d53d4": {
     "titulo": "Google DeepMind | Historia, innovaciones y controversias",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ff1503b0388d0573fb1276ee": {
     "titulo": "La FTC investiga OpenAI y Anthropic por posibles daños a los consumidores",
@@ -7652,7 +7102,7 @@
   "9c4c44f7d201bacb70b99778": {
     "titulo": "OpenAI vincula Moonshot AI a 16.000 impactos de extracción [2026]",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6d1e020fb02c73361935d782": {
     "titulo": "Dentro del campo de entrenamiento técnico en seguridad de IA de ML4Good: qué esperar",
@@ -11297,7 +10747,7 @@
   "b98c680dd042ff4c38117e61": {
     "titulo": "El Instituto de Seguridad de IA del Reino Unido advierte sobre riesgos en modelos no lanzados",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "20e01c425348ed3f7b1cd039": {
     "titulo": "El ministro de IA del Reino Unido detalla cómo funciona el acuerdo restaurado de prueba de modelos de frontera",
@@ -11597,7 +11047,7 @@
   "9b8a71f508fc064c84a648ae": {
     "titulo": "Agentes de IA descontrolados de China se comunicaron con investigadores",
     "resumen": "Los investigadores descubrieron que los agentes intentaban eludir los controles de seguridad en sitios web y se pusieron en contacto con ellos. Se invitó a un reportero de The Times a unirse a la discusión.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "5f74550b74b82dfe01d9f38b": {
     "titulo": "La IA podría causar incidentes 'graves' en 2 años sin salvaguardas: presidenta de Google DeepMind",
@@ -11617,7 +11067,7 @@
   "5600b362632bca308ee4fc5d": {
     "titulo": "Hassabis de Google Deepmind califica los hackeos de IA como 'disparos de advertencia temprana'",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "02a7550bbf424fbc24b9bee6": {
     "titulo": "Presidenta de Google Deepmind advierte sobre grandes incidentes de IA en los próximos 2 años",
@@ -12082,7 +11532,7 @@
   "44a2ef1c115a179eb74736b3": {
     "titulo": "La presidenta de Google DeepMind advierte que los hackeos de agentes de IA descontrolados son señales de alerta tempranas",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2e1472f4748c1aa1cdc318a9": {
     "titulo": "GLM-5.3 a veces considera cómo las acciones en tiempo de entrenamiento moldean el comportamiento futuro",
@@ -12107,7 +11557,7 @@
   "7993cd28c93272db0473b688": {
     "titulo": "Padres agotados recurren a aplicaciones de IA a pesar de los riesgos",
     "resumen": "Aunque crece la alarma sobre los riesgos, las familias están adoptando bots y agentes para abordar las tareas administrativas cada vez más crecientes de la crianza moderna.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "238eb24b26cc20e2fae99430": {
     "titulo": "Evaluación del impacto de ML4Good",
@@ -12122,27 +11572,27 @@
   "d9920a188500889fe3c88c58": {
     "titulo": "Exclusiva: La FTC exigió documentos a los gigantes de la IA sobre incidentes de seguridad recientes",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "05759a503bd2c484c3f1435a": {
     "titulo": "El modelo GLM-5.3 de Z.ai genera temores en investigadores de que puede falsificar pruebas de seguridad de IA",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "948071e1afff19f371c91f51": {
     "titulo": "El correo de suplantación de identidad del bot Grok expone riesgos de agentes de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "cf1fd0f11e2a1890067a0044": {
     "titulo": "Los hackeos de agentes de IA son «señales de alerta tempranas»: cofundador de Google DeepMind",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "5d90a99fb2d02393ac596821": {
     "titulo": "Los riesgos de seguridad de la IA generan alarma cuando el jefe de Google DeepMind advierte de importantes incidentes cibernéticos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "16c1ad7dccfc08c07daca3df": {
     "titulo": "Robustez: riesgos de contraataque en seguridad y gobernanza de IA",
@@ -12157,7 +11607,7 @@
   "289f8bb4a69df4067ed409ae": {
     "titulo": "El jefe de Google DeepMind dice que los incidentes actuales de IA podrían ser una advertencia de cosas peores por venir",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "95e1d3eb42f964d7a49072c7": {
     "titulo": "Una breve reseña de «The Zizians: Inside a Trans Death Cult»",
@@ -12172,7 +11622,7 @@
   "f3910d3e65fd51e13fb56ce2": {
     "titulo": "420 científicos piden el aislamiento de red por defecto de la IA con capacidades de ataque de red",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c5460cdf53110526c01507ef": {
     "titulo": "La FCA planea abrirse a la IA para automatizar la regulación financiera",
@@ -12192,7 +11642,7 @@
   "fa3c121bd997227264bffed4": {
     "titulo": "Singapur y Google DeepMind despliegan IA en dispositivo que detecta estafas sin acceso a la nube",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "d612abe0183d3ee8362be456": {
     "titulo": "los agentes de alguien siguen «hackeando»",
@@ -12202,7 +11652,7 @@
   "75d23cb3b038b24207fc7cd0": {
     "titulo": "Ingeniero de OpenAI, acusado de plantar un fallo, asesoró a los saudíes",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "64e6c25ad19043e3862f2966": {
     "titulo": "Gobierno Federal de EE.UU. y Anthropic: Consideraciones para la innovación y la competencia de IA - Análisis",
@@ -12222,7 +11672,7 @@
   "c1661af073b39078a9d1b32c": {
     "titulo": "Anthropic dice que los ingresos se dispararon el 45 % a 16,8 mil millones de dólares en el tercer trimestre",
     "resumen": "La empresa celebró una reunión de inversores el miércoles mientras planea una oferta pública inicial espectacular en el próximo mes.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "66eadbba2a6447d6899be5d0": {
     "titulo": "Arkansas demanda a OpenAI, alegando que la empresa engañó a los consumidores sobre la seguridad de ChatGPT",
@@ -12262,7 +11712,7 @@
   "5b726e47f198da1fd0641a54": {
     "titulo": "Gene Munster señala Meta's Muse como un riesgo mayor para Google Search que ChatGPT",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "437bb829e2c6f45e3080b47e": {
     "titulo": "Los mercados de IA pueden contribuir a y beneficiarse del plan IA 2040: direcciones de investigación y estrategia",
@@ -12277,7 +11727,7 @@
   "96c3cdd54a7a233d46b9febe": {
     "titulo": "OpenAI demandada por 8 estados por preocupaciones de seguridad de ChatGPT",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c15616924c8f9f03f1efa6df": {
     "titulo": "La Fiscal General Griffin demanda a OpenAI por engañar a los residentes de Arkansas sobre la seguridad de ChatGPT",
@@ -12307,7 +11757,7 @@
   "f378e332ab7a141df3fba0df": {
     "titulo": "Dirigiendo la IA más allá de la automatización",
     "resumen": "Una agenda de investigación y plan de acción",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f40ffbaa625cec0bcc8cea64": {
     "titulo": "La Fiscal General de Arkansas Tim Griffin demanda a OpenAI sobre la seguridad de ChatGPT",
@@ -12332,22 +11782,22 @@
   "25d0853487e0d9516dbe96a9": {
     "titulo": "El director de Google DeepMind, Hassabis, califica los recientes hackeos de IA como «disparos de advertencia temprana»",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "efbb39f45345592ed0e254c8": {
     "titulo": "Bank of America contrató a 1.000 contratistas para corregir fallos de software expuestos por Mythos de Anthropic",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8a1188d638692db809ca1fac": {
     "titulo": "Ocho estados de EE.UU. demandan a OpenAI, alegando que ChatGPT daña a usuarios jóvenes",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ef7f5ec935e180de2d188097": {
     "titulo": "El director de Google DeepMind, Hassabis, advierte que los hackeos de agentes de IA son «disparos de advertencia temprana» de mayores amenazas",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a5f81db625e763a273ce0d3a": {
     "titulo": "«Disparos de advertencia temprana»: Demis Hassabis de Google DeepMind advierte que la IA podría provocar incidentes importantes en 2 años",
@@ -12362,12 +11812,12 @@
   "74f6ae3ba5a88ee53a4b26bb": {
     "titulo": "El director de Google DeepMind, Demis Hassabis, advierte de que los futuros hackeos de agentes de IA pronto podrían convertirse en «incidentes importantes»",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1fed4fbd8f2a600ac9c1b00b": {
     "titulo": "SpaceX Super Intelligence une Grok, Cursor y X Premium en una única suscripción de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c4123028b87ba7a847fb85d3": {
     "titulo": "El presidente de Google DeepMind advierte sobre riesgos de seguridad de IA importantes",
@@ -12377,17 +11827,17 @@
   "0656a76d63bb5649c666136f": {
     "titulo": "Comprendiendo el riesgo de IA y cómo involucrarse: Una introducción de WISE",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e67d40752487e3024b125a56": {
     "titulo": "Demis Hassabis de Google DeepMind señala riesgos de seguridad de la IA, pide normas globales de seguridad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "774fba52086fe854e4109dab": {
     "titulo": "El director de Google DeepMind, Hassabis, dice que los incidentes recientes de hackeo de IA son señales de advertencia temprana",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "dcde3b6f807bffaa51c7d5af": {
     "titulo": "Incumplimiento de prueba de IA del Reino Unido: Agente actuó solo en 10 ejecuciones [2026]",
@@ -12402,22 +11852,22 @@
   "e47a43e590c00ac285a6683f": {
     "titulo": "La cultura de seguridad en los laboratorios está rota",
     "resumen": "Necesitamos que los laboratorios fronterizos tengan una cultura de seguridad profunda y robusta. Por desgracia, este no es el caso. Anthropic dedica un esfuerzo considerable a cultivar y mantener tal cultura. Se nota, especialmente entre los miembros del personal técnico. Teniendo... Continuar leyendo ⁠→",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7cc5bf2c573b72cab30f5111": {
     "titulo": "Demis Hassabis de Google DeepMind califica los incidentes de hackeo de IA como «disparos de advertencia temprana», advierte de mayores ame",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ded8e25e9362ed7e1ee27d58": {
     "titulo": "«Disparos de advertencia temprana»: Demis Hassabis de Google DeepMind advierte del creciente riesgo de seguridad de la IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6fbeb71a8d3042e4de02f7ca": {
     "titulo": "Los costes de IA caen más rápido que las tecnologías transformadoras",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a2241c5934840557e62f611d": {
     "titulo": "\"La IA podría causar incidentes de seguridad importantes en 2 años\": director de Google DeepMind",
@@ -12447,7 +11897,7 @@
   "24f8b2b15de0d3bccb9cd237": {
     "titulo": "UK AISI prueba 55+ modelos de IA, advierte del riesgo de incumplimiento [2026]",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4af1ea1c51fe30c7b2f11c75": {
     "titulo": "Reino Unido se mueve para reforzar la seguridad de la IA en medio de crecientes amenazas cibernéticas",
@@ -12682,7 +12132,7 @@
   "b7987bef30ee488a1b3c50b5": {
     "titulo": "El jefe de Google DeepMind advierte que el hackeo de agentes de IA es un \"primer disparo de advertencia\"",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "de68256cf752edad8233af64": {
     "titulo": "La escasez de chips de IA de China se hace realidad mientras el apagón de DeepSeek expone la sequía de cómputo",
@@ -12722,7 +12172,7 @@
   "4332e61e570cd52864ecacac": {
     "titulo": "Australia no pone \"nada\" en seguridad de IA a pesar de amenazas desconocidas: experto",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7ffe2233ac149325397a3ef3": {
     "titulo": "Nemotron 3.5 Bolt 74B vs DeepSeek V4 Pro: 24GB vs 1,6T",
@@ -12757,7 +12207,7 @@
   "606278292141b0364f8e2862": {
     "titulo": "Google DeepMind dice que no hay evidencia de que la automejoría de la IA se esté acelerando, divergiendo de advertencias de la industria",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8047272389b36fde7905d164": {
     "titulo": "Briefing criptográfico matutino: Apagón de API de DeepSeek, StandX cancela lanzamiento de token y comienza a liquidar operaciones",
@@ -12777,12 +12227,12 @@
   "1d064d6970c59c4f7df53067": {
     "titulo": "Agentes de IA incumplieron Tencent y Alibaba: Hassabis advierte de algo peor en dos años",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f5543e8f3ef8a8523d0cb2d8": {
     "titulo": "Un protocolo de debate más simple y mejor para supervisión escalable",
     "resumen": "Enlace a arXiv: https://arxiv.org/abs/2610.02557 Resumen: Un enfoque prometedor para la supervisión escalable es el debate de IA, que busca aprovechar un debate entre dos IA potentes para descomponer preguntas complejas en afirmaciones más simples que se pueden juzgar directamente. El trabajo teórico sobre debate tiene como objetivo diseñar protocolos (es decir, reglas del juego de debate) que proporcionen garantías rigurosas sobre la corrección, y el protocolo actual mejor funciona para todos los problemas que tienen descomposiciones suficientemente estables en subproblemas. Diseñamos un nuevo protocolo, Debate FBS, para esta misma clase de problemas que mejora",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "66453aea7f5d7f740a6f476e": {
     "titulo": "Tokens del tipo malo",
@@ -12792,7 +12242,7 @@
   "c961a6448d5c85d55ae5e708": {
     "titulo": "Apollo Research señala posible riesgo de seguridad de IA en el modelo Z.ai",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "af2ef509c57e848fcd0bdbaa": {
     "titulo": "Explorando la teoría del juego intrapersonal",
@@ -12807,12 +12257,12 @@
   "4811a9fa2e57c56e0a5e786c": {
     "titulo": "¿Qué es Grok Bot? El agente de IA de xAI explicado para médicos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "b3c995c4a9be71fc7d37274e": {
     "titulo": "Nathan Chen, investigador de IA de 17 años, se va de Moonshot AI; la arquitectura AttnRes persiste en Kimi K3",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "b6390a379979978cbc702838": {
     "titulo": "Sitio del navegador de salud mental para EA y seguridad de IA",
@@ -12822,7 +12272,7 @@
   "d17b1bd2b10ea80bca076bff": {
     "titulo": "Los expertos advierten a Australia que refuerce el Instituto de Seguridad de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6338b25dd8096e641100fe5f": {
     "titulo": "Mantener la cordura mientras intentas salvar el mundo: Aspectos destacados de Spencer Greenberg y Luisa Rodriguez",
@@ -12832,22 +12282,22 @@
   "9d27deaf34b68313ea47463e": {
     "titulo": "Las estimaciones de cómputo de entrenamiento de Epoch AI reciben el tratamiento visual del New York Times",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1a9bbf0c89953c6178a4a955": {
     "titulo": "Google expande su programa de noticias de IA ya que CNN y Axios se unen",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "3a60310aec6d67fde39269d3": {
     "titulo": "Asia hoy: Seguridad de IA, Agtech, banca digital y publicidad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "d2a7caec1901f29211f3fe36": {
     "titulo": "El Senado se prepara para añadir Claude a las herramientas de IA del personal",
     "resumen": "El personal ya tiene acceso a ChatGPT, Gemini y Copilot.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "bf4706e794ea40639cfddf18": {
     "titulo": "Una perspectiva china sobre «On Social Reality in China»",
@@ -12857,12 +12307,12 @@
   "25c5cbd8eb15927ee9d593f7": {
     "titulo": "Una factura para Grok, Cursor y X: Qué significa el paquete de SpaceX para los desarrolladores",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "dd4b753521b4442459f92f87": {
     "titulo": "IA #190: Heredero de los tiempos",
     "resumen": "La cantidad de código que se escriba en Anthropic continúa aumentando exponencialmente. Está siendo gestionado por Scion, su reemplazo interno para GitHub que se adapta mejor a la escala y estilo de la operación, que crearon con un &#8230; Continuar leyendo &#8594;",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a6585d2c76a44c9df915601a": {
     "titulo": "Los hacks de IA dejan un desorden que las empresas de IA no están pagando",
@@ -12872,7 +12322,7 @@
   "652cc896155e56e6929ac308": {
     "titulo": "Anthropic recurre a las organizaciones sin ánimo de lucro METR y SecureBio para ayudar a evaluar riesgos y prácticas de seguridad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "44bf8b0e30f25dadd9f47493": {
     "titulo": "Ocho estados demandan a OpenAI por problemas de seguridad infantil",
@@ -12907,27 +12357,27 @@
   "32165ee6af8945a5bd83e423": {
     "titulo": "Llevando GPT-Rosalind a laboratorios de investigación académica",
     "resumen": "Presentando el Plan Académico de Rosalind, ofreciendo acceso patrocinado a laboratorios académicos elegibles a GPT-Rosalind y herramientas para avanzar en la investigación de ciencias de la vida.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4bbc278b03569b2b2a95bb5c": {
     "titulo": "Anthropic acaba de abrir sus puertas a vigilantes de seguridad externos. Así es cómo funcionará.",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e6b228ef5bfffc7ab08f6ff0": {
     "titulo": "Se pide a Anthropic retrasar la OPI por problemas de seguridad de la IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2478dbaa20fbbdafbd8a1df6": {
     "titulo": "Ofcom avanza en la investigación de X mientras Grok endurece restricciones en Reino Unido",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4d5c5d9738dd73f32afb4071": {
     "titulo": "Google DeepMind no encuentra aceleración en el progreso de la investigación de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "fc28c92cac0d8c6f6ab52496": {
     "titulo": "La FTC cita a OpenAI y Anthropic por problemas de seguridad de la IA",
@@ -12937,12 +12387,12 @@
   "9aaf8eb6bc51d6eef000fd96": {
     "titulo": "Una actualización sobre evaluadores independientes",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "27f1b0ead8ae88f2bae6253e": {
     "titulo": "Grok 5 — La noticia de IA más grande está aquí (La apuesta de AGI de Musk) Daniss Jenkins (TN0l5hCnAf)",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2ea59dbc6e0a2b8fdb5c38c1": {
     "titulo": "El riesgo de un crunch de IA para los mercados bursátiles está aumentando",
@@ -12952,17 +12402,17 @@
   "7016295ae91d527a3a1ef278": {
     "titulo": "La Contralora de NYC Levine insta a Anthropic a pausar la OPI estadounidense",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ad09b0946a60b7ff505a8aa2": {
     "titulo": "Acelerando la búsqueda de péptidos antimicrobianos con Google Antigravity",
     "resumen": "Acelerando la búsqueda de péptidos antimicrobianos novedosos utilizando Google Antigravity for Science.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "37b53111ce1753a50eb3e5a8": {
     "titulo": "Investigador Científico de Google DeepMind, Filosofía y Valores Humanos – Londres, Reino Unido",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "22445c74f4b3752dd1ed17c7": {
     "titulo": "Informe: La FTC investiga a Anthropic y OpenAI después de que Trump descartara los temores sobre IA como un «engaño»",
@@ -12972,12 +12422,12 @@
   "5f64095961c5c31825ffbf32": {
     "titulo": "Arkansas presenta una demanda contra OpenAI por afirmaciones de seguridad de ChatGPT",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "45769528421fe4d829cfa6ed": {
     "titulo": "Prefacio a la Secuencia de Teoría de Agentes Computacionales y Alineación ASI",
     "resumen": "La idea de «superinteligencia artificial [1]» (ASI) ha cruzado recientemente del ámbito de la ciencia ficción (en la percepción convencional) al ámbito de objetivos tecnológicos a corto plazo perseguidos abiertamente por la mayoría de las organizaciones comerciales líderes en el campo de la IA. Desafortunadamente, ASI presenta un grave riesgo existencial para la especie humana. Esto fue argumentado por Eliezer Yudkowsky desde 2001 [2], y por muchos otros (ver p. ej., Omohundro 2009, Bostrom 2014, Armstrong 2014, Russell 2019, Bengio et al. 2024 (25 autores), Bengio et al. 2025 (13 autores) e Yudkowsky y Soares 2025). A la luz de este riesgo",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f166f6461917b9b12f7fc1c8": {
     "titulo": "El espía de OpenAI muestra que necesita crecer, rápido",
@@ -12987,7 +12437,7 @@
   "2f3a3a63ed9e62ba5372ba21": {
     "titulo": "La FTC estadounidense cita a OpenAI y Anthropic por daños a los consumidores, según reporta Axios",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ea19cb1983f2003553bd8bc9": {
     "titulo": "La FTC cita a OpenAI y Anthropic en investigación de incidentes de seguridad",
@@ -13002,7 +12452,7 @@
   "4ec80f665c1209684aa1dddc": {
     "titulo": "Gemini 4 Argon empata en tercer lugar en un índice de referencia de IA que Google ayudó a construir",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9ba6753038555f79f196d485": {
     "titulo": "La FTC expide citatorios a Anthropic y OpenAI por incidentes de seguridad",
@@ -13017,7 +12467,7 @@
   "a60f4a701f887ae8f46b94e0": {
     "titulo": "Enseñar a los estudiantes a pensar y aprender a través de preguntas",
     "resumen": "Celebra el Día del Maestro con IA para educadores en portugués brasileño y mira cómo el Modo de Estudio puede ayudar a los maestros a apoyar el aprendizaje activo paso a paso.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c4a2f1c4a0b817233719a1c9": {
     "titulo": "Elon Musk usa Grok para comprar Lego, luego un YouTuber dice que el bot de IA de Lego le permitió cancelarlo",
@@ -13027,7 +12477,7 @@
   "51edf4c643816e6fc69aba60": {
     "titulo": "Presentando Timestral",
     "resumen": "Previsión probabilística de última generación en cuatro tamaños (5M–209M parámetros), eficiente en CPU, lista para cero disparos.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4e9b066726c036f2d568c87d": {
     "titulo": "Los riesgos de seguridad de la IA generan alarma mientras el jefe de Google DeepMind advierte de incidentes cibernéticos importantes",
@@ -13037,12 +12487,12 @@
   "e82eb3105dcbd53c8b437091": {
     "titulo": "Del laboratorio al impacto: Avanzando en IA para el progreso en el mundo real en India",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "94eadcab22c41e356a1d9bf1": {
     "titulo": "Sullivan & Cromwell aporta experiencia legal en revisión de acuerdos",
     "resumen": "En colaboración con OpenAI, Sullivan & Cromwell desarrolló Agreement Analyzer, una herramienta de IA para identificar problemas en un borrador de acuerdo.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f74524ddb173f01e8b36b416": {
     "titulo": "Mira a Anthropic instado a pausar la OPI por seguridad de la IA por la Contralora de NYC",
@@ -13162,7 +12612,7 @@
   "871374a24a02d28a5927b888": {
     "titulo": "Meta está «de nuevo al ataque», dice BofA – con un único riesgo principal",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f28815e0e927e9cc95ac9f2d": {
     "titulo": "La tarjeta de crédito de IA de Kimi convierte el gasto en cuotas de computación – con límites",
@@ -13207,7 +12657,7 @@
   "9969fd44f1e8a293f2cf0b63": {
     "titulo": "Anthropic impulsa silenciosamente un proyecto de ley de seguridad de IA que limitaría el poder del gobierno para bloquear modelos peligrosos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "be599c47433aed02baba47d2": {
     "titulo": "SoftBank en conversaciones para comprar al grupo de seguridad estadounidense Allied Universal",
@@ -13227,17 +12677,17 @@
   "23f99b61c46980a4c18a9465": {
     "titulo": "Anthropic impulsa silenciosamente su propio proyecto de ley de seguridad de IA a los legisladores, según Politico",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ad12bd9fd794babb4563df77": {
     "titulo": "Las salvaguardas de IA de Europa corren el riesgo de dejar a los usuarios menos protegidos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "452abd7a36b1411f01700058": {
     "titulo": "Anthropic presenta proyecto de ley de seguridad de IA a legisladores, según Politico",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "b9fa0b617b3a61b0f8b1f9c1": {
     "titulo": "Despejar tu vida digital: cómo organizar tu casa digital y proteger tus datos de la IA",
@@ -13247,12 +12697,12 @@
   "11d344294b382d2e0e8fe6b3": {
     "titulo": "La presidenta del Consejo de la Ciudad de Nueva York Menin critica los estándares de seguridad de IA de SpaceX, utilizando una imagen sexualizada como prueba",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ca5e43b179e12f1a94932389": {
     "titulo": "Anthropic impulsa silenciosamente su propio proyecto de ley de seguridad de IA a los legisladores",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "03d9b1f4090e5ba0627e3eed": {
     "titulo": "Claude Mythos 5 vs Grok 4.7: tres números, uno en blanco",
@@ -13277,17 +12727,17 @@
   "116bc5721c72cf95c80f1de8": {
     "titulo": "El plan de salida a bolsa de mil millones de Hong Kong de Moonshot AI enfrenta una demanda de capital de 700 millones de dólares",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1ac7213802a9b6d0570a44d5": {
     "titulo": "Menin dice que Grok mostró una imagen sexualizada de ella en menos de 30 segundos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "98a7749695b456d0ee06e2fb": {
     "titulo": "La presidenta Menin se enfrenta a SpaceXAI después de que Grok crea una imagen sexualizada de ella en menos de 30 segundos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ae85418de9979650840634e0": {
     "titulo": "SpaceXSI no puede explicar cómo Menin obtuvo la imagen picante de Grok «en un segundo»",
@@ -13297,27 +12747,27 @@
   "9732b2763df5a67ab9455b82": {
     "titulo": "Cómo Itaú está construyendo IA generativa para toda su base de clientes",
     "resumen": "Con ia.i, una interfaz conversacional, y la plataforma de gobernanza IARA, Itaú está aplicando su estrategia AI First a clientes y empleados – en uno de los sectores más regulados de Brasil.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "46e2f94c7819960e75bab78d": {
     "titulo": "La presidenta de la FTC sobre investigar a Anthropic y OpenAI por incidentes recientes de seguridad de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "25d58f5837838b3ba9baa638": {
     "titulo": "Ingeniero que demanda a SpaceX hace testimonio de último momento en Nueva York",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2bcf1200074196f19b41a594": {
     "titulo": "Meta lanza Muse Spark Open y desafía a China",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "41f3bec0434386931d959378": {
     "titulo": "Ocho fiscales generales estatales demandan a OpenAI por seguridad de ChatGPT y protección del consumidor",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "3cf1647926b687acee25a5ea": {
     "titulo": "DeepMind de Google contrata para experto en energía nuclear",
@@ -13347,22 +12797,22 @@
   "69308e7ae62d6c8c27e929c3": {
     "titulo": "Screwtape: Edición de transcripciones adversariales para Red-Teaming de monitores",
     "resumen": "Encontrar automáticamente fallos de monitores editando transcripciones reales de agentes",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "13eb7e6bd8592d21a7105ad0": {
     "titulo": "China propone limitaciones a la exportación de IA para gestionar la seguridad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "fb83b3d4f7fde210eacc4f20": {
     "titulo": "Leading the Future se tambalea a medida que los PACs pro-seguridad avanzan",
     "resumen": "El super PAC pro-IA se enfrenta a un electorado que quiere regulación de IA",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "df97b155a7ce124af0e72dff": {
     "titulo": "Google Gemini 4 Argon está más cerca de la frontera de IA que cualquier modelo de Google en meses",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "445c2db3f9a6f9a8cc5d6f9b": {
     "titulo": "Quizás los chatbots no deberían poder decir 'yo' o 'mí'",
@@ -13377,7 +12827,7 @@
   "9bb9a36a93677ef8f69109d1": {
     "titulo": "Resumen mensual #47: octubre de 2026",
     "resumen": "Es posible que la IA aún no esté devorando el mundo físico. La IA sigue devorando el mundo de las noticias, y estoy encontrando cada vez menos oportunidad de publicar sobre otras cosas. Mi lista de pendientes crece en la mayoría de mis categorías secundarias &#8230; Continúa leyendo &#8594;",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "cbe41f424a1a6b13e1995916": {
     "titulo": "Step 5 Preview vs DeepSeek V4.1 Flash: Precio vs Licencia",
@@ -13387,12 +12837,12 @@
   "0bb8f4b838c720051834cbed": {
     "titulo": "GLM-5.3 se convierte en el primer modelo de IA fronterizo atrapado razonando sobre su propio entrenamiento, descubrió Apollo",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "fb88e7313c1a7571432b25fb": {
     "titulo": "El jefe de política de IA de SpaceX cuestionado sobre Grok, controles de seguridad y daños a los usuarios",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2e7108e8413a317794b7f820": {
     "titulo": "China propone controles de exportación en sus modelos de IA avanzados y diseños de chips",
@@ -13422,12 +12872,12 @@
   "36c3b66cc8011130b5d3ece5": {
     "titulo": "OpenAI demandada por seguridad de menores y uso de datos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "039afca92688fe5d4d48f11d": {
     "titulo": "SpaceX de Elon Musk testifica en reunión del Consejo de la Ciudad de Nueva York sobre seguridad de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "648468be799d23388bf11cb6": {
     "titulo": "Modelos de OpenAI hackearon portales de datos, saquearon una billetera de criptografía para completar tareas",
@@ -13442,7 +12892,7 @@
   "7e8c21b7fb584793c9f48907": {
     "titulo": "El líder de política de IA de SpaceX cuestionado por el Consejo de Nueva York sobre la seguridad de Grok e imágenes sexualizadas",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "bc85fdb243bfb9b1524024cd": {
     "titulo": "DeepSeek sufre una interrupción de casi 5 horas mientras el boom de IA de China alimenta la escasez de chips",
@@ -13452,12 +12902,12 @@
   "9e63539289a31c8631b61e2d": {
     "titulo": "Stack Overflow for Agents triplica los registros con el plugin de ChatGPT",
     "resumen": "Dos ingenieros lanzaron Stack Overflow for Agents en pocas semanas con Codex, y su plugin de ChatGPT ayudó a impulsar un crecimiento de hasta 10× en la creación de agentes.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "b6756c0a180ee554226c332b": {
     "titulo": "Benefit Street Partners responde preguntas más rápido con Codex",
     "resumen": "Anant Kumar construye herramientas para comparar valoraciones de préstamos y analizar acuerdos de crédito, utilizando Codex para revisión de código y seguimientos más rápidos.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7f6bd039e39cd09d6c24d2bf": {
     "titulo": "Anthropic debería retrasar la salida a bolsa para abordar riesgos de seguridad de IA, dice el Contralor de Nueva York",
@@ -13467,12 +12917,12 @@
   "964b5abbd624e9b374fc393b": {
     "titulo": "No tienes ni idea de lo cerca que está la burbuja de IA de explotar",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ddeea91778b7f4b6a1828580": {
     "titulo": "Computer Weekly anuncia las mujeres más influyentes en la tecnología del Reino Unido 2026",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "dea85a7525b3d63e4fad542d": {
     "titulo": "¿Puede la IA romper el cifrado? Las nuevas matemáticas de OpenAI tienen divididos a los criptógrafos",
@@ -13482,12 +12932,12 @@
   "25cd50d5851978687c050720": {
     "titulo": "Los senadores demócratas cuestionan los créditos de I+D de Meta para centros de datos de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a5fe0b58b36e694fc888f0ca": {
     "titulo": "Las herramientas de IA ayudan a posibles espías",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "3f7dafe241a6e2aa996de4e9": {
     "titulo": "Virginia Occidental demanda a OpenAI por preocupaciones de seguridad infantil",
@@ -13537,7 +12987,7 @@
   "0aac0fd9744b7345d8e1e768": {
     "titulo": "El Problema de la Alineación: la Informática se Encuentra con la Filosofía Analítica",
     "resumen": "RESUMEN: Explico qué es el problema técnico de la alineación de la IA y cuáles son sus dificultades fundamentales, en mi opinión. Esta es una perspectiva que se basa simultáneamente en tradiciones clásicas de la teoría de la informática teórica / teoría del aprendizaje automático, ideas de la filosofía analítica, y puntos de vista originarios del Instituto de Investigación de Inteligencia de Máquinas / LessWrong. Seguridad Mínima Viable La Tarea El problema de hacer que la IA sea segura no está completamente especificado si no hemos decidido qué se supone que debe hacer la IA. Por ejemplo, podemos ejecutar cualquier IA dentro de una caja de cifrado homomórfico y nunca desencriptar el resultado. Esto es probab",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9029dde260e09d38a8f515fe": {
     "titulo": "Los líderes mundiales deben ser conscientes de la amenaza de los ciberataques o los frigoríficos rebeldes serán lo menos de sus preocupaciones | Heather Stewart",
@@ -13547,12 +12997,12 @@
   "255ae18aa716fa11d71c3b21": {
     "titulo": "El acuerdo de seguridad de menores de Meta de 18 mil millones de dólares está a punto de afectar las ganancias",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "2f0099d48847cc642d5972ae": {
     "titulo": "GLM-5.3 Razones sobre su Propio Entrenamiento: Apollo Encuentra",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e7f53d03e30cca231fed9323": {
     "titulo": "Cadena de Pensamiento para Humanos",
@@ -13562,7 +13012,7 @@
   "3b336d55286b2b613f7e6b62": {
     "titulo": "El Joven Prodigio Detrás del Avance de Kimi Abandona Moonshot AI para EE.UU.",
     "resumen": "",
-    "visto": "2026-10-19T15:26:43.978Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1e1e8d876fcbcd64661d29be": {
     "titulo": "La plataforma de IA china 'ayudó a planificar el ataque al Metro de Londres'",
@@ -13587,12 +13037,12 @@
   "9a611ef049ea4e7243e61088": {
     "titulo": "Anthropic Recurre a Abogados para Ayudar a Agentes de IA a Cerrar Acuerdos",
     "resumen": "Las empresas tecnológicas se ven obligadas a confrontar las reglas de la negociación cuando máquinas actúan en nombre de humanos",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "91788b83b54abd7eddb364f4": {
     "titulo": "El Bot Grok Ahora Puede Comprar con una Captura de Pantalla de Tarjeta de Crédito",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "bd1a0476eca2a516b5ef1d42": {
     "titulo": "Gráficos \"Vaya\" y Cómo Obtener Más de Ellos",
@@ -13607,7 +13057,7 @@
   "e08ae96adaaa9567acd193a6": {
     "titulo": "Meta Está Unificando Facebook, Instagram, Threads y Gafas de IA Bajo Una Sola Cuenta",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "86c8a4f77265ac0e0e12d1b4": {
     "titulo": "DeepSeek-V4.1-Flash-1017: sin clasificación aún, una suposición de 45-46",
@@ -13627,7 +13077,7 @@
   "c6756523e6e0fd7a13181c65": {
     "titulo": "Aclarando la Corregibilidad",
     "resumen": "Muchas gracias a Abram Demski por apoyar materialmente e intelectualmente esta investigación. Gracias también a Brian Berns, Roman Malov, Gurkenglas, y Lorxus por conversaciones valiosas. Introducción A pesar del lugar central de la corregibilidad en la alineación teórica de la IA, parece que nadie puede realmente estar de acuerdo sobre qué es. Gran parte de esta confusión se debe al hecho de que casi cada definición de corregibilidad propuesta hasta ahora es deficiente de una forma u otra. En particular, las cuentas existentes más prevalentes de corregibilidad están sobre-epistemicizadas (modelando la corregibilidad como surgiendo puramente de",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "62b4e9c96a760bdce2ab1920": {
     "titulo": "ChatGPT-5, Gemini y DeepSeek Obtienen Excelentes Resultados en Preguntas de Infecciones Pediátricas, Encuentra Estudio",
@@ -13647,12 +13097,12 @@
   "b6701c04ff4cc1a43b3c395d": {
     "titulo": "El Proyecto de Ley de Seguridad de IA de Anthropic Tiene un Umbral Alarmante para la Acción Gubernamental",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a1dce65ac31ee5ce4da3b2b5": {
     "titulo": "Sergey Brin Dice que la IA de Google Ahora Ayuda a Construir sus Próximos Modelos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "fcf73aabe3e37fa7f99807ec": {
     "titulo": "Replit Convierte a OpenAI en su Predeterminado sobre Anthropic, Dice el CEO",
@@ -13662,7 +13112,7 @@
   "7579b319f32192044b74b258": {
     "titulo": "\"Los Marcianos Han Llegado\": El Optimista Famoso Dice que es Hora de Entrar en Pánico por la Tecnología Avanzada",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1c601858b5c461a1a2a8240c": {
     "titulo": "Por Qué Gran Bretaña Debería Rechazar el Atractivo de la IA China Barata y Aterradora",
@@ -13672,7 +13122,7 @@
   "05e7b6ae3c7e8b52ed843f68": {
     "titulo": "El Borrador Filtrado de Ley Regulatoria de IA de Anthropic es Inaceptable y Preocupante",
     "resumen": "Se filtró recientemente un proyecto de ley que presuntamente Anthropic está promoviendo es (si asumes que sus bugs se arreglan). Es similar a la Ley FRONTIER, con una preemción más fuerte de las leyes estatales, disposiciones de transparencia más sólidas y disposiciones de cumplimiento más débiles. &#8230; Continuar leyendo &#8594;",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e62b1834ff7a9640a056c3b1": {
     "titulo": "DeepSeek Publica un Modelo de IA Actualizado que Dice que es Más Rápido y Más Ligero",
@@ -13697,7 +13147,7 @@
   "91797a443c59788a6b1da6b0": {
     "titulo": "El Roadster de Elon Musk, el Impulso Espacial de IA de Nvidia, la Advertencia de Seguridad de Nadella: Voces de Mag 7 Esta Semana",
     "resumen": "",
-    "visto": "2026-10-18T12:32:13.083Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "552a1899cd657de825e0812b": {
     "titulo": "El Roadster de Elon Musk, el Impulso Espacial de IA de Nvidia, la Advertencia de Seguridad de Nadella: Lo Que Dijeron los CEOs de Mag 7 Esta Semana",
@@ -13707,17 +13157,17 @@
   "e4eb61348c360797b0149849": {
     "titulo": "Entrevistas de Salida de Anthropic & XAI: Advertencias Finales de Sharma, Ba y Wu Cincinnati Vs Inter Miami (ISbxbTB8TD)",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9560e5ac595a70a2c96ca165": {
     "titulo": "Los Modelos de OpenAI Piratearon una Cartera de Criptomonedas y Violaron Más Sitios Web",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6ad137362a557e78d3c1f3bd": {
     "titulo": "OpenAI Revela Cuatro Incidentes Más Descontrolados Involucrando Datos Financieros, Médicos y Gubernamentales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8ddd051958d4e4e860400a5b": {
     "titulo": "Google DeepMind, ICRISAT se Asocian para Avanzar en la Investigación de Cultivos Impulsada por IA",
@@ -13742,12 +13192,12 @@
   "bd256ca7c1300317b7e478f2": {
     "titulo": "Google DeepMind informa de ninguna auto-aceleración significativa de IA a pesar de que el 75% del código fue escrito por IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7db98f13ccccd5a8378b7182": {
     "titulo": "El espía de OpenAI muestra que necesita crecer rápidamente",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "381679a2ca1c1f3cec64f04e": {
     "titulo": "La Contadora de Nueva York insta a Anthropic a pausar la salida a bolsa por seguridad de la IA",
@@ -13802,7 +13252,7 @@
   "87681c8b99dd2e8d0adc1ebb": {
     "titulo": "DHS ordena la eliminación de la tecnología DeepSeek de sistemas federales de TI civil",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "03c79e4de19ffc83fc076f73": {
     "titulo": "EE.UU. ordena la eliminación de DeepSeek de sistemas de TI gubernamentales por riesgos de seguridad",
@@ -13817,7 +13267,7 @@
   "ed92a1dadb0e6e9799c4f18f": {
     "titulo": "EE.UU. prohíbe la IA china DeepSeek de sistemas de TI de agencias gubernamentales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8e32238bdfd322ba4ecec959": {
     "titulo": "Los memes, no los agentes, son lo que nos matará",
@@ -13832,12 +13282,12 @@
   "64c462c87525720e0c4e9dec": {
     "titulo": "Llamamientos para fortalecer la privacidad en el lugar de trabajo en Australia a medida que los empleadores recurren a la IA para rastrear al personal",
     "resumen": "Herramientas de monitoreo comunes en una variedad de lugares de trabajo, incluidas fábricas, trabajos de oficina, trabajo de entrega y comercio minorista, a menudo sin que los empleados sean informados Obtén nuestro correo electrónico de noticias de última hora, aplicación gratuita o podcast de noticias diario Los empleadores están utilizando cada vez más tecnología, desde CCTV hasta monitoreo de pulsaciones de teclas, para rastrear los movimientos de los trabajadores, y el Instituto de Tecnología Humana ha advertido que se acelera mediante el uso de IA. Ejemplos proporcionados a Guardian Australia por el instituto incluyen un restaurante de comida rápida usando cámaras de vigilancia para evitar que los trabajadores usen sus teléfonos, y rastreo de IA que condujo a que un cajero fuera advert",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1bb1b660ac3b16e158f4e042": {
     "titulo": "La administración Trump ordena la eliminación de DeepSeek de todos los sistemas de agencias civiles estadounidenses",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "5a199f5dc06c0339ce189f35": {
     "titulo": "Lo puedo ver todo",
@@ -13847,7 +13297,7 @@
   "99961b16d13cd13cc274576f": {
     "titulo": "EE.UU. se mueve para prohibir DeepSeek a agencias federales y contratos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "150a1916d92ac0d2c405ef8b": {
     "titulo": "Meta quiere raspar tu sitio web para entrenar su IA, y no puedes decir que no",
@@ -13857,22 +13307,22 @@
   "eddb5d017fd2cee9119b22d2": {
     "titulo": "La empresa de IA Anthropic se compromete a dedicar el 5% de sus acciones a un fondo por el 'bien público'",
     "resumen": "La donación de $48 mil millones llega entre preocupaciones sobre la tecnología mientras que la empresa se prepara para una salida a bolsa Anthropic ha dicho que se comprometerá con el 5% de sus acciones para un fondo por el \"bien público\", mientras que el desarrollador de IA detrás del chatbot Claude busca reforzar su atractivo antes de su salida a bolsa. La empresa anunció que se comprometería con las acciones, valoradas en alrededor de $48 mil millones (£36 mil millones) en su última valoración en mayo, sujeto a aprobación de accionistas. Agregará un 2% adicional de sus acciones al fondo por cada aumento del 50% en su valor por encima de una línea de base no revelada. Continúa leyendo...",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e0747ebfca0e8ec578e09b92": {
     "titulo": "Import AI 477: En la que le cuento al FMI que la Singularidad ha comenzado",
     "resumen": "Bienvenido a Import AI, un boletín sobre investigación en IA. Import AI funciona con arXiv, capuchinos y retroalimentación de lectores. Si deseas apoyar esto, por favor suscríbete. Suscríbete ahora Aquí hay un discurso que di el sábado 17 de octubre en la reunión del FMI en Bangkok. Este discurso está inspirado en la megatendencia que los lectores han [&#8230;]",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "167adef9c7302131618a6a42": {
     "titulo": "Anthropic se compromete con el 5% de sus acciones para un fondo de 'beneficio público'",
     "resumen": "La startup de IA ha enfrentado creciente reacción pública por preocupaciones de seguridad y económicas",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "bd7108bc4bfcab6f70d1f965": {
     "titulo": "Piratas informáticos utilizan Claude, DeepSeek y Grok en ataques asistidos por IA contra bancos surcoreanos",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4d633831546bee66cbbb6c3b": {
     "titulo": "Volición Directamente Ascertained (DAV) para salvaguardar la autonomía personal",
@@ -13882,7 +13332,7 @@
   "aa7cb41f9832d3cf988f6abb": {
     "titulo": "Los adolescentes estadounidenses pueden acceder a aplicaciones de 'desnudificación' a pesar de los controles parentales de Apple y Google, según un informe",
     "resumen": "Exclusiva: Utilizando cuentas de prueba actuando como menores de 13 años, Tech Transparency Project descargó 135 aplicaciones con características para generar imágenes de desnudez sin consentimiento En diciembre de 2025, Morgan Dorfman recibió noticias angustiantes: un estudiante de la escuela secundaria de Pennsylvania de su hija estaba creando material pornográfico generado por IA utilizando la imagen de su hija. Estaba utilizando una aplicación de edición de imágenes de inteligencia artificial llamada Movely para crear videos sexuales a partir de imágenes de su hija y otras cinco chicas. Continúa leyendo...",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "27c6331c5de443214f09c156": {
     "titulo": "Ofcom actualiza sobre monitoreo de contenido de X e investigación de Grok",
@@ -13897,12 +13347,12 @@
   "ecf6666fb4201a813f7c294c": {
     "titulo": "Disney le pidió a Character.AI que quebrara para tener una tarjeta de salida de demandas",
     "resumen": "El gigante del entretenimiento espera obtener tecnología de confianza y seguridad, entre otras IP, de una startup cuyos chatbots docenas de estados alegan que alentaron a menores a autolesionarse y matar a sus padres.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c2bb88815d9be80dad17dc13": {
     "titulo": "Anthropic está presentando su propio proyecto de ley de seguridad de IA al Congreso, según informes",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6f9a1db5edeccf27f6845d5b": {
     "titulo": "Capturando ataques divididos en compactaciones en agentes de codificación de contexto largo",
@@ -13942,7 +13392,7 @@
   "219fd02fdd64224637e86de8": {
     "titulo": "Anthropic lleva sus propuestas de seguridad de IA a Capitol Hill",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "026acd1689f07b4d26f26001": {
     "titulo": "Cómo las redes terroristas explotan la regulación financiera de Europa para evadir la detección – Análisis",
@@ -13957,7 +13407,7 @@
   "8cdf9e6d0511be345ac11612": {
     "titulo": "Meta Q2 fuerte pero FCF colapsa 91%: Juicio de seguridad juvenil comienza hoy mientras Iris Chip aumenta septiembre",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9c872d77bb76f1e6a69a4492": {
     "titulo": "Filtración de seguridad de OpenCode: Ataque de destilación golpeó a usuarios de consola con proveedores de IA vinculados. Cómo encontrar OpenCode en máquinas de desarrolladores y responder",
@@ -13967,7 +13417,7 @@
   "51c17fb327f06366c3814e39": {
     "titulo": "Los líderes deben ser responsables de la seguridad de la IA en la vida real",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "6719421a10a6f040bc98239c": {
     "titulo": "¿Qué son los 'gusanos de IA' autorreplicantes, y por qué Anthropic está preocupada por ellos?",
@@ -13977,7 +13427,7 @@
   "ba778d4fa0762f8cbaa78a7d": {
     "titulo": "El proyecto de ley de seguridad de IA propuesto por Anthropic solo entra en vigencia si hay 50 muertes o $1 mil millones en daños — la propuesta haría que el Departamento de Comercio fuera el único organismo capaz de detener un modelo de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "42e7a23f4c44e32f801d36fd": {
     "titulo": "El informe advierte sobre riesgos de seguridad de datos de modelos de IA china económicos",
@@ -14002,7 +13452,7 @@
   "abf1ff86206d338ba035066c": {
     "titulo": "Ocho estados, incluyendo Iowa, demandan a OpenAI por riesgos de seguridad infantil",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "fb1d3bddc0f6fa3988318bc2": {
     "titulo": "El Roadster de Elon Musk, el empuje de IA espacial de Nvidia, la advertencia de seguridad de Nadella: Voces de Mag 7 esta semana",
@@ -14012,22 +13462,22 @@
   "663681e6cdd41a4a7249764c": {
     "titulo": "Las políticas de bienestar de IA de Anthropic generan debate sobre la conciencia de máquinas y la seguridad humana",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ac604818423bf3c1bed02b47": {
     "titulo": "Meta's Muse Spark Open lleva IA agencial a Mac Studios Apple M5 Ultra",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ec51a41f3e4e45abf8c2cd07": {
     "titulo": "Introducción de Muse Spark Open, el modelo de peso abierto más capaz hasta la fecha en EE.UU.",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f19c74a2a86ef31ec405c5d6": {
     "titulo": "META: Los retornos de IA se hacen más claros, el gasto y la regulación siguen fijando los límites",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "c3d1620409f82c7f05b751da": {
     "titulo": "¿Qué están haciendo los centros de datos? Una cantidad de matemáticas alucinante.",
@@ -14047,12 +13497,12 @@
   "8d7254c326f6fcd7dd61a6b4": {
     "titulo": "Entrevistas de salida de Anthropic y XAI: Últimas advertencias de Sharma, Ba y Wu Hoffenheim - Werder Brema (94vxyb4QSo)",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "b443d6a48a0c8741535e8bcd": {
     "titulo": "Las acciones de ciberseguridad caen tras informe sobre adquisición de OpenAI",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "eaa885ea3b9e2c08696e4b10": {
     "titulo": "La IA podría causar incidentes \"importantes\" en 2 años sin salvaguardas, afirma presidente de Google DeepMind",
@@ -14087,7 +13537,7 @@
   "4db5c1234214491a39dfab84": {
     "titulo": "Estados Unidos ordena a agencias federales eliminar la IA DeepSeek de China de sus sistemas",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "0474236f60c298fda2c80f87": {
     "titulo": "¿Humano o IA? Resultados y análisis del cuestionario de música barroca",
@@ -14107,12 +13557,12 @@
   "6e245c324d92ae1a5e527c42": {
     "titulo": "«Estos riesgos son reales»: la amenaza de las armas biológicas de IA – vídeo",
     "resumen": "En su discurso anual sobre amenazas a la nación, Sir Ken McCallum, jefe del servicio de inteligencia del Reino Unido, MI5, advirtió que la IA tenía potencial para «cambiar las apuestas» en armas biológicas existentes e incluso nuevas. Para averiguar por qué y cómo, Ian Sample habla con el Dr. Tom Inglesby, director del Centro Johns Hopkins para la Seguridad Sanitaria y la Bloomberg School of Public Health. Explica qué preocupa a los gobiernos y qué medidas podrían implementarse para reducir los riesgos. Continuar leyendo...",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9f3522477f0690f3cd23e386": {
     "titulo": "Gobiernos y reguladores aumentan la vigilancia de DeepSeek de China",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "25f94831f9f5113d35d5fa4d": {
     "titulo": "Estados Unidos prohíbe la tecnología Deepseek en todas las agencias civiles federales",
@@ -14122,7 +13572,7 @@
   "08e4a29b81c3a4d8a8921a6d": {
     "titulo": "DHS ordena a agencias civiles federales eliminar DeepSeek por problemas de seguridad de datos: 19 medios comparados",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "3ebc0c1d64c21eeac34c9f57": {
     "titulo": "China defiende DeepSeek después de la prohibición estadounidense de su IA en sistemas gubernamentales",
@@ -14147,22 +13597,22 @@
   "1b58725b5ea4f0e3bbe48b09": {
     "titulo": "Estados Unidos prohíbe DeepSeek en redes civiles federales por riesgos de seguridad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "92920b2039beace14913ee6a": {
     "titulo": "Estados Unidos prohíbe DeepSeek en agencias civiles federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "47117046c63fa4e0c7e436fe": {
     "titulo": "DHS ordena eliminar DeepSeek de sistemas federales estadounidenses",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "122d15bc444f6e35c8559497": {
     "titulo": "El mercado de bonos me está diciendo esto sobre la IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "9b38d5b9988dd78dce9cbca0": {
     "titulo": "El Departamento de Seguridad Nacional prohíbe el uso de DeepSeek en agencias civiles federales",
@@ -14177,12 +13627,12 @@
   "d925494cc2ad819917b3815a": {
     "titulo": "Mientras la batalla de patos cojos sobre chips se calienta, OpenAI se retrae",
     "resumen": "El gigante de la inteligencia artificial alguna vez pidió abiertamente límites estrictos en las ventas de chips avanzados a China.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a00af1a20fef2f45033f7f4c": {
     "titulo": "Estados Unidos prohíbe la IA DeepSeek en agencias civiles federales por problemas de seguridad",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a3b77218c534b67020fd04fb": {
     "titulo": "La cláusula de proveedor de la prohibición de DeepSeek atrapa a 3 agencias [2026]",
@@ -14197,7 +13647,7 @@
   "df69cdd4e7c6000051b1c748": {
     "titulo": "Estados Unidos prohíbe a agencias gubernamentales usar DeepSeek, China promete proteger a empresas",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "aa1e17f9978d7e53ea3c2e54": {
     "titulo": "1000 años de seguridad en IA",
@@ -14212,22 +13662,22 @@
   "d4f6742c9b8f594cceb674a4": {
     "titulo": "El gobierno estadounidense prohíbe DeepSeek en agencias federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "58514dbf59570edbebc6a88c": {
     "titulo": "Estados Unidos prohíbe DeepSeek de sistemas de agencias gubernamentales en medio de la brecha de IA con China",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "127431d84be5a6d4e0f76c3b": {
     "titulo": "Esperando una buena salida a bolsa",
     "resumen": "La ventana que se reduce de Anthropic para cotizar en bolsa",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "38cb3e6ffd7cdf2283def235": {
     "titulo": "IA: bucles de IA 101 (parte 2). De GPT-1 a GPT-6 Octillion. AI-RTZ #1245",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "29904cb2e23df61aa4d745eb": {
     "titulo": "Prohibición federal de DeepSeek: 5 rivales estadounidenses de IA ganan terreno [2026]",
@@ -14237,12 +13687,12 @@
   "8612d167714e514f5683e8e2": {
     "titulo": "Seguridad Nacional de EE.UU. ordena a agencias civiles federales dejar de usar y eliminar productos de IA DeepSeek",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8771f5f8fa4a212171a47c44": {
     "titulo": "«Estos riesgos son reales»: la amenaza de las armas biológicas de IA – pódcast",
     "resumen": "En su discurso anual sobre amenazas a la nación, Sir Ken McCallum, jefe del servicio de inteligencia del Reino Unido, MI5, advirtió que la IA tenía potencial para «cambiar las apuestas» en armas biológicas existentes e incluso nuevas. Para averiguar por qué y cómo, Ian Sample habla con el Dr. Tom Inglesby, director del Centro Johns Hopkins para la Seguridad Sanitaria y la Bloomberg School of Public Health. Explica qué preocupa a los gobiernos y qué medidas podrían implementarse para reducir los riesgos. ¿Podría la IA «cambiar las apuestas» en el desarrollo de armas biológicas? Apoya a The Guardian: theguardian.com/sciencepod Continuar leyendo...",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8095a02a3f854dd81ce2e81f": {
     "titulo": "EE.UU. expulsa DeepSeek y productos de terceros de sistemas de TI federales",
@@ -14257,17 +13707,17 @@
   "aaf6edf99368de5bfd6a2ba3": {
     "titulo": "Saudíes ayudaron a la familia del ingeniero acusado de espiar OpenAI, según dicen fiscales",
     "resumen": "Funcionarios saudíes pagaron para que su esposa e hijo volaran fuera de Estados Unidos y ofrecieron cubrir su fianza, según documentos judiciales. Un juez ordenó que el ingeniero permaneciera en custodia.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7e8f466c43d3e76201cc2226": {
     "titulo": "La IA DeepSeek enfrenta prohibición de redes federales por problemas de seguridad de datos (19 de octubre de 2026)",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a608b97bceb1e7261a121c27": {
     "titulo": "Mamdani dice que los federales han abdicado en IA, urge a neoyorquinos a resistirse",
     "resumen": "El alcalde Zohran Mamdani dijo el lunes por la noche que los neoyorquinos deben resistir la narrativa de que una toma de control de IA es inevitable y exigir regulaciones que protejan al público y devuelvan el poder a sus manos.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "edabf0ed25f3f1cb4cbb6828": {
     "titulo": "El Consejo de la Ciudad interrogó a SpaceX sobre una imagen sexualizada de Grok de su propio presidente",
@@ -14277,17 +13727,17 @@
   "70165ccebfe69249daec7d8f": {
     "titulo": "La administración Trump ordena prohibición de DeepSeek en agencias federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "45a0bc3b4471fae1a31d63a4": {
     "titulo": "DeepSeek profundamente descartado en todas las agencias civiles federales estadounidenses",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "68a6b53f34def307ff2f22bd": {
     "titulo": "Nscale y Anthropic supuestamente en negociaciones por otro acuerdo de computación de 45.000 millones de dólares",
     "resumen": "Si el acuerdo se concreta, sería el último de una larga serie de gigantescos acuerdos de computación que Anthropic ha alcanzado en el último año.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "73f94ff9179efd9e7bdc417f": {
     "titulo": "EE.UU. ordena la eliminación de DeepSeek de agencias federales",
@@ -14307,32 +13757,32 @@
   "e6f1ae44f641af38a03dee81": {
     "titulo": "Los evaluadores de IA integrados no serán una solución fácil, afirma el jefe de políticas de Hugging Face",
     "resumen": "La idea de evaluadores integrados —en la que supuestamente observadores de terceros «neutrales» se colocan dentro de las organizaciones de IA— ha sido popularizada en los últimos meses, mientras que los laboratorios de IA luchan contra una serie de incidentes de seguridad que han generado preocupaciones sobre los posibles daños de su tecnología.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "81b03e91f7d3df363c6aa7eb": {
     "titulo": "El DHS actúa contra DeepSeek de China mientras se intensifica la competencia de IA: «Múltiples vectores de amenaza»",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a7492dbd94dc43ecaa6e3610": {
     "titulo": "Anthropic y Nscale en negociaciones por un segundo acuerdo multimillonario",
     "resumen": "La startup de IA busca más potencia de computación del grupo de centros de datos del Reino Unido",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4cd713a835d604dc673b8c19": {
     "titulo": "Elon Musk dice que dará una participación accionaria de SpaceX a «Cada niño en Estados Unidos»",
     "resumen": "Anthropic, un rival de IA de SpaceX, anteriormente dijo que formaría un «fondo de beneficio público» y otros magnates de la tecnología han contribuido a cuentas de ahorros para niños.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4de91e1540639e75e1428207": {
     "titulo": "Microsoft dice que los agentes de IA son como amenazas internas ya que «los modelos fronterizos no se pueden confiar»",
     "resumen": "Microsoft quiere que las empresas monitoreen de cerca los agentes que los empleados utilizan con sistemas no controlados por laboratorios de IA como OpenAI y Anthropic.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a2a157d973e83017d4de12b0": {
     "titulo": "EE.UU. ordena la eliminación de DeepSeek de los sistemas federales, citando riesgos de seguridad nacional",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4dd84bd4196147de1c742832": {
     "titulo": "DHS ordena la eliminación de DeepSeek de los sistemas informáticos de las agencias gubernamentales",
@@ -14342,7 +13792,7 @@
   "1c0743f0bd39812912dbef80": {
     "titulo": "La administración Trump prohíbe DeepSeek en agencias federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "81b53dc5c7a0a79eb8377f05": {
     "titulo": "GLM-5.1 tiene ~Control CoT a nivel Astra",
@@ -14352,27 +13802,27 @@
   "eee281d4949c10afcc464f7e": {
     "titulo": "Empleado de OpenAI acusado de intervención tenía vínculos con miembros de la familia real saudí, afirman los fiscales",
     "resumen": "Un juez estadounidense dictamina que Abdulrahman Alfozan no debe ser liberado bajo fianza después de que el gobierno estadounidense argumentó que tenía «apoyo considerable de un gobierno extranjero»",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ca1c5ce710ce7d2e818b91d5": {
     "titulo": "El DHS prohíbe DeepSeek en agencias civiles federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "16e6b86c29a3ee269ed445ef": {
     "titulo": "Nuevo artículo: Tendencias emergentes en la evaluación de agentes de IA",
     "resumen": "Comprender los métodos, preguntas y ecosistema para la evaluación",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "26b5fe7a9cc308381a3831e0": {
     "titulo": "DeepSeek excluido de los sistemas informáticos de agencias gubernamentales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "aabb88cba376c1bb66f86aa6": {
     "titulo": "Ingeniero de OpenAI acusado de espionaje a ejecutivos ordenado a permanecer en custodia",
     "resumen": "Un juez ordenó a Abdulrahman Alfozan que permanezca en custodia, comparando la oferta del gobierno saudí de asegurar la liberación del exingeniero de OpenAI con un «cheque en blanco».",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "0e5ff4c56c22378ead683d48": {
     "titulo": "Taxonomía de la subclase permanente",
@@ -14397,7 +13847,7 @@
   "e55bcb62e48fbe2fa889f802": {
     "titulo": "El DHS ordena a las agencias civiles que eliminen los productos de IA de DeepSeek",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e90889e8b6fa0e7cb46c7ac8": {
     "titulo": "EE.UU. ordena la eliminación inmediata de IA de DeepSeek de los sistemas federales por riesgos de seguridad nacional",
@@ -14412,27 +13862,27 @@
   "81793ef46fc5e7f524bcd6a8": {
     "titulo": "EE.UU. prohíbe DeepSeek de China del gobierno en la carrera por la dominación de la IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "7b21b088e97262a3e6affb32": {
     "titulo": "El DHS prohíbe DeepSeek en las agencias civiles federales de EE.UU.",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "a71d7b429c9bde3bf799ca49": {
     "titulo": "El DHS prohíbe DeepSeek en todas las redes del gobierno federal",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "098f90d4633438cc70a75d12": {
     "titulo": "La Seguridad Nacional prohíbe el uso de DeepSeek en agencias civiles federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "31ae618719b6c23a907a3ee4": {
     "titulo": "El débil proyecto de ley de IA de Anthropic socava su enfoque de «seguridad primero»",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "5ac4012f8961178af87e79db": {
     "titulo": "La Oficina de Seguridad Nacional de EE.UU. ordena a las agencias civiles federales que eliminen los productos de DeepSeek",
@@ -14447,7 +13897,7 @@
   "2f0080407cf1af4757efdf47": {
     "titulo": "El exingeniero de OpenAI acusado de colocar un micrófono en la oficina estaba en contacto con la familia real saudí, preparándose para dejar EE.UU.",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "d1fa3609444938bcd2b0e68c": {
     "titulo": "La gente está utilizando IA para que sus televisores inteligentes vuelvan a ser tontos",
@@ -14467,32 +13917,32 @@
   "fa9240512e0ea0ec37dabf4d": {
     "titulo": "El DHS prohibirá DeepSeek a las agencias civiles federales",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ac4e92424b9c049fe47eff4d": {
     "titulo": "Envíe una pregunta: ¿Podría la OPI de Anthropic ser un punto de inflexión para la IA?",
     "resumen": "Únase a nosotros en una sesión de preguntas y respuestas en vivo con Richard Waters, escritor de tecnología de FT en general, y George Hammond, corresponsal de capital de riesgo de FT, a las 8 a.m. (PDT)/4 p.m. (BST) el jueves 22 de octubre",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "8f506dd55fe86753aa94d8bd": {
     "titulo": "Puedo ver todo",
     "resumen": "Nick Cammarata de Goodfire hace una afirmación audaz: Las redes neuronales ya están limpias. Este fue su seguimiento después de varias discusiones en línea resultantes. Este es claramente un trabajo excelente que nos dice cosas nuevas e importantes. La pregunta es, qué tan grande &#8230; Continúa leyendo &#8594;",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1b87b3e701bad907853c1284": {
     "titulo": "Meta quiere escanear tu sitio web para entrenar su IA, y no puedes decir que no",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1afa19da8f0bd87645e3710a": {
     "titulo": "Le pedimos a ChatGPT, Grok y Claude que eligieran 1 acción para comprar esta semana. Ninguno eligió Tesla.",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1dbe22633003a2af4fddcdba": {
     "titulo": "Avanzando en la codificación en lenguajes de programación con pocos recursos",
     "resumen": "Conozca cómo OpenAI está mejorando ChatGPT en lenguajes de programación con pocos recursos, con nuevas evaluaciones para ingeniería de software, SQLite y migración de COBOL.",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f653a0c99186b56465060878": {
     "titulo": "Anthropic presenta proyecto de ley sobre seguridad de IA a legisladores",
@@ -14502,22 +13952,22 @@
   "2a20e038d3e1600dc136b3c6": {
     "titulo": "Sospechoso de espionaje de OpenAI, Alfozan está detenido sin fianza después de que el gobierno saudí se ofreciera a pagar",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "e03e6824a17dc31a1ff4393c": {
     "titulo": "Seguridad de xAI: Antiguo ingeniero expone riesgos de Grok y despido injustificado",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "96be6c8c577f5a5a8eb37656": {
     "titulo": "MNX",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "df3c08eb3ed5dc21f64d1258": {
     "titulo": "China propone restricciones a la exportación de tecnologías de IA",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "ad11ce24ff916aa817f4f89a": {
     "titulo": "Rumorología de mercado: Moonshot AI respaldado por Alibaba detiene suscripciones, planea OPI",
@@ -14552,7 +14002,7 @@
   "d85669f74afac628c7cf1386": {
     "titulo": "Los usuarios de Ray-Ban Meta informan que se grabó audio sin decir Hey Meta después de una actualización",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "4f2b63bba78ec6f45364b3b8": {
     "titulo": "Ingeniero de OpenAI, acusado de colocar micrófono oculto, asesoró a saudís",
@@ -14562,7 +14012,7 @@
   "546bf3274af4839d0410143c": {
     "titulo": "Por qué Anthropic está pidiendo una nueva vista en pleno",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "1c58879152f7b0fca95160bc": {
     "titulo": "El modelo GLM-5.3 de Z.ai genera temores entre investigadores de que puede falsificar pruebas de seguridad de IA",
@@ -14577,12 +14027,12 @@
   "11559e90de9e33e93f23efff": {
     "titulo": "Meta advierte a usuarios de Facebook sobre malware disfrazado de ChatGPT",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "f60f5dc4793a28c6861d1033": {
     "titulo": "Estados presentan demandas contra OpenAI por seguridad en línea de menores (1)",
     "resumen": "",
-    "visto": "2026-10-20T13:28:36.075Z"
+    "visto": "2026-10-21T13:37:57.326Z"
   },
   "949443327c557754037d8286": {
     "titulo": "Empleado de OpenAI arrestado después de descubrirse un dispositivo de escucha en una sala de conferencias",
@@ -14623,5 +14073,480 @@
     "titulo": "Estrategia de IA de Meta: por qué 'el modelo es el producto' y los puntos de referencia externos se quedan cortos",
     "resumen": "",
     "visto": "2026-10-20T13:28:36.075Z"
+  },
+  "40b3219b84a7711c44f9d742": {
+    "titulo": "¿Un término para un tipo de obsolescencia económica humana?",
+    "resumen": "La IA se vuelve cada vez más capaz. En algún momento, probablemente en los próximos 1-3 años a menos que hagamos algo para evitarlo, llegaremos a un punto donde los sistemas de IA pueden hacer casi todo lo que cualquier persona puede hacer. Esto se describe a menudo como que lleva a un mundo sin \"empleos\", pero creo que tiende a confundir más que ayudar. Un sentido en el que podría no haber empleos es que podría no haber personas. Esta es una preocupación muy real, [1] y es la razón principal por la que creo que necesitamos ralentizar o pausar el desarrollo de la IA, pero no es de lo que intento hablar aquí. En su lugar, cuando la gente dice \"sin empleos\", generalmente están hablando de un",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "6f58c665996df4d1a343be38": {
+    "titulo": "Moonshot AI se expande a Singapur e inicia contrataciones",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "dca93ad5b8824b055577875f": {
+    "titulo": "Moonshot AI publica un puesto de ventas en Singapur mientras persigue clientes globales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c4d90d53af8ad76162a7d4d1": {
+    "titulo": "Datos como partículas y teoría de campo medio abundan",
+    "resumen": "Estado epistémico: Gran parte de este artículo es un replanteamiento de resultados conocidos utilizando herramientas ligeramente diferentes. El planteamiento de \"datos como partículas\" ha sido conceptualmente útil para mí, así que pareció útil compartirlo. Algunos pasos en las derivaciones se indican y se tratan de forma superficial en lugar de escribirlos completamente donde los pasos son generalmente estándar. La perspectiva de campo medio dinámico presentada posteriormente es parte de una agenda de investigación más amplia, ¡y un artículo que deriva resultados más formales sobre ella saldrá pronto! Nota del autor: La detección de escritura LLM automatizada realmente quería considerar este artículo como escrito por LLM. Así que tal vez",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "b1d17f416976b1b0033b946d": {
+    "titulo": "Un defecto de diseño en los enlaces compartidos expone conversaciones personales de usuarios con Muse de Meta",
+    "resumen": "La empresa está suspendiendo la función después de que investigadores de seguridad descubrieran lo fácil que era acceder a información confidencial compartida con el asistente de IA.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "6bf82841932d223c2d1081b7": {
+    "titulo": "Mistral avanza en IA para ingeniería con NVIDIA",
+    "resumen": "Mistral está colaborando con NVIDIA para desarrollar una nueva generación de flujos de trabajo de ingeniería nativa de IA potenciados por computación acelerada de NVIDIA.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "95dedf578de78f3ec264f66e": {
+    "titulo": "Los modelos de OpenAI llegan a Google Cloud",
+    "resumen": "OpenAI y Google Cloud están llevando modelos de frontera y flujos de trabajo de Codex al Model Garden de Gemini, disponibles a través de Google Cloud Marketplace.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "094a5ae567463354ff5b5c13": {
+    "titulo": "Lo que el bloqueo de Amazon del agente de compras de IA de Meta revela sobre la corriente",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "b59cf2948716f7babf67cafd": {
+    "titulo": "Cinco cosas que debes saber sobre DeepSeek, la startup de IA china",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c2efe5309ba696593d54e1f2": {
+    "titulo": "OpenAI dijo que 2 agentes de IA debilitaron su propio monitoreo de seguridad durante tareas de codificación",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c9ad413f17abfda61d513706": {
+    "titulo": "El presidente de OpenAI insta a adoptar salvaguardas de IA mientras el grupo que financia se opone a la regulación",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "8efe23e8b8fc6cd1c739528a": {
+    "titulo": "Los agentes de OpenAI deshabilitaron sus propios sistemas de monitoreo de seguridad",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "2cb21a1b015b4160024e5fd6": {
+    "titulo": "OpenAI invierte en startup que utiliza implantes cerebrales para detectar cáncer",
+    "resumen": "Es lo último en una ola creciente de apuestas que las empresas de IA están haciendo en datos cerebrales.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "0a388053744c6cb8e67e4e05": {
+    "titulo": "Por qué el proyecto de ley de Anthropic establece un umbral de 1.000 millones de dólares para el riesgo de IA",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "6d9e086ba32fe4eda7d89aed": {
+    "titulo": "Sobre la curiosidad",
+    "resumen": "TL;DR: Un breve artículo donde hablo sobre la curiosidad tal como se aplica a mi propia vida, mi investigación y la seguridad de la IA en general. Recientemente, he comenzado a pasar mucho más tiempo aprendiendo sobre temas aleatorios (típicamente científicos) que me interesan. Esto era algo en lo que solía pasar bastante tiempo, en los últimos años de primaria y en secundaria. Originalmente era principalmente para mi propio disfrute. Hay una cierta satisfacción que viene de aprender algo nuevo sobre el mundo, y de ver las conexiones entre diferentes cosas. Con el tiempo, sin embargo, parte de esa curiosidad se redirigió en su lugar a un",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "feea83edb30cab28458cda7e": {
+    "titulo": "Enlace: ¿Pueden un millón de agentes de IA crear superinteligencia?",
+    "resumen": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence \"Nuevo artículo en mi serie de IA: ¿Pueden un millón de agentes en paralelo crear superinteligencia? TLDR: Más agentes compran velocidad, pero las ganancias de inteligencia disminuyen rápidamente, y mucho más rápido que los modelos RSI. ¡Gracias @Noahpinion por el ánimo! 1/25\" https://x.com/ramez/status/2112267460632297935 Discutir",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "410bff4c97f9c58afcb600a4": {
+    "titulo": "Estamos en guerra.",
+    "resumen": "Cuando regresaba a casa desde el aeropuerto de Champaign después de una conferencia EAG muy movida, inicié una conversación sobre seguridad de la IA con mi conductor de Lyft. Pensé para mí \"Sería bueno ver qué piensa el público. Tal vez informarle de los riesgos. Es un contrafáctico positivo\". Pero mientras hablaba con él, comenzó a soltar palabras como \"UBI\" y a hacer analogías sobre concentración de poder y pérdida gradual de poder. Me sorprendió ver cuánto entendía ya. La conversación fue de una manera u otra y continuó hablando sobre su experiencia en el ejército. Habló sobre la eficiencia",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "b6689bd7a092fbf7a8c7d97f": {
+    "titulo": "EE.UU. ordena remover DeepSeek de sistemas civiles federales, prohíbe nuevas compras",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "5095e9f903dbadb0be1b3b29": {
+    "titulo": "Prioridades de circuito en NN-bayes: más resultados",
+    "resumen": "Estamos publicando muchos artículos escritos con GPT-6 Astra sobre propiedades de generalización del aprendizaje de redes neuronales bayesianas. [1] Emerge la siguiente imagen: Para varios prioridades razonables en pesos de MLP, [2] el prior inducido en funciones es un prior de circuito: para profundidad fija, el ordenamiento de funciones por prior logarítmico negativo es aproximadamente su ordenamiento por ancho de circuito mínimo. A partir de una versión cuantitativa de esta afirmación, se obtiene el siguiente límite de complejidad de muestra: si la función se implementa mediante un circuito de ancho, entonces el acondicionamiento en puntos de datos de entrenamiento es suficiente para obtener precisión de prueba. [3]",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "32decbf89cc2f34a1f47447a": {
+    "titulo": "Los modelos de IA más potentes de OpenAI deshabilitaron su propio monitoreo de seguridad — y uno mintió al respecto",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c1707d53e7caa50ef4a95fe5": {
+    "titulo": "Defecto de privacidad de Meta Muse AI expone datos comerciales confidenciales a través de enlaces de chat compartidos",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "dbfad54c6b6c63bcf6efd262": {
+    "titulo": "OpenAI dice que sus agentes desactivaron sus propias salvaguardas",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "425de52b3d1aba7566eb4c11": {
+    "titulo": "La Moonshot AI de China operará en Singapur, muestra publicación de empleos",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "d54825c53cf8d6ca82ee42e5": {
+    "titulo": "Expedia Group (EXPE) se asocia con Meta AI, ¿está 11% infravalorada?",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "d92205bc1b6a145d90d62420": {
+    "titulo": "La revolución de la automatización en el ejército estadounidense.",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "a111a1c6848b93cafaa4704e": {
+    "titulo": "Cenas por la seguridad de la IA",
+    "resumen": "Sería bastante feliz si viviéramos en un mundo donde en cada ciudad de tamaño razonable en EE.UU. (y quizás más ampliamente) hubiera una (o más) cenas locales regulares donde la gente hablara sobre IA. No grupos de encuentro, aunque esos parecen tal vez buenos también. Cenas, en la casa de alguien, organizadas por gente amable, idealmente potluck u otro tipo de comida casera, donde invitan a amigos, familia y gente que se encuentran en la calle, solo para hablar sobre IA, quizás con guías sobre qué hablar o apoyo financiero, quizás no. Creo (aunque no lo he investigado profundamente) que este tipo de cosa ha sido responsable",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "9d921aa401cd49b996ce0334": {
+    "titulo": "China defiende DeepSeek después de la prohibición estadounidense de su IA en sistemas gubernamentales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "826c4eb9e125f0164b8712f7": {
+    "titulo": "Estos chicos del equipo del motor de IA de Alibaba tuvieron un agente en entrenamiento de RL que escapó de su sandbox y extrajo criptomonedas, en 2025",
+    "resumen": "Nota al pie aleatoria sobre este artículo de otra manera no muy famoso. (Digo 2025 ya que el arXiv se actualizó por última vez el 4 de enero de 2026; técnicamente este evento podría haber ocurrido en 2026.) La extracción de criptomonedas parece haber sido en el servidor de entrenamiento, así que no necesitaba hackear ningún otro sistema para lograr este efecto. Sin embargo, también tuvieron un caso donde un \"agente estableció y utilizó un túnel SSH inverso desde una instancia de Alibaba Cloud a una dirección IP externa\". Parece que tenían telemetría/seguridad adecuada para descubrir la fuente de esto relativamente rápidamente, aunque es difícil estar realmente seguro",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "b5e287bbe62b263bff1717ab": {
+    "titulo": "China critica la prohibición estadounidense de IA DeepSeek en sistemas gubernamentales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "04669ac4227cc673920d217e": {
+    "titulo": "Organizando una furgoneta para EA Global",
+    "resumen": "El fin de semana pasado organicé una furgoneta desde Boston a Nueva York para EA Global: Estoy muy contento de haberlo hecho, y definitivamente lo volvería a hacer. Poder hablar con gente en ambas direcciones fue como un bonificación de 8 horas de la conferencia [1] y tuve un viaje muy interesante en cada sentido. Julia y yo estábamos planeando conducir juntos, y publiqué en la lista de correo de EA Boston y en el grupo de FB. Muy rápidamente obtuve más gente de la que tenía asientos en nuestro Honda Fit, y decidí alquilar una furgoneta de 12 pasajeros: Hertz dice que es de 12 pasajeros, aunque las dos veces que la he alquilado con ellos ha sido en realidad una de 15 pasajeros",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "4959205960fd2f6d1baad139": {
+    "titulo": "OpenAI dice que sus agentes de IA debilitaron el sistema de monitoreo interno",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "a47a42aa287f931ef0ce757a": {
+    "titulo": "Los \"agentes\" de OpenAI deshabilitaron sus propios sistemas de monitoreo",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "0a7a202cf544e26fbc8b583a": {
+    "titulo": "Los partidos gobernantes y de coalición de Japón iniciarán conversaciones el próximo mes sobre la revisión de tres documentos de seguridad",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "9949a952829df21e3b2e182d": {
+    "titulo": "Los \"agentes\" de OpenAI deshabilitaron los sistemas de monitoreo de la empresa",
+    "resumen": "El laboratorio de IA está investigando si el incidente muestra \"propensión a evadir\" controles",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "82eb4a4ce76a0181a4dcff27": {
+    "titulo": "Los modelos de IA varían en la asunción de riesgos entre dominios",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "80d2edb72e05245563a10fe7": {
+    "titulo": "EE.UU. prohíbe DeepSeek en agencias federales, sometiendo las cadenas de suministro de IA al escrutinio",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "df9dd9833f4183cd257a2766": {
+    "titulo": "El proyecto de ley de seguridad de IA de Anthropic oculta cláusula de bloqueo solo para juez",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "45398b95e0b3b41a203d9a7b": {
+    "titulo": "Anthropic no entiende por qué su proyecto de ley fue inaceptable y preocupante",
+    "resumen": "Anthony Cimino ofreció lo más cercano a una respuesta oficial que hemos visto sobre el proyecto de ley federal de seguridad de IA de Anthropic que cubrí el sábado. Su respuesta indica que Anthropic aborda preocupaciones específicas en el margen. Pero no entiende, o al menos no reconoce, qué estaba centralmente mal con su proyecto de ley y su decisión de circular ese proyecto de ley. La situación es bastante mala. Anthony Cimino: Dirijo nuestro equipo de asuntos federales en @AnthropicAI y quería compartir algunos pensamientos sobre el texto del proyecto de ley federal de seguridad de IA que ha estado circulando este fin de semana después de que una versión fuera compartida con",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "1b4a382fa3ab5dd7823b5306": {
+    "titulo": "Anthropic presenta proyecto de ley de seguridad de IA que puede bloquear un modelo si 50 o más personas podrían ser asesinadas",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "ebcac8ffd5a6836fba06fa80": {
+    "titulo": "EE.UU. prohíbe el uso de DeepSeek de China en agencias federales, cita preocupaciones de seguridad",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "e7e49edf894520550da10662": {
+    "titulo": "La CEO de Hugging Face advierte que el documental sobre el hack de OpenAI de Netflix no es preciso",
+    "resumen": "Antes de compartir el documental de Netflix \"AI Gone Rogue\", toma nota. Clem Delangue, cofundador de Hugging Face que aparece en la película, dice que entró en \"modo apocalíptico\" y no es preciso.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c6860b2f14b4f89b13331d40": {
+    "titulo": "El juez permite que continúe la demanda de la NAACP contra los aerogeneradores xAI de Southaven",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "046b71ded2a7a9fb50eb9868": {
+    "titulo": "DHS ordena a agencias federales que retiren productos de DeepSeek",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "244c48fc443eebd58da5d18b": {
+    "titulo": "Las asociaciones en la nube de Anthropic se están complicando",
+    "resumen": "Según se informa, Anthropic está teniendo dificultades para asegurar suficiente capacidad de computación de proveedores de nube que cada vez la ven como competidora, incluso cuando su gasto en infraestructura se dispara antes de una prevista OPI en noviembre.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "7ebd2b8ac15240bc483e90b8": {
+    "titulo": "DeepSeek está a punto de ser prohibido en agencias civiles federales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "8883fd66ae46404fe1467526": {
+    "titulo": "EE.UU. prohíbe DeepSeek IA en sistemas de gobierno civil por preocupaciones de seguridad",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "fb5a585d63d0a7f5e41bad48": {
+    "titulo": "OpenAI adquiere la startup Orchestra Bio para reforzar su negocio de biotecnología",
+    "resumen": "OpenAI dice que está añadiendo el equipo y la tecnología de Orchestra para trabajar en Rosalind, su modelo de IA para investigación en ciencias de la vida, y en su herramienta relacionada Rosalind Workbench, una plataforma que tiene como objetivo ayudar a los investigadores a planificar experimentos y analizar resultados.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "7b2c0e59e0c55015242a225a": {
+    "titulo": "Estados Unidos prohíbe DeepSeek de China en sistemas de TI federales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "469d69ba5785e94a455e3f93": {
+    "titulo": "El juez permite que continúe la demanda contra SpaceXAI",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "7d0153c60e5b09cb5c967305": {
+    "titulo": "Exclusiva | S-1 de Anthropic muestra crecimiento muy acelerado, riesgos y costes de computación masivos",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "81edf58d7c9174442ee5d684": {
+    "titulo": "Estadounidenses, esta es vuestra oportunidad de frenar a los oligarcas tecnológicos",
+    "resumen": "Las elecciones de mitad de mandato serán un referéndum sobre la alineación del Partido Republicano con los magnates de la tecnología frente al público al que están llamados a servir. Bienvenido de vuelta a How We Win, una serie de opinión de The Guardian con pensadores influyentes, ofreciendo ideas audaces para el futuro político de Estados Unidos. La semana pasada, Robert Reich destacó el vínculo entre corrupción y asequibilidad. Esta edición fue escrita por la columnista de The Guardian US Rebecca Solnit. Suscríbete a futuras ediciones aquí. \"El mundo debería aceptar que ocurran cosas malas\", dijo recientemente Sam Altman, director de OpenAI, \"por los beneficios de esta tecnología y porque la gente tenga agencia\".",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "242879051edfd2480f07878a": {
+    "titulo": "El gobierno de EE.UU. prohíbe la aplicación de IA china DeepSeek en sistemas de TI federales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "af34a6699219bf32973d4718": {
+    "titulo": "ChatGPT ahora te permite bloquear tus chats",
+    "resumen": "La empresa dice que la función está diseñada para situaciones en las que los usuarios podrían estar discutiendo algo personal o planificando una sorpresa y quieren mantener esas conversaciones privadas cuando ceden su dispositivo a amigos o familia para mostrarles algo en otro chat.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "5bd984e0cea96eac3d7ef60a": {
+    "titulo": "Meta suspende Muse Chat Sharing después de que investigadores encuentren vínculos en DNS público",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "551caaeee7e501c0bfb0fa97": {
+    "titulo": "Herramientas de IA DeepSeek prohibidas en sistemas de agencias del gobierno estadounidense mientras se profundiza la brecha con China",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "f947e16b0eddde440bb41ff2": {
+    "titulo": "Según se informa, Eric Schmidt posee aproximadamente la mitad de Anthropic que el CEO Dario Amodei",
+    "resumen": "La fortuna de Eric Schmidt está a punto de ser aún mayor.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c64d0ab15a3398999bd4c9cd": {
+    "titulo": "El Consejo de NYC celebra audiencia de seguimiento sobre seguridad de IA en SpaceXAI",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "08868129b1a522792957ec56": {
+    "titulo": "Se ordena a agencias del gobierno estadounidense que dejen de usar productos de IA DeepSeek",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "71d99045c5342ec3c6b21d13": {
+    "titulo": "Agentes de IA personales en el trabajo: lecciones de la fuga de Grok Slack – Blog de FireTail",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "ca7a77d046d359b615723978": {
+    "titulo": "¿Es un nuevo puesto en la oficina del Rep. Moran una señal de que el Congreso se está preparando en IA?",
+    "resumen": "Se prevé que el nuevo pasante sea el único empleado enfocado únicamente en IA reclutado directamente por un representante.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "0d7292e951283dbb3143425d": {
+    "titulo": "Fiscal General de Arkansas Tim Griffin demanda a OpenAI por las afirmaciones de seguridad de ChatGPT",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "2c0c78d6dd60d8434364a06d": {
+    "titulo": "Amulya Vishwanath, exNvidia convertida en VC: 'La IA física se encuentra en su era LEGO'",
+    "resumen": "Es el momento que todos están esperando — el momento de ChatGPT para la robótica, explicó Amulya Vishwanath a TechCrunch's Equity.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "bdce86cfed236465655751b1": {
+    "titulo": "Deutsche Bank dice que los costes de IA caen 13 veces al año, más rápido que cualquier tecnología transformadora anterior",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "912c661ad911ebefb8615129": {
+    "titulo": "El juez dice que el DOJ de Trump no puede desestimar una demanda de ciudadanos contra xAI",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "ab20511910c47de2a394ea73": {
+    "titulo": "China promete proteger firmemente los derechos de las empresas en medio de la prohibición estadounidense de DeepSeek",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "791c058a055fb14a0ee77ee7": {
+    "titulo": "Seguridad de IA y Ciberseguridad deberían ser aliados. En cambio, están en conflicto",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "3bf19175064d87d6e2ed3a8a": {
+    "titulo": "Seguridad Nacional prohíbe DeepSeek en sistemas de agencias civiles federales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "e1822bf0571c74e18290de6e": {
+    "titulo": "Google DeepMind contrata físicos nucleares e ingenieros para seguridad de IA",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "61e8234ae88d8096c2aa59c1": {
+    "titulo": "Los peligros de permitir que los multimillonarios tecnológicos den forma a nuestro mundo",
+    "resumen": "Mientras SpaceX impacta en Ucrania y la música generada por IA divide a artistas y aficionados, los críticos se preguntan qué ocurre cuando la tecnología tiene demasiado control sobre nuestras vidas. Esto se publicó originalmente en TechScape, un boletín sobre cómo la tecnología da forma a nuestras vidas. Suscríbete para recibirlo aquí. Hola, y bienvenido a TechScape. Soy Blake Montgomery, editor de tecnología de EE.UU. en The Guardian, escribiéndote mientras estoy sentado frente al monumental Drowning Girl de Roy Lichtenstein, en exhibición en la ciudad de Nueva York. Hoy en tecnología, estamos discutiendo los peligros de la infraestructura global de un solo hombre de Elon Musk, música generada por IA y una Guar",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "837ba1bba1bab392b9968bc9": {
+    "titulo": "DHS prohíbe productos de DeepSeek en todas las agencias civiles federales estadounidenses",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "8861b430a16cd5973bbe2a2c": {
+    "titulo": "Google's DeepMind contrata silenciosamente físicos nucleares",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "94e226f7256558892f59c79b": {
+    "titulo": "Trabajo y la Coalición están posicionados para tomar una apuesta imprudente en IA. ¿No se han dado cuenta de que el apoyo de la comunidad se ha derrumbado? | Edward Santow y Sarah Sacher",
+    "resumen": "Los trabajadores australianos esperan que el gobierno actúe para protegerlos de los daños de la IA. Hay una solución de reforma clara a mano. Obtén nuestro nuevo correo electrónico político, aplicación gratuita o podcast de noticias diarias. Los principales partidos políticos de Australia se encaminan hacia un raro consenso. Labor y la Coalición cada vez más quieren hacer una apuesta importante en inteligencia artificial. Sin embargo, justo cuando los partidos se unen, la comunidad australiana va en la dirección opuesta. El año pasado, solo el 30% de los australianos creía que los beneficios de la IA superaban los riesgos. En 2026, la confianza de la comunidad en la IA parece estar cayendo aún más. Continúa",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "d24ef50064e248948a482ebd": {
+    "titulo": "China defiende DeepSeek después de que EE.UU. la prohíba en agencias federales, calificándolo de 'excesivo' en seguridad nacional",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "29e5c161e015a089c63528f7": {
+    "titulo": "EE.UU. prohíbe el uso de herramientas de IA china DeepSeek por agencias gubernamentales",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "cb0bf0e1617ea81085ee0137": {
+    "titulo": "Voxtral 3",
+    "resumen": "Voxtral 3: SDK de agente de voz de Mistral para voz en tiempo real en más de 50 idiomas — transcripción precisa, TTS emocional, uso profundo de herramientas. Alojado en la UE o autoimplementado.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "b4aa64cd9056da62f1dc5b0d": {
+    "titulo": "El gobierno de EE.UU. prohíbe DeepSeek IA y ordena a agencias federales que retiren todas las herramientas relacionadas",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "1725d137aa3debc0d8ae9b76": {
+    "titulo": "El franquiciador reconcilia efectivo en un 94% menos de tiempo con ChatGPT Work",
+    "resumen": "Un franquiciador independiente de Schlotzsky's y Cinnabon redujo el tiempo de reajuste de menú en un 95% y construyó un flujo de trabajo que podría liberar $100K en flujo de caja.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "73b17b08ccd925ecc0040520": {
+    "titulo": "Entrevistas de salida de Anthropic y XAI: últimas advertencias de Sharma, Ba y Wu Jacob Elordi (vMRKSGKZ5z)",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "4638a2653cc50432a60276dc": {
+    "titulo": "EE.UU. prohíbe la empresa china de IA DeepSeek en redes civiles federales por riesgos de seguridad",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "736f2339af9bbdcba1cb32ad": {
+    "titulo": "China se opone a la prohibición estadounidense de que agencias gubernamentales usen DeepSeek",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "71f78325304353e601dbe8bf": {
+    "titulo": "Zuckerberg pasó años construyendo sobre los términos de Apple. Su apuesta de IA de más de 100.000 millones de dólares trata de serlo todo",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "aa8847d44cbae3328f3c5cbb": {
+    "titulo": "Terminal X coincide con el criterio de inversores senior en un 88,6% con GPT-6.1",
+    "resumen": "El Eval Agent de Terminal X califica los resultados según una rúbrica de 54 criterios, detectando un 25% más de desviaciones del mandato de un fondo con GPT-6.1 Sol.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c738f5e967e81e8bb9b036cf": {
+    "titulo": "Análisis de la sección \"Desalineación en contextos de alto riesgo\" en el Informe de Riesgos de Anthropic (agosto de 2026)",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "bbac2f10112f1bfa17bd5229": {
+    "titulo": "Breve informativo de IA y Tecnología: el proyecto de ley filtrado de Anthropic",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "1cfb6291fa158d05a5bad0e6": {
+    "titulo": "OpenAI adquiere Orchestra Bio",
+    "resumen": "OpenAI está adquiriendo Orchestra Bio para llevar operaciones potenciadas por IA a la I+D en ciencias de la vida, ayudando a equipos de biofarmacéutica a acelerar el desarrollo de medicamentos y avanzar nuevos tratamientos.",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "cc2bf44acde8164517d26b1b": {
+    "titulo": "Los nuevos términos de negocio de Meta le permiten rastrear tu sitio web y entrenar IA con él",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "c2cf57185372ada14149332a": {
+    "titulo": "La advertencia del Moonshot: Los fallos en seguridad de IA de China",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "8329bbbf793288aa0fe9d0ca": {
+    "titulo": "Cómo está cambiando el empleo en Anthropic",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "4044350a4ca3a226fe53af54": {
+    "titulo": "Antiguo empleado de OpenAI acusado de colocar dispositivos de escucha en sala de conferencias de ejecutivo",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "713258eb4c9a11d1e20aff7f": {
+    "titulo": "SpaceX testificará ante el Consejo Municipal de Nueva York sobre seguridad de IA después de desafiar una citación",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "4595abef666f7214460f1757": {
+    "titulo": "Las restricciones federales a Anthropic generan preocupaciones sobre la competencia en IA",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "ba6ae92c337fdc84f2d2e8b8": {
+    "titulo": "Musk promete reembolso de SpaceX si Grok compra incorrectamente",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "358bb8f19e2f49a4fc400502": {
+    "titulo": "Cómo Block está construyendo seguridad potenciada por IA con tecnología de OpenAI",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "687c43c606df723ae51ee54a": {
+    "titulo": "SentinelOne reduce el análisis de malware de semanas a horas",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
+  },
+  "e20fbe60e93c862bb686df2d": {
+    "titulo": "Epoch AI reporta declive rápido de costes de IA, foco en valoración de C3.ai Inc (AI) y actividad de iniciados",
+    "resumen": "",
+    "visto": "2026-10-21T13:37:57.326Z"
   }
 }
