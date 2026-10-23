@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-22T13:40:08.278Z",
+  "generado": "2026-10-23T13:16:00.375Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -36,7 +36,7 @@
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 28
+      "items": 50
     },
     {
       "nombre": "xAI (Google News)",
@@ -46,7 +46,7 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 32
+      "items": 34
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -116,7 +116,7 @@
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 39
+      "items": 20
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -161,7 +161,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 20
+      "items": 23
     },
     {
       "nombre": "Financial Times AI",
@@ -207,31 +207,29 @@
   "feedsVacios": [
     "Google DeepMind Blog"
   ],
-  "feedsCaidos": [
-    "Google DeepMind Blog"
-  ],
+  "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 128,
-    "quePasanFiltro": 70,
-    "publicadas": 66
+    "enFeeds": 109,
+    "quePasanFiltro": 65,
+    "publicadas": 61
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 518,
-    "prensaSinCoincidencia": 137,
-    "duplicadas": 13,
+    "fueraDeVentana": 514,
+    "prensaSinCoincidencia": 143,
+    "duplicadas": 15,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 11,
-    "deCache": 191,
-    "traducidas": 42,
-    "fallidas": 40,
+    "deCache": 167,
+    "traducidas": 110,
+    "fallidas": 0,
     "llamadas": 3,
     "tokens": {
-      "entrada": 7623,
-      "salida": 7740
+      "entrada": 8588,
+      "salida": 9396
     }
   }
 }
