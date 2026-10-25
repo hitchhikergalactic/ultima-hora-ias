@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-24T12:33:58.357Z",
+  "generado": "2026-10-25T13:06:34.227Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -35,7 +35,7 @@
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 31
     },
     {
       "nombre": "xAI (Google News)",
@@ -45,7 +45,7 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 23
+      "items": 39
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -105,7 +105,7 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 7
+      "items": 6
     },
     {
       "nombre": "Apollo Research (Google News)",
@@ -115,7 +115,7 @@
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 45
+      "items": 50
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 23
+      "items": 25
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 81,
-    "quePasanFiltro": 54,
-    "publicadas": 51
+    "enFeeds": 50,
+    "quePasanFiltro": 31,
+    "publicadas": 30
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 594,
-    "prensaSinCoincidencia": 145,
+    "fueraDeVentana": 579,
+    "prensaSinCoincidencia": 147,
     "duplicadas": 15,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 8,
-    "deCache": 212,
-    "traducidas": 64,
+    "yaEnEspanol": 9,
+    "deCache": 232,
+    "traducidas": 59,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 5973,
-      "salida": 6529
+      "entrada": 5177,
+      "salida": 5031
     }
   }
 }
