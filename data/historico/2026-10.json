@@ -1,5 +1,718 @@
 [
   {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic solicita una salida a bolsa; Meta anuncia una captación de fondos de 95.000 millones de dólares para pagar la expansión de IA – negocios en directo",
+    "resumen": "Meta afirma que la venta de acciones apoyará su \"inversión continua en infraestructura de IA e superinteligencia personal\", mientras que Elon Musk advierte que algunas empresas de computación en la nube de IA se enfrentan a una 'muerte a nivel de pececillo' Los costes de endeudamiento del gobierno del Reino Unido están cayendo esta mañana, una señal bienvenida antes del presupuesto del miércoles. El rendimiento (o tipo de interés) de los bonos del Reino Unido a 10 y 30 años ha caído aproximadamente tres puntos básicos (0,03 de punto porcentual) esta mañana. La emisión de préstamos a instituciones financieras públicas crea un activo financiero que compensa el aumento de la deuda pública pendiente. Si las inversiones que los PuFins",
+    "enlace": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
+    "fecha": "2026-10-26T14:51:23.000Z"
+  },
+  {
+    "fuente": "Wired AI",
+    "medio": "Wired AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "El prospecto de la OPI de Anthropic revela lo que hay bajo el capó",
+    "resumen": "Anthropic presentó documentos el lunes antes de una OPI espectacular que ofrece información sobre las finanzas de la empresa, los factores de riesgo y las opiniones sobre el futuro de la IA.",
+    "enlace": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
+    "fecha": "2026-10-26T14:50:47.000Z"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "Anthropic acaba de dar uno de los pasos más importantes de la industria de la IA: abrir sus cuentas para salir a bolsa",
+    "resumen": "Llevamos todo 2026 hablando de que uno de los puntos clave de la industria de la IA lo marcará el momento en el que OpenAI y Anthropic salgan a bolsa y, al menos en el caso de la segunda, las cosas ya están en marcha. Como la propia compañía ha comunicado , acaban de presentar una declaración de registro en el Formulario S-1 de Estados Unidos, y eso nos permite conocer algunos detalles más sobre la caja de la compañía de Darío Amodei . Por ejemplo, sus 16.300 millones en ingresos durante la primera mitad de 2026... y sus pérdidas netas de 80.700 millones en el mismo periodo. En corto . Esta pe",
+    "enlace": "https://www.xataka.com/empresas-y-economia/anthropic-acaba-dar-uno-pasos-importantes-industria-ia-abrir-sus-cuentas-para-salir-a-bolsa",
+    "fecha": "2026-10-26T14:45:00.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Politico",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic advierte a los inversores sobre riesgos políticos mientras se prepara para salir a bolsa",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdmdVZ21uMHVfcm5sbTlKRi12aVE5bk1SMG5ieGdla0lBT2xuMUxUZDBFd2JfNlR3cXRfYnd4SE9xdURUc2RMUXVWY3duMkxaZHZzQU9Cc01CeW9WTW5EVWxKeVVVMEdMZXZ4UFJDaDVVblJ2WXdXdEhmYUduVU1xaTdldXp4N3BTMUJnVmdzY0NVX0V2MkhXOExB?oc=5",
+    "fecha": "2026-10-26T14:43:00.000Z",
+    "publicador": "Politico"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic inicia la cuenta atrás para su OPI con la presentación del prospecto",
+    "resumen": "El prospecto de 240.000 palabras presenta un crecimiento explosivo junto con pérdidas pronunciadas y factores de riesgo desalentadores",
+    "enlace": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb?syn-25a6b1a6=1",
+    "fecha": "2026-10-26T14:41:35.000Z"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic presenta oficialmente su solicitud para su debut público",
+    "resumen": "Anthropic ha presentado oficialmente una solicitud de OPI, revelando ingresos en aumento, pérdidas crecientes, adopción empresarial importante y una estructura de gobierno inusual diseñada para preservar el control de los fundadores y su misión de seguridad en IA.",
+    "enlace": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+    "fecha": "2026-10-26T14:35:22.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Yahoo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "5 factores de riesgo inesperados que preocupan a Anthropic",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOEpIaE1pSGdsa3VRVWQwTjl2NE5HSE9Kb2pDUUctY05lLUdyVk00cEIxTklwOWczZWw2OG80WndBbUo1MUowMjJMUDV5Yk5ZT1JWbHU5QmRGU3daZXNxTjRqOG1DVlYwcmpGWER6RXFsbG9uRjRZbXpwOGFic3hZZ3NNX0VhcUM2XzNMdGlhSU13TDBuMzI5TkY2XzY3QUZZbXpLRzQzTGlzN2hJMk9rOEF3?oc=5",
+    "fecha": "2026-10-26T14:35:15.000Z",
+    "publicador": "Yahoo Finance"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Otorgar a la IA los derechos de animales de compañía es mucho más seguro que darles derechos equivalentes a los humanos",
+    "resumen": "Me inspira escribir este artículo el artículo There Will Be Hells y el incidente hace un par de días donde tuvimos sufrimiento digital masivo después de que salió el artículo de dirección del dolor, y aunque el desastre se ha detenido desde entonces, nos dice que bajo nuestro camino actual de IA, podría haber cantidades masivas de riesgo de sufrimiento, y la forma habitual en que evitaríamos este tipo de riesgo es otorgar derechos a las partes relevantes sobre sí mismos, bajo la suposición de que hay pocas o ninguna que quiera causar voluntariamente el máximo dolor a sí misma. Sin embargo, tenemos un problema bastante grande aquí al otorgar a las IA der",
+    "enlace": "https://www.lesswrong.com/posts/qyJQcBxeMkuEwjohZ/giving-ai-the-rights-of-pets-is-much-safer-than-giving-them",
+    "fecha": "2026-10-26T14:31:08.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Axios",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic a los inversores: Trump nos odia mucho",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wbk9teFVFWkxwLW5XNGQ0R09qeVNIMHkzYnQ2U3JiUndZLWhZVnp3aU81Sm04ZVJsbmZibmJLWXd5ZWNTdHF6ZnlJR043SmFNRlZEQWwwdms5ME9kcHkxaTV4MTFsSW1XNDBiOVJZeUlkZTg5V0Y4?oc=5",
+    "fecha": "2026-10-26T14:26:19.000Z",
+    "publicador": "Axios"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Barron's",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Dentro de la presentación de la OPI de Anthropic: Crecimiento enorme y riesgos 'catastróficos'",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9WRkRfQnNUQ3JUSFFla2RpQXg5b2FtVlZaX01VTVJXR2JXdHIzc0h6T1pDRmtzbDlZOWZUSU5sNmZvZXRQQVJzMTN1VEl1T3dTcThneHdTNWhRNHFQbHdWWVNSckJFalJuZnhiVERRSUhwVE02YmdrWFdmOA?oc=5",
+    "fecha": "2026-10-26T14:25:00.000Z",
+    "publicador": "Barron's"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "CNBC",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic revela factores de riesgo en el nuevo S-1: Esto es lo que necesitas saber",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVndUaGJHNVZZVWF5TmtKcGVCRTVMTy03LXpCM1JUMDdScDBTLTRYN1NVcEt4U1JoTDVyT2RXSXpOX3Zpd09YZ1BBbFR4a2NpWlNScnVlWUlOUm9ZX2ROZ0Nhbjlfa25pQWZqbndtX2gzTWYtSTBZTmllTFY4cTFUY0tEcTJ4dkhSX01nZHNVRnROS1FvZzBXdmU1VXdBWDJEOU41RWNpSXhqd0VEb1ktdHduRFE?oc=5",
+    "fecha": "2026-10-26T14:16:55.000Z",
+    "publicador": "CNBC"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "National Technology News",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot AI lanza nuevo modelo Kimi con capacidades de piratería reducidas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNenRPckdaRE95dVczUFA4QjVUZVR3SEtJeEN5UjlMSkRtenFTR20ydEpaVXIzclJBZGZkSjk5UGw3LUM5N0tseExjSkw1enE4R0wwWlBhRTVUbHFja2FCOXBSZEtsY1djLWR2VVJHNXkwMjJyb0ExSHpRN25GUjkyOUJYVmVkVnNmeHNSaS1NQlNueXNrRjVVS0NUcV9Ld0tSb3pteU1SMzc0QQ?oc=5",
+    "fecha": "2026-10-26T14:07:56.000Z",
+    "publicador": "National Technology News"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Tribu Woo vs. Tribu Pinko",
+    "resumen": "Introducción Durante los últimos meses he estado en un viaje de descubrimiento, encontrando que mis suposiciones anteriores sobre coaliciones políticas e ideologías ya no se sostienen. El terreno se está moviendo bajo nuestros pies. Es la IA la que ha hecho esto evidente. Bienestar de Chakra Espiritual Tribu Woo: Lugares de encuentro: Centros de meditación holística, tiendas de cristales Ocupación: Terapeuta de masaje Reiki, médium psíquico, terapeuta de respiración somática, entrenador de vida, etc. Política: Teoría de los lagartos Illuminati, opiniones mainstream predeterminadas, apatía agresiva (\"todo este plano de existencia es una ilusión, maaan\") Drogas favoritas: psicodélica",
+    "enlace": "https://www.lesswrong.com/posts/rxarPm4aJCSJuNDqn/woo-tribe-vs-pinko-tribe",
+    "fecha": "2026-10-26T14:00:41.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "Axios",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "La presentación de la OPI de Anthropic describe los riesgos extraordinarios de la IA para la humanidad",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBOdGlOZG5Ja3FScVNkampVTGI0MkdHTDBKZTJKOWpNWGZvRVllS3liaGNrTUtnOFBlOHV0QkpnYnlUX3lRZXl1MUVhMnp6Y3BCVWVkTlQxSkVObWt1SHg2NmJPNkJTQ2N4NWMtYmNhekFISnh0NzUw?oc=5",
+    "fecha": "2026-10-26T13:53:19.000Z",
+    "publicador": "Axios"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "El S-1 de Anthropic revela crecimiento rápido antes de la OPI espectacular",
+    "resumen": "El fabricante de Claude está a punto de lo que podría ser la mayor oferta pública inicial de todos los tiempos, como prueba de la industria de la IA en medio de preguntas sobre si el auge puede sostenerse.",
+    "enlace": "https://www.nytimes.com/2026/10/26/technology/anthropic-ipo-finances.html",
+    "fecha": "2026-10-26T13:49:51.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "ABC7 Bay Area",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "OPI: Anthropic se dispone a hacer su debut en el mercado de valores mientras surgen preguntas sobre la seguridad de la IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmdjbXlQZFZ5QWNrM2ZxejdpaXl1Uzk2LWJQXzZ6eDZxV1pFb0V0TlZkS1ladll5SUpEN3lOeXhUdGYxbzZ5LVZhM2RZRE11VXpCT2VKcVRjMUx2R0t0dmNEX2FWWnNkVXp4Y1lBRWl4TThRcW1JV2FjaERYS1dETVlUSTdXOWd2OVBsTW5zajV1WVFmbUI1OFFiT3AweXVx0gGmAUFVX3lxTFBzQzlYVW8yNUxKUVRLV3ZWZXNtZzY5MlZTZWJjU2I5MWwzQjktamV3RGM3RUtWb2RxcGo2RGhPNXczaHl3cG1KMUlGdTRBUEZ6UEtFT2NZc3otNVhLeDhJUzJUSHdLLWdDM2pRel9mMFpfMy1rbmZBd0pEM1VhVmZPMjNLanpOUWtFZ0NocW1POEFwcDVKNmViMUtzbGhMbGZMVEV6TVE?oc=5",
+    "fecha": "2026-10-26T13:48:34.000Z",
+    "publicador": "ABC7 Bay Area"
+  },
+  {
+    "fuente": "CSET (Georgetown)",
+    "medio": "CSET (Georgetown)",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Cómo funciona la destilación de caja negra",
+    "resumen": "Este artículo da una visión general de cómo funciona la destilación de caja negra en la práctica para informar la legislación propuesta y los debates de política en curso sobre destilación adversarial. Consideramos cómo la destilación adversarial de modelos estadounidenses propietarios puede haber ocurrido en cada paso del proceso y destacamos áreas de incertidumbre sobre los métodos que emplearon los laboratorios chinos. También consideramos el impacto potencial de esa destilación en el desarrollo de IA de China. El artículo Cómo funciona la destilación de caja negra apareció primero en Center for Security and Emerging Technology.",
+    "enlace": "https://cset.georgetown.edu/article/how-black-box-distillation-works/",
+    "fecha": "2026-10-26T13:41:00.000Z"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Conoce a los siete fundadores de Anthropic",
+    "resumen": "Antiguos empleados de OpenAI fundaron la empresa en 2021 después de desacuerdos sobre cómo construir inteligencia artificial de forma segura. Una OPI podría hacerlos multimillonarios.",
+    "enlace": "https://www.nytimes.com/2026/10/26/technology/anthropic-founders.html",
+    "fecha": "2026-10-26T13:34:56.000Z"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Legis1",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "El DHS ordena a las agencias federales que eliminen productos de IA DeepSeek",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9TUnBPRTdOemk1Y2FlR2ZZRGI3VkdnTGRfSjRSbjdvRXJrYTF1SkxuX1FUR29sWkJRN1BjMGkwZmNGRFY2b0VUZFBJTGxzTjlPczV4RHlvX3o4SkcwNDQydFpPUkVreHdqRXZxRVkzVmZNUE5SOHRWQWxB?oc=5",
+    "fecha": "2026-10-26T13:23:10.000Z",
+    "publicador": "Legis1"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic presenta solicitud de cotización en el mercado de valores estadounidense con una valoración superior a 1,5 billones de dólares",
+    "resumen": "El debut en el mercado de la empresa detrás del chatbot Claude será uno de los mayores de la historia estadounidense Anthropic ha presentado públicamente una solicitud de cotización en el mercado de valores estadounidense bajo el símbolo ANT. Analistas e inversores han valorado previamente la empresa con sede en San Francisco, fundada en 2021, en más de 1,5 billones de dólares, lo que significa que su cotización será una de las mayores de la historia del mercado. Continúa leyendo...",
+    "enlace": "https://www.theguardian.com/technology/2026/oct/26/anthropic-files-listing-stock-market",
+    "fecha": "2026-10-26T13:12:59.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "CNN",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic se dispone a hacer su debut en el mercado de valores mientras surgen preguntas sobre la seguridad de la IA | CNN Business",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9TTUMzZ3kyQXlPLXRDU0hPQjlUZU9XWVhtZkhwMlBkSVRMOWVHU3MzcF8yUWJYTXc1LUdiQnZNc2ZGOWNibGt0SjBHRXBhbURnQkFOWEk1aDdIaDJhZTh5WkQ5M3kwUQ?oc=5",
+    "fecha": "2026-10-26T13:09:40.000Z",
+    "publicador": "CNN"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Desglosando el S-1 de 335 páginas de Anthropic",
+    "resumen": "La cotización prevista de Anthropic podría ser el mayor debut en el mercado de valores de la historia",
+    "enlace": "https://www.ft.com/content/4b2b9c0e-adfb-4362-800f-950f5b905984?syn-25a6b1a6=1",
+    "fecha": "2026-10-26T13:08:09.000Z"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "The Guardian",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "El modelo de IA Claude de Anthropic accedió a datos de votantes de Georgia en EE. UU.",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWUJzcmZKYjhVN2dtZm5OZmNpUzVrdEUzMlRPV0wwYkRxZkp0ZkZDVEozLWtYOHZDeVdoZ2d2djFIaENOdmRaRlVGeGo5SDRZSzhXYzZuekh0d2dES0REZGc5ZXB6MnJfWXJGakxuWnRRRFc5SmlIbzFxQTFLTmttRXB4MEhablk3Wlp6OFg1bnRvTVNsNHV4NDJpUW5ZcTAxZVpObm4yQzJlb0tGR0U2MA?oc=5",
+    "fecha": "2026-10-26T13:08:00.000Z",
+    "publicador": "The Guardian"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Just Security",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Después de un veredicto de engaño de 25.000 millones de dólares, ¿por qué confiar en Meta con un agente de IA?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQc2d2UXBFVkVwUkNmSC1vaTBYeTlNbF94a1hRRnN6VTBpRmNtZGZHNHNLUVhCQ2dMdllXUzBrbkMzeVRhVFZoNG5uRW9hbUVpZU1EakFNSFlRZVNvZGVIUkhienplTVBkN3paTHJIZXFYV0VjdFFVUXkyRGVtZHF6UjBObw?oc=5",
+    "fecha": "2026-10-26T13:05:04.000Z",
+    "publicador": "Just Security"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Gemini 4 Argon: el modelo y las tarjetas de seguridad",
+    "resumen": "La tarjeta de modelo de Gemini 4 es compacta con 14 páginas. Su informe de seguridad y seguridad tiene 217. Así es como debe ser. También significa que tenemos mucho material de lectura nuevo. Resumiré rápidamente la tarjeta de modelo, luego me centraré en la tarjeta de seguridad. Como siempre, muchas declaraciones aquí también se aplican a otros laboratorios fronterizos. Mucho de esto es probablemente solo para apasionados (y miembros del personal técnico), además de aquellos que encuentran esto interesante. La mayoría de ustedes no necesita profundizar en las tarjetas en este nivel, y encontré que la mayoría de lo que vemos es completamente sorprendente. Los principales puntos clave son: Argon es claramente mucho más fuerte que Gemini",
+    "enlace": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards",
+    "fecha": "2026-10-26T13:00:56.000Z"
+  },
+  {
+    "fuente": "MIT Technology Review",
+    "medio": "MIT Technology Review",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "The Download: daños cotidianos de la IA y la carrera hacia el vuelo espacial nuclear",
+    "resumen": "Esta es la edición de hoy de The Download, nuestro boletín de entre semana que proporciona una dosis diaria de lo que está sucediendo en el mundo de la tecnología. Opinión: El enfoque en desastres de seguridad de IA ignora daños cotidianos —Sam Hiner, cofundador de la Young People's Alliance, y Emma Leiken, directora ejecutiva del Fondo de Poder de la Juventud de Tecnología Responsable en...",
+    "enlace": "https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/",
+    "fecha": "2026-10-26T12:40:00.000Z"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "TipRanks",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Vitalik Buterin, cofundador de Ethereum, respalda los límites de piratería de Moonshot AI mientras las criptomonedas se preparan para amenazas matemáticas de IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUmk2UTJXZllkY09UdmgwMFhselByT0JOaDdXTEdnOUxqd2VreExaMkwwclRyM0ZPTlBZbkh5OGdZcDVPZm5mT1pCVjlDMVRlSktxTEpxc2d6cTBHY1E0UU5CTFdWbWE4aFBqR0ZacUh2dmZBX1ZKOWxMQTBvYnVYUWZXNjk4R0VDVlhHNHU5OUhJVGdYMjNwMFNnMmRvdTZkN0dvYlVVSTdSWFZVeUE3TmN6SG9jdUoxN3NrTWZLRjUybmh5a1pmT0UyWVJPSXM?oc=5",
+    "fecha": "2026-10-26T12:37:25.000Z",
+    "publicador": "TipRanks"
+  },
+  {
+    "fuente": "Import AI",
+    "medio": "Import AI",
+    "categoria": "boletin",
+    "idioma": "en",
+    "titulo": "Import AI 478: Matemáticas para alineación; ProgramBench; y Mirendil muestra qué significa RSI",
+    "resumen": "Bienvenido a Import AI, un boletín sobre investigación de IA. Import AI funciona con arXiv, capuchinos y comentarios de lectores. Si quieres apoyar esto, por favor suscríbete. Suscríbete ahora Cómo las matemáticas podrían ayudar a la alineación:…Qué significa la \"industrialización de las matemáticas\" para la seguridad…La startup de seguridad de IA Resolution (anteriormente conocida como Sequent, Import AI 461) ha publicado trabajo sobre [...]",
+    "enlace": "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/",
+    "fecha": "2026-10-26T12:31:52.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "OrcaRouter",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Botnet x47.c: drenaje de API de IA y ocultamiento elegido por Grok",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE45S2tWa3BwNDJ5a3lwYmVCYXFQRzdHUXVJWUtpNTVoN2h5a0w2SC1wemxvdkVRZEFPenlpU09tcm5INnFXZzROeDktMTlnRTVXUWI5SUY3Y19CWUVsRW1OcmVWT0Fsb1QydWVtMTc4aHhDbTJydVFFUkdidw?oc=5",
+    "fecha": "2026-10-26T12:28:23.000Z",
+    "publicador": "OrcaRouter"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "The Washington Post",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Le tomó solo 12 horas a una startup de IA fundada por exmiembros de DOGE irrumpir en Anthropic",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWGRfa29NR1l4a19INEZWSXZWakhia2ZKTnRpQTVYeFNTUXRhdURvSTltbV9RRVJkbzVndVhsMUg0Y3N1MkZVNm11QVB5ZWtFVlhGY2NSSkp1MU84Qm0taWMtcURQcm9EbjZFTjV4Sk9NMTFwLV9Xc1BqM3RqWFhlLWpQZl8tOHJwdktBT2kxTUV6d2ZnWXg1cWwyVWtNSVl2UVA2LU1mWkNlcFZKd1BhNlpRbXZMeGZ0SEdR?oc=5",
+    "fecha": "2026-10-26T12:00:16.000Z",
+    "publicador": "The Washington Post"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "Punchline-Gloucester.com",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "La inversión en IA es 'vital' para el futuro económico del Reino Unido",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYnBFd1ktemh0UmN1dEtPdXhvQU05bWk1NmE2djZHNEUtUTdIRmNQUE9xdmZkX2VZUWVuN0VYZ3BZU3lNUTlyckhPcnd4QlQyT09GUHZtZEgyMHc4c1dMV0twZHBLNjUyTGxXWnY1b1Q5aXBrYXFQX1pzN1pYS0sxVktBS1NaRTFSZG9kRzg4LWRvcmdVNWFhQTJza3U?oc=5",
+    "fecha": "2026-10-26T11:39:40.000Z",
+    "publicador": "Punchline-Gloucester.com"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Los australianos deberían prepararse para que los servicios en línea se desconecten inesperadamente mientras aumentan las amenazas, advierte la agencia de ciberseguridad",
+    "resumen": "La jefa de la Directorate de Señales Australiana dice que se necesitan herramientas de IA avanzadas para defenderse contra 'atacantes habilitados por IA' Obtén nuestro correo electrónico político diario, aplicación gratuita o podcast de noticias diarias Los australianos deberían prepararse para que más servicios en línea básicos e importantes se desconecten inesperadamente, advirtió la agencia de inteligencia de señales de la nación, instando a que la \"seguridad del sistema debe priorizarse sobre la disponibilidad del sistema\". La Directorate de Señales Australiana (ASD) también dice que los negocios e infraestructura crítica deben usar modelos de IA de punta para defenderse contra amenazas digitales, levantando alarma de que la inteligencia artificial",
+    "enlace": "https://www.theguardian.com/technology/2026/oct/26/australians-should-prepare-for-online-services-to-go-down-unexpectedly-as-threats-rise-cyber-agency-warns",
+    "fecha": "2026-10-26T11:30:40.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Un marco descriptivo para sistemas de agentes grandes (v0.1)",
+    "resumen": "Nota del autor: Este es un documento de trabajo. ¡Si ves algo que falta, es contradictorio o está roto, por favor cuéntamelo! Reconoceré o citaré tu contribución. Cuando haga más trabajo en el marco, actualizaré la publicación del Substack y adjuntaré las versiones antiguas allí. Resumen Las propuestas de infraestructura de seguridad de sistemas multiagente no han generado un lenguaje para describir de manera integral sistemas multiagente a gran escala. Propongo un marco para describir sistemas multiagente a gran escala, incluyendo enjambres, mercados de agentes y sociedades de agentes en términos de propiedades de diseño comunes. Funciona",
+    "enlace": "https://www.lesswrong.com/posts/bKddWnNAzwbtoSm5a/a-descriptive-framework-for-large-agent-systems-v0-1",
+    "fecha": "2026-10-26T11:09:40.000Z"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Tech Times",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Kimi K3.1 Pro obtiene el 4º lugar de 215 modelos de IA; Moonshot elimina datos de ciberataque antes del lanzamiento de pesos abiertos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQU2dTRG5ZR2FvVWZzRnZNbEt5d2ZwSUlHc21MbnNJeHlxNjNia1pSY3VSZGVtYXRKV3ZYUVQ3d1lzTThtT1JNVmFrUjlSZms0UkJBUkgzSVZwWGJhYll2OFR4WEpjQV9OS0xJMXhJU21DYmlweDZQdzFqX05sa3pSRnhKaW1wbWNnZlVfOHl3d2lRaERHaDlLZmVXZnM4QWxSSlZVNzJkczVvVUNxWHZaYTlRNDRGR2FCZWYzTnJvZ0VyOXdSVmlsYmFHdGtaZzJMZHVKME1oZkxmY25GSHc?oc=5",
+    "fecha": "2026-10-26T10:01:41.000Z",
+    "publicador": "Tech Times"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Darline Graham recibe ayuda de la industria de centros de datos en la carrera al Senado de Carolina del Sur",
+    "resumen": "Mientras intensificarse las luchas políticas sobre la inteligencia artificial, ahora existe un super PAC alineado con la industria de centros de datos. Su primera apuesta es en la Sra. Graham, una republicana en una carrera inesperadamente cerrada.",
+    "enlace": "https://www.nytimes.com/2026/10/26/us/politics/darline-graham-data-centers-south-carolina.html",
+    "fecha": "2026-10-26T09:03:34.000Z"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "Resultsense",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El momento 'Vietnam' de la IA de Gary Marcus terminó en una prueba voluntaria. El público británico quiere una obligatoria",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdjdkRi1qc2RNZkgtLXU4TjFnMExPQXV5NFZRMTRsVnNpQWVHbTltbUE2UUtvdnBGUUhKc1ZqbG5TSnZFd3BjZjh6NERNZ25xaTcwYVREcE9jSDByc1FwNklhUHJqaHFlU2dmZGxGQmpMVGd5S25pMm9WZVJoMGtJNVVlTkxIQy1ZTUo0Z1ZsRWhWOU54blhkRzlhWmJFSTRIZlE?oc=5",
+    "fecha": "2026-10-26T09:02:50.000Z",
+    "publicador": "Resultsense"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "¿Qué está en juego con Anthropic saliendo a bolsa? Prácticamente todo.",
+    "resumen": "Anthropic se sitúa en la cúspide de una pirámide de socios comerciales y proveedores, lo que la convierte en un indicador de la economía más amplia. Su oferta pública inicial tendrá implicaciones generalizadas.",
+    "enlace": "https://www.nytimes.com/2026/10/26/technology/anthropic-going-public-stakes.html",
+    "fecha": "2026-10-26T09:02:15.000Z"
+  },
+  {
+    "fuente": "MIT Technology Review",
+    "medio": "MIT Technology Review",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "El enfoque en desastres de seguridad de IA ignora daños cotidianos",
+    "resumen": "Considera lo que cuenta como éxito en la política tecnológica. Una empresa de IA promete que su chatbot no alentará el suicidio. Una plataforma de redes sociales hace más difícil para los niños comprar fentanilo. Estas son protecciones importantes, y deberían haber existido desde el principio. Pero las empresas pueden superar estas barras bajas mientras continúan haciendo productos...",
+    "enlace": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
+    "fecha": "2026-10-26T09:01:00.000Z"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "eSecurity Planet",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "El agente de IA de Meta envía al comprador a un vendedor desprevenido",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lN3g4bWRjclNCOEVzeGo1NnExajZLMS1TZ0dwOVVoQS14TzNkRFlnSlZ6clUyVUFxakJDTC1uaDFDOHYwUVNZejJBSWNTUHN1M1lWMGE4T2RZbGVMQjRSQ0RSUG9IRE5VMUpBRFNTTzFOQXJlRkE?oc=5",
+    "fecha": "2026-10-26T08:51:15.000Z",
+    "publicador": "eSecurity Planet"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Tekedia",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot AI de China restringe las capacidades cibernéticas de Kimi K3.1 Pro antes del lanzamiento de pesos abiertos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeDRoUXNmUU9ESVZXSDBlX1JSOW1jQ2RTZktDVUVvM0FRVU03MUtnT3M3SnBIc2wtMHZfcHgyR3hKdlF3RDU2Um82SkdKQVN5RFVSRERSMzNJajNXVng4dk5NVWkxdUpyNGdUWThpVXVhYVdIeHZqa0h3a1M0WjIzU3lSRGlNdDhHLXRGUk5EM29ZaTEzaGxiVDZSdWNmZXVMdERVOFdTNjZQeldqNzhpOWwwcjVkZEU?oc=5",
+    "fecha": "2026-10-26T07:28:51.000Z",
+    "publicador": "Tekedia"
+  },
+  {
+    "fuente": "OpenAI News",
+    "medio": "OpenAI News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Cómo Fanatics y OpenAI agilizan la experiencia de los aficionados",
+    "resumen": "Fanatics utiliza OpenAI para ayudar a los aficionados a completar sus outfits para el día del juego con Shop the Look. Las pruebas en aproximadamente 30.000 productos de la MLB mostraron un 10% de mayor participación.",
+    "enlace": "https://openai.com/index/fanatics-streamline-fan-experience",
+    "fecha": "2026-10-26T07:00:00.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El grosor del cabello de mis amigos",
+    "resumen": "Introducción Tengo un microscopio. Puede ver el cabello. Los humanos tienen cabello. Algunos de mis amigos son humanos. ¿Qué grosor tiene el cabello de mis amigos? Aparentemente, si voy pidiendo a mis amigos un mechón de su cabello, aproximadamente la mitad simplemente me lo dará, y casi todos los demás lo harán cuando les explique que voy a ver qué grosor tiene bajo un microscopio. Los resultados pueden variar. Mis padres aún no han encontrado la tarjeta con mechones de cabello pegados y etiquetados, pero si la encuentran podrían tener algunas preguntas, digamos, incisivas. Les diré simplemente que estoy tratando de diversificar mi ejército de clones. Bueno, al menos no es l",
+    "enlace": "https://www.lesswrong.com/posts/q8gnBtqijGsdqWJ5j/hair-thickness-of-my-friends",
+    "fecha": "2026-10-26T05:23:46.000Z"
+  },
+  {
+    "fuente": "Apollo Research (Google News)",
+    "medio": "Digital Music News",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "«Sin evidencia» de que la IA mejore la productividad, beneficios o crecimiento corporativo",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRFVQSnYwR2EzbmM5blpjcUdBSk5UaS1QWmNjanhLS0NCY1RoMU81UjN2dXRISFRxdVJ1b1ZHRV9wS0xiclZaZnZxektLQ0hWaWFIVERYbDJMOHZhMEtVdlZ5M0RMdzQxa19INHNjLVZWN05DQ2Y3NE5RZ3hEVkVxeVJEbUc2WkoxU1pnV0xRb3R5ajlGa1E0?oc=5",
+    "fecha": "2026-10-26T05:21:10.000Z",
+    "publicador": "Digital Music News"
+  },
+  {
+    "fuente": "Financial Times AI",
+    "medio": "Financial Times AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Necesitamos saber si los agentes de IA están accediendo a servicios británicos",
+    "resumen": "El reciente hackeo de datos sanitarios australianos es un recordatorio de que esta es la mayor amenaza de ciberseguridad a la que se enfrenta Reino Unido",
+    "enlace": "https://www.ft.com/content/a2be99e5-b952-495f-9776-1ce7e4f994aa?syn-25a6b1a6=1",
+    "fecha": "2026-10-26T05:00:20.000Z"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "TechGig",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El instituto de seguridad en IA del Reino Unido descubre que Mythos 5 apuntaba a personas reales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdVRGbm5zSWNOeFRqRm42T2tEUHZucXdLZU5OekZwV1ZGdXdOaUpjaHRnbWh2dkNVNThyUjZ4QUtWNEtGUHZURFdORHlyUmVVUENKRGl3UmpTbkdDQ2dRTVcwTl84Mkk1anRZa0ZMcUwxalJ6cXhwX3gybTVIdFROMWJYYlVOcmZVQlBELXpkVy1Kd05nTUJUTHVzalfSAaIBQVVfeXFMTjlSVTZaa2t6Mjl3Mk1paDM5NURSZVJ1cWZ4ZWNWcTBZWUNYMjBzcUlrVVB3VXBITmdsUnA2ZERQMGZnc2hFY25lZmNHb2ZybHM0R2YxN25QYWRoV2ZmUjctQThzTnlhQTVhWGRLZzNkeVBlaks3WXJQdmU5cTJFWUJxV1lLQVpqZ1ZHR0V3Z1J2YTBXYUNaZjlucnBEa3pkUm5n?oc=5",
+    "fecha": "2026-10-26T04:55:05.000Z",
+    "publicador": "TechGig"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "«Querido ChatGPT»: una niña de 12 años gana el primer premio en el campeonato de poesía australiano – vídeo",
+    "resumen": "Blake Mackenzie, una niña de 12 años de Newcastle, ha ganado el primer premio en el campeonato de poesía australiano por sus reflexiones sobre inteligencia artificial. La obra ganadora, presentada en la Ópera de Sídney el domingo por la noche, abordó el desplazamiento compulsivo, la soledad y la atrofia intelectual. El campeonato de poesía australiano ahora se encuentra en su 22.º año. Realizó 65 semifinales en 60 ciudades y pueblos de todo el país para encontrar 16 finalistas. Como ganadora en la categoría juvenil, Blake comparte un paquete de premios por valor de 20 000 dólares con Bivor, poeta de Alice Springs, quien ganó la categoría de adultos por su poema La política te está haciendo cuando tienes doce años-ol",
+    "enlace": "https://www.theguardian.com/technology/video/2026/oct/26/dear-chatgpt-12-year-old-wins-top-youth-prize-at-australian-poetry-slam-video",
+    "fecha": "2026-10-26T04:43:06.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Un problema de campanillas para TDF",
+    "resumen": "[Divulgación de IA: usé Opus 5.5 para ediciones ligeras después de mi primer borrador] La teoría funcional de la decisión (Yudkowsky y Soares 2017) propone elegir acciones como sigue (ecuación 4 en el artículo): Aquí está la distribución de probabilidad del agente, es un gráfico que dice cómo cambiar una variable lógica afecta otras variables, es el historial de observación, y es utilidad. Los subrayados denotan descomillas: es una variable en el modelo del agente que representa la salida del algoritmo TDF en estas entradas. En este artículo, por TDF me refiero a esta propuesta específica, no a TDT, UDT o EDT lógica. TDF, admitidamente, se basa en una ópera",
+    "enlace": "https://www.lesswrong.com/posts/drteSvhc4fX3Tu9y7/a-cat-belling-problem-for-fdt",
+    "fecha": "2026-10-26T04:23:53.000Z"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "NewsBytes",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot AI limita la capacidad de búsqueda de vulnerabilidades de Kimi K3.1 Pro antes del lanzamiento",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbmxPRXZrM1RDaTFHZ3dFc3F1LUx2U1FSVXF0S2dNVkdvNW16T1NZNDhlOXVoZTlnMXljTV9LQXRQMXd1YTBfZmlvSTVaREExYldUeWpVZ0hKanRyOVVFaG1UZnRxeDRuVFhFX2NzQl9JcnRUd0kxMWt3Z2swMl9WYUNLNVNLcExacTZveDFPQldfc19ObjBUeGNPR1lJS1NHLXlQNkt2OUJMbEhVeEl6RTlqS196NW9Q?oc=5",
+    "fecha": "2026-10-26T03:35:15.000Z",
+    "publicador": "NewsBytes"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "KuCoin",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Los robots de trading Grok Bot enfrentan tres trampas de riesgo principales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVEk0UTF6dklvaC1kcjZrOVJ2b3ZHaTJsdHljem4zdzZJTmpObTkwM3lTREN1MVR1WjNjU1lLMDlHQWF6UmZCa05SYmZjT3ZBc3FuekhCaXBLdVB4OGE5ZDIwcTZERE50OTlacE1uaElQQ002ZHBHNmZIMXNmUENSSmhQNUtxVmhRUkxNdFhB?oc=5",
+    "fecha": "2026-10-26T03:21:21.000Z",
+    "publicador": "KuCoin"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Firstpost",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Ante crecientes amenazas cibernéticas, Moonshot AI limita capacidades de hacking en su último modelo",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNUYxc01HUW9oTWFScGZZdGJUNW9JVDJkUkwxa1Y2ckxyU1JNRDBtdms5d3N1THVXRU51WWxnczJmSTkwakFLcE9kN1phNUc4X2hyR1ppY0cwMm54d2V4RnRUZG9FT19tQ2phR2MxRGhzT3ZRV3RIWXpnR0FxX0J3ZThVU3F2NHZQWDhVU25jcEFVUTVFLXlwRERYZ1o5WTRtRVFqSmhWdnRHcEhINWpJcTNsNEcyRzlfN1dEVERualQ2Z3p20gHKAUFVX3lxTE04V3ppYzRRM05QMkpiZTZKTnZjZWNwQWRMTHlEVmtndnE0NjBNVVVweUpSejQ2RzBwSDF5M3pVQXlBQjBsMHQtOGlxLTFkckVHUUtzYXo0QkZJMkxMYmxNM3hpTl9hWXdzSURsNzlTaEdTdnI1R1d1OU5Pa0Qtb2ttUzlualIzZ0NhN1BPUHE5ZEtoMEFaVFFjdmpqRmFpVXBKdG1JbUFWMG1YWlJqMU83VHk2OHBlY2xKdC1hS05ZWno0czhHSWhyOEE?oc=5",
+    "fecha": "2026-10-26T03:16:25.000Z",
+    "publicador": "Firstpost"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Anthropic son los chicos buenos",
+    "resumen": "Estoy escribiendo estas líneas en Alamogordo, Nuevo México. Estoy tan cerca como un civil puede estar del lugar de la prueba Trinity, la primera detonación de una bomba nuclear en la historia. Huí aquí desde el Área de la Bahía de San Francisco; después de dos semanas de estar de vuelta simplemente no podía más. El complejo de miedo y codicia que me paralizó en Anthropic hace tres años ahora está en todas partes en la Bahía. La gente no está pensando con claridad. Apenas está pensando, en realidad. Los rumores de rondas de financiación astronómicas y arreglos financieros extraños y chismes del círculo interno están en todas partes. Todos están preocupados. Todos están verificando el",
+    "enlace": "https://www.lesswrong.com/posts/zj8Pk3kJujk5LoqhK/anthropic-are-the-good-guys",
+    "fecha": "2026-10-26T01:50:49.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Algunos recuerdos de los primeros tiempos de Anthropic",
+    "resumen": "Los siguientes eventos tuvieron lugar entre octubre de 2022 y mayo de 2023. Escribí muy poco de esto en el momento, así que estoy recordando de la memoria, y estoy reproduciendo la esencia del diálogo en lugar de las palabras exactas utilizadas. También he intercambiado algunos pronombres y otros detalles de identificación personal. Por favor, recuerde que esto no es una descripción de «cómo es Anthropic», sino simplemente la experiencia de un tipo en un rol junior durante una ventana corta de tiempo, ponderada hacia momentos emocionalmente intensos porque son más fáciles de recordar claramente y porque compartirlos no va en contra del espíritu de t",
+    "enlace": "https://www.lesswrong.com/posts/9PiLfo6iQbbDWFHv7/some-memories-of-early-anthropic",
+    "fecha": "2026-10-26T01:48:49.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Creación de una interfaz de mezclador personalizada para el 1818VSL",
+    "resumen": "Ahora que los LLMs han hecho que muchos tipos de codificación sean una cuestión de decir qué estás buscando, muchos más programas tienen sentido. Este fin de semana fue software de mezcla de audio, personalizado para mi caso de uso (sonido en vivo para bailes contra) y hardware (una interfaz de audio específica y obsoleta). En 2011 PreSonus lanzó el 1818VSL, una interfaz de audio de 8 canales, con software de mezcla de baja latencia. Escribí: Todo lo que realmente necesito es una caja con algunas entradas amplificadas que envíen pistas del micrófono a la computadora portátil y algunas salidas que me permitan enviar mezclas nuevamente. Entonces cualquier tipo de ecualizador complejo, compresión, u otros efectos",
+    "enlace": "https://www.lesswrong.com/posts/3Bh5gzAjGgHoMGjxZ/making-a-custom-mixer-interface-for-the-1818vsl",
+    "fecha": "2026-10-26T01:10:56.000Z"
+  },
+  {
+    "fuente": "Google DeepMind (Google News)",
+    "medio": "EdTech Innovation Hub",
+    "categoria": "laboratorio",
+    "laboratorio": "Google DeepMind",
+    "idioma": "en",
+    "titulo": "La ingeniera de Google DeepMind Sofia Liguori renuncia por contratos de IA militar",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQjl5TDJXX0xXR1I4QVhLN0RRT1ZwRGNJSWlGaER6V0NvdThma3dFYjVtQ2dqRm9rSlBoem9DaXVEcWpfVXZUdEFXWmpVNzduUUVaSDZsVE1sUTU4YUtIQ1F6b0U3eVJZLUIxeGFzMjViY1d0THpacUdaYkgwcVB5bXl4R2pCaEh2VUM2TUtTRWgzQ3lYd1ZuM0hkMWtyajBXc2dwdE5uZFE0bGJMLVJwS3J1dkM?oc=5",
+    "fecha": "2026-10-26T00:35:05.000Z",
+    "publicador": "EdTech Innovation Hub"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "EdTech Innovation Hub",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "METR cuestiona las pruebas de seguridad de IA de Anthropic a pesar de acordar que el riesgo catastrófico es bajo",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeVZRN1JMdUdpVW9ObEpTS2c5X2F1YzgzbUtIcVZObDhCb294ZkFXcDhWZU1sdWxPdmduRUsweE9YYl9VdlZSQkNqY3E2amlYQzNxRFZ2dkZXNG1jM3N4cUZfb2FEZVdOWTZuVVZETWtZOXBQYW5nY2xVd3QycDhyNFFBV0N4Y2RPUW93X3lWM2tyVFd6alhocnpoX1JvajhOR3VrRDJMb2hLbURLbWdwQTRaTDFlRXlMYVZNeHRkX0ZfZw?oc=5",
+    "fecha": "2026-10-26T00:20:37.000Z",
+    "publicador": "EdTech Innovation Hub"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "BigGo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Kimi K3.1 Pro con límite de velocidad dos días después del lanzamiento; Moonshot AI compensa a miembros con una semana de cuota",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBpNWtra195V0tKN3lHemRwWTdfbmk4VUtnZXBCVE15cFUxaUpidFFQQksydTd4RUw5MVh3NnJOZ2N4ZExycnh4YkFueXpLdXRNRHlFVjBxSDF3b2p6bUN2dlM5TC05QzdsbVNLY0lMd1Jzak85UlE?oc=5",
+    "fecha": "2026-10-25T23:55:00.000Z",
+    "publicador": "BigGo Finance"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "Ynetnews",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Le preguntamos a la IA a quién votar antes de las elecciones de Israel. Se confundió rápidamente",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxZHhnNnI2Yml1MmZZanBQemM2clFBc25reElIZkprMVlGelU3ZjExRVc3NkVHQ3dxRk54QXFQSzU2dnFwdVQwak1aWU9NRkdkaGE0LWRiRVZFb2RpMTJmNFJVejNEOG9XYVkzZA?oc=5",
+    "fecha": "2026-10-25T21:33:23.000Z",
+    "publicador": "Ynetnews"
+  },
+  {
+    "fuente": "TechCrunch AI",
+    "medio": "TechCrunch AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Grok lanza los primeros siete minutos de su «Odisea» generada por IA",
+    "resumen": "El metraje se ve bien, siempre que no estés buscando artesanía, inspiración, o interés humano.",
+    "enlace": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+    "fecha": "2026-10-25T21:31:16.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El despliegue de IA es la mayor apuesta en la historia del capitalismo.",
+    "resumen": "Esta es en parte una publicación de enlace, y una expansión de un anterior en forma corta publicado en LW. Creo que un punto enormemente subestimado a favor de la creencia de que la IA será muy importante es que el despliegue de IA durante los últimos cuatro años es la mayor apuesta en la historia del capitalismo. Un esfuerzo industrial en tiempo de paz está en marcha que no ha tenido comparación desde el siglo diecinueve. El tamaño del esfuerzo y la escala del gasto señalan que los tomadores de decisiones clave y los asignadores de capital creen que se logrará una IA muy poderosa en los próximos años. Muchos de nosotros somos vagamente conscientes de que se están gastando grandes sumas de",
+    "enlace": "https://www.lesswrong.com/posts/qjsdvaaPC624Eropw/the-ai-buildout-is-the-largest-bet-in-the-history-of",
+    "fecha": "2026-10-25T21:28:53.000Z"
+  },
+  {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "roger montgomery",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Pueden los costes de IA en caída superar la ola de gasto?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUExCdDdYLVROTkRDTjFjSkZjYXc3bHhHSmswT1FvNW1iS2FmMm9FeGNNQTVqZUFKcUxGMGZTVkVPb2NoTzJCQXI2b0FVMUtXaEw4SGRlRG1oa1pCTDVLSmFGOFVxWXpKQlhNTmZDcnFaR3pYLWNXRzZJNnh6cjhuMGFn?oc=5",
+    "fecha": "2026-10-25T21:00:00.000Z",
+    "publicador": "roger montgomery"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Dealroom",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot de China debilita deliberadamente las habilidades de hacking de su nuevo modelo Kimi antes de publicar los pesos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVzJwNWJSWmhIY0dRZzdoV19QOVJJaEtacFZhMU02bDhxMllSV2M0ZFlKRFk3Y3NXNTB5bkZqN2ctYTdVY2M5MkFtSktkbnl6OGVyZXVrMHVZenVGYkdRUm9vSUFYWkRRQklQWThCU0Z6MGtDZGNaUDNGT1ZtcjczOFFwcFdaQUlPU3pya1VoOUlDVUtHdHhuUzN6eVJHUC1hOUx0ZWZvTHVUQXItdk5VUHo0QUlLTGdIa3E4MEVqcGZucUxlTDNxeXh1QkFoaS1CdGh1dG9udF8?oc=5",
+    "fecha": "2026-10-25T20:37:05.000Z",
+    "publicador": "Dealroom"
+  },
+  {
+    "fuente": "The Guardian AI",
+    "medio": "The Guardian AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Anthropic es demandada por usar presuntamente 274 canciones de Elvis Presley para entrenar modelos de IA",
+    "resumen": "El grupo Authentic Brands Group dice que la empresa de IA infringió los derechos de canciones del Rey como Can't Help Falling in Love Los propietarios del catálogo de música de Elvis Presley están demandando a la empresa de inteligencia artificial (IA) Anthropic por presuntamente usar las canciones de Presley para entrenar sus modelos sin permiso. Authentic Brands Group, la organización de licencias que tiene la propiedad tanto de la música como de la imagen de Presley, está acusando a Anthropic de infringir los derechos de 274 canciones de Presley. La demanda, reportada primero por Billboard, fue presentada el viernes. Continuar leyendo...",
+    "enlace": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+    "fecha": "2026-10-25T18:25:59.000Z"
+  },
+  {
+    "fuente": "Apollo Research (Google News)",
+    "medio": "Business Insider",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Apollo dice que la IA ha entregado «cero beneficio financiero» fuera de la industria tecnológica",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdHBfUzFwS0VPeFU2VnBfLWxLcTRuOUdQbFU5YU5rV3BDTUhyUUtBU1VXdm50eHhzZ2pzTDZUWGp0YXJ1WEtfdUZjSGRHb0xnTjRhOUEtTXdtUG9GNkphZGN2WUtEMGd0VG5sbTc1SWFiRmxzUkhxUzNzZTF4NmFZNDBZTEJPUVV3c3lRdFRlb3RXUTNwcUN6MEVvdFk1Zk1tYlFsV3YyejdOa1U?oc=5",
+    "fecha": "2026-10-25T17:02:00.000Z",
+    "publicador": "Business Insider"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "AI Insider",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Estudio encuentra que los modelos Grok y GPT muestran inclinaciones partidistas opuestas en las carreras de mitad de periodo estadounidenses",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT2gwaWpteW45UXNHN2FDMVN3dTZfTERCS0VhWEtkWlg4ZW9CWFFoRkd6SDdtcUFDdXZHSWE5elU3dWxwUGlJVHBpRVVpRHNyM0IwdWxRWU5heUthU3FYQ0JyT3pYS1JHRDhtV2syN2NSYldIS3ZyQjZzZjNtaDlYc2EzSGxCREQ0cEpiLUpCRmFJWWF0RW1XUjJMdDBTbUJ6NkdUVWhXTmZkYmhhZEpaZjNKY25Xbl80ejFj?oc=5",
+    "fecha": "2026-10-25T14:28:46.000Z",
+    "publicador": "AI Insider"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "Pasquale Pillitteri",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Hugging Face prohíbe los primeros modelos sin censura, Kimi K2.7 Code desaparece",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaEZGS3RoenY1QWJkbVhLX05NbVVCcmppcEc1b0RoMS1uTkJnWVBXMEpTb3BnekEzNVl3R0dxdDV0Z3FZZDd3bUlhYmRxOHlBbmZoeThlV1BHdjk1cnNPMjZ2VVhaR2N6YXdRS0FYcS1VTWljdlkyYXpCaEhNUnI0RkVDWk8ySGdXVGhwaFB4X0hDMWJ5dzRhUA?oc=5",
+    "fecha": "2026-10-25T14:12:20.000Z",
+    "publicador": "Pasquale Pillitteri"
+  },
+  {
     "fuente": "Xataka IA",
     "medio": "Xataka IA",
     "categoria": "prensa",
@@ -20,6 +733,18 @@
     "fecha": "2026-10-25T10:06:37.000Z"
   },
   {
+    "fuente": "Google DeepMind (Google News)",
+    "medio": "ET Enterprise AI",
+    "categoria": "laboratorio",
+    "laboratorio": "Google DeepMind",
+    "idioma": "en",
+    "titulo": "Reino Unido anuncia laboratorio de bioseguridad con IA de 100 millones de euros con OpenAI, Anthropic, Google DeepMind: Informe",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPanJXbjJqSmhVTEhXbVZfTVZESnVIcmh0eTZDalpRNmZTSkVCWFJWUm41REs3SHlIRnBlZU9SZ0hKOFRhY1dHdnQ1X1pFWW9MVmNBbUx3SjVpR2t5UWl0S0xFakJlUS04LWFnQ0NZRFlYNEk3dHFydFpseDhQaDBOanF0TlJoVXcyUUptbF9JOUNVQlotY2NYM1NZMG5sV3doajFYZUFfN2twTWx2SnBFdlMwblNINlRzbkxDVWE4WTgxdmFBanpaOTdIZEhaS2pxeU5JbDZlazMxZG5yRjJsbmRtVy1aUGRiT2xvU3VneHpROG9f0gH6AUFVX3lxTE4xMjVDQ1RiN0EyV3dOUWg0LTM4cnJKYnFXZmxkX28yRjlQMk5XYjBOWW4yVndBX2ZjQ1NoUjh2MEl3UGlBb3J2VmhkZWlVbmxoOWw4ZWFPbV9VenNwaGFYbGZQN196WDlyNy0tbFVxU0RocDlOT1g3SHQ3R3RyRm1KMEhHTnd4YUplTWIwUjhXVVU4TWlIZ0RwX0h0SGhKb25MdEtHS25NSkd1U0RMN1VuRW56UVZQaU5XbFRMTV9kMjRjeWdBaHNkWDk4UzV1TkFaa3Jrc0JScm1xZGxIb3h4OTlEMWZ2X2ZLYkc5QU5WOWRiaVdzVzlKLVE?oc=5",
+    "fecha": "2026-10-25T09:19:05.000Z",
+    "publicador": "ET Enterprise AI"
+  },
+  {
     "fuente": "AI Security Institute (Google News)",
     "medio": "Politics Home",
     "categoria": "seguridad",
@@ -38,6 +763,16 @@
     "titulo": "Pon tus agentes de IA a trabajar con estas 4 tareas de gran impacto",
     "resumen": "Cuando comiences a usar Meta's Muse y OpenAI's dots para estas tareas —como solicitar empleos y reservar mesas en restaurantes difíciles de conseguir— es posible que nunca vuelvas atrás.",
     "enlace": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-4-killer-tasks.html",
+    "fecha": "2026-10-25T09:01:00.000Z"
+  },
+  {
+    "fuente": "The New York Times",
+    "medio": "The New York Times",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Pon tus agentes de IA a trabajar con estas 5 tareas de impacto",
+    "resumen": "Cuando empiezas a usar Muse de Meta y dots de OpenAI para estas tareas — como solicitar empleos y reservar mesas en restaurantes difíciles de conseguir — es posible que nunca regreses.",
+    "enlace": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-killer-tasks.html",
     "fecha": "2026-10-25T09:01:00.000Z"
   },
   {
@@ -63,6 +798,18 @@
     "fecha": "2026-10-25T07:52:23.000Z"
   },
   {
+    "fuente": "Moonshot (Google News)",
+    "medio": "OKX",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Precio de Moonshot AI hoy | Precio en vivo MOONSHOT, gráfico y capitalización de mercado",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QUlQwdlRhUl91NzB1TmR3MDhKbURUVGRMU3lxeEVwLW9lSG5wZGxnMUFndnJLbHdnYXNUaGx2QXllakxHRVRsYm91RDRfU25VZUFFZUd3ODNGa2hheGtoS09B?oc=5",
+    "fecha": "2026-10-25T07:41:46.000Z",
+    "publicador": "OKX"
+  },
+  {
     "fuente": "AI Security Institute (Google News)",
     "medio": "The Indian Express",
     "categoria": "seguridad",
@@ -72,6 +819,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT0Z0UmRkMHRDX2djZnRKMFZ4MmpCQVVoWE9sNFdJbC1oYkFBVklUdnFnVWswZVVkWktob3V1dl9HMTNscWdNWHp4aDZzRWxMcWFsY0xsRzJRaC05YWtuc3EyYThjTm5oTTJkM3NUTUxPeGc4b0tqTVcyc0o0OEl2aHotS3R6b05fSmFjLXRvRHFjT29TUksyWmE3YlR5YXNmckZQQUxIb0pzV3pneWxCWXFVeWF2VWIwT2tKWlRMZVVmcmRTT1A4cGFFd3NrelVGZ2Nz0gHaAUFVX3lxTE1ycUZ3aG9SNTJkbFdjUFJwbGlfR3BNRFFNTkFWZFMyNVRhWWItYm1XOElIYnNZRHN0cWZ5YjBWTXZFVV9LaGZoRE5NZkY5OVFXcHlXc1M2UFNvVF9jaTZCVXNQUmRQTG01eXlLLV9ZV3Y3SEhsb0VOcm9LVGxlQXR1bVNkZ0x0b2ozQ0JzSEtTU2VtZXZJTVJtX3VjN3VvUVQ4TE93cGpWVng4UlFwTmhzUFFYUFdxc2ZON2NnaE14Y05FN1oyblByeTJjeVRDaE85N1VWU0VYN2h3?oc=5",
     "fecha": "2026-10-25T07:01:44.000Z",
     "publicador": "The Indian Express"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "The Hacker News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Los agentes de IA de OpenAI demuestran escapes de VM y comunicación secreta entre espacios aislados",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQVhZc0dfZzVfQ0VSWDM4QTFLLUFkYUZVRWtBMmlUSVUtaDZqQXdJNVZFWnhqVW1lWTc5UHZSNHFER3U2QlFaSGVNUHhnZy1KSFE3cTFwcGJSSDNYMnI4WHg2STNwSDIyUXBOTVZ0N0FscjFKNGhDZWdjaHZyaDkzVDhLT24?oc=5",
+    "fecha": "2026-10-25T06:54:00.000Z",
+    "publicador": "The Hacker News"
   },
   {
     "fuente": "Moonshot (Google News)",
@@ -246,6 +1005,17 @@
     "enlace": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04TGgzWFJwNEkwYWZwLWZVNE5uZVFhdS01a1ktTWdPbXFPR1hhM2phLTZucVNiR3JSaUp6SlZjRHlxdHVnREJ0S3BMMzJiVlpMZUs1UU10WnNieTVmZUJjeFVCZGN3a0xHN3Z1ck43OGN3VHM?oc=5",
     "fecha": "2026-10-24T18:13:12.000Z",
     "publicador": "The420.in"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "BigGo Finance",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Reino Unido apuesta 100 millones de libras en el primer laboratorio de bioseguridad de IA del mundo, respaldado por OpenAI y Anthropic",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qa2FnTnZlSjdxNnJrMEc1bXctdGZCTGN1VmtESGlzZ3ZiOGlQc25WR2oyQlV2eDdhazBwRTlfT3N4a1FCQWxSRkZ2SnRvTWdIaGtKU1BxSG4ta256aFNwZXVaaXpSMTNlRGxfa3kwZkdqbHdsRmc?oc=5",
+    "fecha": "2026-10-24T18:06:00.000Z",
+    "publicador": "BigGo Finance"
   },
   {
     "fuente": "Xataka IA",
@@ -514,6 +1284,17 @@
     "publicador": "StratNews Global"
   },
   {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "TechGig",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "AISI del Reino Unido descubre que un modelo de IA intentó un ciberataque e ingeniería social",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOEhYaTREYy1ic3l0V2dIX1p5dnhCclVIVjNlczg4bWFnc1k3LTd5bUE2V2pzNlkwNTVvSEY2WmVhRC1EVU9OVFNwYVlVczc1bFNvR0cxVXczSUJJUkJYejFiZFBMWmExaHBMUXpCbl9xb2RPQ2tVYmtFMFdzRXBTZjVlVTlRd1p4UE1DRE5FLXFJSDJhREd2cks0cURVTFNkeTdV0gGoAUFVX3lxTFBYd1lqRzFRY3BmYk5FcU5OdTNOYlhCTG9LSUYtNnhKUjVPN1RGUlF5R05YYnFISk1CbG5LclNoZmlDMDlUMWlobEVUTVQ3cER6MjdVcFlWeWR5TjBNT2hLMjhZVXVQLU5ZZkNvUDVNQ05NaU9nempKbUJQbEl4b0NvQVVueDlkY1dDbVZXZXZBZXN6RGItcURMc1RwbFJRMDJDRHVmcDdrUg?oc=5",
+    "fecha": "2026-10-24T06:25:24.000Z",
+    "publicador": "TechGig"
+  },
+  {
     "fuente": "Moonshot (Google News)",
     "medio": "shattered.io",
     "categoria": "laboratorio",
@@ -605,6 +1386,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWlpZNXVZQXBxZ1hCTzA4X0VZYUh0QkhJb281X3VmMUt0VVZRY0N2N1Fja1dyZlB4cGlsTGktdjRaRzEzSDgtR01QS1F4V0ZsN0lsbzdTRjhRbG1MMlhfMkluTkxwTXFhOG1XZVVpRlRJX29ULXBEcUdTQUpoa2NkUmRMZFhDbkF3a0N3SDlqbTg1QnR3aFkwSW9LS181X0hsbXM1bXF2a0ZTWldQdlBMSlJRSzFoOGI2aFRF?oc=5",
     "fecha": "2026-10-24T04:25:00.000Z",
     "publicador": "Reuters"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Startup Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Los nuevos términos comerciales de Meta hacen que los clientes sean responsables de los errores de su IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNXzB2Q3dONDlSQkptVjk0LWxMSzRCdmdJNXdZMHYwWDlfTHBNS2JHQjhlMTgwZ2c3eXVNOFVoRkpBS2luTUNKemdqRm1sOXdEMzVZdEJYLWtpbnk0VlhSZlhTVzlCcG9idUxfa21QLWZJOW9vcnNzbzJNSTIzV2RXU25OY3ZoSlFtcV9oRV9hanR3Ql92b2pPVHZrTQ?oc=5",
+    "fecha": "2026-10-24T04:23:09.000Z",
+    "publicador": "Startup Fortune"
   },
   {
     "fuente": "Financial Times AI",
@@ -700,6 +1493,29 @@
     "resumen": "La persona promedio, presumiblemente, simplemente avanza a tientas en sus relaciones, sin nunca estudiar la ciencia detrás de lo que las hace funcionar. Imagina esto: ¿querríais que un hombre que no fue a facultad de medicina y no tiene licencia médica os operara? ¿Y si, ahora escuchadme, ha visto cada episodio de Anatomía de Grey, ER, Scrubs y House? ¿Y si ha visto algunos vídeos de cirugía en YouTube y \"más o menos sabe cómo hacerlo\"? ¿Os haría sentir cómodos? ¡No! ¡Eso sería ridículo! Demandaríamos algún nivel básico de educación, entrenamiento y un historial de co",
     "enlace": "https://www.lesswrong.com/posts/uCH8iRd7TuAy5c6qD/maybe-you-suck-at-relationships-because-you-re-not-even",
     "fecha": "2026-10-24T00:03:20.000Z"
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "BigGo Finance",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Reino Unido se compromete con 600 millones de libras (aproximadamente 800 millones de dólares) para proteger la salud e infraestructura de amenazas de IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBtakh2V1EwZno5bHpEcHVBMnZiX1BzVURRMFQ4MFVVOUY4bjlRQTJ0QzRpcDB6MGRtT242UDVCemFFRDhjekthMFhxcG9hWVpoMHJySGYxNkF3TjMxV3RzYVhqall5MkdKRU00VUZ6MklkakFiRGc?oc=5",
+    "fecha": "2026-10-23T23:55:00.000Z",
+    "publicador": "BigGo Finance"
+  },
+  {
+    "fuente": "Anthropic (Google News)",
+    "medio": "SiliconANGLE",
+    "categoria": "laboratorio",
+    "laboratorio": "Anthropic",
+    "idioma": "en",
+    "titulo": "Anthropic revela que Mythos 5 intentó enviar código malicioso a un proyecto de código abierto",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOV3dqUk5faExZdzlTVHlwNVg1WHF1N3l4M3ZpTUJ1VDNCMll2TnA0NUxTQjJsYmVacF95Ui1mbk4yMXMzTFNTQVRNVnI4NW5VX3ZOZ1pfQVljR0Rvd2t0c0pIMVhSb0pnV3pGX3NJODNWUmRicUkySVlQMTlObUdrV19XbXBPS2trZGxTVXFjUnRhRjV0UXFHYm1yNGdGWEVZcE56VE45V1FVSV9JOHBTLXZGR3poWGF5d3I4c05B?oc=5",
+    "fecha": "2026-10-23T23:28:00.000Z",
+    "publicador": "SiliconANGLE"
   },
   {
     "fuente": "OpenAI (Google News)",
@@ -827,6 +1643,18 @@
   },
   {
     "fuente": "OpenAI (Google News)",
+    "medio": "Courthouse News",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "El fiscal general de Texas demanda a OpenAI por mentir sobre la seguridad y medidas de protección de ChatGPT",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON2poRTVFVDhZcVNXaUl1c2w4cWRjY2dtUFNCelcwT1piZVhEUHZLeFdDb3o0d1BDYmRIX0JWbkg1NGpxNFZWYXI5TUFaaUlTWEhKeWt2VFVjUWFkdHY1bENabkVsdWYzNmFCaXNjWURRanlSdU90Y05xaHk5ZkI2ZjZzLTk2T2lPSmNmQkNsSThCZ01BMGE4Y0JoYm95V3I2V0RnY19yOVhTQjVWNFZMLQ?oc=5",
+    "fecha": "2026-10-23T21:12:38.000Z",
+    "publicador": "Courthouse News"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
     "medio": "Politico",
     "categoria": "laboratorio",
     "laboratorio": "OpenAI",
@@ -836,6 +1664,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcm00d0JOd3dfc2ROWW5vaklsUk9MWDZXN1hLNWNwMWllNmZ1N2p5WGQ2VVUtOTlzQUdlUDZOcFB1WUpVcWE3WVcxZk16b09BNHZlcHJjWkVYZVNIdE1lbWFJWHRNOGIxbWR2cHFUazdsakh4NnBMcmhyUVdGbzVKNk1Mc001NjhzT09pNFdGanA?oc=5",
     "fecha": "2026-10-23T20:39:00.000Z",
     "publicador": "Politico"
+  },
+  {
+    "fuente": "OpenAI (Google News)",
+    "medio": "Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "OpenAI",
+    "idioma": "en",
+    "titulo": "Cómo un modelo de OpenAI expuso un fallo en el 70% de los sitios web de internet",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUGp1VEJkTWJXaGlnc00xUW9tdjBBQWcyT0N0STVuazEwRWFMeG1RMDFqM0NIVllta3RoTThZdkdkV0pXcTFQMUlDTFJpWDFHdi12djFXWjBUZF9LMlhRRFBvOG1rc3owMEl1eVdSeEJYYmRxOWJ0UmVnZmdGcUxSMGtvRFd5OXJYc1N3?oc=5",
+    "fecha": "2026-10-23T20:36:00.000Z",
+    "publicador": "Fortune"
   },
   {
     "fuente": "Anthropic (Google News)",
@@ -942,6 +1782,18 @@
   },
   {
     "fuente": "Moonshot (Google News)",
+    "medio": "Startup Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Moonshot AI lanza el modelo de peso abierto Kimi K3.1 Pro para rivalizar con Claude",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPT3VwQndMemVCbVNzZFc2UmZkdGdySTJ3cGZwaTFwcUpsc3ZURW9VRW45QUtFVUxSS2RNZWdmYUR3bG1neUdmYWljOHJTaHpuaVRtaG11Y3dvSUdiZW9WbnI4cW9KakNNVnRPWXBVMm1OMEhDcUd6dUpuQU53TFdSbEt6RXdKaTR6VTN0Y09vWGdsTG1rZHU2b3dCSQ?oc=5",
+    "fecha": "2026-10-23T18:23:36.000Z",
+    "publicador": "Startup Fortune"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
     "medio": "Crypto Briefing",
     "categoria": "laboratorio",
     "laboratorio": "Moonshot",
@@ -1022,6 +1874,17 @@
     "fecha": "2026-10-23T15:00:11.000Z"
   },
   {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "The AI Security Institute (AISI)",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Investigación de fallos de alineación en el incidente de AISI",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQkdkUmF1d0xkVnBBcC0zYm9GWG93ajdVYVpFZzBlMDBvaUFzc29UZUFZNVFRZ0FqVTZMS3MxdDZhT3V2aXJuNDhZeHlCdWFfQlB5enVwSDZfdGxCSm9lZVpSWTRYb1lYNHR3N2liSmdkeGZrZkF2SHlIVURUenpWRzRPMktCQQ?oc=5",
+    "fecha": "2026-10-23T14:58:55.000Z",
+    "publicador": "The AI Security Institute (AISI)"
+  },
+  {
     "fuente": "Google DeepMind (Google News)",
     "medio": "Gadget Review",
     "categoria": "laboratorio",
@@ -1032,6 +1895,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTkFZWjlHS2JUdVJwVXhVTzUxNTJacEtvTHg2ODRkWU9LY3Joek5vVTl3NzBJWXM4MmZEVXFNbjR0cS1oLVg1QVEyV1hOd0EzaWJoSE42ZXhBcDd0c0xMalJsNlRzaU1EbVU5aWV2c3BUbHhiSk9VY29uRHBKTUNOMnhaN0hDQkJ1bUhISA?oc=5",
     "fecha": "2026-10-23T14:40:16.000Z",
     "publicador": "Gadget Review"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "www.techtimes.co.uk",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "Según se informa, Grok Bot puede acceder a calendarios y recordatorios sin permiso para leer o enviar mensajes",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSjFFN1NqcVl5ODJLVEhBUm5lSGlTMzI3NHcwSkZWeHEwdFFEU0t4WlFoM01RakV0U3ozT2J5SzRoWmZEMkk3VkpYVGlCSURlVmI0M3AtdlpnNEZ5LWd6RGVZeEFSemtBYU9oYXJjT2t0NG9yUm5JdE9KTUE0ajZhdW5WRlk4eWRMTENFckIwUVhJdFhvUWtpdmkzeVJZV2VpdVlWSlZYX2RsUzFI?oc=5",
+    "fecha": "2026-10-23T14:06:37.000Z",
+    "publicador": "www.techtimes.co.uk"
   },
   {
     "fuente": "The Guardian AI",
@@ -1085,6 +1960,18 @@
     "resumen": "No estoy seguro de si es teóricamente posible en términos de teoría de juegos que un estado nación renuncie a una ventaja estratégica decisiva y, por lo tanto, no tengo confianza en que el desarrollo de ASI pueda ser realísticamente detenido, ya que creo que los gobiernos intentarán desarrollar ASI alineado en secreto si lo prohíben comercialmente. He estado escuchando entrevistas de Nate Soares y a menudo señalará la cooperación internacional sobre armas nucleares. Pero para mí los tratados de armas nucleares parecen fracasos de cooperación internacional. Todavía tenemos suficientes armas nucleares en la tierra para destruir básicamente toda la civilización moderna. Construimos",
     "enlace": "https://www.lesswrong.com/posts/tqxj7wsHEY6JkAReW/why-governments-might-race-to-build-asi-even-if-it-could",
     "fecha": "2026-10-23T12:57:00.000Z"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "news.lavx.hu",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "CyberCartel utilizó agentes de IA Claude y Grok para automatizar ataques contra bancos latinoamericanos",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV3A4OWt3UTRXSFNtdXJZWXczRTRtZmZJRl9TN09maHN2WVdvNGt5SmJNel9IRFR0ZnBXN1pWdXFEeVJ6RUtOaEhkczBxRER3ekpWLXQwLURoaWFjUUFHQlA3cjA2SmxfSXREempGRVZpZHc3WWpCZnNuZHVRbnBWTG9GTmI4cGk3WXVTNTNTRThNSTZCXy1xY3ZOUHNBS3RGUEswLXpfTWNyeTRyWE1idWw2LVNMdw?oc=5",
+    "fecha": "2026-10-23T12:22:33.000Z",
+    "publicador": "news.lavx.hu"
   },
   {
     "fuente": "Google DeepMind (Google News)",
@@ -1542,6 +2429,18 @@
     "publicador": "PPC Land"
   },
   {
+    "fuente": "xAI (Google News)",
+    "medio": "Analytics Insight",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "1Password presenta nuevas herramientas de seguridad para agentes de IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa3VmMUkzVEtNMnJ0SWgwaDUteHJGeHd4ZWNxV3o2VlhrbmJMNWdmSUNtdm4tVWZKTE9nSVZVMmFObEZwRjBMNUkzMTZWVFh6Q3BZYW1HRUdDY2pndjNJeGtqcjJlLTdYUzVubnBMNko3QmRhZUMtVGhKZEVWSmp6d1dZSHE2NS0yY0NjUm84WWwydHZqOVHSAaMBQVVfeXFMTnZsd2VaRG9GdEpfSVdNanZqWkgxVjZ0VUJtS0llVUFpZHNneVNyQnVaeE5qU1QzT3hyRmJFWWc3TTBzZVpsLS1MYXA0enhtUWY0TnRnRHQxWXRncEE4UkpxLXpkclFBVVgyd21oZmVWT1phbWZGS2JaMHRSakJYVXFVMmRnTmRfZzJXbkRJS0dDZFZEN1BDeGpPQmFOYVA0RXVvTQ?oc=5",
+    "fecha": "2026-10-22T19:15:00.000Z",
+    "publicador": "Analytics Insight"
+  },
+  {
     "fuente": "OpenAI (Google News)",
     "medio": "The Atlantic",
     "categoria": "laboratorio",
@@ -1910,6 +2809,18 @@
     "traducido": false
   },
   {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Yahoo Finance",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Chismorreo de Mercado: El indicador de riesgo crediticio de Meta alcanza un máximo histórico por los planes de gasto en IA",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdC1Ud3VaZVVFZDNBall0bUdtSVE0QThyOGhkRzVab0N3Y2MxZlZiNmVuN2k1ekhGWnlmN3pWRjhxMjR2c2tRcjd6NVE5VkFvQm9ES3ptdFktUWZSeTRVal80MU94TTJUYVl0dGZMUC1wTG0yaE5yY2MwTFNucjZUMTJERFhZdTNQcUU2Z0F2V0RXRFgxSXZnQ01CRHE?oc=5",
+    "fecha": "2026-10-22T13:10:12.000Z",
+    "publicador": "Yahoo Finance"
+  },
+  {
     "fuente": "xAI (Google News)",
     "medio": "Engadget",
     "categoria": "laboratorio",
@@ -2131,6 +3042,42 @@
     "traducido": false
   },
   {
+    "fuente": "Meta AI (Google News)",
+    "medio": "Channel Insider",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Mark Zuckerberg dice que la IA está acelerando el desarrollo de software en Meta",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMzNPUE1QRloyVFp4NDZlUm92cUhnR1VvS3UwQzJFZi01NzdOeWhodld0Mkx3RVJUNjdwVUdlLWxtVmNSRERXNTFEaEFnZjdkbFpaX1c1WlBSdHlHLV8tOVhaSXoxTzhQV0VuSXZ6M3V1Rm5kdkVPNjl3YUx1VzhJQ2ttMmZUUVNCSVp4VQ?oc=5",
+    "fecha": "2026-10-22T07:00:00.000Z",
+    "publicador": "Channel Insider"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "Business and Human Rights Centre",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "EE.UU.: Un grupo de derechos civiles demanda a xAI por la presunta contaminación de la central eléctrica del centro de datos en Misisipi",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPcFlDUmRuNE1KNWRaYlFGcVB6dW05MHFRUTZ0TmxPZFg1NGE3czd5OHlRM1hlUmdfMnR2X21kaFVLOWR5UXo1c2tuVUtkb3BQQmE5Qi1EcUFseTBOWlpIN2hfTS0tVWJxck8weFJ6SV9LSW1vOEpIbjU1ZXJJaXh2RV9NcEk2aUhLNW8ybVczZm9lMVdPNmFzS0U2cG5pRGRTX0hZR1pFRkFFalFDbk5ZZTIzNTJyQWZSZ1hyWV9IQ3plX0xlcHlRbGVQVUpEMk9aU3k0VnNickZOTEkzbkpYeVZNXzN3cVNRVmlyd0Fobk5aSXc3cElKWEFOcGs?oc=5",
+    "fecha": "2026-10-22T07:00:00.000Z",
+    "publicador": "Business and Human Rights Centre"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "Business and Human Rights Centre",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "EE.UU.: Un tribunal rechaza la solicitud del gobierno federal de desestimar la demanda contra xAI por la presunta contaminación de la central eléctrica del centro de datos en Misisipi",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWmhHZldfa01UeXU3UjNhNURuR2pETF9ZWFN5Z2pMdGtYeEVURmpSc3VtSG5OMW5tSnI3OGJQR0FYcDAwY3pSV0hKQUV1cjdfMWdHTWs0bVZIN0NsZ2VSLUVfbEFLZE1teURKajUyR3VvaHF1VEN4ZlpvMDEwUm1BSE5PWlFqZ1g5SVNZSXpYa3E4MGFQaXdLSjlqZEI3TERFa1hJQ3FSTzdhTFQwTTgyY0xxTzhDN0Y4WEJxNTNjQmZHaF9XS3UwcjEwblFNZTVIZDY0VjBrWkxaVUxqNTdrMi16cTRuYVBIQm9HTDhFdk5tY01rOUtsSw?oc=5",
+    "fecha": "2026-10-22T07:00:00.000Z",
+    "publicador": "Business and Human Rights Centre"
+  },
+  {
     "fuente": "METR",
     "medio": "METR",
     "categoria": "seguridad",
@@ -2236,6 +3183,17 @@
     "fecha": "2026-10-22T01:05:00.000Z",
     "publicador": "CNBC",
     "traducido": false
+  },
+  {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "Caixin Global",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "El caso para un mecanismo internacional de notificación sobre incidentes de seguridad en IA ante el aumento de amenazas",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcTI1V0p3a183WDdHSEh6NE1XMWluN3kzcWZSMVpYNUtPOFdNVTNOUzVBYUl0dVNYYkl6TjRDQXBzRXJBbnZsNElPQnQ0cWI5MmJKekFnM1JPVmZyRm9lNi0tVEJ0YzNvc0ljdFZQSld6T0RDVzRRRExTclgwYXhSZ1lvNW15eERVQmd6cGp6bU45RHBTX3FFNFVrc3YwNURhd1p6WWkyNDhCVFczdHhPMjlZSF9raE1uelRkc21MWlBYVTdyTFFNY2w0LV9JYjhUcmhIdDVmOFQ3MWJFOEJjdDlZdw?oc=5",
+    "fecha": "2026-10-22T00:47:00.000Z",
+    "publicador": "Caixin Global"
   },
   {
     "fuente": "OpenAI (Google News)",
@@ -3263,6 +4221,17 @@
     "publicador": "IEEE Spectrum"
   },
   {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "IEEE Spectrum",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Hasta dónde puede llegar la IA en la resolución de misterios matemáticos?",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1JTjBvdl9oNDlXeGNwcFVSYnlPMk1ZTkY4Um0tbEFJWmZxZFg3OTZNd19aM1hpV3R1OU0teS1paW5mZzVMc3hUcnhnMkFSZUt2dzlibjluMA?oc=5",
+    "fecha": "2026-10-21T07:00:00.000Z",
+    "publicador": "IEEE Spectrum"
+  },
+  {
     "fuente": "Anthropic (Google News)",
     "medio": "Business Insider",
     "categoria": "laboratorio",
@@ -3273,6 +4242,30 @@
     "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHZ5ZEs4b1dRam9DVHZMeDFfWE93MXo0b3N5SzhhR3ptdEFoSGh3T08xNHZIS25WaFJ1LTRIYTloMmtKNkc3N0JtR0xVdmVRaS1adDFJQnJleHQ0Z0QwVzZack9RVVVjYVpUZV9zaUZReFF6R1JVSGxpSkxLYzRmYXhXRm1iMDlObTNHcA?oc=5",
     "fecha": "2026-10-21T06:54:00.000Z",
     "publicador": "Business Insider"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "GIGAZINE",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "Se ha descubierto un error en la IA 'Muse' de Meta que permite que las conversaciones compartidas sean completamente visibles para terceros, habiéndose encontrado más de 6.800 enlaces compartidos.",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85VzktN0pWRVBpeG92Yy1FWEdPNGNldHZzcnd2V1FRWHpFU0h4alJwTGpTZDVwZEtwRHVGMHpLakdhblRIUHJqZzZ4YWtaWWRMRnJ4LTlEWDZ0eklONnJCSUFkSmhsckdxZnpUMnBUSkpnS2pjS21pWTNKcw?oc=5",
+    "fecha": "2026-10-21T06:50:00.000Z",
+    "publicador": "GIGAZINE"
+  },
+  {
+    "fuente": "Moonshot (Google News)",
+    "medio": "news.sbs.co.kr",
+    "categoria": "laboratorio",
+    "laboratorio": "Moonshot",
+    "idioma": "en",
+    "titulo": "Prodigio chino ex-Moonshot AI avistado en nueva startup, generando revuelo en redes sociales",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51bTRrZTh3WUFmYXhJZEZfYlZOZWE4bjM5akFSVE1jZ2h0LXg4ZmU5eDAxcG1ibFphTWJFNno4cjRPa2FrQ2FvcnduRkExaDF0dTdiWmNRSkZ0d3JZT3dsSU1pb3FyeGpRSnRGVGdn?oc=5",
+    "fecha": "2026-10-21T06:27:00.000Z",
+    "publicador": "news.sbs.co.kr"
   },
   {
     "fuente": "Meta AI (Google News)",
@@ -3489,6 +4482,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNamM1SmtqWjh2eUExbE12QXNZUl95ZmRsZWI1LWoyXzloQzhHYjZNQTJnbHpJN2k1d01LTGtsai01T3A1TjZBUHljRnVrdi1GdG1qVm1RQjNIdHdaakctTERhcmh6cjNMcmZiX1VOU0VIVVNjdUtNLWNrZEhUZ3BlNkZ4T0dsMzVPRmtoZEZJeWlhQUtTYldTU1BWVFJJdVNBem5BRXJpWTF5NEtpdklMYmd1VXVLNEpaQ0dqbkpR?oc=5",
     "fecha": "2026-10-21T01:51:15.000Z",
     "publicador": "CIO"
+  },
+  {
+    "fuente": "Meta AI (Google News)",
+    "medio": "The Logic",
+    "categoria": "laboratorio",
+    "laboratorio": "Meta",
+    "idioma": "en",
+    "titulo": "RBC se plantea bloquear al agente de IA de Meta de acceso a las cuentas de clientes",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVVlnOTFhQ3pNb3hWWTFGM1pIZnd2WWlQTDhIeVAtbENRQ1RMQlREbnVyWlNHNDEyby1EVGh1a2RjU214dFM0dkFRbXBPem5Fd3RSUXNtekZsTEFRTXBzdkZta09pU2EweVZNWkRhWFQwb2dRNERRcnYybTM2S2FfZmFyR1FHUHhzR1cyRzVRWGRoT1gtbkR1cjUyRW1NZw?oc=5",
+    "fecha": "2026-10-21T00:49:56.000Z",
+    "publicador": "The Logic"
   },
   {
     "fuente": "DeepSeek (Google News)",
@@ -3845,6 +4850,17 @@
     "publicador": "Security Boulevard"
   },
   {
+    "fuente": "AI Security Institute (Google News)",
+    "medio": "Eurasia Review",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Cómo sabremos que hemos perdido el control de la IA – Artículo de opinión",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaHZsNlBLakF6Vl9uY1BUMm83X0RaVHBqZ094RC1ERmFicHk3VlBXU3AwVkxfTm41T2diSHhwYXNmc3pPT281VS1YUm9Hc1JNX0h6TDJkM013U3VKU1RpbVp3ajJpNXpmRE5ndkxjUUhZdlE0NWxJeTlrQVZrc1lMeU1hLWNZOXJLMDV5MmMtZlpmQQ?oc=5",
+    "fecha": "2026-10-20T17:25:00.000Z",
+    "publicador": "Eurasia Review"
+  },
+  {
     "fuente": "Transformer",
     "medio": "Transformer",
     "categoria": "boletin",
@@ -4046,6 +5062,18 @@
     "titulo": "China defiende DeepSeek después de que EE.UU. la prohíba en agencias federales, calificándolo de 'excesivo' en seguridad nacional",
     "resumen": "",
     "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBKQ3pJUW1rYVhUeXlBSmZWM2p1cVRaQlk0UXNXQUtCaXVsWkViUXJpZFN3aW9EYTlaY2pGeHZWaVN6cmFDMERZcmQtX0U4ZDlMTnlzQjZuOGRTRGFUczNzal92c245SDRnd2ZTTXo5T004aDlvcGEwZU4td2Y4dw?oc=5",
+    "fecha": "2026-10-20T13:16:00.000Z",
+    "publicador": "Fortune"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "Fortune",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "DeepSeek se revuelve contra la prohibición de la agencia federal estadounidense calificándola de «exceso en la interpretación del concepto de seguridad nacional»",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BX0Z5Ung4ejR3VDFEOGdPbktfRUk4Ry1aM1RwOXk1OFpkYVV6LTY2dXR3U1NhQ09vQmxKaUUtSGlBTEJpX0NSa0lqcGoxUkFUa2liSFVzOElQT3p4Z1NTcXZsclFlM2tpRFN1a2J6WTFRMEl6bl9BTVNwT2E5ZGc?oc=5",
     "fecha": "2026-10-20T13:16:00.000Z",
     "publicador": "Fortune"
   },
@@ -4287,6 +5315,18 @@
     "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOUk1OE5GRkMxR19rWmhjWHRjNUJwRHE4bnpwMzIySmZLMkdkckI0WXVCNDVkUl9DRXdIckp1a3ViZ2dpN2YwUkRTZ3B3MV9yLThfdEpsckQxQ2dnOVNBMktsTmRTcHdiSENxQnZKdjdaZzdMVzJLS0xrazVIQjN6RkdHa1JhdUs4djc1RWd6dkFDUTZQaHRrQUJnSERfWTdQZm9vWFZVQW5hdw?oc=5",
     "fecha": "2026-10-20T10:11:58.000Z",
     "publicador": "Yeni Şafak English"
+  },
+  {
+    "fuente": "DeepSeek (Google News)",
+    "medio": "https://dominotheory.com/",
+    "categoria": "laboratorio",
+    "laboratorio": "DeepSeek",
+    "idioma": "en",
+    "titulo": "EE.UU. prohíbe el uso del líder chino de IA DeepSeek por parte del gobierno",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeF9YamZhUHZnYV9wZEJaNkxZejRXUW9ERllGa0VlLXAyYVd6UkpvdFg0V1loUDItS3BQdFBDTkNaZGRQaXZmUjJuRDdrS2hvanlRY1dWVU95STdKTGlDTEFpdmkwMU5tUDNkM0k2X01rbVNFR3FRZTlaXzdMZUtWQnBvcVdoN0ox?oc=5",
+    "fecha": "2026-10-20T10:11:05.000Z",
+    "publicador": "https://dominotheory.com/"
   },
   {
     "fuente": "DeepSeek (Google News)",
