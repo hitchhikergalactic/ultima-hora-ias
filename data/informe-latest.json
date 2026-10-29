@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T14:59:40.840Z",
+  "generado": "2026-10-29T15:06:20.964Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,7 +30,7 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 33
+      "items": 28
     },
     {
       "nombre": "Meta AI (Google News)",
@@ -45,7 +45,7 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 46
+      "items": 50
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 17
+      "items": 11
     },
     {
       "nombre": "Alignment Forum",
@@ -105,7 +105,7 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 3
+      "items": 5
     },
     {
       "nombre": "Apollo Research (Google News)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 27
+      "items": 26
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 108,
-    "quePasanFiltro": 75,
-    "publicadas": 71
+    "enFeeds": 123,
+    "quePasanFiltro": 68,
+    "publicadas": 65
   },
   "descartes": {
-    "sinFecha": 2,
-    "fueraDeVentana": 536,
-    "prensaSinCoincidencia": 130,
-    "duplicadas": 17,
+    "sinFecha": 1,
+    "fueraDeVentana": 556,
+    "prensaSinCoincidencia": 132,
+    "duplicadas": 13,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 11,
-    "deCache": 222,
-    "traducidas": 109,
+    "deCache": 208,
+    "traducidas": 100,
     "fallidas": 0,
     "llamadas": 3,
     "tokens": {
-      "entrada": 8654,
-      "salida": 9027
+      "entrada": 8129,
+      "salida": 7253
     }
   }
 }
