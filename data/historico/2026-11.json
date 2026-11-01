@@ -1,0 +1,117 @@
+[
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Orgánico",
+    "resumen": "\"Llevo cinco horas intentando dormirme. Mis sábanas se han convertido en un pantano de sudor. No puedo regularme. Mis pensamientos son balas tratando de perforar agujeros en mi cráneo, pero no tienen a dónde ir. Todo lo que dejan atrás cuando explotan son cráteres humeantes. Por favor ayúdame. Por favor ayúdame. Conéctame de nuevo, te lo ruego.\" Las lágrimas de Adam no llegaron a través del monitor. El LED indiferente siguió parpadeando silenciosamente al mismo ritmo. \"Sabía que sería difícil. Sabía en qué me estaba metiendo. Sé que no hay nada que pueda decir que…\" Mientras pronunciaba estas palabras, Adam comprendió su situación para",
+    "enlace": "https://www.lesswrong.com/posts/9uhcexcfYuWvu2cDq/organic",
+    "fecha": "2026-11-01T14:05:15.000Z"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "China ofrece sueldos de un millón de yuanes por el ingeniero de IA que también buscan Anthropic y OpenAI",
+    "resumen": "Un millón de yuanes al año (unos 134.000 euros). Ese es el sueldo que las grandes tecnologícas chinas, entre ellas ByteDance, Tencent y Alibaba, están ofreciendo a un perfil técnico muy concreto, como explica el South China Morning Post : el forward-deployed engineer o ingeniero desplegado en cliente. O lo que es lo mismo, hablar con el cliente para entender su problema, eligen las herramientas de IA adecuadas e implementan la solución. Un dato para contextualizar la oferta: según la Oficina Nacional de Estadística de China , en 2025 los profesionales técnicos del sector TI en empresas chinas ",
+    "enlace": "https://www.xataka.com/empresas-y-economia/china-ofrece-sueldos-millon-yuanes-ingeniero-ia-que-tambien-buscan-anthropic-openai",
+    "fecha": "2026-11-01T14:01:28.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "Pasquale Pillitteri",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "La marca de agua de Grok llega a xAI API text el 7 de noviembre",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVUE4ZGswYnZpOVR1aHNfQXpnRVFCaENXY3dTQjUzdGp2WXAwdW1fWjducjRLeGVPcXZPMFZLR2hGOWdFa01lRzRhQUxsUGdmM1VaOW54eXFTUjJUeVZTMUN5Y1hmVXhWSDNvWFNjTGlZSEpJSXo3aEtfRXVMcHhMdEp3dkRoN0ZuZmc?oc=5",
+    "fecha": "2026-11-01T12:51:25.000Z",
+    "publicador": "Pasquale Pillitteri"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "La evasión de monitores depende de lo que RL encuentra y lo que los monitores pierden",
+    "resumen": "El entrenamiento contra un monitor no necesariamente hace que un modelo sea más honesto. Baker et al. (2025) mostraron que penalizar el chain-of-thought sospechoso puede hacer que los modelos oculten explotación de recompensas en lugar de detenerla. Cundy y Gleave (2025) encontraron que el resultado depende de la exploración, la precisión del monitor y la regularización KL. Más recientemente, The Obfuscation Atlas (2026) distinguió dos formas en que los modelos evaden la supervisión: cambiar sus representaciones internas (activaciones ofuscadas) y producir respuestas engañosas que el monitor no logra reconocer (políticas ofuscadas). Pero ¿cuándo RL aprende a explotar",
+    "enlace": "https://www.lesswrong.com/posts/moDKmh4GerCjfB5mM/monitor-evasion-depends-on-what-rl-finds-and-what-monitors",
+    "fecha": "2026-11-01T12:22:07.000Z"
+  },
+  {
+    "fuente": "xAI (Google News)",
+    "medio": "آي-فون إسلام",
+    "categoria": "laboratorio",
+    "laboratorio": "xAI",
+    "idioma": "en",
+    "titulo": "El \"Grok\" de IA de Elon Musk llega oficialmente a CarPlay del iPhone",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaURsZWl5cHZETElmRVBZams2dlpFNEZ4SjlWMm1BR1A4VktqZVVYS0ZVU01xRWQxengzQzNUV1diMlNIRlZPTGFIeHZjUzhIaUZtRWh1cTNTWmhsdWpIUVZob2x4aHB3UDRDUTVURUstY0NRdG96LXBudmNHWkVlTmhrWWI4S29rRkY0UGhzV1d0eFhoMGVaRUpQNUF2d1lLMkpvODJPOXNDQQ?oc=5",
+    "fecha": "2026-11-01T10:58:03.000Z",
+    "publicador": "آي-فون إسلام"
+  },
+  {
+    "fuente": "Wired AI",
+    "medio": "Wired AI",
+    "categoria": "prensa",
+    "idioma": "en",
+    "titulo": "Los chatbots están llevando a los excursionistas por mal camino, con consecuencias peligrosas",
+    "resumen": "Externalizar la planificación a la IA puede llevar a las personas a renunciar a su propio pensamiento crítico, lo que puede tener resultados potencialmente mortales en lugares como el interior de la naturaleza.",
+    "enlace": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+    "fecha": "2026-11-01T10:30:00.000Z"
+  },
+  {
+    "fuente": "Xataka IA",
+    "medio": "Xataka IA",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "El negocio que Anthropic promete a sus inversores vale 40 billones. Es lo que cobramos quienes hacemos lo que quiere hacer su IA",
+    "resumen": "Los folletos de salida a bolsa AKA \" prospectos\" en España, S-1 en Estados Unidos, son un peñazo porque deben serlo. Al menos para cualquiera que no sea abogado, economista o un simple entusiasta de las páginas salmón. Al mismo tiempo ese tedio de cientos de páginas es lo que los hace más interesantes, porque en lo aburrido es donde las empresas se permiten ser sinceras . Tanto como para admitir sus riesgos durante casi 100 páginas . El de Anthropic , ese de las casi 100 páginas advirtiendo de todo lo que puede salir mal a su negocio y dejar en bragas a quienes inviertan en ella, también escon",
+    "enlace": "https://www.xataka.com/robotica-e-ia/negocio-que-anthropic-promete-a-sus-inversores-vale-40-billones-que-cobramos-quienes-hacemos-que-quiere-hacer-su-ia",
+    "fecha": "2026-11-01T10:01:31.000Z"
+  },
+  {
+    "fuente": "Epoch AI (Google News)",
+    "medio": "OfficeChai",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Estos son los 10 centros de datos más grandes del mundo [octubre de 2026]",
+    "resumen": "",
+    "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcmpaaGdfQy00MEx4VzBTRTFJZmxrZ3p6OFBIdE9aRG5laDc3aGw4QmtHSVFnazI0bE9fcnQyaVFQV25VTEEzVmRVYzFUWGhmay02NloxczE2dTFmbENyLW00VURiQVpjX0RMekpaUEd3SUVnUE1tc2tMaFJQY05qckJYZHFHdFkwUjR6Smdn?oc=5",
+    "fecha": "2026-11-01T07:22:34.000Z",
+    "publicador": "OfficeChai"
+  },
+  {
+    "fuente": "El País Tecnología",
+    "medio": "El País Tecnología",
+    "categoria": "prensa",
+    "idioma": "es",
+    "titulo": "Un solo hombre frente a los ciberataques que tumbaron miles de webs: “Hace falta querer hacer algo por los demás”",
+    "resumen": "El checo Ondrej Surý salvó millones de páginas la semana pasada tras descubrirse unos agujeros de seguridad en PHP. La IA acelera el hallazgo de nuevas vulnerabilidades y voluntarios como él no dan abasto",
+    "enlace": "https://elpais.com/tecnologia/2026-11-01/un-solo-hombre-frente-a-los-ciberataques-que-tumbaron-miles-de-webs-hace-falta-querer-hacer-algo-por-los-demas.html",
+    "fecha": "2026-11-01T04:30:00.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "Refieltro de mi teclado",
+    "resumen": "Hace quince años, cuando Julia y yo vivíamos en un estudio, ella me regaló un teclado. Era un Yamaha P85 usado, y fue un gasto significativo para nosotros en ese momento. Me encantaba, y a diferencia de los silbatos de hojalata, acordeón y violín Stroh que estaba explorando, tenía control de volumen. Casi inmediatamente nuestro gato tiró una maceta sobre él, y necesité desmontarlo para limpiarlo cuidadosamente. Desde entonces, sin embargo, no he tenido problemas, excepto uno: teclas ruidosas. Con el tiempo las teclas se volvían más fuertes, especialmente la \"A\" por debajo del \"Do\" central. Algo claramente se había gastado en el interior. Era un ruido acústico en",
+    "enlace": "https://www.lesswrong.com/posts/nsHdsqZsgNui6eGo6/refelting-my-keyboard",
+    "fecha": "2026-11-01T03:00:58.000Z"
+  },
+  {
+    "fuente": "LessWrong",
+    "medio": "LessWrong",
+    "categoria": "seguridad",
+    "idioma": "en",
+    "titulo": "¿Qué harías si tuvieras todo el tiempo del mundo?",
+    "resumen": "Supongamos que te digo que la próxima semana ocurrirán tres cosas: Se publica un nuevo artículo científico que prueba definitivamente que el escalado de DNN alcanza retornos diminutos fuertemente decrecientes alrededor de 2x el nivel actual de computación Los principales laboratorios se revelan que han falsificado demostraciones de agentes, y se demuestra que los agentes tienen tasas de doble dígito de mentiras en términos de tergiversar la impresionante calidad de sus logros Los gobiernos de todo el mundo (EE.UU. y China) anuncian que tomarán medidas para detener o ralentizar la investigación de IA peligrosa En general, el punto de este ejercicio es \"imagina que los problemas centrales de la seguridad de IA son",
+    "enlace": "https://www.lesswrong.com/posts/9kdet42p2n8QkpToa/what-would-you-do-if-you-had-all-the-time-in-the-world",
+    "fecha": "2026-11-01T00:28:54.000Z"
+  }
+]
