@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-02T18:05:58.773Z",
+  "generado": "2026-11-03T16:01:52.390Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,12 +30,12 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 32
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 40
+      "items": 31
     },
     {
       "nombre": "xAI (Google News)",
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 48
+      "items": 27
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 42
+      "items": 20
     },
     {
       "nombre": "Alignment Forum",
@@ -105,12 +105,12 @@
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 10
+      "items": 9
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 4
+      "items": 3
     },
     {
       "nombre": "AI Security Institute (Google News)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 32
+      "items": 29
     },
     {
       "nombre": "Financial Times AI",
@@ -206,31 +206,29 @@
   "feedsVacios": [
     "Miles Brundage (Google News)"
   ],
-  "feedsCaidos": [
-    "Miles Brundage (Google News)"
-  ],
+  "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 87,
-    "quePasanFiltro": 45,
-    "publicadas": 43
+    "enFeeds": 104,
+    "quePasanFiltro": 56,
+    "publicadas": 53
   },
   "descartes": {
-    "sinFecha": 0,
-    "fueraDeVentana": 630,
+    "sinFecha": 1,
+    "fueraDeVentana": 583,
     "prensaSinCoincidencia": 143,
-    "duplicadas": 11,
+    "duplicadas": 8,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
     "yaEnEspanol": 14,
-    "deCache": 181,
-    "traducidas": 82,
+    "deCache": 168,
+    "traducidas": 69,
     "fallidas": 0,
-    "llamadas": 3,
+    "llamadas": 2,
     "tokens": {
-      "entrada": 7132,
-      "salida": 6231
+      "entrada": 5844,
+      "salida": 6848
     }
   }
 }
