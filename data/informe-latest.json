@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-03T16:01:52.390Z",
+  "generado": "2026-11-04T16:06:33.241Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -35,12 +35,12 @@
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 31
+      "items": 33
     },
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 32
     },
     {
       "nombre": "Moonshot (Google News)",
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 27
+      "items": 35
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 20
+      "items": 19
     },
     {
       "nombre": "Alignment Forum",
@@ -110,12 +110,12 @@
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 3
+      "items": 4
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 50
+      "items": 26
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -185,7 +185,7 @@
     {
       "nombre": "El País Tecnología",
       "categoria": "prensa",
-      "items": 21
+      "items": 22
     },
     {
       "nombre": "Euronews Next",
@@ -208,27 +208,27 @@
   ],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 104,
-    "quePasanFiltro": 56,
-    "publicadas": 53
+    "enFeeds": 114,
+    "quePasanFiltro": 71,
+    "publicadas": 61
   },
   "descartes": {
     "sinFecha": 1,
-    "fueraDeVentana": 583,
-    "prensaSinCoincidencia": 143,
-    "duplicadas": 8,
+    "fueraDeVentana": 542,
+    "prensaSinCoincidencia": 150,
+    "duplicadas": 17,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 14,
-    "deCache": 168,
-    "traducidas": 69,
+    "yaEnEspanol": 12,
+    "deCache": 155,
+    "traducidas": 78,
     "fallidas": 0,
     "llamadas": 2,
     "tokens": {
-      "entrada": 5844,
-      "salida": 6848
+      "entrada": 6899,
+      "salida": 8057
     }
   }
 }
