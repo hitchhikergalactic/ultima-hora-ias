@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-16T18:14:34.990Z",
+  "generado": "2026-11-17T17:30:28.171Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -10,8 +10,7 @@
     {
       "nombre": "Google DeepMind Blog",
       "categoria": "laboratorio",
-      "items": 0,
-      "error": "Status code 500"
+      "items": 50
     },
     {
       "nombre": "Mistral AI",
@@ -31,27 +30,27 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 32
+      "items": 36
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 25
+      "items": 27
     },
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 31
+      "items": 32
     },
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 29
+      "items": 30
     },
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 33
+      "items": 32
     },
     {
       "nombre": "METR",
@@ -61,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 27
+      "items": 33
     },
     {
       "nombre": "Alignment Forum",
@@ -96,12 +95,12 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 12
+      "items": 10
     },
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 6
+      "items": 9
     },
     {
       "nombre": "GovAI (Google News)",
@@ -111,12 +110,12 @@
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 9
+      "items": 8
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 22
+      "items": 29
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -161,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 40
+      "items": 38
     },
     {
       "nombre": "Financial Times AI",
@@ -204,32 +203,30 @@
       "items": 34
     }
   ],
-  "feedsVacios": [
-    "Google DeepMind Blog"
-  ],
+  "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 128,
-    "quePasanFiltro": 83,
-    "publicadas": 74
+    "enFeeds": 162,
+    "quePasanFiltro": 107,
+    "publicadas": 100
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 413,
-    "prensaSinCoincidencia": 196,
-    "duplicadas": 12,
+    "fueraDeVentana": 464,
+    "prensaSinCoincidencia": 189,
+    "duplicadas": 17,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 12,
-    "deCache": 195,
-    "traducidas": 101,
+    "yaEnEspanol": 11,
+    "deCache": 191,
+    "traducidas": 125,
     "fallidas": 0,
-    "llamadas": 3,
+    "llamadas": 4,
     "tokens": {
-      "entrada": 8116,
-      "salida": 7976
+      "entrada": 9509,
+      "salida": 8853
     }
   }
 }
