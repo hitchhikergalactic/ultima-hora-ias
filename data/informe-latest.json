@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17T17:30:28.171Z",
+  "generado": "2026-11-18T17:06:18.667Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,17 +30,17 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 36
+      "items": 34
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 27
+      "items": 16
     },
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 32
+      "items": 33
     },
     {
       "nombre": "Moonshot (Google News)",
@@ -50,7 +50,7 @@
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 32
+      "items": 33
     },
     {
       "nombre": "METR",
@@ -60,7 +60,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 33
+      "items": 44
     },
     {
       "nombre": "Alignment Forum",
@@ -100,22 +100,22 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 9
+      "items": 7
     },
     {
       "nombre": "GovAI (Google News)",
       "categoria": "seguridad",
-      "items": 6
+      "items": 7
     },
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 8
+      "items": 15
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 29
+      "items": 28
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +160,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 38
+      "items": 34
     },
     {
       "nombre": "Financial Times AI",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 162,
-    "quePasanFiltro": 107,
-    "publicadas": 100
+    "enFeeds": 148,
+    "quePasanFiltro": 85,
+    "publicadas": 82
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 464,
-    "prensaSinCoincidencia": 189,
-    "duplicadas": 17,
+    "fueraDeVentana": 482,
+    "prensaSinCoincidencia": 185,
+    "duplicadas": 10,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 11,
-    "deCache": 191,
-    "traducidas": 125,
+    "yaEnEspanol": 13,
+    "deCache": 201,
+    "traducidas": 107,
     "fallidas": 0,
-    "llamadas": 4,
+    "llamadas": 3,
     "tokens": {
-      "entrada": 9509,
-      "salida": 8853
+      "entrada": 8126,
+      "salida": 8364
     }
   }
 }
