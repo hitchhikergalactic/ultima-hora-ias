@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-19T17:13:44.469Z",
+  "generado": "2026-11-20T16:52:06.755Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -10,7 +10,8 @@
     {
       "nombre": "Google DeepMind Blog",
       "categoria": "laboratorio",
-      "items": 50
+      "items": 0,
+      "error": "Non-whitespace before first tag. Line: 0 Column: 1 Char: \u001f"
     },
     {
       "nombre": "Mistral AI",
@@ -30,12 +31,12 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 33
+      "items": 35
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 20
+      "items": 17
     },
     {
       "nombre": "xAI (Google News)",
@@ -45,12 +46,12 @@
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 29
+      "items": 28
     },
     {
       "nombre": "DeepSeek (Google News)",
       "categoria": "laboratorio",
-      "items": 33
+      "items": 32
     },
     {
       "nombre": "METR",
@@ -60,7 +61,7 @@
     {
       "nombre": "Epoch AI (Google News)",
       "categoria": "seguridad",
-      "items": 50
+      "items": 48
     },
     {
       "nombre": "Alignment Forum",
@@ -100,7 +101,7 @@
     {
       "nombre": "Miles Brundage (Google News)",
       "categoria": "seguridad",
-      "items": 0
+      "items": 2
     },
     {
       "nombre": "GovAI (Google News)",
@@ -110,12 +111,12 @@
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 13
+      "items": 16
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 31
+      "items": 30
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -160,7 +161,7 @@
     {
       "nombre": "The New York Times",
       "categoria": "prensa",
-      "items": 42
+      "items": 39
     },
     {
       "nombre": "Financial Times AI",
@@ -204,33 +205,33 @@
     }
   ],
   "feedsVacios": [
-    "Miles Brundage (Google News)"
+    "Google DeepMind Blog"
   ],
   "feedsCaidos": [
-    "Miles Brundage (Google News)"
+    "Google DeepMind Blog"
   ],
   "ultimas24h": {
-    "enFeeds": 184,
-    "quePasanFiltro": 120,
-    "publicadas": 113
+    "enFeeds": 120,
+    "quePasanFiltro": 74,
+    "publicadas": 71
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 479,
-    "prensaSinCoincidencia": 178,
-    "duplicadas": 17,
+    "fueraDeVentana": 437,
+    "prensaSinCoincidencia": 162,
+    "duplicadas": 14,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 18,
-    "deCache": 190,
-    "traducidas": 133,
+    "yaEnEspanol": 15,
+    "deCache": 231,
+    "traducidas": 102,
     "fallidas": 0,
-    "llamadas": 4,
+    "llamadas": 3,
     "tokens": {
-      "entrada": 11210,
-      "salida": 11214
+      "entrada": 8802,
+      "salida": 9056
     }
   }
 }
