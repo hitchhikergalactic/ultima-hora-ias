@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-22T16:07:15.249Z",
+  "generado": "2026-11-23T20:00:21.176Z",
   "ventanaDias": 7,
   "feeds": [
     {
@@ -30,22 +30,22 @@
     {
       "nombre": "Google DeepMind (Google News)",
       "categoria": "laboratorio",
-      "items": 37
+      "items": 34
     },
     {
       "nombre": "Meta AI (Google News)",
       "categoria": "laboratorio",
-      "items": 22
+      "items": 42
     },
     {
       "nombre": "xAI (Google News)",
       "categoria": "laboratorio",
-      "items": 35
+      "items": 50
     },
     {
       "nombre": "Moonshot (Google News)",
       "categoria": "laboratorio",
-      "items": 29
+      "items": 30
     },
     {
       "nombre": "DeepSeek (Google News)",
@@ -95,7 +95,7 @@
     {
       "nombre": "Helen Toner (Google News)",
       "categoria": "seguridad",
-      "items": 10
+      "items": 8
     },
     {
       "nombre": "Miles Brundage (Google News)",
@@ -110,12 +110,12 @@
     {
       "nombre": "Apollo Research (Google News)",
       "categoria": "seguridad",
-      "items": 14
+      "items": 13
     },
     {
       "nombre": "AI Security Institute (Google News)",
       "categoria": "seguridad",
-      "items": 32
+      "items": 29
     },
     {
       "nombre": "AI Safety Newsletter (CAIS)",
@@ -206,27 +206,27 @@
   "feedsVacios": [],
   "feedsCaidos": [],
   "ultimas24h": {
-    "enFeeds": 53,
-    "quePasanFiltro": 25,
-    "publicadas": 25
+    "enFeeds": 156,
+    "quePasanFiltro": 107,
+    "publicadas": 103
   },
   "descartes": {
     "sinFecha": 0,
-    "fueraDeVentana": 495,
-    "prensaSinCoincidencia": 162,
+    "fueraDeVentana": 510,
+    "prensaSinCoincidencia": 168,
     "duplicadas": 15,
     "duplicadasTrasTraducir": 0
   },
   "traduccion": {
     "modelo": "claude-haiku-4-5-20251001",
-    "yaEnEspanol": 16,
-    "deCache": 281,
-    "traducidas": 48,
+    "yaEnEspanol": 17,
+    "deCache": 217,
+    "traducidas": 117,
     "fallidas": 0,
-    "llamadas": 2,
+    "llamadas": 3,
     "tokens": {
-      "entrada": 5043,
-      "salida": 4621
+      "entrada": 8989,
+      "salida": 9334
     }
   }
 }
